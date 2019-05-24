@@ -1,11 +1,14 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-import App from '../containers/App';
+import { Route, Switch } from 'react-router-dom';
 import RegisterPage from '../components/RegisterPage';
+import LoginPage from '../components/LoginPage';
 
-export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={RegisterPage} />
-    <Route path="register" component={RegisterPage} />
-  </Route>
-);
+function Routes() {
+  return (
+    <Switch>
+      <Route exact path="/register" component={RegisterPage} />
+      <Route exact path="/login" component={LoginPage} />
+    </Switch>
+  );
+}
+export default Routes;

@@ -1,19 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './App.css';
+import Routes from '../routes';
 
-function App(props) {
-  const { children } = props;
+function App() {
   return (
     <div>
       <h3>User Authentication System</h3>
-      {children}
+      <Routes />
     </div>
   );
 }
-
-App.propTypes = {
-  children: PropTypes.shape.isRequired
-};
 
 export default App;

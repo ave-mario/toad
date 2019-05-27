@@ -20,7 +20,7 @@
   "scripts": {
     "check-staged": "lint-staged",
     "lint": "eslint src -c .eslintrc --ext js,jsx",
-    "lint-fix": "eslint src -c .eslintrc --fix . --ext js,jsx",
+    "lint:fix": "eslint src -c .eslintrc --fix . --ext js,jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

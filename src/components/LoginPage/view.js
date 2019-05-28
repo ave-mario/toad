@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Title, Button } from './components';
+import { Form, Input, Title, Button } from '../../elements';
 import store from '../../config/redux.store';
 
 class LoginPage extends React.Component {
@@ -30,8 +30,8 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <div>
-        <Title>Form</Title>
+      <div style={{ textAlign: 'center' }}>
+        <Title>Sign in</Title>
         <Form>
           <Input
             type="text"

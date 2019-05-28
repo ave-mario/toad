@@ -3,7 +3,7 @@ import createSagaMiddleware from 'redux-saga';
 import { logger } from 'redux-logger';
 import { routerMiddleware } from 'connected-react-router';
 import rootReducer from '../reducers';
-import history from '../history';
+import history from './browser.history';
 import rootSaga from '../sagas';
 
 const initialState = {};

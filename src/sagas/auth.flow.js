@@ -1,14 +1,17 @@
 import { put, call, take, fork, cancel } from 'redux-saga/effects';
 import login from '../actions/auth.actions';
+import handleResponse from '../services';
 
 function* authorize(email, password) {
   try {
-    const user = yield call(login, email, password);
-    yield put({ type: 'LOGIN_SUCCESS', payload: { user } });
-    localStorage.setItem(user);
-    return user;
+    const response = yield call(login, email, password);
+    const payload = handleResponse.handleLoginSuccess(response);
+    yield put({ type: 'LOGIN_SUCCESS', payload });
+    localStorage.setItem('user', response);
+    return response;
   } catch (error) {
-    yield put({ type: 'LOGIN_FAILURE', payload: { error } });
+    const payload = handleResponse.handleLoginError(error);
+    yield put({ type: 'LOGIN_FAILURE', payload });
     return error;
   }
 }

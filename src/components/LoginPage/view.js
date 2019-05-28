@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, Title, Button } from './components';
-import store from '../../store';
+import store from '../../config/redux.store';
 
 class LoginPage extends React.Component {
   constructor(props) {

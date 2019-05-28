@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter as Router } from 'connected-react-router';
-import store from './store';
-import App from './containers/App';
-import history from './history';
+import store from './config/redux.store';
+import App from './components/App';
+import history from './config/browser.history';
 
 export default history;
 

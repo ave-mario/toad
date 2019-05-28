@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default function login({ email, password }) {
+export default function login(email, password) {
   const config = {
     headers: { 'Content-Type': 'application/json' }
   };

@@ -1,7 +1,6 @@
 import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
 import { login, loadUser } from '../actions/auth.actions';
-import handleResponse from '../services';
 import * as Types from '../actions/types';
 
 function* authorize(email, password) {
@@ -12,7 +11,7 @@ function* authorize(email, password) {
     yield put(push('/'));
     return response;
   } catch (error) {
-    const payload = handleResponse.handleLoginError(error);
+    const payload = error.response.data;
     yield put({ type: Types.LOGIN_FAILURE, payload });
     yield put(push('/login'));
     return error;
@@ -22,7 +21,7 @@ function* load() {
   try {
     const tokens = yield JSON.parse(localStorage.getItem('tokens'));
     if (tokens === null) {
-      throw new Error('There is no tokens');
+      throw new Error('There are no tokens');
     } else {
       const response = yield call(loadUser, tokens.accessToken);
       const { user } = response.data;

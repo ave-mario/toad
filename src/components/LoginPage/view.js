@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Form, Input, Title, Button, Title2 } from '../../elements';
 import store from '../../config/redux.store';
 
-class LoginPage extends React.Component {
+class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +11,6 @@ class LoginPage extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleLogout = this.handleLogout.bind(this);
   }
 
   handleChange(e) {
@@ -26,13 +25,6 @@ class LoginPage extends React.Component {
       type: 'LOGIN_REQUEST',
       email,
       password
-    });
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  handleLogout() {
-    store.dispatch({
-      type: 'LOGOUT'
     });
   }
 
@@ -56,9 +48,6 @@ class LoginPage extends React.Component {
           />
           <Button type="submit" onClick={this.handleSubmit}>
             Submit
-          </Button>
-          <Button type="button" onClick={this.handleLogout}>
-            LOGOUT
           </Button>
         </Form>
       </>

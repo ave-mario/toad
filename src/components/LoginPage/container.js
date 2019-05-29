@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import login from '../../actions/auth.actions';
+import { login } from '../../actions/auth.actions';
 import LoginPage from './view';
 import store from '../../config/redux.store';
 

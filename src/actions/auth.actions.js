@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default function login(email, password) {
+export function login(email, password) {
   const config = {
     headers: { 'Content-Type': 'application/json' }
   };
@@ -8,5 +8,11 @@ export default function login(email, password) {
     email,
     password
   };
-  return axios.post('http://localhost:3001/api/employees/login', body, config);
+  return axios.post('employees/login', body, config);
+}
+export function loadUser(token) {
+  const config = {
+    headers: { Authorization: `Bearer ${token}` }
+  };
+  return axios.get('employees/current', config);
 }

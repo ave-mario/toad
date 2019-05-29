@@ -31,13 +31,15 @@ export const Title = styled.h1`
   color: ${({ color }) => color || '#4d4d4d'};
   font-size: ${({ fontSize }) => fontSize || '2.2em'};
   text-align: ${({ textAlign }) => textAlign || 'center'};
+  margin: ${({ margin }) => margin || '5px auto'};
 `;
 
 export const Title2 = styled.h2`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-weight: ${({ fontWeight }) => fontWeight || '300px'}
   color: ${props => props.color || '#4d4d4d'};
-  font-size: ${({ fontSize }) => fontSize || '1.8em'};
+  font-size: ${({ fontSize }) => fontSize || '1.2em'};
+  margin: ${({ margin }) => margin || '1px auto'};
 `;
 
 export const Text = styled.p`

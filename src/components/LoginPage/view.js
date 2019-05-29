@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Title, Button } from '../../elements';
+import { Form, Input, Title, Button, Title2 } from '../../elements';
 import store from '../../config/redux.store';
 
 class LoginPage extends React.Component {
@@ -11,6 +11,7 @@ class LoginPage extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleLogout = this.handleLogout.bind(this);
   }
 
   handleChange(e) {
@@ -28,11 +29,19 @@ class LoginPage extends React.Component {
     });
   }
 
+  // eslint-disable-next-line class-methods-use-this
+  handleLogout() {
+    store.dispatch({
+      type: 'LOGOUT'
+    });
+  }
+
   render() {
     return (
-      <div style={{ textAlign: 'center' }}>
-        <Title>Sign in</Title>
-        <Form>
+      <>
+        <Form width="500px">
+          <Title>Welcome to our hotel</Title>
+          <Title2>Sign in</Title2>
           <Input
             type="text"
             name="email"
@@ -48,8 +57,11 @@ class LoginPage extends React.Component {
           <Button type="submit" onClick={this.handleSubmit}>
             Submit
           </Button>
+          <Button type="button" onClick={this.handleLogout}>
+            LOGOUT
+          </Button>
         </Form>
-      </div>
+      </>
     );
   }
 }

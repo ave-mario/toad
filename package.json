@@ -24,7 +24,20 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "husky:commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "husky:post-checkout": "lint-staged",
+    "husky:pre-commit": "lint-staged",
+    "husky:pre-push": "npm run lint:fix",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npm run husky:commit-msg",
+      "post-checkout": "npm run husky:post-checkout",
+      "pre-commit": "npm run husky:pre-commit",
+      "pre-push": "npm run husky:pre-push"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,12 +67,6 @@
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
     "prettier": "^1.17.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "lint-staged": {
     "*.{js,jsx}": [

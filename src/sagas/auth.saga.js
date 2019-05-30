@@ -54,8 +54,6 @@ export function* loadFlow() {
       yield take(Types.LOGOUT);
       yield put({ type: Types.LOGOUT });
       yield put(push('/login'));
-    } else {
-      yield put({ type: Types.LOAD_USER_FAILURE });
     }
   }
 }

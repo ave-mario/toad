@@ -1,0 +1,46 @@
+import styled from 'styled-components';
+import { Button, Form, Input, Title, Title2 } from '../../../elements';
+
+export const SubmitButton = styled(Button)`
+  position: relative;
+  display: block;
+  margin: 5px auto 5px 10%;
+  padding: 0px;
+  width: 100px;
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+
+  transition: background-color 0.3s;
+  :hover {
+    background-color: #27ae60;
+  }
+`;
+export const LoginForm = styled(Form)`
+  min-width: 30%;
+  max-width: 50%;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: #f7f8f9;
+  box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
+  margin-top: 20%;
+`;
+export const LoginInput = styled(Input)`
+  width: 80%;
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+  }
+`;
+export const LoginTitle = styled(Title)`
+  font-size: 1.75em;
+`;
+export const LoginSubTitle = styled(Title2)`
+  margin: 0;
+`;

@@ -1,18 +1,19 @@
 import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
-import { login, loadUser } from '../actions/auth.actions';
-import * as Types from '../actions/types';
+import { login, loadUser } from '../actions/api.calls';
+import authActions from '../actions/auth.actions';
 
+const { Creators, Types } = authActions;
 function* authorize(email, password) {
   try {
     const response = yield call(login, email, password);
+    const { user, tokens } = response.data;
     localStorage.setItem('tokens', JSON.stringify(response.data.tokens));
-    yield put({ type: Types.LOGIN_SUCCESS, payload: response.data });
+    yield put(Creators.loginSuccess(user, tokens));
     yield put(push('/'));
     return response;
   } catch (error) {
-    const payload = error.response.data;
-    yield put({ type: Types.LOGIN_FAILURE, payload });
+    yield put(Creators.loginFailure(error.response.data));
     yield put(push('/login'));
     return error;
   }
@@ -25,34 +26,25 @@ function* load() {
     } else {
       const response = yield call(loadUser, tokens.accessToken);
       const { user } = response.data;
-      yield put({ type: Types.LOAD_USER_SUCCESS, payload: user });
+      yield put(Creators.loadSuccess(user));
       yield put(push('/'));
     }
   } catch (error) {
     yield put(push('/login'));
     if (error.response) {
-      yield put({
-        type: Types.LOAD_USER_FAILURE,
-        payload: error.response.data
-      });
+      yield put(Creators.loadFailure(error.response.data));
     } else {
-      yield put({
-        type: Types.LOAD_USER_FAILURE,
-        payload: error.message
-      });
+      yield put(Creators.loadFailure(error.message));
     }
   }
 }
 export function* loadFlow() {
   while (true) {
-    yield takeLatest(Types.LOAD_USER_REQUEST, load);
-    const action = yield take([
-      Types.LOAD_USER_SUCCESS,
-      Types.LOAD_USER_FAILURE
-    ]);
-    if (action.type === Types.LOAD_USER_SUCCESS) {
+    yield takeLatest(Types.LOAD_REQUEST, load);
+    const action = yield take([Types.LOAD_SUCCESS, Types.LOAD_FAILURE]);
+    if (action.type === Types.LOAD_SUCCESS) {
       yield take(Types.LOGOUT);
-      yield put({ type: Types.LOGOUT });
+      yield put(Creators.logout());
       yield put(push('/login'));
     }
   }
@@ -64,6 +56,7 @@ export function* loginFlow() {
     const action = yield take([Types.LOGOUT, Types.LOGIN_FAILURE]);
     if (action.type === Types.LOGOUT) {
       yield cancel(task);
+      yield put(Creators.logout());
       yield put(push('/login'));
     }
   }

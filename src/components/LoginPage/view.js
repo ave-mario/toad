@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Form, Input, Title, Button, Title2 } from '../../elements';
+import { Header, Main, Footer } from '../../elements';
+import {
+  SubmitButton,
+  LoginForm,
+  LoginInput,
+  LoginTitle,
+  LoginSubTitle
+} from './elements/login.form';
 import store from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
 
@@ -29,25 +36,31 @@ class LoginPage extends Component {
   render() {
     return (
       <>
-        <Form width="500px">
-          <Title>Welcome to our hotel</Title>
-          <Title2>Sign in</Title2>
-          <Input
-            type="text"
-            name="email"
-            placeholder="Email"
-            onChange={this.handleChange}
-          />
-          <Input
-            type="password"
-            name="password"
-            placeholder="Password"
-            onChange={this.handleChange}
-          />
-          <Button type="submit" onClick={this.handleSubmit}>
-            Submit
-          </Button>
-        </Form>
+        <LoginForm>
+          <Header>
+            <LoginTitle>Welcome to hotel management</LoginTitle>
+            <LoginSubTitle>Sign in</LoginSubTitle>
+          </Header>
+          <Main>
+            <LoginInput
+              type="text"
+              name="email"
+              placeholder="Email"
+              onChange={this.handleChange}
+            />
+            <LoginInput
+              type="password"
+              name="password"
+              placeholder="Password"
+              onChange={this.handleChange}
+            />
+          </Main>
+          <Footer>
+            <SubmitButton type="submit" onClick={this.handleSubmit}>
+              SIGN IN
+            </SubmitButton>
+          </Footer>
+        </LoginForm>
       </>
     );
   }

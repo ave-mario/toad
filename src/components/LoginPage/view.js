@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Form, Input, Title, Button, Title2 } from '../../elements';
 import store from '../../config/redux.store';
+import authActions from '../../actions/auth.actions';
 
+const { Creators } = authActions;
 class LoginPage extends Component {
   constructor(props) {
     super(props);
@@ -21,11 +23,7 @@ class LoginPage extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const { email, password } = this.state;
-    store.dispatch({
-      type: 'LOGIN_REQUEST',
-      email,
-      password
-    });
+    store.dispatch(Creators.loginRequest(email, password));
   }
 
   render() {

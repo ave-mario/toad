@@ -10,6 +10,9 @@ import {
   LoginSubTitle
 } from './elements/login.form';
 
+export const fakeValidEmail = 'vidgf@sdf.sfn';
+export const fakeValidPassword = '12345QWE';
+
 class LoginPage extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +32,7 @@ class LoginPage extends Component {
   handleSubmit(e) {
     const { email, password } = this.state;
     const { login } = this.props;
-    if (email === 'vidgf@sdf.sfn' && password === '12345QWE') {
+    if (email === fakeValidEmail && password === fakeValidPassword) {
       this.setState({ isLogged: true });
     }
     e.preventDefault();

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test case for testing main page Main page snapshot 1`] = `
+<Fragment>
+  <styled.h1>
+    Main Page
+  </styled.h1>
+  <styled.button
+    onClick={[Function]}
+    type="button"
+  >
+    LOGOUT
+  </styled.button>
+</Fragment>
+`;

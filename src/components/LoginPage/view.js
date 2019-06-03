@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Header, Main, Footer } from '../../elements';
 import {
   SubmitButton,
@@ -8,10 +9,7 @@ import {
   LoginTitle,
   LoginSubTitle
 } from './elements/login.form';
-import store from '../../config/redux.store';
-import authActions from '../../actions/auth.actions';
 
-const { Creators } = authActions;
 class LoginPage extends Component {
   constructor(props) {
     super(props);
@@ -30,11 +28,12 @@ class LoginPage extends Component {
 
   handleSubmit(e) {
     const { email, password } = this.state;
+    const { login } = this.props;
     if (email === 'vidgf@sdf.sfn' && password === '12345QWE') {
       this.setState({ isLogged: true });
     }
     e.preventDefault();
-    store.dispatch(Creators.loginRequest(email, password));
+    login(email, password);
   }
 
   render() {
@@ -75,4 +74,8 @@ class LoginPage extends Component {
     );
   }
 }
+
+LoginPage.propTypes = {
+  login: PropTypes.func.isRequired
+};
 export default LoginPage;

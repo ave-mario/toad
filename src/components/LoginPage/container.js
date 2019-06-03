@@ -1,13 +1,20 @@
 import { connect } from 'react-redux';
-import { login } from '../../actions/api.calls';
 import LoginPage from './view';
-import store from '../../config/redux.store';
+import authActions from '../../actions/auth.actions';
 
+const { Creators } = authActions;
 const mapStateToProps = state => ({
   user: state.user
 });
 
+const mapDispatchToProps = dispatch => {
+  return {
+    login: (email, password) => {
+      dispatch(Creators.loginRequest(email, password));
+    }
+  };
+};
 export default connect(
   mapStateToProps,
-  { login, store }
+  mapDispatchToProps
 )(LoginPage);

@@ -4,22 +4,27 @@ import LoginPage from '../components/LoginPage/view';
 /* eslint-disable no-undef */
 describe('Test case for testing login', () => {
   let wrapper;
+  const props = {
+    login: jest.fn()
+  };
   test('username check', () => {
-    wrapper = shallow(<LoginPage />);
+    wrapper = shallow(<LoginPage {...props} />);
+
     wrapper.find('.emailInput').simulate('change', {
       target: { name: 'email', value: 'krishankantsinghal' }
     });
+
     expect(wrapper.state('email')).toEqual('krishankantsinghal');
   });
   it('password check', () => {
-    wrapper = shallow(<LoginPage />);
+    wrapper = shallow(<LoginPage {...props} />);
     wrapper.find('.passwordInput').simulate('change', {
       target: { name: 'password', value: 'krishankant123' }
     });
     expect(wrapper.state('password')).toEqual('krishankant123');
   });
   it('login check with right data', () => {
-    wrapper = shallow(<LoginPage />);
+    wrapper = shallow(<LoginPage {...props} />);
     wrapper.find('.emailInput').simulate('change', {
       target: { name: 'email', value: 'vidgf@sdf.sfn' }
     });
@@ -29,10 +34,11 @@ describe('Test case for testing login', () => {
     wrapper.find('.submitButton').simulate('click', {
       preventDefault: () => {}
     });
+    expect(props.login).toBeCalled();
     expect(wrapper.state('isLogged')).toBe(true);
   });
   it('login check with wrong data', () => {
-    wrapper = shallow(<LoginPage />);
+    wrapper = shallow(<LoginPage {...props} />);
     wrapper.find('.emailInput').simulate('change', {
       target: { name: 'username', value: 'krishankantsinghal' }
     });
@@ -42,6 +48,7 @@ describe('Test case for testing login', () => {
     wrapper.find('.submitButton').simulate('click', {
       preventDefault: () => {}
     });
+    expect(props.login).toBeCalled();
     expect(wrapper.state('isLogged')).toBe(false);
   });
 });

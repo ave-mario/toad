@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test case for testing login form Login page snapshot 1`] = `
+<Fragment>
+  <Styled(styled.form)>
+    <styled.header>
+      <Styled(styled.h1)>
+        Welcome to hotel management
+      </Styled(styled.h1)>
+      <Styled(styled.h2)>
+        Sign in
+      </Styled(styled.h2)>
+    </styled.header>
+    <styled.main>
+      <Styled(styled.input)
+        className="emailInput"
+        name="email"
+        onChange={[Function]}
+        placeholder="Email"
+        type="text"
+      />
+      <Styled(styled.input)
+        className="passwordInput"
+        name="password"
+        onChange={[Function]}
+        placeholder="Password"
+        type="password"
+      />
+    </styled.main>
+    <styled.footer>
+      <Styled(styled.button)
+        className="submitButton"
+        onClick={[Function]}
+        type="submit"
+      >
+        SIGN IN
+      </Styled(styled.button)>
+    </styled.footer>
+  </Styled(styled.form)>
+</Fragment>
+`;

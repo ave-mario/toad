@@ -22,13 +22,12 @@ export const SubmitButton = styled(Button)`
   }
 `;
 export const LoginForm = styled(Form)`
-  min-width: 30%;
-  max-width: 50%;
+  min-width: 200px;
+  max-width: 600px;
   border-width: 0;
   border-radius: 20px;
   background-color: #f7f8f9;
   box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
-  margin-top: 20%;
 `;
 export const LoginInput = styled(Input)`
   width: 80%;

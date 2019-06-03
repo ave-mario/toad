@@ -29,7 +29,7 @@ describe('Test case for testing login', () => {
     wrapper.find('.submitButton').simulate('click', {
       preventDefault: () => {}
     });
-    expect(wrapper.state('isLogined')).toBe(true);
+    expect(wrapper.state('isLogged')).toBe(true);
   });
   it('login check with wrong data', () => {
     wrapper = shallow(<LoginPage />);
@@ -42,6 +42,6 @@ describe('Test case for testing login', () => {
     wrapper.find('.submitButton').simulate('click', {
       preventDefault: () => {}
     });
-    expect(wrapper.state('isLogined')).toBe(false);
+    expect(wrapper.state('isLogged')).toBe(false);
   });
 });

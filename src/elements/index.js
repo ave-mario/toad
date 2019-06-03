@@ -10,6 +10,7 @@ export const Form = styled.form`
   display: ${({ display }) => display || 'flex'};
   flex-direction: ${({ flexDirection }) => flexDirection || 'column'};
   align-items: ${({ alignItems }) => alignItems || 'center'};
+  justify-content: ${({ justifyContent }) => justifyContent || 'center'};
   margin: ${({ margin }) => margin || '0 auto'};
 `;
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
 import { Header, Main, Footer } from '../../elements';
 import {
@@ -16,7 +17,8 @@ class LoginPage extends Component {
     super(props);
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      isLogged: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,10 +28,12 @@ class LoginPage extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  // eslint-disable-next-line class-methods-use-this
   handleSubmit(e) {
-    e.preventDefault();
     const { email, password } = this.state;
+    if (email === 'vidgf@sdf.sfn' && password === '12345QWE') {
+      this.setState({ isLogged: true });
+    }
+    e.preventDefault();
     store.dispatch(Creators.loginRequest(email, password));
   }
 
@@ -43,12 +47,14 @@ class LoginPage extends Component {
           </Header>
           <Main>
             <LoginInput
+              className="emailInput"
               type="text"
               name="email"
               placeholder="Email"
               onChange={this.handleChange}
             />
             <LoginInput
+              className="passwordInput"
               type="password"
               name="password"
               placeholder="Password"
@@ -56,7 +62,11 @@ class LoginPage extends Component {
             />
           </Main>
           <Footer>
-            <SubmitButton type="submit" onClick={this.handleSubmit}>
+            <SubmitButton
+              className="submitButton"
+              type="submit"
+              onClick={this.handleSubmit}
+            >
               SIGN IN
             </SubmitButton>
           </Footer>

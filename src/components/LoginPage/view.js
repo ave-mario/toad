@@ -1,17 +1,21 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Main, Footer } from '../../elements';
-import {
-  SubmitButton,
-  LoginForm,
-  LoginInput,
-  LoginTitle,
-  LoginSubTitle
-} from './elements/login.form';
+import { Formik } from 'formik';
+import { string, object } from 'yup';
+import Login from './Login';
 
 export const fakeValidEmail = 'vidgf@sdf.sfn';
 export const fakeValidPassword = '12345QWE';
+
+const validationSchema = object().shape({
+  email: string()
+    .email()
+    .required('email is required'),
+  password: string()
+    .required('password is required')
+    .matches(/^[\S]{5,18}$/, 'The password cannot contain spaces')
+});
 
 class LoginPage extends Component {
   constructor(props) {
@@ -21,22 +25,6 @@ class LoginPage extends Component {
       password: '',
       isLogged: false
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  handleSubmit(e) {
-    const { email, password } = this.state;
-    const { login } = this.props;
-    if (email === fakeValidEmail && password === fakeValidPassword) {
-      this.setState({ isLogged: true });
-    }
-    e.preventDefault();
-    login(email, password);
   }
 
   render() {
@@ -49,37 +37,22 @@ class LoginPage extends Component {
           height: '100%'
         }}
       >
-        <LoginForm>
-          <Header>
-            <LoginTitle>Welcome to hotel management</LoginTitle>
-            <LoginSubTitle>Sign in</LoginSubTitle>
-          </Header>
-          <Main>
-            <LoginInput
-              className="emailInput"
-              type="text"
-              name="email"
-              placeholder="Email"
-              onChange={this.handleChange}
-            />
-            <LoginInput
-              className="passwordInput"
-              type="password"
-              name="password"
-              placeholder="Password"
-              onChange={this.handleChange}
-            />
-          </Main>
-          <Footer>
-            <SubmitButton
-              className="submitButton"
-              type="submit"
-              onClick={this.handleSubmit}
-            >
-              SIGN IN
-            </SubmitButton>
-          </Footer>
-        </LoginForm>
+        <Formik
+          initialValues={{ email: '', password: '' }}
+          validationSchema={validationSchema}
+          onSubmit={values => {
+            const { login } = this.props;
+            if (
+              values.email === fakeValidEmail &&
+              values.password === fakeValidPassword
+            ) {
+              this.setState({ isLogged: true });
+            }
+            login(values.email, values.password);
+            this.setState({ email: '', password: '' });
+          }}
+          render={props => <Login {...props} />}
+        />
       </div>
     );
   }

@@ -28,6 +28,7 @@ export const LoginForm = styled(Form)`
   border-radius: 20px;
   background-color: #f7f8f9;
   box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
+  margin: 8px;
 `;
 export const LoginInput = styled(Input)`
   width: 80%;
@@ -35,6 +36,7 @@ export const LoginInput = styled(Input)`
   font-size: 1em;
   :focus {
     outline: none;
+    border: 1px solid #ccc;
   }
 `;
 export const LoginTitle = styled(Title)`

@@ -5,7 +5,6 @@ import LoginPage, { fakeValidEmail, fakeValidPassword } from '../view';
 
 const randomEmail = faker.internet.email;
 const randomPassword = faker.internet.password;
-/* eslint-disable no-undef */
 describe('Test case for testing login form', () => {
   let wrapper;
   const props = {

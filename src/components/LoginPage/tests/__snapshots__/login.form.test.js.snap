@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test case for testing login form Login page snapshot 1`] = `
-<Fragment>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "center",
+    }
+  }
+>
   <Styled(styled.form)>
     <styled.header>
       <Styled(styled.h1)>
@@ -37,5 +46,5 @@ exports[`Test case for testing login form Login page snapshot 1`] = `
       </Styled(styled.button)>
     </styled.footer>
   </Styled(styled.form)>
-</Fragment>
+</div>
 `;

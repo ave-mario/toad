@@ -8,6 +8,7 @@ const INITIAL_STATE = {
   tokens: JSON.parse(localStorage.getItem('tokens')), // ???
   error: null
 };
+
 export const loginRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
@@ -19,7 +20,8 @@ export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
     ...state,
     isRequesting: false,
     user,
-    tokens
+    tokens,
+    error: null
   };
 };
 export const loginFailure = (state = INITIAL_STATE, { error }) => {
@@ -39,7 +41,8 @@ export const loadSuccess = (state = INITIAL_STATE, { user }) => {
   return {
     ...state,
     isRequesting: false,
-    user
+    user,
+    error: null
   };
 };
 export const loadFailure = (state = INITIAL_STATE, { error }) => {
@@ -61,6 +64,7 @@ export const logout = (state = INITIAL_STATE) => {
     error: null
   };
 };
+
 export const HANDLERS = {
   [Types.LOGIN_REQUEST]: loginRequest,
   [Types.LOGIN_SUCCESS]: loginSuccess,

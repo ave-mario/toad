@@ -41,7 +41,14 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100%'
+        }}
+      >
         <LoginForm>
           <Header>
             <LoginTitle>Welcome to hotel management</LoginTitle>
@@ -73,7 +80,7 @@ class LoginPage extends Component {
             </SubmitButton>
           </Footer>
         </LoginForm>
-      </>
+      </div>
     );
   }
 }

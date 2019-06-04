@@ -1,10 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MainPage from '../index';
+import MainPage from '../view';
 
 describe('Test case for testing main page', () => {
   test('Main page snapshot', () => {
-    const component = shallow(<MainPage />);
+    const props = {
+      logout: () => {}
+    };
+    const component = shallow(<MainPage {...props} />);
 
     expect(component).toMatchSnapshot();
   });

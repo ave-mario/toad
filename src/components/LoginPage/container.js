@@ -4,7 +4,7 @@ import authActions from '../../actions/auth.actions';
 
 const { Creators } = authActions;
 const mapStateToProps = state => ({
-  user: state.user
+  error: state.auth.error
 });
 
 const mapDispatchToProps = dispatch => {

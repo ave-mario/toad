@@ -6,7 +6,7 @@ const darkGrey = '#4d4d4d';
 const blue = '#5995ef';
 
 export const Form = styled.form`
-  width: ${({ width }) => width || '300px'};
+  width: ${({ width }) => width || '400px'};
   display: ${({ display }) => display || 'flex'};
   flex-direction: ${({ flexDirection }) => flexDirection || 'column'};
   align-items: ${({ alignItems }) => alignItems || 'center'};

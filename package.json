@@ -52,7 +52,7 @@
     "husky:commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     "husky:post-checkout": "lint-staged",
     "husky:pre-commit": "lint-staged",
-    "husky:pre-push": "npm run lint & npm run test",
+    "husky:pre-push": "npm run lint & npm run test -a",
     "prettier": "prettier --write \"*.{js,jsx,ts,tsx,json}\"",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
   },

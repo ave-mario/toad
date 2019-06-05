@@ -13,13 +13,9 @@ function* authorize(email, password) {
     yield put(push('/'));
     return response;
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message
+    const errorMessage = error.response ? error.response.data : error.message;
     yield put(Creators.loginFailure(errorMessage));
-      yield put(Creators.loginFailure(error.response.data));
-    } else {
-      yield put(Creators.loginFailure(error.message));
-    }
-    yield put(push('/login'));
+    // yield put(push('/login'));
     return error;
   }
 }

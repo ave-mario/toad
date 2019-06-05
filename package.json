@@ -45,15 +45,15 @@
     "lint:fix": "eslint src -c .eslintrc --fix . --ext js,jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --forceExit",
+    "test:watch": "react-scripts test",
     "test:update": "react-scripts test --updateSnapshot",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "husky:commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     "husky:post-checkout": "lint-staged",
-    "husky:pre-commit": "lint-staged",
+    "husky:pre-commit": " npm run test && lint-staged",
     "husky:pre-push": "npm run lint & npm run test -a",
-    "prettier": "prettier --write \"*.{js,jsx,ts,tsx,json}\"",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
   },
   "husky": {
@@ -89,13 +89,9 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "npm run test",
-      "npm run prettier",
+      "prettier --list-different",
       "npm run lint:fix",
       "git add ."
-    ],
-    "*.{js,jsx,json,md}": [
-      "prettier --list-different"
     ]
   },
   "commitlint": {

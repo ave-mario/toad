@@ -1,0 +1,10 @@
+diff a/src/components/LoginPage/tests/login.form.test.js b/src/components/LoginPage/tests/login.form.test.js	(rejected hunks)
+@@ -37 +37 @@ describe('Login form', () => {
+-  test('submit',()=>{
++  test('submit', () => {
+@@ -42 +42 @@ describe('Login form', () => {
+-      },
++      }
+@@ -45 +45 @@ describe('Login form', () => {
+-  })
++  });

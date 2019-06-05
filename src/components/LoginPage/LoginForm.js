@@ -29,17 +29,22 @@ export const validationSchema = object().shape({
 export const handleSubmit = values => {
   store.dispatch(Creators.loginRequest(values.email, values.password));
 };
-export const mapPropsToValues = () => ({ email: '', password: '' });
+
+export const mapPropsToValues = () => ({
+  email: '',
+  password: ''
+});
 
 export const MyFormInner = props => {
   const {
-    login,
     values,
     handleChange,
     handleBlur,
     errors,
     touched,
-    handleSubmit
+    handleSubmit,
+    isSubmitting,
+    isFailed
   } = props;
   return (
     <LoginForm onSubmit={handleSubmit}>
@@ -77,7 +82,11 @@ export const MyFormInner = props => {
         )}
       </Main>
       <Footer>
-        <SubmitButton className="submitButton" type="submit">
+        <SubmitButton
+          className="submitButton"
+          type="submit"
+          disabled={isSubmitting && !isFailed}
+        >
           SIGN IN
         </SubmitButton>
       </Footer>

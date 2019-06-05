@@ -1,10 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import faker from 'faker';
-import { fakeValidEmail, fakeValidPassword } from '../view';
 import { Login } from '../LoginForm';
-const randomEmail = faker.internet.email;
-const randomPassword = faker.internet.password;
 
 describe('Login form', () => {
   const wrapper = mount(<Login />);

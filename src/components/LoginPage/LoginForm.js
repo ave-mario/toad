@@ -1,6 +1,12 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { withFormik } from 'formik';
+import { string, object } from 'yup';
 import { Header, Main, Footer } from '../../elements';
+import store from '../../config/redux.store';
+import authActions from '../../actions/auth.actions';
 import {
   SubmitButton,
   LoginForm,
@@ -9,13 +15,30 @@ import {
   LoginSubTitle
 } from './elements/login.form';
 
-function Login(props) {
+const { Creators } = authActions;
+
+export const validationSchema = object().shape({
+  email: string()
+    .email()
+    .required('email is required'),
+  password: string()
+    .required('password is required')
+    .matches(/^[\S]{5,18}$/, 'The password cannot contain spaces')
+});
+
+export const handleSubmit = values => {
+  store.dispatch(Creators.loginRequest(values.email, values.password));
+};
+export const mapPropsToValues = () => ({ email: '', password: '' });
+
+export const MyFormInner = props => {
   const {
-    errors,
-    touched,
+    login,
     values,
     handleChange,
     handleBlur,
+    errors,
+    touched,
     handleSubmit
   } = props;
   return (
@@ -26,6 +49,7 @@ function Login(props) {
       </Header>
       <Main>
         <LoginInput
+          id="emailInput"
           className="emailInput"
           type="text"
           name="email"
@@ -59,6 +83,10 @@ function Login(props) {
       </Footer>
     </LoginForm>
   );
-}
+};
 
-export default Login;
+export const Login = withFormik({
+  mapPropsToValues,
+  validationSchema,
+  handleSubmit
+})(MyFormInner);

@@ -13,7 +13,8 @@ function* authorize(email, password) {
     yield put(push('/'));
     return response;
   } catch (error) {
-    if (error.response) {
+    const errorMessage = error.response ? error.response.data : error.message
+    yield put(Creators.loginFailure(errorMessage));
       yield put(Creators.loginFailure(error.response.data));
     } else {
       yield put(Creators.loginFailure(error.message));

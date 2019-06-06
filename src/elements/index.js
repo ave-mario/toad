@@ -105,3 +105,11 @@ export const Main = styled.main`
   width: ${({ width }) => width || '100%'};
   text-align: center;
 `;
+export const ErrorText = styled.div`
+  text-align: ${({ textAlign }) => textAlign || 'center'};
+  color: ${({ color }) => color || 'red'};
+  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
+  font-size: ${({ fontSize }) => fontSize || `13px`};
+  width: ${({ width }) => width || '100%'};
+  padding: ${({ margin }) => margin || '2px'};
+`;

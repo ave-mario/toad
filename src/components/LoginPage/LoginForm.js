@@ -1,12 +1,11 @@
-/* eslint-disable no-shadow */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { withFormik } from 'formik';
 import { string, object } from 'yup';
-import { Header, Main, Footer } from '../../elements';
+import PropTypes from 'prop-types';
+import { Header, Main, Footer, ErrorText } from '../../elements';
 import store from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
+import reg from '../../config/regex';
 import {
   SubmitButton,
   LoginForm,
@@ -23,7 +22,7 @@ export const validationSchema = object().shape({
     .required('email is required'),
   password: string()
     .required('password is required')
-    .matches(/^[\S]{5,18}$/, 'The password cannot contain spaces')
+    .matches(reg.password, 'The password cannot contain spaces')
 });
 
 export const handleSubmit = values => {
@@ -42,12 +41,12 @@ export const MyFormInner = props => {
     handleBlur,
     errors,
     touched,
-    handleSubmit,
+    handleSubmit: submit,
     isSubmitting,
     isFailed
   } = props;
   return (
-    <LoginForm onSubmit={handleSubmit}>
+    <LoginForm onSubmit={submit}>
       <Header>
         <LoginTitle>Welcome to hotel management</LoginTitle>
         <LoginSubTitle>Sign in</LoginSubTitle>
@@ -64,9 +63,7 @@ export const MyFormInner = props => {
           value={values.mail}
           onBlur={handleBlur}
         />
-        {errors.email && touched.email && (
-          <div style={{ color: 'red' }}>{errors.email}</div>
-        )}
+        {errors.email && touched.email && <ErrorText>{errors.email}</ErrorText>}
         <LoginInput
           className="passwordInput"
           type="password"
@@ -78,7 +75,7 @@ export const MyFormInner = props => {
           onBlur={handleBlur}
         />
         {errors.password && touched.password && (
-          <div style={{ color: 'red' }}>{errors.password}</div>
+          <ErrorText>{errors.password}</ErrorText>
         )}
       </Main>
       <Footer>
@@ -92,6 +89,20 @@ export const MyFormInner = props => {
       </Footer>
     </LoginForm>
   );
+};
+
+MyFormInner.propTypes = {
+  values: PropTypes.objectOf(PropTypes.string).isRequired,
+  handleChange: PropTypes.func.isRequired,
+  handleBlur: PropTypes.func.isRequired,
+  errors: PropTypes.objectOf(PropTypes.string).isRequired,
+  touched: PropTypes.objectOf(PropTypes.bool).isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  isSubmitting: PropTypes.bool.isRequired,
+  isFailed: PropTypes.bool
+};
+MyFormInner.defaultProps = {
+  isFailed: false
 };
 
 export const Login = withFormik({

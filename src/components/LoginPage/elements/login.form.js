@@ -4,7 +4,7 @@ import { Button, Form, Input, Title, Title2 } from '../../../elements';
 export const SubmitButton = styled(Button)`
   position: relative;
   display: block;
-  margin: 5px auto 5px 10%;
+  margin: 10px auto 10px 10%;
   padding: 0px;
   width: 100px;
   overflow: hidden;

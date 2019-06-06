@@ -5,7 +5,7 @@ const { Types } = authActions;
 const INITIAL_STATE = {
   isRequesting: false,
   user: null,
-  tokens: JSON.parse(localStorage.getItem('tokens')), // ???
+  tokens: JSON.parse(localStorage.getItem('tokens')),
   error: null,
   isFailed: false
 };

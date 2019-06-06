@@ -15,7 +15,6 @@ function* authorize(email, password) {
   } catch (error) {
     const errorMessage = error.response ? error.response.data : error.message;
     yield put(Creators.loginFailure(errorMessage));
-    // yield put(push('/login'));
     return error;
   }
 }

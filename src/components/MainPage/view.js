@@ -8,7 +8,6 @@ class MainPage extends Component {
     this.handleLogout = this.handleLogout.bind(this);
   }
 
-  // eslint-disable-next-line class-methods-use-this
   handleLogout() {
     const { logout } = this.props;
     logout();

@@ -2,7 +2,7 @@ version: 2
 jobs:
   prepare:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - restore_cache:
@@ -20,7 +20,7 @@ jobs:
             - node_modules
   lint:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - attach_workspace:
@@ -30,7 +30,7 @@ jobs:
           command: npm run lint
   build:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - attach_workspace:
@@ -44,7 +44,7 @@ jobs:
             - build
   test:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - attach_workspace:

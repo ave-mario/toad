@@ -5,9 +5,6 @@ import { put, takeLatest, all, call, take } from 'redux-saga/effects';
 import getPosts from '../actions/posts.actions';
 import loginFlow from './auth.flow';
 
-function* helloSaga() {
-  console.log('Hello Sagas!');
-}
 function* fetchPosts() {
   const posts = yield call(getPosts);
   yield put({ type: 'POSTS_FETCHED', payload: posts });
@@ -17,5 +14,5 @@ function* watchFetchPosts() {
 }
 
 export default function* rootSaga() {
-  yield all([helloSaga(), watchFetchPosts(), loginFlow()]);
+  yield all([watchFetchPosts(), loginFlow()]);
 }

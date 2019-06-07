@@ -4,7 +4,7 @@ import { login, loadUser } from '../actions/api.calls';
 import authActions from '../actions/auth.actions';
 
 const { Creators, Types } = authActions;
-function* authorize(email, password) {
+export function* authorize(email, password) {
   try {
     const response = yield call(login, email, password);
     const { user, tokens } = response.data;
@@ -18,7 +18,7 @@ function* authorize(email, password) {
     return error;
   }
 }
-function* load() {
+export function* load() {
   try {
     const tokens = yield JSON.parse(localStorage.getItem('tokens'));
     if (tokens === null) {

@@ -1,56 +1,27 @@
 import React from 'react';
-import { Form, Input, Title, Button } from './components';
-import store from '../../config/redux.store';
+import PropTypes from 'prop-types';
+import { Login } from './LoginForm';
 
-class LoginPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  handleSubmit(e) {
-    e.preventDefault();
-    const { email, password } = this.state;
-    store.dispatch({
-      type: 'LOGIN_REQUEST',
-      email,
-      password
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Title>Form</Title>
-        <Form>
-          <Input
-            type="text"
-            name="email"
-            placeholder="Email"
-            onChange={this.handleChange}
-          />
-          <Input
-            type="password"
-            name="password"
-            placeholder="Password"
-            onChange={this.handleChange}
-          />
-          <Button type="submit" onClick={this.handleSubmit}>
-            Submit
-          </Button>
-        </Form>
-      </div>
-    );
-  }
+function LoginPage(props) {
+  const { isFailed } = props;
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%'
+      }}
+    >
+      <Login isFailed={isFailed} />
+    </div>
+  );
 }
+
+LoginPage.propTypes = {
+  isFailed: PropTypes.bool
+};
+LoginPage.defaultProps = {
+  isFailed: false
+};
 export default LoginPage;

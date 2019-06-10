@@ -1,12 +1,14 @@
-import axios from 'axios';
+import { createActions } from 'reduxsauce';
 
-export default function login(email, password) {
-  const config = {
-    headers: { 'Content-Type': 'application/json' }
-  };
-  const body = {
-    email,
-    password
-  };
-  return axios.post('http://localhost:3001/api/employees/login', body, config);
-}
+const { Types, Creators } = createActions({
+  loginRequest: ['email', 'password'],
+  loginSuccess: ['user', 'tokens'],
+  loginFailure: ['error'],
+  loadRequest: null,
+  loadSuccess: ['user'],
+  loadFailure: ['error'],
+  logout: null
+});
+const authActions = { Types, Creators };
+
+export default authActions;

@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@redux-saga/testing-utils": "^1.0.2",
     "axios": "^0.18.1",
     "connected-react-router": "^6.4.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "formik": "^1.5.7",
     "history": "^4.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -14,8 +19,27 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.5.3",
     "redux-saga": "^1.0.2",
-    "styled-components": "^4.2.0"
+    "reduxsauce": "^1.1.0",
+    "styled-components": "^4.2.0",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-conventional": "^7.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.11.0",
+    "faker": "^4.1.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "react-test-renderer": "^16.8.6"
   },
   "scripts": {
     "check-staged": "lint-staged",
@@ -23,8 +47,32 @@
     "lint:fix": "eslint src -c .eslintrc --fix . --ext js,jsx",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test  --verbose --watchAll=false --forceExit",
+    "test:watch": "react-scripts test",
+    "test:update": "react-scripts test --updateSnapshot",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "husky:commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "husky:post-checkout": "lint-staged",
+    "husky:pre-commit": " npm run test && lint-staged",
+    "husky:pre-push": "npm run lint & npm run test -a",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "npm run husky:commit-msg",
+      "post-checkout": "npm run husky:post-checkout",
+      "pre-commit": "npm run husky:pre-commit",
+      "pre-push": "npm run husky:pre-push"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx,ts,tsx}"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,32 +89,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@commitlint/cli": "^7.6.1",
-    "@commitlint/config-conventional": "^7.6.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.11.0",
-    "husky": "^2.3.0",
-    "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx}": [
-      "eslint"
-    ],
-    "*.{js,jsx,json,md}": [
-      "prettier --list-different"
+      "prettier --write",
+      "npm run lint:fix",
+      "git add ."
     ]
   },
   "commitlint": {

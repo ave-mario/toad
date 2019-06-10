@@ -1,13 +1,15 @@
 import { connect } from 'react-redux';
-import login from '../../actions/auth.actions';
 import LoginPage from './view';
-import store from '../../config/redux.store';
 
 const mapStateToProps = state => ({
-  user: state.user
+  isFailed: state.auth.isFailed
 });
+
+const mapDispatchToProps = () => {
+  return {};
+};
 
 export default connect(
   mapStateToProps,
-  { login, store }
+  mapDispatchToProps
 )(LoginPage);

@@ -1,4 +1,4 @@
-import { loadFlow, loginFlow, load, authorize } from '../auth.saga';
+import { loadFlow, loginFlow, load, authorize, logout } from '../auth.saga';
 import { createMockTask } from '@redux-saga/testing-utils';
 import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import authActions from '../../actions/auth.actions';
@@ -16,9 +16,7 @@ test('load flow', () => {
     type: 'LOAD_SUCCESS'
   };
   expect(generator.next(action).value).toEqual(take(Types.LOGOUT));
-  expect(generator.next().value).toEqual(put(Creators.logout()));
-  expect(generator.next().value).toEqual(put(push('/login')));
-  expect(generator.next().value).toEqual(takeLatest(Types.LOAD_REQUEST, load));
+  expect(generator.next().value).toEqual(call(logout));
 });
 
 test('login flow', () => {
@@ -39,7 +37,5 @@ test('login flow', () => {
     type: 'LOGOUT'
   };
   expect(generator.next(action).value).toEqual(cancel(task));
-  expect(generator.next().value).toEqual(put(Creators.logout()));
-  expect(generator.next().value).toEqual(put(push('/login')));
-  expect(generator.next(credentials).value).toEqual(take(Types.LOGIN_REQUEST));
+  expect(generator.next().value).toEqual(call(logout));
 });

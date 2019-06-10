@@ -1,5 +1,5 @@
 const api = {
-  port: '3001',
+  port: '3006',
   route: 'api'
 };
 Object.freeze(api);

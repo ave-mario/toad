@@ -38,14 +38,17 @@ export function* load() {
     }
   }
 }
+export function* logout() {
+  yield put(Creators.logout());
+  yield put(push('/login'));
+}
 export function* loadFlow() {
   while (true) {
     yield takeLatest(Types.LOAD_REQUEST, load);
     const action = yield take([Types.LOAD_SUCCESS, Types.LOAD_FAILURE]);
     if (action.type === Types.LOAD_SUCCESS) {
       yield take(Types.LOGOUT);
-      yield put(Creators.logout());
-      yield put(push('/login'));
+      yield call(logout);
     }
   }
 }
@@ -59,8 +62,7 @@ export function* loginFlow() {
     const action = yield take([Types.LOGOUT, Types.LOGIN_FAILURE]);
     if (action.type === Types.LOGOUT) {
       yield cancel(task);
-      yield put(Creators.logout());
-      yield put(push('/login'));
+      yield call(logout);
     }
   }
 }

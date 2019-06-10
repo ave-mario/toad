@@ -8,6 +8,11 @@ class MainPage extends Component {
     this.handleLogout = this.handleLogout.bind(this);
   }
 
+  componentDidMount() {
+    const { load } = this.props;
+    load();
+  }
+
   handleLogout() {
     const { logout } = this.props;
     logout();
@@ -26,7 +31,8 @@ class MainPage extends Component {
 }
 
 MainPage.propTypes = {
-  logout: PropTypes.func.isRequired
+  logout: PropTypes.func.isRequired,
+  load: PropTypes.func.isRequired
 };
 
 export default MainPage;

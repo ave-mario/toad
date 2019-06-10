@@ -5,7 +5,8 @@ import MainPage from '../view';
 describe('Test case for testing main page', () => {
   test('Main page snapshot', () => {
     const props = {
-      logout: () => {}
+      logout: () => {},
+      load: () => {}
     };
     const component = shallow(<MainPage {...props} />);
 

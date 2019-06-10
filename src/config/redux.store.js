@@ -21,4 +21,5 @@ const store = createStore(
 );
 sagaMiddleware.run(rootSaga);
 export const action = type => store.dispatch({ type });
+export const dispatcher = credentials => store.dispatch(credentials);
 export default store;

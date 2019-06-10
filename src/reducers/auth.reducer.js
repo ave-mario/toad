@@ -13,7 +13,8 @@ const INITIAL_STATE = {
 export const loginRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
-    isRequesting: true
+    isRequesting: true,
+    isFailed: false
   };
 };
 export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {

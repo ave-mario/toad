@@ -3,7 +3,7 @@ import { withFormik } from 'formik';
 import { string, object } from 'yup';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
-import store from '../../config/redux.store';
+import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
 import reg from '../../config/regex';
 import {
@@ -25,8 +25,9 @@ export const validationSchema = object().shape({
     .matches(reg.password, 'The password cannot contain spaces')
 });
 
-export const handleSubmit = values => {
-  store.dispatch(Creators.loginRequest(values.email, values.password));
+export const handleSubmit = (values, { resetForm }) => {
+  dispatcher(Creators.loginRequest(values.email, values.password));
+  resetForm();
 };
 
 export const mapPropsToValues = () => ({
@@ -60,7 +61,7 @@ export const MyFormInner = props => {
           placeholder="Email"
           onChange={handleChange}
           border={errors.email && touched.email && '1px solid red'}
-          value={values.mail}
+          value={values.email}
           onBlur={handleBlur}
         />
         {errors.email && touched.email && <ErrorText>{errors.email}</ErrorText>}

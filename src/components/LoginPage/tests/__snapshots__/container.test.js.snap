@@ -355,6 +355,7 @@ exports[`LoginPage should render correctly 1`] = `
                             onChange={[Function]}
                             placeholder="Email"
                             type="text"
+                            value=""
                           >
                             <StyledComponent
                               className="emailInput"
@@ -417,6 +418,7 @@ exports[`LoginPage should render correctly 1`] = `
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             >
                               <input
                                 className="sc-bwzfXH emailInput sc-kAzzGY fAIfVb"
@@ -426,6 +428,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 onChange={[Function]}
                                 placeholder="Email"
                                 type="text"
+                                value=""
                               />
                             </StyledComponent>
                           </Styled(styled.input)>

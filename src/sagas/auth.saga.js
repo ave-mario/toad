@@ -49,6 +49,9 @@ export function* loadFlow() {
     }
   }
 }
+// export function* welcomeFlow() {
+//   while (true) {}
+// }
 export function* loginFlow() {
   while (true) {
     const { email, password } = yield take(Types.LOGIN_REQUEST);

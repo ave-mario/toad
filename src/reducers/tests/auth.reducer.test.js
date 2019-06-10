@@ -17,7 +17,8 @@ describe('Auth reducer test', () => {
       type: Types.LOGIN_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      isRequesting: true
+      isRequesting: true,
+      isFailed: false
     });
   });
   test('should handle LOGIN_SUCCESS', () => {

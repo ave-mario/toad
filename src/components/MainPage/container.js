@@ -10,6 +10,9 @@ const mapDispatchToProps = dispatch => {
   return {
     logout: () => {
       dispatch(Creators.logout());
+    },
+    load: () => {
+      dispatch(Creators.loadRequest());
     }
   };
 };

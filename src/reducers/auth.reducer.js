@@ -4,10 +4,14 @@ import authActions from '../actions/auth.actions';
 const { Types } = authActions;
 const INITIAL_STATE = {
   isRequesting: false,
+  isFailed: false,
   user: null,
   tokens: JSON.parse(localStorage.getItem('tokens')),
   error: null,
-  isFailed: false
+  createPassword: {
+    success: null,
+    error: null
+  }
 };
 
 export const loginRequest = (state = INITIAL_STATE) => {
@@ -60,6 +64,34 @@ export const loadFailure = (state = INITIAL_STATE, { error }) => {
     isFailed: true
   };
 };
+export const createPasswordRequest = (state = INITIAL_STATE) => {
+  return {
+    ...state,
+    isRequesting: true,
+    isFailed: false
+  };
+};
+export const createPasswordSuccess = (state = INITIAL_STATE, { success }) => {
+  return {
+    ...state,
+    isRequesting: false,
+    createPassword: {
+      success,
+      error: null
+    }
+  };
+};
+export const createPasswordFailure = (state = INITIAL_STATE, { error }) => {
+  return {
+    ...state,
+    isRequesting: false,
+    isFailed: true,
+    createPassword: {
+      success: null,
+      error
+    }
+  };
+};
 export const logout = (state = INITIAL_STATE) => {
   localStorage.removeItem('tokens');
   return {
@@ -79,6 +111,9 @@ export const HANDLERS = {
   [Types.LOAD_REQUEST]: loadRequest,
   [Types.LOAD_SUCCESS]: loadSuccess,
   [Types.LOAD_FAILURE]: loadFailure,
+  [Types.CREATE_PASSWORD_REQUEST]: createPasswordRequest,
+  [Types.CREATE_PASSWORD_SUCCESS]: createPasswordSuccess,
+  [Types.CREATE_PASSWORD_FAILURE]: createPasswordFailure,
   [Types.LOGOUT]: logout
 };
 

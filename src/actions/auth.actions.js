@@ -7,6 +7,9 @@ const { Types, Creators } = createActions({
   loadRequest: null,
   loadSuccess: ['user'],
   loadFailure: ['error'],
+  createPasswordRequest: ['password'],
+  createPasswordSuccess: ['success'],
+  createPasswordFailure: ['error'],
   logout: null
 });
 const authActions = { Types, Creators };

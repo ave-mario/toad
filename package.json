@@ -9,6 +9,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
+    "fast-safe-stringify": "^2.0.6",
     "formik": "^1.5.7",
     "history": "^4.9.0",
     "prop-types": "^15.7.2",

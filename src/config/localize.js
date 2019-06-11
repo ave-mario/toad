@@ -8,9 +8,9 @@ i18n.use(initReactI18next).init({
     ru,
     en
   },
-  fallbackLng: 'en',
+  fallbackLng: 'ru',
   debug: true,
-  ns: ['translations', 'common'],
+  ns: ['translations'],
   defaultNS: 'translations',
   interpolation: {
     escapeValue: false,

@@ -20,7 +20,7 @@ class MainPage extends Component {
       <>
         <Title>Main Page</Title>
         <Button type="button" onClick={this.handleLogout}>
-          {t('LogoutButton')}
+          {t('button.Logout')}
         </Button>
       </>
     );
@@ -32,4 +32,4 @@ MainPage.propTypes = {
   t: PropTypes.func.isRequired
 };
 
-export default withTranslation('common')(MainPage);
+export default withTranslation()(MainPage);

@@ -347,7 +347,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 <h2
                                   className="sc-EHOje sc-kgoBCf iSZju"
                                 >
-                                  SignInLabel
+                                  label.SignIn
                                 </h2>
                               </StyledComponent>
                             </Styled(styled.h2)>
@@ -679,7 +679,7 @@ exports[`LoginPage should render correctly 1`] = `
                                   disabled={false}
                                   type="submit"
                                 >
-                                  SignInButton
+                                  button.SignIn
                                 </button>
                               </StyledComponent>
                             </Styled(styled.button)>

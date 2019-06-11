@@ -51,7 +51,7 @@ export const MyFormInner = props => {
     <LoginForm onSubmit={submit}>
       <Header>
         <LoginTitle>{t('translations:Welcome')}</LoginTitle>
-        <LoginSubTitle>{t('SignInLabel')}</LoginSubTitle>
+        <LoginSubTitle>{t('label.SignIn')}</LoginSubTitle>
       </Header>
       <Main>
         <LoginInput
@@ -86,7 +86,7 @@ export const MyFormInner = props => {
           type="submit"
           disabled={isSubmitting && !isFailed}
         >
-          {t('SignInButton')}
+          {t('button.SignIn')}
         </SubmitButton>
       </Footer>
     </LoginForm>
@@ -112,4 +112,4 @@ export const Login = withFormik({
   mapPropsToValues,
   validationSchema,
   handleSubmit
-})(withTranslation('common')(MyFormInner));
+})(withTranslation()(MyFormInner));

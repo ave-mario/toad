@@ -1,15 +1,17 @@
 {
   "translations": {
-    "Welcome": "Добро пожаловать в гостиничный менеджмент"
-  },
-  "common": {
-    "SignInLabel": "Вход",
-    "SignInButton": "Войти",
-    "LogoutButton": "Выйти",
+    "Welcome": "Добро пожаловать в гостиничный менеджмент",
+    "label": {
+      "SignIn": "Вход"
+    },
+    "button": {
+      "SignIn": "Войти",
+      "Logout": "Выйти"
+    },
     "Email": "Email",
     "PhoneNumber": "Мобильный телефон",
     "Name": "Имя",
-    "Surname": "Фафилия",
+    "Surname": "Фамилия",
     "Password": "Пароль"
   }
 }

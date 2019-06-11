@@ -27,7 +27,7 @@ exports[`LoginPage should render correctly 1`] = `
           }
         }
       >
-        <WithFormik(MyFormInner)
+        <WithFormik(withI18nextTranslation(MyFormInner))
           isFailed={false}
         >
           <Formik
@@ -47,7 +47,7 @@ exports[`LoginPage should render correctly 1`] = `
             validateOnChange={true}
             validationSchema={[Function]}
           >
-            <MyFormInner
+            <withI18nextTranslation(MyFormInner)
               dirty={false}
               errors={Object {}}
               handleBlur={[Function]}
@@ -91,40 +91,87 @@ exports[`LoginPage should render correctly 1`] = `
                 }
               }
             >
-              <Styled(styled.form)
-                onSubmit={[Function]}
+              <MyFormInner
+                dirty={false}
+                errors={Object {}}
+                handleBlur={[Function]}
+                handleChange={[Function]}
+                handleReset={[Function]}
+                handleSubmit={[Function]}
+                i18n={Object {}}
+                initialValues={
+                  Object {
+                    "email": "",
+                    "password": "",
+                  }
+                }
+                isFailed={false}
+                isSubmitting={false}
+                isValid={false}
+                isValidating={false}
+                registerField={[Function]}
+                resetForm={[Function]}
+                setError={[Function]}
+                setErrors={[Function]}
+                setFieldError={[Function]}
+                setFieldTouched={[Function]}
+                setFieldValue={[Function]}
+                setFormikState={[Function]}
+                setStatus={[Function]}
+                setSubmitting={[Function]}
+                setTouched={[Function]}
+                setValues={[Function]}
+                submitCount={0}
+                submitForm={[Function]}
+                t={[Function]}
+                tReady={true}
+                touched={Object {}}
+                unregisterField={[Function]}
+                validateField={[Function]}
+                validateForm={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+                values={
+                  Object {
+                    "email": "",
+                    "password": "",
+                  }
+                }
               >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-cSHVUG",
-                        "isStatic": false,
-                        "lastClassName": "gXWBfR",
-                        "rules": Array [
-                          "
+                <Styled(styled.form)
+                  onSubmit={[Function]}
+                >
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-cSHVUG",
+                          "isStatic": false,
+                          "lastClassName": "gXWBfR",
+                          "rules": Array [
+                            "
   width: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   display: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   flex-direction: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   align-items: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   justify-content: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
   margin: ",
-                          [Function],
-                          ";
+                            [Function],
+                            ";
 ",
-                          "
+                            "
   min-width: 200px;
   max-width: 600px;
   border-width: 0;
@@ -133,284 +180,222 @@ exports[`LoginPage should render correctly 1`] = `
   box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.75);
   margin: 8px;
 ",
+                          ],
+                        },
+                        "displayName": "Styled(styled.form)",
+                        "foldedComponentIds": Array [
+                          "sc-bdVaJa",
                         ],
-                      },
-                      "displayName": "Styled(styled.form)",
-                      "foldedComponentIds": Array [
-                        "sc-bdVaJa",
-                      ],
-                      "render": [Function],
-                      "styledComponentId": "sc-cSHVUG",
-                      "target": "form",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
+                        "render": [Function],
+                        "styledComponentId": "sc-cSHVUG",
+                        "target": "form",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
                     }
-                  }
-                  forwardedRef={null}
-                  onSubmit={[Function]}
-                >
-                  <form
-                    className="sc-bdVaJa sc-cSHVUG gXWBfR"
+                    forwardedRef={null}
                     onSubmit={[Function]}
                   >
-                    <styled.header>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-gqjmRU",
-                              "isStatic": false,
-                              "lastClassName": "diNjPe",
-                              "rules": Array [
-                                "
+                    <form
+                      className="sc-bdVaJa sc-cSHVUG gXWBfR"
+                      onSubmit={[Function]}
+                    >
+                      <styled.header>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-gqjmRU",
+                                "isStatic": false,
+                                "lastClassName": "diNjPe",
+                                "rules": Array [
+                                  "
   margin: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
 ",
-                              ],
-                            },
-                            "displayName": "styled.header",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-gqjmRU",
-                            "target": "header",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.header",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-gqjmRU",
+                              "target": "header",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <header
-                          className="sc-gqjmRU diNjPe"
+                          forwardedRef={null}
                         >
-                          <Styled(styled.h1)>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-chPdSV",
-                                    "isStatic": false,
-                                    "lastClassName": "ifMhNf",
-                                    "rules": Array [
-                                      "
+                          <header
+                            className="sc-gqjmRU diNjPe"
+                          >
+                            <Styled(styled.h1)>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-chPdSV",
+                                      "isStatic": false,
+                                      "lastClassName": "ifMhNf",
+                                      "rules": Array [
+                                        "
   font-family: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   font-weight: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   color: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   font-size: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   text-align: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   margin: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
 ",
-                                      "
+                                        "
   font-size: 1.75em;
 ",
+                                      ],
+                                    },
+                                    "displayName": "Styled(styled.h1)",
+                                    "foldedComponentIds": Array [
+                                      "sc-ifAKCX",
                                     ],
-                                  },
-                                  "displayName": "Styled(styled.h1)",
-                                  "foldedComponentIds": Array [
-                                    "sc-ifAKCX",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-chPdSV",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-chPdSV",
+                                    "target": "h1",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
                                 }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h1
-                                className="sc-ifAKCX sc-chPdSV ifMhNf"
+                                forwardedRef={null}
                               >
-                                Welcome to hotel management
-                              </h1>
-                            </StyledComponent>
-                          </Styled(styled.h1)>
-                          <Styled(styled.h2)>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kgoBCf",
-                                    "isStatic": false,
-                                    "lastClassName": "iSZju",
-                                    "rules": Array [
-                                      "
+                                <h1
+                                  className="sc-ifAKCX sc-chPdSV ifMhNf"
+                                >
+                                  translations:Welcome
+                                </h1>
+                              </StyledComponent>
+                            </Styled(styled.h1)>
+                            <Styled(styled.h2)>
+                              <StyledComponent
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kgoBCf",
+                                      "isStatic": false,
+                                      "lastClassName": "iSZju",
+                                      "rules": Array [
+                                        "
   font-family: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   font-weight: ",
-                                      [Function],
-                                      "
+                                        [Function],
+                                        "
   color: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   font-size: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   text-align: ",
-                                      [Function],
-                                      ";s
+                                        [Function],
+                                        ";s
   margin: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
 ",
-                                      "
+                                        "
   margin: 0;
 ",
+                                      ],
+                                    },
+                                    "displayName": "Styled(styled.h2)",
+                                    "foldedComponentIds": Array [
+                                      "sc-EHOje",
                                     ],
-                                  },
-                                  "displayName": "Styled(styled.h2)",
-                                  "foldedComponentIds": Array [
-                                    "sc-EHOje",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-kgoBCf",
-                                  "target": "h2",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kgoBCf",
+                                    "target": "h2",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
                                 }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h2
-                                className="sc-EHOje sc-kgoBCf iSZju"
+                                forwardedRef={null}
                               >
-                                Sign in
-                              </h2>
-                            </StyledComponent>
-                          </Styled(styled.h2)>
-                        </header>
-                      </StyledComponent>
-                    </styled.header>
-                    <styled.main>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-jTzLTM",
-                              "isStatic": false,
-                              "lastClassName": "bVLzFa",
-                              "rules": Array [
-                                "
+                                <h2
+                                  className="sc-EHOje sc-kgoBCf iSZju"
+                                >
+                                  SignInLabel
+                                </h2>
+                              </StyledComponent>
+                            </Styled(styled.h2)>
+                          </header>
+                        </StyledComponent>
+                      </styled.header>
+                      <styled.main>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-jTzLTM",
+                                "isStatic": false,
+                                "lastClassName": "bVLzFa",
+                                "rules": Array [
+                                  "
   margin: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   text-align: center;
 ",
-                              ],
-                            },
-                            "displayName": "styled.main",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-jTzLTM",
-                            "target": "main",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.main",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-jTzLTM",
+                              "target": "main",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <main
-                          className="sc-jTzLTM bVLzFa"
+                          forwardedRef={null}
                         >
-                          <Styled(styled.input)
-                            className="emailInput"
-                            id="emailInput"
-                            name="email"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            placeholder="Email"
-                            type="text"
+                          <main
+                            className="sc-jTzLTM bVLzFa"
                           >
-                            <StyledComponent
+                            <Styled(styled.input)
                               className="emailInput"
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kAzzGY",
-                                    "isStatic": false,
-                                    "lastClassName": "fAIfVb",
-                                    "rules": Array [
-                                      "
-  width: ",
-                                      [Function],
-                                      ";
-  height: ",
-                                      [Function],
-                                      ";
-  border: ",
-                                      [Function],
-                                      ";
-  background-color: ",
-                                      [Function],
-                                      ";
-  border-radius: ",
-                                      [Function],
-                                      ";
-  margin: ",
-                                      [Function],
-                                      ";
-",
-                                      "
-  width: 80%;
-  padding-left: 13px;
-  font-size: 1em;
-  :focus {
-    outline: none;
-    border: 1px solid #ccc;
-  }
-",
-                                    ],
-                                  },
-                                  "displayName": "Styled(styled.input)",
-                                  "foldedComponentIds": Array [
-                                    "sc-bwzfXH",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-kAzzGY",
-                                  "target": "input",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
                               id="emailInput"
                               name="email"
                               onBlur={[Function]}
@@ -418,58 +403,38 @@ exports[`LoginPage should render correctly 1`] = `
                               placeholder="Email"
                               type="text"
                             >
-                              <input
-                                className="sc-bwzfXH emailInput sc-kAzzGY fAIfVb"
-                                id="emailInput"
-                                name="email"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                placeholder="Email"
-                                type="text"
-                              />
-                            </StyledComponent>
-                          </Styled(styled.input)>
-                          <Styled(styled.input)
-                            className="passwordInput"
-                            name="password"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            placeholder="Password"
-                            type="password"
-                            value=""
-                          >
-                            <StyledComponent
-                              className="passwordInput"
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kAzzGY",
-                                    "isStatic": false,
-                                    "lastClassName": "fAIfVb",
-                                    "rules": Array [
-                                      "
+                              <StyledComponent
+                                className="emailInput"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kAzzGY",
+                                      "isStatic": false,
+                                      "lastClassName": "fAIfVb",
+                                      "rules": Array [
+                                        "
   width: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   height: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   border: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   background-color: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   border-radius: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   margin: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
 ",
-                                      "
+                                        "
   width: 80%;
   padding-left: 13px;
   font-size: 1em;
@@ -478,21 +443,41 @@ exports[`LoginPage should render correctly 1`] = `
     border: 1px solid #ccc;
   }
 ",
+                                      ],
+                                    },
+                                    "displayName": "Styled(styled.input)",
+                                    "foldedComponentIds": Array [
+                                      "sc-bwzfXH",
                                     ],
-                                  },
-                                  "displayName": "Styled(styled.input)",
-                                  "foldedComponentIds": Array [
-                                    "sc-bwzfXH",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-kAzzGY",
-                                  "target": "input",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kAzzGY",
+                                    "target": "input",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
                                 }
-                              }
-                              forwardedRef={null}
+                                forwardedRef={null}
+                                id="emailInput"
+                                name="email"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Email"
+                                type="text"
+                              >
+                                <input
+                                  className="sc-bwzfXH emailInput sc-kAzzGY fAIfVb"
+                                  id="emailInput"
+                                  name="email"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  placeholder="Email"
+                                  type="text"
+                                />
+                              </StyledComponent>
+                            </Styled(styled.input)>
+                            <Styled(styled.input)
+                              className="passwordInput"
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -500,97 +485,159 @@ exports[`LoginPage should render correctly 1`] = `
                               type="password"
                               value=""
                             >
-                              <input
-                                className="sc-bwzfXH passwordInput sc-kAzzGY fAIfVb"
+                              <StyledComponent
+                                className="passwordInput"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-kAzzGY",
+                                      "isStatic": false,
+                                      "lastClassName": "fAIfVb",
+                                      "rules": Array [
+                                        "
+  width: ",
+                                        [Function],
+                                        ";
+  height: ",
+                                        [Function],
+                                        ";
+  border: ",
+                                        [Function],
+                                        ";
+  background-color: ",
+                                        [Function],
+                                        ";
+  border-radius: ",
+                                        [Function],
+                                        ";
+  margin: ",
+                                        [Function],
+                                        ";
+",
+                                        "
+  width: 80%;
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "Styled(styled.input)",
+                                    "foldedComponentIds": Array [
+                                      "sc-bwzfXH",
+                                    ],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-kAzzGY",
+                                    "target": "input",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
                                 name="password"
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 placeholder="Password"
                                 type="password"
                                 value=""
-                              />
-                            </StyledComponent>
-                          </Styled(styled.input)>
-                        </main>
-                      </StyledComponent>
-                    </styled.main>
-                    <styled.footer>
-                      <StyledComponent
-                        forwardedComponent={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "attrs": Array [],
-                            "componentStyle": ComponentStyle {
-                              "componentId": "sc-VigVT",
-                              "isStatic": false,
-                              "lastClassName": "hCqwmc",
-                              "rules": Array [
-                                "
+                              >
+                                <input
+                                  className="sc-bwzfXH passwordInput sc-kAzzGY fAIfVb"
+                                  name="password"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  placeholder="Password"
+                                  type="password"
+                                  value=""
+                                />
+                              </StyledComponent>
+                            </Styled(styled.input)>
+                          </main>
+                        </StyledComponent>
+                      </styled.main>
+                      <styled.footer>
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-VigVT",
+                                "isStatic": false,
+                                "lastClassName": "hCqwmc",
+                                "rules": Array [
+                                  "
   margin: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   padding: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
   width: ",
-                                [Function],
-                                ";
+                                  [Function],
+                                  ";
 ",
-                              ],
-                            },
-                            "displayName": "styled.footer",
-                            "foldedComponentIds": Array [],
-                            "render": [Function],
-                            "styledComponentId": "sc-VigVT",
-                            "target": "footer",
-                            "toString": [Function],
-                            "warnTooManyClasses": [Function],
-                            "withComponent": [Function],
+                                ],
+                              },
+                              "displayName": "styled.footer",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-VigVT",
+                              "target": "footer",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
                           }
-                        }
-                        forwardedRef={null}
-                      >
-                        <footer
-                          className="sc-VigVT hCqwmc"
+                          forwardedRef={null}
                         >
-                          <Styled(styled.button)
-                            className="submitButton"
-                            disabled={false}
-                            type="submit"
+                          <footer
+                            className="sc-VigVT hCqwmc"
                           >
-                            <StyledComponent
+                            <Styled(styled.button)
                               className="submitButton"
                               disabled={false}
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-jzJRlG",
-                                    "isStatic": false,
-                                    "lastClassName": "ljpSvq",
-                                    "rules": Array [
-                                      "
+                              type="submit"
+                            >
+                              <StyledComponent
+                                className="submitButton"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-jzJRlG",
+                                      "isStatic": false,
+                                      "lastClassName": "ljpSvq",
+                                      "rules": Array [
+                                        "
   width: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   height: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   background-color: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   color: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   border-radius: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
   border: ",
-                                      [Function],
-                                      ";
+                                        [Function],
+                                        ";
 ",
-                                      "
+                                        "
   position: relative;
   display: block;
   margin: 10px auto 10px 10%;
@@ -610,41 +657,42 @@ exports[`LoginPage should render correctly 1`] = `
     background-color: #27ae60;
   }
 ",
+                                      ],
+                                    },
+                                    "displayName": "Styled(styled.button)",
+                                    "foldedComponentIds": Array [
+                                      "sc-htpNat",
                                     ],
-                                  },
-                                  "displayName": "Styled(styled.button)",
-                                  "foldedComponentIds": Array [
-                                    "sc-htpNat",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-jzJRlG",
-                                  "target": "button",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-jzJRlG",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
                                 }
-                              }
-                              forwardedRef={null}
-                              type="submit"
-                            >
-                              <button
-                                className="sc-htpNat submitButton sc-jzJRlG ljpSvq"
-                                disabled={false}
+                                forwardedRef={null}
                                 type="submit"
                               >
-                                SIGN IN
-                              </button>
-                            </StyledComponent>
-                          </Styled(styled.button)>
-                        </footer>
-                      </StyledComponent>
-                    </styled.footer>
-                  </form>
-                </StyledComponent>
-              </Styled(styled.form)>
-            </MyFormInner>
+                                <button
+                                  className="sc-htpNat submitButton sc-jzJRlG ljpSvq"
+                                  disabled={false}
+                                  type="submit"
+                                >
+                                  SignInButton
+                                </button>
+                              </StyledComponent>
+                            </Styled(styled.button)>
+                          </footer>
+                        </StyledComponent>
+                      </styled.footer>
+                    </form>
+                  </StyledComponent>
+                </Styled(styled.form)>
+              </MyFormInner>
+            </withI18nextTranslation(MyFormInner)>
           </Formik>
-        </WithFormik(MyFormInner)>
+        </WithFormik(withI18nextTranslation(MyFormInner))>
       </div>
     </LoginPage>
   </Connect(LoginPage)>

@@ -1,0 +1,15 @@
+{
+  "translations": {
+    "Welcome": "Welcome to hotel management"
+  },
+  "common": {
+    "SignInLabel": "Sign in",
+    "SignInButton": "Sign in",
+    "LogoutButton": "Logout",
+    "Email": "Email",
+    "PhoneNumber": "Phone number",
+    "Name": "Name",
+    "Surname": "Surname",
+    "Password": "Passwpord"
+  }
+}

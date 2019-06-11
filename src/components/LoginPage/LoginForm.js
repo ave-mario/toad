@@ -1,5 +1,6 @@
 import React from 'react';
 import { withFormik } from 'formik';
+import { withTranslation } from 'react-i18next';
 import { string, object } from 'yup';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
@@ -43,13 +44,14 @@ export const MyFormInner = props => {
     touched,
     handleSubmit: submit,
     isSubmitting,
-    isFailed
+    isFailed,
+    t
   } = props;
   return (
     <LoginForm onSubmit={submit}>
       <Header>
-        <LoginTitle>Welcome to hotel management</LoginTitle>
-        <LoginSubTitle>Sign in</LoginSubTitle>
+        <LoginTitle>{t('translations:Welcome')}</LoginTitle>
+        <LoginSubTitle>{t('SignInLabel')}</LoginSubTitle>
       </Header>
       <Main>
         <LoginInput
@@ -57,7 +59,7 @@ export const MyFormInner = props => {
           className="emailInput"
           type="text"
           name="email"
-          placeholder="Email"
+          placeholder={t('Email')}
           onChange={handleChange}
           border={errors.email && touched.email && '1px solid red'}
           value={values.mail}
@@ -68,7 +70,7 @@ export const MyFormInner = props => {
           className="passwordInput"
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder={t('Password')}
           onChange={handleChange}
           border={errors.password && touched.password && '1px solid red'}
           value={values.password}
@@ -84,7 +86,7 @@ export const MyFormInner = props => {
           type="submit"
           disabled={isSubmitting && !isFailed}
         >
-          SIGN IN
+          {t('SignInButton')}
         </SubmitButton>
       </Footer>
     </LoginForm>
@@ -99,7 +101,8 @@ MyFormInner.propTypes = {
   touched: PropTypes.objectOf(PropTypes.bool).isRequired,
   handleSubmit: PropTypes.func.isRequired,
   isSubmitting: PropTypes.bool.isRequired,
-  isFailed: PropTypes.bool
+  isFailed: PropTypes.bool,
+  t: PropTypes.func.isRequired
 };
 MyFormInner.defaultProps = {
   isFailed: false
@@ -109,4 +112,4 @@ export const Login = withFormik({
   mapPropsToValues,
   validationSchema,
   handleSubmit
-})(MyFormInner);
+})(withTranslation('common')(MyFormInner));

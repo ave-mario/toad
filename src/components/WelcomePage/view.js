@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import service from '../../services';
+import services from '../../services';
 import { Welcome } from './WelcomeForm';
 
 function WelcomePage(props) {
   const { isFailed, search } = props;
-  const { name, token } = service.queryStringService(search);
+  const { name, token } = services.queryStringService(search);
   return (
     <div
       style={{

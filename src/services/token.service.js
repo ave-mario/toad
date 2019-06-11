@@ -1,13 +1,14 @@
 import safeStringify from 'fast-safe-stringify';
 
-function setTokens(tokens) {
-  localStorage.setItem('tokens', safeStringify(tokens));
+async function setTokens(tokens) {
+  await localStorage.setItem('tokens', safeStringify(tokens));
 }
-function getTokens() {
-  return JSON.parse(localStorage.getItem('tokens'));
+async function getTokens() {
+  const tokens = await JSON.parse(localStorage.getItem('tokens'));
+  return tokens;
 }
-function removeTokens() {
-  localStorage.removeItem('tokens');
+async function removeTokens() {
+  await localStorage.removeItem('tokens');
 }
 
 export default {

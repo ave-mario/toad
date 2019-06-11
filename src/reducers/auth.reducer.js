@@ -1,12 +1,14 @@
 import { createReducer } from 'reduxsauce';
 import authActions from '../actions/auth.actions';
+import services from '../services';
 
 const { Types } = authActions;
+const tokensFromStorage = services.tokenService.getTokens();
 const INITIAL_STATE = {
   isRequesting: false,
   isFailed: false,
   user: null,
-  tokens: JSON.parse(localStorage.getItem('tokens')),
+  tokens: tokensFromStorage,
   error: null,
   createPassword: {
     success: null,
@@ -93,7 +95,7 @@ export const createPasswordFailure = (state = INITIAL_STATE, { error }) => {
   };
 };
 export const logout = (state = INITIAL_STATE) => {
-  localStorage.removeItem('tokens');
+  services.tokenService.removeTokens();
   return {
     ...state,
     isRequesting: false,

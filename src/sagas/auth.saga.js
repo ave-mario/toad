@@ -2,13 +2,14 @@ import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
 import { login, loadUser, createPassword } from '../actions/api.calls';
 import authActions from '../actions/auth.actions';
+import services from '../services';
 
 const { Creators, Types } = authActions;
 export function* authorize(email, password) {
   try {
     const response = yield call(login, email, password);
     const { user, tokens } = response.data;
-    localStorage.setItem('tokens', JSON.stringify(response.data.tokens));
+    services.tokenService.setTokens(response.data.tokens);
     yield put(Creators.loginSuccess(user, tokens));
     yield put(push('/'));
     return response;
@@ -20,7 +21,7 @@ export function* authorize(email, password) {
 }
 export function* load() {
   try {
-    const tokens = yield JSON.parse(localStorage.getItem('tokens'));
+    const tokens = services.tokenService.getTokens();
     if (tokens === null) {
       throw new Error('There are no tokens');
     } else {

@@ -4,11 +4,13 @@ import authActions from '../../actions/auth.actions';
 const { Types } = authActions;
 describe('Auth reducer test', () => {
   test('should return the initial state', () => {
+    let promise = new Promise((resolve, reject) => {});
+
     expect(authReducer(undefined, {})).toEqual({
       isRequesting: false,
       isFailed: false,
       user: null,
-      tokens: JSON.parse(localStorage.getItem('tokens')),
+      tokens: promise,
       error: null,
       createPassword: {
         success: null,

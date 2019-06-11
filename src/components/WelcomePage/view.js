@@ -1,6 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import service from '../../services';
+import { Welcome } from './WelcomeForm';
 
-function WelcomePage() {
+function WelcomePage(props) {
+  const { isFailed, search } = props;
+  const { name, token } = service.queryStringService(search);
   return (
     <div
       style={{
@@ -10,9 +15,16 @@ function WelcomePage() {
         height: '100%'
       }}
     >
-      WELCOME PAGE
+      <Welcome isFailed={isFailed} name={name} token={token} />
     </div>
   );
 }
 
+WelcomePage.propTypes = {
+  search: PropTypes.string.isRequired,
+  isFailed: PropTypes.bool
+};
+WelcomePage.defaultProps = {
+  isFailed: false
+};
 export default WelcomePage;

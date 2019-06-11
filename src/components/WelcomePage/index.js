@@ -1,3 +1,3 @@
-import WelcomePage from './view';
+import WelcomePage from './container';
 
 export default WelcomePage;

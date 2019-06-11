@@ -1,6 +1,6 @@
 import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
-import { login, loadUser } from '../actions/api.calls';
+import { login, loadUser, createPassword } from '../actions/api.calls';
 import authActions from '../actions/auth.actions';
 
 const { Creators, Types } = authActions;
@@ -31,11 +31,17 @@ export function* load() {
     }
   } catch (error) {
     yield put(push('/login'));
-    if (error.response) {
-      yield put(Creators.loadFailure(error.response.data));
-    } else {
-      yield put(Creators.loadFailure(error.message));
-    }
+    const errorMessage = error.response ? error.response.data : error.message;
+    yield put(Creators.loadFailure(errorMessage));
+  }
+}
+export function* createNewPassword(password, token) {
+  try {
+    const response = yield call(createPassword, password, token);
+    yield put(Creators.createPasswordSuccess(response.data.success));
+  } catch (error) {
+    const errorMessage = error.response ? error.response.data : error.message;
+    yield put(Creators.createPasswordFailure(errorMessage));
   }
 }
 export function* logout() {
@@ -52,9 +58,12 @@ export function* loadFlow() {
     }
   }
 }
-// export function* welcomeFlow() {
-//   while (true) {}
-// }
+export function* createPasswordFlow() {
+  while (true) {
+    const { password, token } = yield take(Types.CREATE_PASSWORD_REQUEST);
+    yield call(createNewPassword, password, token);
+  }
+}
 export function* loginFlow() {
   while (true) {
     const { email, password } = yield take(Types.LOGIN_REQUEST);

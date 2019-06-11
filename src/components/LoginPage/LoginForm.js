@@ -25,9 +25,8 @@ export const validationSchema = object().shape({
     .matches(reg.password, 'The password cannot contain spaces')
 });
 
-export const handleSubmit = (values, { resetForm }) => {
+export const handleSubmit = values => {
   dispatcher(Creators.loginRequest(values.email, values.password));
-  resetForm();
 };
 
 export const mapPropsToValues = () => ({

@@ -1,11 +1,10 @@
 import React from 'react';
 import { withFormik } from 'formik';
-import { string, object } from 'yup';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
-import reg from '../../config/regex';
+import { loginValidationSchema } from '../../config/validation.schemas';
 import {
   SubmitButton,
   LoginForm,
@@ -15,15 +14,6 @@ import {
 } from './elements/login.form';
 
 const { Creators } = authActions;
-
-export const validationSchema = object().shape({
-  email: string()
-    .email()
-    .required('email is required'),
-  password: string()
-    .required('password is required')
-    .matches(reg.password, 'The password cannot contain spaces')
-});
 
 export const handleSubmit = values => {
   dispatcher(Creators.loginRequest(values.email, values.password));
@@ -107,6 +97,6 @@ MyFormInner.defaultProps = {
 
 export const Login = withFormik({
   mapPropsToValues,
-  validationSchema,
+  validationSchema: loginValidationSchema,
   handleSubmit
 })(MyFormInner);

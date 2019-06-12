@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.4.5",
     "@redux-saga/testing-utils": "^1.0.2",
     "axios": "^0.18.1",
     "connected-react-router": "^6.4.0",

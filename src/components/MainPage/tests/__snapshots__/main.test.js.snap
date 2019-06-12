@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test case for testing main page Main page snapshot 1`] = `
-<Fragment>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "center",
+    }
+  }
+>
   <styled.h1>
     Main Page
   </styled.h1>
@@ -11,5 +20,5 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
   >
     LOGOUT
   </styled.button>
-</Fragment>
+</div>
 `;

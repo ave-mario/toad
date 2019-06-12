@@ -1,5 +1,5 @@
 const reg = {
-  password: /^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}/
+  password: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}$/
 };
 Object.freeze(reg);
 

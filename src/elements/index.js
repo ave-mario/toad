@@ -113,3 +113,20 @@ export const ErrorText = styled.div`
   width: ${({ width }) => width || '100%'};
   padding: ${({ margin }) => margin || '2px'};
 `;
+export const Loader = styled.div`
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #a4a6a8;
+  border-bottom: 10px solid #a4a6a8;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;

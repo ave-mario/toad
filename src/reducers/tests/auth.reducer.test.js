@@ -4,13 +4,11 @@ import authActions from '../../actions/auth.actions';
 const { Types } = authActions;
 describe('Auth reducer test', () => {
   test('should return the initial state', () => {
-    let promise = new Promise((resolve, reject) => {});
-
     expect(authReducer(undefined, {})).toEqual({
       isRequesting: false,
       isFailed: false,
       user: null,
-      tokens: promise,
+      tokens: {},
       error: null,
       createPassword: {
         success: null,
@@ -24,7 +22,8 @@ describe('Auth reducer test', () => {
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: true,
-      isFailed: false
+      isFailed: false,
+      error: null
     });
   });
   test('should handle LOGIN_SUCCESS', () => {
@@ -57,7 +56,9 @@ describe('Auth reducer test', () => {
       type: Types.LOAD_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      isRequesting: true
+      error: null,
+      isRequesting: true,
+      error: null
     });
   });
   test('should handle LOAD_SUCCESS', () => {
@@ -91,7 +92,8 @@ describe('Auth reducer test', () => {
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: true,
-      isFailed: false
+      isFailed: false,
+      error: null
     });
   });
   test('should handle CREATE_PASSWORD_SUCCESS', () => {

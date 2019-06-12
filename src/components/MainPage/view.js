@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Title, Button } from '../../elements';
+import { Title, Button, Loader } from '../../elements';
 
 class MainPage extends Component {
   constructor(props) {
@@ -19,13 +19,27 @@ class MainPage extends Component {
   }
 
   render() {
+    const { user } = this.props;
     return (
-      <>
-        <Title>Main Page</Title>
-        <Button type="button" onClick={this.handleLogout}>
-          LOGOUT
-        </Button>
-      </>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100%'
+        }}
+      >
+        {!user ? (
+          <Loader />
+        ) : (
+          <>
+            <Title>Main Page</Title>
+            <Button type="button" onClick={this.handleLogout}>
+              LOGOUT
+            </Button>
+          </>
+        )}
+      </div>
     );
   }
 }

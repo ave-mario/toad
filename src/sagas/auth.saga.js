@@ -21,7 +21,7 @@ export function* authorize(email, password) {
 }
 export function* load() {
   try {
-    const tokens = services.tokenService.getTokens();
+    const tokens = yield services.tokenService.getTokens();
     if (tokens === null) {
       throw new Error('There are no tokens');
     } else {

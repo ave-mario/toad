@@ -100,9 +100,9 @@ exports[`LoginPage should render correctly 1`] = `
                       "$$typeof": Symbol(react.forward_ref),
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
-                        "componentId": "sc-cSHVUG",
+                        "componentId": "sc-kAzzGY",
                         "isStatic": false,
-                        "lastClassName": "gXWBfR",
+                        "lastClassName": "cbdgnU",
                         "rules": Array [
                           "
   width: ",
@@ -140,7 +140,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "sc-bdVaJa",
                       ],
                       "render": [Function],
-                      "styledComponentId": "sc-cSHVUG",
+                      "styledComponentId": "sc-kAzzGY",
                       "target": "form",
                       "toString": [Function],
                       "warnTooManyClasses": [Function],
@@ -151,7 +151,7 @@ exports[`LoginPage should render correctly 1`] = `
                   onSubmit={[Function]}
                 >
                   <form
-                    className="sc-bdVaJa sc-cSHVUG gXWBfR"
+                    className="sc-bdVaJa sc-kAzzGY cbdgnU"
                     onSubmit={[Function]}
                   >
                     <styled.header>
@@ -197,9 +197,9 @@ exports[`LoginPage should render correctly 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-chPdSV",
+                                    "componentId": "sc-kgoBCf",
                                     "isStatic": false,
-                                    "lastClassName": "ifMhNf",
+                                    "lastClassName": "eUeWDk",
                                     "rules": Array [
                                       "
   font-family: ",
@@ -231,7 +231,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "sc-ifAKCX",
                                   ],
                                   "render": [Function],
-                                  "styledComponentId": "sc-chPdSV",
+                                  "styledComponentId": "sc-kgoBCf",
                                   "target": "h1",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -241,7 +241,7 @@ exports[`LoginPage should render correctly 1`] = `
                               forwardedRef={null}
                             >
                               <h1
-                                className="sc-ifAKCX sc-chPdSV ifMhNf"
+                                className="sc-ifAKCX sc-kgoBCf eUeWDk"
                               >
                                 Welcome to hotel management
                               </h1>
@@ -254,9 +254,9 @@ exports[`LoginPage should render correctly 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kgoBCf",
+                                    "componentId": "sc-kGXeez",
                                     "isStatic": false,
-                                    "lastClassName": "iSZju",
+                                    "lastClassName": "bkEGeL",
                                     "rules": Array [
                                       "
   font-family: ",
@@ -288,7 +288,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "sc-EHOje",
                                   ],
                                   "render": [Function],
-                                  "styledComponentId": "sc-kgoBCf",
+                                  "styledComponentId": "sc-kGXeez",
                                   "target": "h2",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -298,7 +298,7 @@ exports[`LoginPage should render correctly 1`] = `
                               forwardedRef={null}
                             >
                               <h2
-                                className="sc-EHOje sc-kgoBCf iSZju"
+                                className="sc-EHOje sc-kGXeez bkEGeL"
                               >
                                 Sign in
                               </h2>
@@ -364,9 +364,9 @@ exports[`LoginPage should render correctly 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kAzzGY",
+                                    "componentId": "sc-chPdSV",
                                     "isStatic": false,
-                                    "lastClassName": "fAIfVb",
+                                    "lastClassName": "jhPExZ",
                                     "rules": Array [
                                       "
   width: ",
@@ -404,7 +404,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "sc-bwzfXH",
                                   ],
                                   "render": [Function],
-                                  "styledComponentId": "sc-kAzzGY",
+                                  "styledComponentId": "sc-chPdSV",
                                   "target": "input",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -421,7 +421,7 @@ exports[`LoginPage should render correctly 1`] = `
                               value=""
                             >
                               <input
-                                className="sc-bwzfXH emailInput sc-kAzzGY fAIfVb"
+                                className="sc-bwzfXH emailInput sc-chPdSV jhPExZ"
                                 id="emailInput"
                                 name="email"
                                 onBlur={[Function]}
@@ -448,9 +448,9 @@ exports[`LoginPage should render correctly 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-kAzzGY",
+                                    "componentId": "sc-chPdSV",
                                     "isStatic": false,
-                                    "lastClassName": "fAIfVb",
+                                    "lastClassName": "jhPExZ",
                                     "rules": Array [
                                       "
   width: ",
@@ -488,7 +488,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "sc-bwzfXH",
                                   ],
                                   "render": [Function],
-                                  "styledComponentId": "sc-kAzzGY",
+                                  "styledComponentId": "sc-chPdSV",
                                   "target": "input",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -504,7 +504,7 @@ exports[`LoginPage should render correctly 1`] = `
                               value=""
                             >
                               <input
-                                className="sc-bwzfXH passwordInput sc-kAzzGY fAIfVb"
+                                className="sc-bwzfXH passwordInput sc-chPdSV jhPExZ"
                                 name="password"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -569,9 +569,9 @@ exports[`LoginPage should render correctly 1`] = `
                                   "$$typeof": Symbol(react.forward_ref),
                                   "attrs": Array [],
                                   "componentStyle": ComponentStyle {
-                                    "componentId": "sc-jzJRlG",
+                                    "componentId": "sc-cSHVUG",
                                     "isStatic": false,
-                                    "lastClassName": "ljpSvq",
+                                    "lastClassName": "klCCBt",
                                     "rules": Array [
                                       "
   width: ",
@@ -620,7 +620,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "sc-htpNat",
                                   ],
                                   "render": [Function],
-                                  "styledComponentId": "sc-jzJRlG",
+                                  "styledComponentId": "sc-cSHVUG",
                                   "target": "button",
                                   "toString": [Function],
                                   "warnTooManyClasses": [Function],
@@ -631,7 +631,7 @@ exports[`LoginPage should render correctly 1`] = `
                               type="submit"
                             >
                               <button
-                                className="sc-htpNat submitButton sc-jzJRlG ljpSvq"
+                                className="sc-htpNat submitButton sc-cSHVUG klCCBt"
                                 disabled={false}
                                 type="submit"
                               >

@@ -3,12 +3,11 @@ import authActions from '../actions/auth.actions';
 import services from '../services';
 
 const { Types } = authActions;
-const tokensFromStorage = services.tokenService.getTokens();
 const INITIAL_STATE = {
   isRequesting: false,
   isFailed: false,
   user: null,
-  tokens: tokensFromStorage,
+  tokens: {},
   error: null,
   createPassword: {
     success: null,
@@ -20,7 +19,8 @@ export const loginRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
     isRequesting: true,
-    isFailed: false
+    isFailed: false,
+    error: null
   };
 };
 export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
@@ -44,7 +44,8 @@ export const loginFailure = (state = INITIAL_STATE, { error }) => {
 export const loadRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
-    isRequesting: true
+    isRequesting: true,
+    error: null
   };
 };
 export const loadSuccess = (state = INITIAL_STATE, { user }) => {
@@ -70,7 +71,8 @@ export const createPasswordRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
     isRequesting: true,
-    isFailed: false
+    isFailed: false,
+    error: null
   };
 };
 export const createPasswordSuccess = (state = INITIAL_STATE, { success }) => {

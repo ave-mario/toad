@@ -1,17 +1,16 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import en from '../locale/en';
-import ru from '../locale/ru';
 
 i18n.use(initReactI18next).init({
   resources: {
-    ru,
-    en
+    ru: {},
+    en: {}
   },
-  fallbackLng: 'ru',
+  fallbackLng: 'en',
   debug: true,
   ns: ['translations'],
   defaultNS: 'translations',
+  keySeparator: '.',
   interpolation: {
     escapeValue: false,
     formatSeparator: ','
@@ -20,5 +19,11 @@ i18n.use(initReactI18next).init({
     wait: true
   }
 });
+
+export const addResourse = (ns, resources) => {
+  ['ru', 'en'].forEach(lng => {
+    i18n.addResourceBundle(lng, ns, resources[lng]);
+  });
+};
 
 export default i18n;

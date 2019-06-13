@@ -7,7 +7,7 @@ const INITIAL_STATE = {
   isRequesting: false,
   isFailed: false,
   user: null,
-  tokens: {},
+  tokens: null,
   error: null,
   createPassword: {
     success: null,
@@ -38,6 +38,7 @@ export const loginFailure = (state = INITIAL_STATE, { error }) => {
     ...state,
     isRequesting: false,
     error,
+    tokens: null,
     isFailed: true
   };
 };

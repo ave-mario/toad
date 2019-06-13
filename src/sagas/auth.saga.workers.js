@@ -1,10 +1,11 @@
-import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
+import { put, call } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
 import { login, loadUser, createPassword } from '../actions/api.calls';
 import authActions from '../actions/auth.actions';
 import services from '../services';
 
-const { Creators, Types } = authActions;
+const { Creators } = authActions;
+
 export function* authorize(email, password) {
   try {
     const response = yield call(login, email, password);
@@ -19,6 +20,7 @@ export function* authorize(email, password) {
     return error;
   }
 }
+
 export function* load() {
   try {
     const tokens = yield services.tokenService.getTokens();
@@ -36,6 +38,7 @@ export function* load() {
     yield put(Creators.loadFailure(errorMessage));
   }
 }
+
 export function* createNewPassword(password, token) {
   try {
     const response = yield call(createPassword, password, token);
@@ -45,34 +48,8 @@ export function* createNewPassword(password, token) {
     yield put(Creators.createPasswordFailure(errorMessage));
   }
 }
+
 export function* logout() {
   yield put(Creators.logout());
   yield put(push('/login'));
-}
-export function* loadFlow() {
-  while (true) {
-    yield takeLatest(Types.LOAD_REQUEST, load);
-    const action = yield take([Types.LOAD_SUCCESS, Types.LOAD_FAILURE]);
-    if (action.type === Types.LOAD_SUCCESS) {
-      yield take(Types.LOGOUT);
-      yield call(logout);
-    }
-  }
-}
-export function* createPasswordFlow() {
-  while (true) {
-    const { password, token } = yield take(Types.CREATE_PASSWORD_REQUEST);
-    yield call(createNewPassword, password, token);
-  }
-}
-export function* loginFlow() {
-  while (true) {
-    const { email, password } = yield take(Types.LOGIN_REQUEST);
-    const task = yield fork(authorize, email, password);
-    const action = yield take([Types.LOGOUT, Types.LOGIN_FAILURE]);
-    if (action.type === Types.LOGOUT) {
-      yield cancel(task);
-      yield call(logout);
-    }
-  }
 }

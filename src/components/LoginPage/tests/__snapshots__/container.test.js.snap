@@ -16,6 +16,8 @@ exports[`LoginPage should render correctly 1`] = `
   <Connect(LoginPage)>
     <LoginPage
       isFailed={false}
+      load={[Function]}
+      user={Object {}}
     >
       <div
         style={

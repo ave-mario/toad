@@ -1,23 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { push } from 'connected-react-router';
 import services from '../../services';
 import { Welcome } from './WelcomeForm';
+import { dispatcher } from '../../config/redux.store';
 
-function WelcomePage(props) {
-  const { isFailed, search } = props;
-  const { name, token } = services.queryStringService(search);
-  return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100%'
-      }}
-    >
-      <Welcome isFailed={isFailed} name={name} token={token} />
-    </div>
-  );
+class WelcomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: null,
+      token: null
+    };
+  }
+
+  componentDidMount() {
+    const { search } = this.props;
+    const { name, token } = services.queryStringService(search);
+    if (!name || !token) dispatcher(push('/login'));
+    this.setState({ name, token });
+  }
+
+  render() {
+    const { isFailed } = this.props;
+    const { name, token } = this.state;
+    return (
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100%'
+        }}
+      >
+        <Welcome isFailed={isFailed} name={name} token={token} />
+      </div>
+    );
+  }
 }
 
 WelcomePage.propTypes = {

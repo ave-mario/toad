@@ -1,10 +1,10 @@
-import { loadFlow, loginFlow, load, authorize, logout } from '../auth.saga';
+import { loadFlow, loginFlow } from '../auth.saga.flows';
+import { load, authorize, logout } from '../auth.saga.workers';
 import { createMockTask } from '@redux-saga/testing-utils';
-import { put, call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
+import { call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
 import authActions from '../../actions/auth.actions';
-import { push } from 'connected-react-router';
 
-const { Creators, Types } = authActions;
+const { Types } = authActions;
 
 test('load flow', () => {
   const generator = loadFlow();

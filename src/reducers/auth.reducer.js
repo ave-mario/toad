@@ -1,19 +1,26 @@
 import { createReducer } from 'reduxsauce';
 import authActions from '../actions/auth.actions';
+import services from '../services';
 
 const { Types } = authActions;
 const INITIAL_STATE = {
   isRequesting: false,
+  isFailed: false,
   user: null,
-  tokens: JSON.parse(localStorage.getItem('tokens')),
-  error: null,
-  isFailed: false
+  tokens: null,
+  error: '',
+  createPassword: {
+    success: null,
+    error: null
+  }
 };
 
 export const loginRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
-    isRequesting: true
+    isRequesting: true,
+    isFailed: false,
+    error: ''
   };
 };
 export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
@@ -22,7 +29,7 @@ export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
     isRequesting: false,
     user,
     tokens,
-    error: null,
+    error: '',
     isFailed: false
   };
 };
@@ -31,13 +38,15 @@ export const loginFailure = (state = INITIAL_STATE, { error }) => {
     ...state,
     isRequesting: false,
     error,
+    tokens: null,
     isFailed: true
   };
 };
 export const loadRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
-    isRequesting: true
+    isRequesting: true,
+    error: ''
   };
 };
 export const loadSuccess = (state = INITIAL_STATE, { user }) => {
@@ -45,7 +54,7 @@ export const loadSuccess = (state = INITIAL_STATE, { user }) => {
     ...state,
     isRequesting: false,
     user,
-    error: null,
+    error: '',
     isFailed: false
   };
 };
@@ -59,14 +68,43 @@ export const loadFailure = (state = INITIAL_STATE, { error }) => {
     isFailed: true
   };
 };
+export const createPasswordRequest = (state = INITIAL_STATE) => {
+  return {
+    ...state,
+    isRequesting: true,
+    isFailed: false,
+    error: ''
+  };
+};
+export const createPasswordSuccess = (state = INITIAL_STATE, { success }) => {
+  return {
+    ...state,
+    isRequesting: false,
+    createPassword: {
+      success,
+      error: null
+    }
+  };
+};
+export const createPasswordFailure = (state = INITIAL_STATE, { error }) => {
+  return {
+    ...state,
+    isRequesting: false,
+    isFailed: true,
+    createPassword: {
+      success: null,
+      error
+    }
+  };
+};
 export const logout = (state = INITIAL_STATE) => {
-  localStorage.removeItem('tokens');
+  services.tokenService.removeTokens();
   return {
     ...state,
     isRequesting: false,
     user: null,
     tokens: null,
-    error: null,
+    error: '',
     isFailed: false
   };
 };
@@ -78,6 +116,9 @@ export const HANDLERS = {
   [Types.LOAD_REQUEST]: loadRequest,
   [Types.LOAD_SUCCESS]: loadSuccess,
   [Types.LOAD_FAILURE]: loadFailure,
+  [Types.CREATE_PASSWORD_REQUEST]: createPasswordRequest,
+  [Types.CREATE_PASSWORD_SUCCESS]: createPasswordSuccess,
+  [Types.CREATE_PASSWORD_FAILURE]: createPasswordFailure,
   [Types.LOGOUT]: logout
 };
 

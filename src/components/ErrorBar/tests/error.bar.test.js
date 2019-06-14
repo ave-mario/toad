@@ -2,9 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import configureStore from 'redux-mock-store';
-import LoginPage from '../container';
+import ErrorBar from '../container';
 
-test('LoginPage should render correctly', () => {
+test('ErrorBar should render correctly', () => {
   const mockStore = configureStore();
   const store = mockStore({
     auth: {
@@ -19,7 +19,7 @@ test('LoginPage should render correctly', () => {
 
   const wrapper = mount(
     <Provider store={store}>
-      <LoginPage />
+      <ErrorBar />
     </Provider>
   );
   expect(wrapper).toMatchSnapshot();

@@ -16,3 +16,13 @@ export function loadUser(token) {
   };
   return axios.get('employees/current', config);
 }
+
+export function createPassword(newPassword, token) {
+  const config = {
+    headers: { Authorization: `Bearer ${token}` }
+  };
+  const body = {
+    newPassword
+  };
+  return axios.put('employees/password', body, config);
+}

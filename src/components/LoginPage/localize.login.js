@@ -8,10 +8,6 @@ export default {
     },
     buttons: {
       Sumbit: 'Войти'
-    },
-    validation: {
-      emailRequired: 'Требуется email',
-      passwordRequired: 'Требуется пароль'
     }
   },
   en: {
@@ -23,10 +19,6 @@ export default {
     },
     buttons: {
       Sumbit: 'Sign in'
-    },
-    validation: {
-      emailRequired: 'Email is required',
-      passwordRequired: 'Password is required'
     }
   }
 };

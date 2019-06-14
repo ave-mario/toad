@@ -15,7 +15,15 @@ exports[`LoginPage should render correctly 1`] = `
 >
   <Connect(LoginPage)>
     <LoginPage
+      error={
+        Object {
+          "message": "message",
+          "success": false,
+        }
+      }
       isFailed={false}
+      load={[Function]}
+      user={Object {}}
     >
       <div
         style={
@@ -141,6 +149,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "nonExplicitWhitelist": false,
                         "ns": Array [
                           "translations",
+                          "validation",
                           "Login",
                         ],
                         "nsSeparator": ":",
@@ -165,9 +174,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
-                              "validation": Object {
-                                "emailRequired": "Email is required",
-                                "passwordRequired": "Password is required",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "The email is incorrect",
+                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              },
+                              "required": Object {
+                                "email": "Email is required",
+                                "password": "Password is required",
                               },
                             },
                           },
@@ -182,9 +197,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
-                              "validation": Object {
-                                "emailRequired": "Требуется email",
-                                "passwordRequired": "Требуется пароль",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "Неверный email",
+                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              },
+                              "required": Object {
+                                "email": "Требуется email",
+                                "password": "Требуется пароль",
                               },
                             },
                           },
@@ -241,6 +262,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "nonExplicitWhitelist": false,
                       "ns": Array [
                         "translations",
+                        "validation",
                         "Login",
                       ],
                       "nsSeparator": ":",
@@ -265,9 +287,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
-                            "validation": Object {
-                              "emailRequired": "Email is required",
-                              "passwordRequired": "Password is required",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "The email is incorrect",
+                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                            },
+                            "required": Object {
+                              "email": "Email is required",
+                              "password": "Password is required",
                             },
                           },
                         },
@@ -282,9 +310,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
-                            "validation": Object {
-                              "emailRequired": "Требуется email",
-                              "passwordRequired": "Требуется пароль",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "Неверный email",
+                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                            },
+                            "required": Object {
+                              "email": "Требуется email",
+                              "password": "Требуется пароль",
                             },
                           },
                         },
@@ -342,6 +376,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "nonExplicitWhitelist": false,
                               "ns": Array [
                                 "translations",
+                                "validation",
                                 "Login",
                               ],
                               "nsSeparator": ":",
@@ -367,9 +402,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Email is required",
-                                      "passwordRequired": "Password is required",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "The email is incorrect",
+                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    },
+                                    "required": Object {
+                                      "email": "Email is required",
+                                      "password": "Password is required",
                                     },
                                   },
                                 },
@@ -384,9 +425,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Требуется email",
-                                      "passwordRequired": "Требуется пароль",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "Неверный email",
+                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    },
+                                    "required": Object {
+                                      "email": "Требуется email",
+                                      "password": "Требуется пароль",
                                     },
                                   },
                                 },
@@ -427,6 +474,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -451,9 +499,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -468,9 +522,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -520,6 +580,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -545,9 +606,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -562,9 +629,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -610,6 +683,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -634,9 +708,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -651,9 +731,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -683,9 +769,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
-                              "validation": Object {
-                                "emailRequired": "Email is required",
-                                "passwordRequired": "Password is required",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "The email is incorrect",
+                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              },
+                              "required": Object {
+                                "email": "Email is required",
+                                "password": "Password is required",
                               },
                             },
                           },
@@ -700,9 +792,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
-                              "validation": Object {
-                                "emailRequired": "Требуется email",
-                                "passwordRequired": "Требуется пароль",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "Неверный email",
+                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              },
+                              "required": Object {
+                                "email": "Требуется email",
+                                "password": "Требуется пароль",
                               },
                             },
                           },
@@ -745,6 +843,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -770,9 +869,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -787,9 +892,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -834,6 +945,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -858,9 +970,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -875,9 +993,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -934,6 +1058,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -959,9 +1084,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -976,9 +1107,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -1019,6 +1156,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -1043,9 +1181,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -1060,9 +1204,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -1112,6 +1262,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -1136,9 +1287,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -1153,9 +1310,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -1207,6 +1370,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "nonExplicitWhitelist": false,
                               "ns": Array [
                                 "translations",
+                                "validation",
                                 "Login",
                               ],
                               "nsSeparator": ":",
@@ -1232,9 +1396,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Email is required",
-                                      "passwordRequired": "Password is required",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "The email is incorrect",
+                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    },
+                                    "required": Object {
+                                      "email": "Email is required",
+                                      "password": "Password is required",
                                     },
                                   },
                                 },
@@ -1249,9 +1419,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Требуется email",
-                                      "passwordRequired": "Требуется пароль",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "Неверный email",
+                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    },
+                                    "required": Object {
+                                      "email": "Требуется email",
+                                      "password": "Требуется пароль",
                                     },
                                   },
                                 },
@@ -1292,6 +1468,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -1316,9 +1493,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -1333,9 +1516,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -1385,6 +1574,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -1410,9 +1600,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -1427,9 +1623,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -2396,9 +2598,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
-                            "validation": Object {
-                              "emailRequired": "Email is required",
-                              "passwordRequired": "Password is required",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "The email is incorrect",
+                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                            },
+                            "required": Object {
+                              "email": "Email is required",
+                              "password": "Password is required",
                             },
                           },
                         },
@@ -2413,9 +2621,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
-                            "validation": Object {
-                              "emailRequired": "Требуется email",
-                              "passwordRequired": "Требуется пароль",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "Неверный email",
+                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                            },
+                            "required": Object {
+                              "email": "Требуется email",
+                              "password": "Требуется пароль",
                             },
                           },
                         },
@@ -2433,9 +2647,15 @@ exports[`LoginPage should render correctly 1`] = `
                             "SignIn": "Sign in",
                             "title": "Welcome to hotel management",
                           },
-                          "validation": Object {
-                            "emailRequired": "Email is required",
-                            "passwordRequired": "Password is required",
+                        },
+                        "validation": Object {
+                          "incorrect": Object {
+                            "email": "The email is incorrect",
+                            "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                          },
+                          "required": Object {
+                            "email": "Email is required",
+                            "password": "Password is required",
                           },
                         },
                       },
@@ -2450,9 +2670,15 @@ exports[`LoginPage should render correctly 1`] = `
                             "SignIn": "Вход",
                             "title": "Добро пожаловать в гостиничный менеджмент",
                           },
-                          "validation": Object {
-                            "emailRequired": "Требуется email",
-                            "passwordRequired": "Требуется пароль",
+                        },
+                        "validation": Object {
+                          "incorrect": Object {
+                            "email": "Неверный email",
+                            "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                          },
+                          "required": Object {
+                            "email": "Требуется email",
+                            "password": "Требуется пароль",
                           },
                         },
                       },
@@ -2493,6 +2719,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "nonExplicitWhitelist": false,
                               "ns": Array [
                                 "translations",
+                                "validation",
                                 "Login",
                               ],
                               "nsSeparator": ":",
@@ -2518,9 +2745,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Email is required",
-                                      "passwordRequired": "Password is required",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "The email is incorrect",
+                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    },
+                                    "required": Object {
+                                      "email": "Email is required",
+                                      "password": "Password is required",
                                     },
                                   },
                                 },
@@ -2535,9 +2768,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Требуется email",
-                                      "passwordRequired": "Требуется пароль",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "Неверный email",
+                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    },
+                                    "required": Object {
+                                      "email": "Требуется email",
+                                      "password": "Требуется пароль",
                                     },
                                   },
                                 },
@@ -2578,6 +2817,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -2602,9 +2842,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -2619,9 +2865,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -2671,6 +2923,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -2696,9 +2949,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -2713,9 +2972,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -2761,6 +3026,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -2785,9 +3051,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -2802,9 +3074,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -2834,9 +3112,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
-                              "validation": Object {
-                                "emailRequired": "Email is required",
-                                "passwordRequired": "Password is required",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "The email is incorrect",
+                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              },
+                              "required": Object {
+                                "email": "Email is required",
+                                "password": "Password is required",
                               },
                             },
                           },
@@ -2851,9 +3135,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
-                              "validation": Object {
-                                "emailRequired": "Требуется email",
-                                "passwordRequired": "Требуется пароль",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "Неверный email",
+                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              },
+                              "required": Object {
+                                "email": "Требуется email",
+                                "password": "Требуется пароль",
                               },
                             },
                           },
@@ -2896,6 +3186,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -2921,9 +3212,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -2938,9 +3235,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -2985,6 +3288,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -3009,9 +3313,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -3026,9 +3336,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -3085,6 +3401,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -3110,9 +3427,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -3127,9 +3450,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -3170,6 +3499,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -3194,9 +3524,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -3211,9 +3547,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -3263,6 +3605,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "nonExplicitWhitelist": false,
                           "ns": Array [
                             "translations",
+                            "validation",
                             "Login",
                           ],
                           "nsSeparator": ":",
@@ -3288,9 +3631,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Email is required",
-                                  "passwordRequired": "Password is required",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "The email is incorrect",
+                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                },
+                                "required": Object {
+                                  "email": "Email is required",
+                                  "password": "Password is required",
                                 },
                               },
                             },
@@ -3305,9 +3654,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   "SignIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
-                                "validation": Object {
-                                  "emailRequired": "Требуется email",
-                                  "passwordRequired": "Требуется пароль",
+                              },
+                              "validation": Object {
+                                "incorrect": Object {
+                                  "email": "Неверный email",
+                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                },
+                                "required": Object {
+                                  "email": "Требуется email",
+                                  "password": "Требуется пароль",
                                 },
                               },
                             },
@@ -3353,6 +3708,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "nonExplicitWhitelist": false,
                         "ns": Array [
                           "translations",
+                          "validation",
                           "Login",
                         ],
                         "nsSeparator": ":",
@@ -3377,9 +3733,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
-                              "validation": Object {
-                                "emailRequired": "Email is required",
-                                "passwordRequired": "Password is required",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "The email is incorrect",
+                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              },
+                              "required": Object {
+                                "email": "Email is required",
+                                "password": "Password is required",
                               },
                             },
                           },
@@ -3394,9 +3756,15 @@ exports[`LoginPage should render correctly 1`] = `
                                 "SignIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
-                              "validation": Object {
-                                "emailRequired": "Требуется email",
-                                "passwordRequired": "Требуется пароль",
+                            },
+                            "validation": Object {
+                              "incorrect": Object {
+                                "email": "Неверный email",
+                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              },
+                              "required": Object {
+                                "email": "Требуется email",
+                                "password": "Требуется пароль",
                               },
                             },
                           },
@@ -3446,6 +3814,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "nonExplicitWhitelist": false,
                               "ns": Array [
                                 "translations",
+                                "validation",
                                 "Login",
                               ],
                               "nsSeparator": ":",
@@ -3471,9 +3840,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Email is required",
-                                      "passwordRequired": "Password is required",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "The email is incorrect",
+                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    },
+                                    "required": Object {
+                                      "email": "Email is required",
+                                      "password": "Password is required",
                                     },
                                   },
                                 },
@@ -3488,9 +3863,15 @@ exports[`LoginPage should render correctly 1`] = `
                                       "SignIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
-                                    "validation": Object {
-                                      "emailRequired": "Требуется email",
-                                      "passwordRequired": "Требуется пароль",
+                                  },
+                                  "validation": Object {
+                                    "incorrect": Object {
+                                      "email": "Неверный email",
+                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    },
+                                    "required": Object {
+                                      "email": "Требуется email",
+                                      "password": "Требуется пароль",
                                     },
                                   },
                                 },
@@ -3531,6 +3912,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -3555,9 +3937,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -3572,9 +3960,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -3624,6 +4018,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "nonExplicitWhitelist": false,
                             "ns": Array [
                               "translations",
+                              "validation",
                               "Login",
                             ],
                             "nsSeparator": ":",
@@ -3649,9 +4044,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Email is required",
-                                    "passwordRequired": "Password is required",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "The email is incorrect",
+                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  },
+                                  "required": Object {
+                                    "email": "Email is required",
+                                    "password": "Password is required",
                                   },
                                 },
                               },
@@ -3666,9 +4067,15 @@ exports[`LoginPage should render correctly 1`] = `
                                     "SignIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
-                                  "validation": Object {
-                                    "emailRequired": "Требуется email",
-                                    "passwordRequired": "Требуется пароль",
+                                },
+                                "validation": Object {
+                                  "incorrect": Object {
+                                    "email": "Неверный email",
+                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  },
+                                  "required": Object {
+                                    "email": "Требуется email",
+                                    "password": "Требуется пароль",
                                   },
                                 },
                               },
@@ -4635,9 +5042,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
-                            "validation": Object {
-                              "emailRequired": "Email is required",
-                              "passwordRequired": "Password is required",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "The email is incorrect",
+                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                            },
+                            "required": Object {
+                              "email": "Email is required",
+                              "password": "Password is required",
                             },
                           },
                         },
@@ -4652,9 +5065,15 @@ exports[`LoginPage should render correctly 1`] = `
                               "SignIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
-                            "validation": Object {
-                              "emailRequired": "Требуется email",
-                              "passwordRequired": "Требуется пароль",
+                          },
+                          "validation": Object {
+                            "incorrect": Object {
+                              "email": "Неверный email",
+                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                            },
+                            "required": Object {
+                              "email": "Требуется email",
+                              "password": "Требуется пароль",
                             },
                           },
                         },
@@ -4710,9 +5129,9 @@ exports[`LoginPage should render correctly 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "attrs": Array [],
                         "componentStyle": ComponentStyle {
-                          "componentId": "sc-cSHVUG",
+                          "componentId": "sc-kpOJdX",
                           "isStatic": false,
-                          "lastClassName": "gXWBfR",
+                          "lastClassName": "itVTit",
                           "rules": Array [
                             "
   width: ",
@@ -4750,7 +5169,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "sc-bdVaJa",
                         ],
                         "render": [Function],
-                        "styledComponentId": "sc-cSHVUG",
+                        "styledComponentId": "sc-kpOJdX",
                         "target": "form",
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
@@ -4761,7 +5180,7 @@ exports[`LoginPage should render correctly 1`] = `
                     onSubmit={[Function]}
                   >
                     <form
-                      className="sc-bdVaJa sc-cSHVUG gXWBfR"
+                      className="sc-bdVaJa sc-kpOJdX itVTit"
                       onSubmit={[Function]}
                     >
                       <styled.header>
@@ -4807,9 +5226,9 @@ exports[`LoginPage should render correctly 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-chPdSV",
+                                      "componentId": "sc-ckVGcZ",
                                       "isStatic": false,
-                                      "lastClassName": "ifMhNf",
+                                      "lastClassName": "gKRcXm",
                                       "rules": Array [
                                         "
   font-family: ",
@@ -4841,7 +5260,7 @@ exports[`LoginPage should render correctly 1`] = `
                                       "sc-ifAKCX",
                                     ],
                                     "render": [Function],
-                                    "styledComponentId": "sc-chPdSV",
+                                    "styledComponentId": "sc-ckVGcZ",
                                     "target": "h1",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -4851,7 +5270,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 forwardedRef={null}
                               >
                                 <h1
-                                  className="sc-ifAKCX sc-chPdSV ifMhNf"
+                                  className="sc-ifAKCX sc-ckVGcZ gKRcXm"
                                 >
                                   Welcome to hotel management
                                 </h1>
@@ -4864,9 +5283,9 @@ exports[`LoginPage should render correctly 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-kgoBCf",
+                                      "componentId": "sc-jKJlTe",
                                       "isStatic": false,
-                                      "lastClassName": "iSZju",
+                                      "lastClassName": "anFjL",
                                       "rules": Array [
                                         "
   font-family: ",
@@ -4898,7 +5317,7 @@ exports[`LoginPage should render correctly 1`] = `
                                       "sc-EHOje",
                                     ],
                                     "render": [Function],
-                                    "styledComponentId": "sc-kgoBCf",
+                                    "styledComponentId": "sc-jKJlTe",
                                     "target": "h2",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -4908,7 +5327,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 forwardedRef={null}
                               >
                                 <h2
-                                  className="sc-EHOje sc-kgoBCf iSZju"
+                                  className="sc-EHOje sc-jKJlTe anFjL"
                                 >
                                   Sign in
                                 </h2>
@@ -4965,6 +5384,7 @@ exports[`LoginPage should render correctly 1`] = `
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             >
                               <StyledComponent
                                 className="emailInput"
@@ -4973,9 +5393,9 @@ exports[`LoginPage should render correctly 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-kAzzGY",
+                                      "componentId": "sc-dxgOiQ",
                                       "isStatic": false,
-                                      "lastClassName": "fAIfVb",
+                                      "lastClassName": "ekmKjS",
                                       "rules": Array [
                                         "
   width: ",
@@ -5013,7 +5433,7 @@ exports[`LoginPage should render correctly 1`] = `
                                       "sc-bwzfXH",
                                     ],
                                     "render": [Function],
-                                    "styledComponentId": "sc-kAzzGY",
+                                    "styledComponentId": "sc-dxgOiQ",
                                     "target": "input",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -5027,15 +5447,17 @@ exports[`LoginPage should render correctly 1`] = `
                                 onChange={[Function]}
                                 placeholder="Email"
                                 type="text"
+                                value=""
                               >
                                 <input
-                                  className="sc-bwzfXH emailInput sc-kAzzGY fAIfVb"
+                                  className="sc-bwzfXH emailInput sc-dxgOiQ ekmKjS"
                                   id="emailInput"
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   placeholder="Email"
                                   type="text"
+                                  value=""
                                 />
                               </StyledComponent>
                             </Styled(styled.input)>
@@ -5055,9 +5477,9 @@ exports[`LoginPage should render correctly 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-kAzzGY",
+                                      "componentId": "sc-dxgOiQ",
                                       "isStatic": false,
-                                      "lastClassName": "fAIfVb",
+                                      "lastClassName": "ekmKjS",
                                       "rules": Array [
                                         "
   width: ",
@@ -5095,7 +5517,7 @@ exports[`LoginPage should render correctly 1`] = `
                                       "sc-bwzfXH",
                                     ],
                                     "render": [Function],
-                                    "styledComponentId": "sc-kAzzGY",
+                                    "styledComponentId": "sc-dxgOiQ",
                                     "target": "input",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -5111,7 +5533,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="sc-bwzfXH passwordInput sc-kAzzGY fAIfVb"
+                                  className="sc-bwzfXH passwordInput sc-dxgOiQ ekmKjS"
                                   name="password"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -5121,6 +5543,214 @@ exports[`LoginPage should render correctly 1`] = `
                                 />
                               </StyledComponent>
                             </Styled(styled.input)>
+                            <Connect(ErrorBar)>
+                              <ErrorBar
+                                dispatch={[Function]}
+                                error={
+                                  Object {
+                                    "message": "message",
+                                    "success": false,
+                                  }
+                                }
+                              >
+                                <styled.div>
+                                  <StyledComponent
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "sc-jzJRlG",
+                                          "isStatic": false,
+                                          "lastClassName": "cSdUnJ",
+                                          "rules": Array [
+                                            "
+  text-align: ",
+                                            [Function],
+                                            ";
+  color: ",
+                                            [Function],
+                                            ";
+  background-color: ",
+                                            [Function],
+                                            ";
+  font-family: ",
+                                            [Function],
+                                            ";
+  font-size: ",
+                                            [Function],
+                                            ";
+  width: ",
+                                            [Function],
+                                            ";
+  height: ",
+                                            [Function],
+                                            ";
+  padding: ",
+                                            [Function],
+                                            ";
+  padding-left: ",
+                                            [Function],
+                                            ";
+  margin: ",
+                                            [Function],
+                                            ";
+  border-radius: ",
+                                            [Function],
+                                            ";
+  display: ",
+                                            [Function],
+                                            ";
+  align-items: ",
+                                            [Function],
+                                            ";
+  justify-content: ",
+                                            [Function],
+                                            ";
+  flex-wrap: ",
+                                            [Function],
+                                            ";
+",
+                                          ],
+                                        },
+                                        "displayName": "styled.div",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "sc-jzJRlG",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="sc-jzJRlG cSdUnJ"
+                                    >
+                                      <styled.span>
+                                        <StyledComponent
+                                          forwardedComponent={
+                                            Object {
+                                              "$$typeof": Symbol(react.forward_ref),
+                                              "attrs": Array [],
+                                              "componentStyle": ComponentStyle {
+                                                "componentId": "sc-cSHVUG",
+                                                "isStatic": false,
+                                                "lastClassName": "ipeltD",
+                                                "rules": Array [
+                                                  "
+  color: ",
+                                                  [Function],
+                                                  ";
+  font-family: ",
+                                                  [Function],
+                                                  ";
+  font-size: ",
+                                                  [Function],
+                                                  ";
+  max-width: ",
+                                                  [Function],
+                                                  ";
+  overflow: ",
+                                                  [Function],
+                                                  ";
+",
+                                                ],
+                                              },
+                                              "displayName": "styled.span",
+                                              "foldedComponentIds": Array [],
+                                              "render": [Function],
+                                              "styledComponentId": "sc-cSHVUG",
+                                              "target": "span",
+                                              "toString": [Function],
+                                              "warnTooManyClasses": [Function],
+                                              "withComponent": [Function],
+                                            }
+                                          }
+                                          forwardedRef={null}
+                                        >
+                                          <span
+                                            className="sc-cSHVUG ipeltD"
+                                          >
+                                            message
+                                          </span>
+                                        </StyledComponent>
+                                      </styled.span>
+                                      <ForwardRef
+                                        onClick={[Function]}
+                                        style={
+                                          Object {
+                                            "color": "white",
+                                            "cursor": "pointer",
+                                            "fontSize": "30",
+                                          }
+                                        }
+                                      >
+                                        <WithStyles(ForwardRef(SvgIcon))
+                                          onClick={[Function]}
+                                          style={
+                                            Object {
+                                              "color": "white",
+                                              "cursor": "pointer",
+                                              "fontSize": "30",
+                                            }
+                                          }
+                                        >
+                                          <ForwardRef(SvgIcon)
+                                            classes={
+                                              Object {
+                                                "colorAction": "MuiSvgIcon-colorAction",
+                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                                "colorError": "MuiSvgIcon-colorError",
+                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                                "root": "MuiSvgIcon-root",
+                                              }
+                                            }
+                                            onClick={[Function]}
+                                            style={
+                                              Object {
+                                                "color": "white",
+                                                "cursor": "pointer",
+                                                "fontSize": "30",
+                                              }
+                                            }
+                                          >
+                                            <svg
+                                              aria-hidden="true"
+                                              className="MuiSvgIcon-root"
+                                              focusable="false"
+                                              onClick={[Function]}
+                                              role="presentation"
+                                              style={
+                                                Object {
+                                                  "color": "white",
+                                                  "cursor": "pointer",
+                                                  "fontSize": "30",
+                                                }
+                                              }
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                              />
+                                              <path
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                              />
+                                            </svg>
+                                          </ForwardRef(SvgIcon)>
+                                        </WithStyles(ForwardRef(SvgIcon))>
+                                      </ForwardRef>
+                                    </div>
+                                  </StyledComponent>
+                                </styled.div>
+                              </ErrorBar>
+                            </Connect(ErrorBar)>
                           </main>
                         </StyledComponent>
                       </styled.main>
@@ -5176,9 +5806,9 @@ exports[`LoginPage should render correctly 1`] = `
                                     "$$typeof": Symbol(react.forward_ref),
                                     "attrs": Array [],
                                     "componentStyle": ComponentStyle {
-                                      "componentId": "sc-jzJRlG",
+                                      "componentId": "sc-kGXeez",
                                       "isStatic": false,
-                                      "lastClassName": "ljpSvq",
+                                      "lastClassName": "jDpIaV",
                                       "rules": Array [
                                         "
   width: ",
@@ -5227,7 +5857,7 @@ exports[`LoginPage should render correctly 1`] = `
                                       "sc-htpNat",
                                     ],
                                     "render": [Function],
-                                    "styledComponentId": "sc-jzJRlG",
+                                    "styledComponentId": "sc-kGXeez",
                                     "target": "button",
                                     "toString": [Function],
                                     "warnTooManyClasses": [Function],
@@ -5238,7 +5868,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 type="submit"
                               >
                                 <button
-                                  className="sc-htpNat submitButton sc-jzJRlG ljpSvq"
+                                  className="sc-htpNat submitButton sc-kGXeez jDpIaV"
                                   disabled={false}
                                   type="submit"
                                 >

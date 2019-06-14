@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import validation from '../validation/localization.shemas';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -25,5 +26,7 @@ export const addResourse = (ns, resources) => {
     i18n.addResourceBundle(lng, ns, resources[lng]);
   });
 };
+
+addResourse('validation', validation);
 
 export default i18n;

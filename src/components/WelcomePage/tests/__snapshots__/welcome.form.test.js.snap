@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome form snaps should render login form 1`] = `
+<Formik
+  enableReinitialize={false}
+  handleSubmit={[Function]}
+  initialValues={
+    Object {
+      "password": "",
+    }
+  }
+  isInitialValid={false}
+  onSubmit={[Function]}
+  render={[Function]}
+  validateOnBlur={true}
+  validateOnChange={true}
+  validationSchema={[Function]}
+/>
+`;

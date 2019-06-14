@@ -3,8 +3,10 @@
 exports[`Test case for testing main page Main page snapshot 1`] = `
 <MainPage
   i18n={Object {}}
+  load={[Function]}
   logout={[Function]}
   t={[Function]}
   tReady={true}
+  user={Object {}}
 />
 `;

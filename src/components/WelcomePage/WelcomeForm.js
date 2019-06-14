@@ -5,6 +5,7 @@ import { Header, Main, Footer, ErrorText } from '../../elements';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
 import { passwordValidationSchema } from '../../config/validation.schemas';
+import ErrorBar from '../ErrorBar';
 import {
   SubmitButton,
   WelcomeForm,
@@ -57,6 +58,7 @@ export const MyFormInner = props => {
         {errors.password && touched.password && (
           <ErrorText>{errors.password}</ErrorText>
         )}
+        <ErrorBar />
       </Main>
       <Footer>
         <SubmitButton

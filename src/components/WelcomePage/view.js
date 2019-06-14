@@ -22,7 +22,7 @@ class WelcomePage extends Component {
   }
 
   render() {
-    const { isFailed } = this.props;
+    const { isFailed, error } = this.props;
     const { name, token } = this.state;
     return (
       <div
@@ -33,7 +33,7 @@ class WelcomePage extends Component {
           height: '100%'
         }}
       >
-        <Welcome isFailed={isFailed} name={name} token={token} />
+        <Welcome isFailed={isFailed} name={name} token={token} error={error} />
       </div>
     );
   }
@@ -41,9 +41,11 @@ class WelcomePage extends Component {
 
 WelcomePage.propTypes = {
   search: PropTypes.string.isRequired,
-  isFailed: PropTypes.bool
+  isFailed: PropTypes.bool,
+  error: PropTypes.string
 };
 WelcomePage.defaultProps = {
-  isFailed: false
+  isFailed: false,
+  error: 'false'
 };
 export default WelcomePage;

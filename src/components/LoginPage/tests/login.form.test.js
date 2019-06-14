@@ -1,9 +1,27 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Login } from '../LoginForm';
+import { Provider } from 'react-redux';
+import configureStore from 'redux-mock-store';
 
 describe('Login form', () => {
-  const wrapper = mount(<Login />);
+  const mockStore = configureStore();
+  const store = mockStore({
+    auth: {
+      isFailed: false,
+      user: {},
+      error: {
+        message: 'message',
+        success: false
+      }
+    }
+  });
+
+  const wrapper = mount(
+    <Provider store={store}>
+      <Login />
+    </Provider>
+  );
   test('should update an email input when it is changed', () => {
     wrapper.find('input.emailInput').simulate('change', {
       persist: () => {},

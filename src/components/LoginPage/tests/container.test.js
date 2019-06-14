@@ -9,7 +9,11 @@ it('LoginPage should render correctly', () => {
   const store = mockStore({
     auth: {
       isFailed: false,
-      user: {}
+      user: {},
+      error: {
+        message: 'message',
+        success: false
+      }
     }
   });
 

@@ -14,7 +14,6 @@ class LoginPage extends Component {
 
   render() {
     const { isFailed, user } = this.props;
-    console.log(user);
     return (
       <div
         style={{

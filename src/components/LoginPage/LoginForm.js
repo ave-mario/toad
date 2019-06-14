@@ -2,6 +2,7 @@ import React from 'react';
 import { withFormik } from 'formik';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
+import ErrorBar from '../ErrorBar';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
 import { loginValidationSchema } from '../../config/validation.schemas';
@@ -67,6 +68,7 @@ export const MyFormInner = props => {
         {errors.password && touched.password && (
           <ErrorText>{errors.password}</ErrorText>
         )}
+        <ErrorBar />
       </Main>
       <Footer>
         <SubmitButton

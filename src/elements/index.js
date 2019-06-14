@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import { Close } from 'styled-icons/material/Close';
+import colors from '../enums/colors.enums';
 
-const white = '#fff';
-const grey = '#ccc';
-const darkGrey = '#4d4d4d';
-const blue = '#5995ef';
+const { white, grey, darkGrey, blue } = colors;
 
 export const Form = styled.form`
   width: ${({ width }) => width || '400px'};
@@ -16,12 +14,18 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  width: ${({ width }) => width || '300px'};
+  width: ${({ width }) => width || '276px'};
   height: ${({ height }) => height || '35px'};
   border: ${({ border }) => border || `1px solid ${grey}`};
   background-color: ${({ backgroundColor }) => backgroundColor || `${white}`};
   border-radius: ${({ borderRadius }) => borderRadius || '20px'};
   margin: ${({ margin }) => margin || '3px auto'};
+  padding: 0 13px;
+
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
 `;
 
 export const Button = styled.button`
@@ -68,6 +72,8 @@ export const Title3 = styled.h3`
 export const Text = styled.p`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   color: ${props => props.color || `${darkGrey}`};
+  padding: 8px 0;
+  margin: 0;
 `;
 
 export const Nav = styled.nav`
@@ -91,7 +97,6 @@ export const Aside = styled.aside`
 `;
 
 export const Header = styled.header`
-  margin: ${({ margin }) => margin || '5px auto'};
   padding: ${({ margin }) => margin || '5px'};
 `;
 
@@ -99,6 +104,12 @@ export const Footer = styled.footer`
   margin: ${({ margin }) => margin || '1px auto'};
   padding: ${({ margin }) => margin || '0'};
   width: ${({ width }) => width || '100%'};
+  ${({ background }) => `background: ${background};`}
+  height:  ${props => (props.small ? `30px` : `50px`)}
+  ${({ absolute }) =>
+    absolute &&
+    `position: absolute;
+    bottom: 0;`}
 `;
 export const Main = styled.main`
   margin: ${({ margin }) => margin || '0'};

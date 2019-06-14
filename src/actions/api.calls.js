@@ -51,3 +51,7 @@ export async function callWithAuth(func) {
 
   return func(newTokenData.tokens.accessToken);
 }
+export function addNewAddition(data) {
+  return axios.post('rooms-services', data);
+ }
+

@@ -33,9 +33,9 @@ export function* load() {
       yield put(push('/'));
     }
   } catch (error) {
-    yield put(push('/login'));
     const errorMessage = error.response ? error.response.data : error.message;
     yield put(Creators.loadFailure(errorMessage));
+    yield put(push('/login'));
   }
 }
 

@@ -7,9 +7,9 @@ import { Loader } from '../../elements';
 
 class LoginPage extends Component {
   componentDidMount() {
-    const { user, load } = this.props;
+    const { user, load, isFailed } = this.props;
     if (user) dispatcher(push('/'));
-    else load();
+    if (!isFailed) load();
   }
 
   render() {

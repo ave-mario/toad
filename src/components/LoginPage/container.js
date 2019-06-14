@@ -7,7 +7,8 @@ const { Creators } = authActions;
 const mapStateToProps = state => ({
   isFailed: state.auth.isFailed,
   user: state.auth.user,
-  error: state.auth.error
+  error: state.auth.error,
+  tokens: state.auth.tokens
 });
 
 const mapDispatchToProps = dispatch => {

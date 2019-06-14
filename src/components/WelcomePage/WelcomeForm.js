@@ -22,8 +22,7 @@ export const handleSubmit = (values, { props }) => {
 };
 
 export const mapPropsToValues = () => ({
-  password: '',
-  email: ''
+  password: ''
 });
 
 export const MyFormInner = props => {

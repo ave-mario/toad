@@ -23,15 +23,18 @@ class ErrorBar extends Component {
     const { error } = this.props;
     return (
       <>
-        {error !== 'Unauthorized' && isShow && (
-          <ServerError>
-            <ServerErrorText>{error.message}</ServerErrorText>
-            <Close
-              style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
-              onClick={this.handleClick}
-            />
-          </ServerError>
-        )}
+        {error !== 'Unauthorized' &&
+          error !== 'There are no tokens' &&
+          error !== '' &&
+          isShow && (
+            <ServerError>
+              <ServerErrorText>{error.message}</ServerErrorText>
+              <Close
+                style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
+                onClick={this.handleClick}
+              />
+            </ServerError>
+          )}
       </>
     );
   }

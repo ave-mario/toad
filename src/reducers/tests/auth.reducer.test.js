@@ -6,10 +6,14 @@ describe('Auth reducer test', () => {
   test('should return the initial state', () => {
     expect(authReducer(undefined, {})).toEqual({
       isRequesting: false,
+      isFailed: false,
       user: null,
-      tokens: JSON.parse(localStorage.getItem('tokens')),
-      error: null,
-      isFailed: false
+      tokens: null,
+      error: '',
+      createPassword: {
+        success: null,
+        error: null
+      }
     });
   });
   test('should handle LOGIN_REQUEST', () => {
@@ -17,7 +21,9 @@ describe('Auth reducer test', () => {
       type: Types.LOGIN_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      isRequesting: true
+      isRequesting: true,
+      isFailed: false,
+      error: ''
     });
   });
   test('should handle LOGIN_SUCCESS', () => {
@@ -30,19 +36,21 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: 'user',
       tokens: 'tokens',
-      error: null,
+      error: '',
       isFailed: false
     });
   });
   test('should handle LOGIN_FAILURE', () => {
     const action = {
       type: Types.LOGIN_FAILURE,
-      error: 'error'
+      error: 'error',
+      tokens: null
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: false,
       error: 'error',
-      isFailed: true
+      isFailed: true,
+      tokens: null
     });
   });
   test('should handle LOAD_REQUEST', () => {
@@ -50,7 +58,9 @@ describe('Auth reducer test', () => {
       type: Types.LOAD_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      isRequesting: true
+      error: null,
+      isRequesting: true,
+      error: ''
     });
   });
   test('should handle LOAD_SUCCESS', () => {
@@ -61,7 +71,7 @@ describe('Auth reducer test', () => {
     expect(authReducer({}, action)).toEqual({
       isRequesting: false,
       user: 'user',
-      error: null,
+      error: '',
       isFailed: false
     });
   });
@@ -78,6 +88,43 @@ describe('Auth reducer test', () => {
       isFailed: true
     });
   });
+  test('should handle CREATE_PASSWORD_REQUEST', () => {
+    const action = {
+      type: Types.CREATE_PASSWORD_REQUEST
+    };
+    expect(authReducer({}, action)).toEqual({
+      isRequesting: true,
+      isFailed: false,
+      error: ''
+    });
+  });
+  test('should handle CREATE_PASSWORD_SUCCESS', () => {
+    const action = {
+      type: Types.CREATE_PASSWORD_SUCCESS,
+      success: 'success'
+    };
+    expect(authReducer({}, action)).toEqual({
+      isRequesting: false,
+      createPassword: {
+        success: 'success',
+        error: null
+      }
+    });
+  });
+  test('should handle CREATE_PASSWORD_FAILURE', () => {
+    const action = {
+      type: Types.CREATE_PASSWORD_FAILURE,
+      error: 'error'
+    };
+    expect(authReducer({}, action)).toEqual({
+      isRequesting: false,
+      isFailed: true,
+      createPassword: {
+        success: null,
+        error: 'error'
+      }
+    });
+  });
   test('should handle LOGOUT', () => {
     const action = {
       type: Types.LOGOUT
@@ -86,7 +133,7 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: null,
       tokens: null,
-      error: null,
+      error: '',
       isFailed: false
     });
   });

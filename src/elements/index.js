@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Close } from 'styled-icons/material/Close';
 
 const white = '#fff';
 const grey = '#ccc';
@@ -111,5 +112,60 @@ export const ErrorText = styled.div`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-size: ${({ fontSize }) => fontSize || `13px`};
   width: ${({ width }) => width || '100%'};
-  padding: ${({ margin }) => margin || '2px'};
+  padding: ${({ padding }) => padding || '2px'};
+`;
+export const ServerError = styled.div`
+  text-align: ${({ textAlign }) => textAlign || 'left'};
+  color: ${({ color }) => color || 'white'};
+  background-color: ${({ backgroundColor }) => backgroundColor || '#ed1e3a'};
+  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
+  font-size: ${({ fontSize }) => fontSize || `13px`};
+  width: ${({ width }) => width || '80%'};
+  height: ${({ height }) => height || '25px'};
+  padding: ${({ padding }) => padding || '5px'};
+  padding-left: ${({ padding }) => padding || '12px'};
+  margin: ${({ margin }) => margin || '0 auto'};
+  border-radius: ${({ borderRadius }) => borderRadius || '5px'};
+  display: ${({ display }) => display || 'flex'};
+  align-items: ${({ alignItems }) => alignItems || 'center'};
+  justify-content: ${({ justifyContent }) => justifyContent || 'space-between'};
+  flex-wrap: ${({ flexWrap }) => flexWrap || 'no-wrap'};
+`;
+export const ServerErrorText = styled.span`
+  color: ${({ color }) => color || 'white'};
+  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
+  font-size: ${({ fontSize }) => fontSize || `13px`};
+  max-width: ${({ maxWidth }) => maxWidth || `80%`};
+  overflow: ${({ overflow }) => overflow || 'hidden'};
+`;
+export const CloseButton = styled.button`
+  cursor: pointer;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  border: none;
+  background: none;
+  vertical-align: bottom;
+  :focus {
+    outline: none;
+  }
+`;
+export const CloseIcon = styled(Close)``;
+export const Loader = styled.div`
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #a4a6a8;
+  border-bottom: 10px solid #a4a6a8;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;

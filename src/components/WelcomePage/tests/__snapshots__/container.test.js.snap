@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LoginPage should render correctly 1`] = `
+exports[`WelcomePage should render correctly 1`] = `
 <Provider
   store={
     Object {
@@ -13,17 +13,12 @@ exports[`LoginPage should render correctly 1`] = `
     }
   }
 >
-  <Connect(LoginPage)>
-    <LoginPage
-      error={
-        Object {
-          "message": "message",
-          "success": false,
-        }
-      }
+  <Connect(WelcomePage)>
+    <WelcomePage
+      dispatch={[Function]}
+      error="false"
       isFailed={false}
-      load={[Function]}
-      user={Object {}}
+      search="?token=token&name=name"
     >
       <div
         style={
@@ -36,27 +31,33 @@ exports[`LoginPage should render correctly 1`] = `
         }
       >
         <WithFormik(MyFormInner)
+          error="false"
           isFailed={false}
+          name="name"
+          token="token"
         >
           <Formik
             enableReinitialize={false}
+            error="false"
             handleSubmit={[Function]}
             initialValues={
               Object {
-                "email": "",
                 "password": "",
               }
             }
             isFailed={false}
             isInitialValid={false}
+            name="name"
             onSubmit={[Function]}
             render={[Function]}
+            token="token"
             validateOnBlur={true}
             validateOnChange={true}
             validationSchema={[Function]}
           >
             <MyFormInner
               dirty={false}
+              error="false"
               errors={Object {}}
               handleBlur={[Function]}
               handleChange={[Function]}
@@ -64,7 +65,6 @@ exports[`LoginPage should render correctly 1`] = `
               handleSubmit={[Function]}
               initialValues={
                 Object {
-                  "email": "",
                   "password": "",
                 }
               }
@@ -72,6 +72,7 @@ exports[`LoginPage should render correctly 1`] = `
               isSubmitting={false}
               isValid={false}
               isValidating={false}
+              name="name"
               registerField={[Function]}
               resetForm={[Function]}
               setError={[Function]}
@@ -86,6 +87,7 @@ exports[`LoginPage should render correctly 1`] = `
               setValues={[Function]}
               submitCount={0}
               submitForm={[Function]}
+              token="token"
               touched={Object {}}
               unregisterField={[Function]}
               validateField={[Function]}
@@ -94,7 +96,6 @@ exports[`LoginPage should render correctly 1`] = `
               validateOnChange={true}
               values={
                 Object {
-                  "email": "",
                   "password": "",
                 }
               }
@@ -251,7 +252,8 @@ exports[`LoginPage should render correctly 1`] = `
                               <h1
                                 className="sc-ifAKCX sc-ckVGcZ gKRcXm"
                               >
-                                Welcome to hotel management
+                                Welcome
+                                , name
                               </h1>
                             </StyledComponent>
                           </Styled(styled.h1)>
@@ -308,7 +310,7 @@ exports[`LoginPage should render correctly 1`] = `
                               <h2
                                 className="sc-EHOje sc-jKJlTe anFjL"
                               >
-                                Sign in
+                                Please, create a password
                               </h2>
                             </StyledComponent>
                           </Styled(styled.h2)>
@@ -355,91 +357,6 @@ exports[`LoginPage should render correctly 1`] = `
                         <main
                           className="sc-jTzLTM bVLzFa"
                         >
-                          <Styled(styled.input)
-                            className="emailInput"
-                            id="emailInput"
-                            name="email"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            placeholder="Email"
-                            type="text"
-                            value=""
-                          >
-                            <StyledComponent
-                              className="emailInput"
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-dxgOiQ",
-                                    "isStatic": false,
-                                    "lastClassName": "ekmKjS",
-                                    "rules": Array [
-                                      "
-  width: ",
-                                      [Function],
-                                      ";
-  height: ",
-                                      [Function],
-                                      ";
-  border: ",
-                                      [Function],
-                                      ";
-  background-color: ",
-                                      [Function],
-                                      ";
-  border-radius: ",
-                                      [Function],
-                                      ";
-  margin: ",
-                                      [Function],
-                                      ";
-",
-                                      "
-  width: 80%;
-  padding-left: 13px;
-  font-size: 1em;
-  :focus {
-    outline: none;
-    border: 1px solid #ccc;
-  }
-",
-                                    ],
-                                  },
-                                  "displayName": "Styled(styled.input)",
-                                  "foldedComponentIds": Array [
-                                    "sc-bwzfXH",
-                                  ],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-dxgOiQ",
-                                  "target": "input",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                              id="emailInput"
-                              name="email"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              placeholder="Email"
-                              type="text"
-                              value=""
-                            >
-                              <input
-                                className="sc-bwzfXH emailInput sc-dxgOiQ ekmKjS"
-                                id="emailInput"
-                                name="email"
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                placeholder="Email"
-                                type="text"
-                                value=""
-                              />
-                            </StyledComponent>
-                          </Styled(styled.input)>
                           <Styled(styled.input)
                             className="passwordInput"
                             name="password"
@@ -851,7 +768,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 disabled={false}
                                 type="submit"
                               >
-                                SIGN IN
+                                CREATE
                               </button>
                             </StyledComponent>
                           </Styled(styled.button)>
@@ -865,7 +782,7 @@ exports[`LoginPage should render correctly 1`] = `
           </Formik>
         </WithFormik(MyFormInner)>
       </div>
-    </LoginPage>
-  </Connect(LoginPage)>
+    </WelcomePage>
+  </Connect(WelcomePage)>
 </Provider>
 `;

@@ -4,12 +4,17 @@ import authActions from '../../actions/auth.actions';
 
 const { Creators } = authActions;
 
-const mapStateToProps = () => ({});
+const mapStateToProps = state => ({
+  user: state.auth.user
+});
 
 const mapDispatchToProps = dispatch => {
   return {
     logout: () => {
       dispatch(Creators.logout());
+    },
+    load: () => {
+      dispatch(Creators.loadRequest());
     }
   };
 };

@@ -5,8 +5,12 @@ const { Types, Creators } = createActions({
   loginSuccess: ['user', 'tokens'],
   loginFailure: ['error'],
   loadRequest: null,
+  getNewTokensRequest: ['tokens'],
   loadSuccess: ['user'],
   loadFailure: ['error'],
+  createPasswordRequest: ['password', 'token'],
+  createPasswordSuccess: ['success'],
+  createPasswordFailure: ['error'],
   logout: null
 });
 const authActions = { Types, Creators };

@@ -2,26 +2,26 @@ import React from 'react';
 import { withFormik } from 'formik';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
-import ErrorBar from '../ErrorBar';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
-import { loginValidationSchema } from '../../config/validation.schemas';
+import { passwordValidationSchema } from '../../config/validation.schemas';
+import ErrorBar from '../ErrorBar';
 import {
   SubmitButton,
-  LoginForm,
-  LoginInput,
-  LoginTitle,
-  LoginSubTitle
-} from './elements/login.form';
+  WelcomeForm,
+  WelcomeInput,
+  WelcomeTitle,
+  WelcomeSubTitle
+} from './elements/welcome.form';
 
 const { Creators } = authActions;
 
-export const handleSubmit = values => {
-  dispatcher(Creators.loginRequest(values.email, values.password));
+export const handleSubmit = (values, { props }) => {
+  const { token } = props;
+  dispatcher(Creators.createPasswordRequest(values.password, token));
 };
 
 export const mapPropsToValues = () => ({
-  email: '',
   password: ''
 });
 
@@ -34,28 +34,17 @@ export const MyFormInner = props => {
     touched,
     handleSubmit: submit,
     isSubmitting,
-    isFailed
+    isFailed,
+    name
   } = props;
   return (
-    <LoginForm onSubmit={submit}>
+    <WelcomeForm onSubmit={submit}>
       <Header>
-        <LoginTitle>Welcome to hotel management</LoginTitle>
-        <LoginSubTitle>Sign in</LoginSubTitle>
+        <WelcomeTitle>Welcome{name && `, ${name}`}</WelcomeTitle>
+        <WelcomeSubTitle>Please, create a password</WelcomeSubTitle>
       </Header>
       <Main>
-        <LoginInput
-          id="emailInput"
-          className="emailInput"
-          type="text"
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-          border={errors.email && touched.email && '1px solid red'}
-          value={values.email}
-          onBlur={handleBlur}
-        />
-        {errors.email && touched.email && <ErrorText>{errors.email}</ErrorText>}
-        <LoginInput
+        <WelcomeInput
           className="passwordInput"
           type="password"
           name="password"
@@ -76,10 +65,10 @@ export const MyFormInner = props => {
           type="submit"
           disabled={isSubmitting && !isFailed}
         >
-          SIGN IN
+          CREATE
         </SubmitButton>
       </Footer>
-    </LoginForm>
+    </WelcomeForm>
   );
 };
 
@@ -91,14 +80,16 @@ MyFormInner.propTypes = {
   touched: PropTypes.objectOf(PropTypes.bool).isRequired,
   handleSubmit: PropTypes.func.isRequired,
   isSubmitting: PropTypes.bool.isRequired,
-  isFailed: PropTypes.bool
+  isFailed: PropTypes.bool,
+  name: PropTypes.string
 };
 MyFormInner.defaultProps = {
-  isFailed: false
+  isFailed: false,
+  name: ''
 };
 
-export const Login = withFormik({
+export const Welcome = withFormik({
   mapPropsToValues,
-  validationSchema: loginValidationSchema,
+  validationSchema: passwordValidationSchema,
   handleSubmit
 })(MyFormInner);

@@ -58,7 +58,7 @@ In the root folder of project open `src/config/api.js` and configure **port** an
 
 ### Client
 
-The application runs on port _3001_ by default. If you want to change it open `package.json`, find scripts part and change **port** as you like:
+The application runs on port _3333_ by default. If you want to change it open `package.json`, find scripts part and change **port** as you like:
 
 ```
 ...

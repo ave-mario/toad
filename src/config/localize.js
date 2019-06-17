@@ -1,6 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import validation from '../validation/localization.schemas';
+import validation from '../validation/localization.validation';
+import routes from '../enums/routes.localization';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -28,5 +29,6 @@ export const addResource = (ns, resources) => {
 };
 
 addResource('validation', validation);
+addResource('routes', routes);
 
 export default i18n;

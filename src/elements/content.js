@@ -10,7 +10,7 @@ export const Content = styled.div`
 
 export const Menu = styled.nav`
   background: ${({ background }) => background || `${colors.whiteYellow}`};
-  min-height: 500px;
+  min-height: 100vh;
   ${({ absolute }) =>
     absolute &&
     css`

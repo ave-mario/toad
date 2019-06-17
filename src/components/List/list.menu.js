@@ -13,8 +13,9 @@ const ListMenu = ({ list }) => {
           <NavLink
             to={li.link}
             exact
+            key={li.link}
             style={{
-              'text-decoration': 'none',
+              textDecoration: 'none',
               color: colors.black,
               border: `1px solid ${colors.grey}`,
               padding: '8px'
@@ -32,7 +33,7 @@ const ListMenu = ({ list }) => {
 };
 
 ListMenu.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.string).isRequired
+  list: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default ListMenu;

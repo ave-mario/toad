@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { push } from 'connected-react-router';
+import { withTranslation } from 'react-i18next';
 import services from '../../services';
 import { Welcome } from './WelcomeForm';
 import { dispatcher } from '../../config/redux.store';
+import { addResource } from '../../config/localize';
+import localization from './localization.welcome';
 
+addResource('Welcome', localization);
 class WelcomePage extends Component {
   constructor(props) {
     super(props);
@@ -48,4 +52,4 @@ WelcomePage.defaultProps = {
   isFailed: false,
   error: 'false'
 };
-export default WelcomePage;
+export default withTranslation('Welcome')(WelcomePage);

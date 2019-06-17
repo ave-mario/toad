@@ -7,6 +7,7 @@ const INITIAL_STATE = {
   isRequesting: false,
   isFailed: false,
   user: null,
+  isAuthenticated: false,
   tokens: null,
   error: '',
   createPassword: {
@@ -28,6 +29,7 @@ export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
     ...state,
     isRequesting: false,
     user,
+    isAuthenticated: true,
     tokens,
     error: '',
     isFailed: false
@@ -37,6 +39,7 @@ export const loginFailure = (state = INITIAL_STATE, { error }) => {
   return {
     ...state,
     isRequesting: false,
+    isAuthenticated: false,
     error,
     tokens: null,
     isFailed: true
@@ -54,6 +57,7 @@ export const loadSuccess = (state = INITIAL_STATE, { user }) => {
     ...state,
     isRequesting: false,
     user,
+    isAuthenticated: true,
     error: '',
     isFailed: false
   };
@@ -64,6 +68,7 @@ export const loadFailure = (state = INITIAL_STATE, { error }) => {
     isRequesting: false,
     user: null,
     tokens: null,
+    isAuthenticated: false,
     error,
     isFailed: true
   };
@@ -103,6 +108,7 @@ export const logout = (state = INITIAL_STATE) => {
     ...state,
     isRequesting: false,
     user: null,
+    isAuthenticated: false,
     tokens: null,
     error: '',
     isFailed: false

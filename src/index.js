@@ -13,6 +13,7 @@ import history from './config/browser.history';
 export default history;
 
 axios.defaults.baseURL = `http://localhost:${api.port}/${api.route}/`;
+axios.default.timeout = api.timeout;
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1644,12 +1644,19 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "Welcome": Object {
                         "buttons": Object {
+                          "Logout": "Logout",
                           "logout": "Logout",
                         },
+                      },
+                      "validation": Object {
+                        "incorrect": Object {
+                          "email": "The email is incorrect",
+                          "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
                         "labels": Object {
                           "subTitle": "Please, create a password",
                           "title": "Welcome",
                         },
+                        "required": Object {
                         "placeholders": Object {
                           "password": "Password",
                         },
@@ -4003,12 +4010,19 @@ exports[`WelcomePage should render correctly 1`] = `
                         },
                         "Welcome": Object {
                           "buttons": Object {
+                            "Logout": "Logout",
                             "logout": "Logout",
                           },
+                        },
+                        "validation": Object {
+                          "incorrect": Object {
+                            "email": "The email is incorrect",
+                            "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
                           "labels": Object {
                             "subTitle": "Please, create a password",
                             "title": "Welcome",
                           },
+                          "required": Object {
                           "placeholders": Object {
                             "password": "Password",
                           },

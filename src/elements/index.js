@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { Close } from 'styled-icons/material/Close';
 import colors from '../enums/colors.enums';
 
-const { white, grey, darkGrey, blue } = colors;
-
 export const Form = styled.form`
   width: ${({ width }) => width || '400px'};
   display: ${({ display }) => display || 'flex'};
@@ -14,14 +12,16 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  width: ${({ width }) => width || '276px'};
+  width: ${({ width }) => width || '300px'};
   height: ${({ height }) => height || '35px'};
-  border: ${({ border }) => border || `1px solid ${grey}`};
-  background-color: ${({ backgroundColor }) => backgroundColor || `${white}`};
+  border: ${({ border }) => border || `1px solid ${colors.grey}`};
+  background-color: ${({ backgroundColor }) =>
+    backgroundColor || `${colors.white}`};
   border-radius: ${({ borderRadius }) => borderRadius || '20px'};
   margin: ${({ margin }) => margin || '3px auto'};
-  padding: 0 13px;
 
+  padding-left: 13px;
+  font-size: 1em;
   :focus {
     outline: none;
     border: 1px solid #ccc;
@@ -31,22 +31,25 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: ${({ width }) => width || '300px'};
   height: ${({ height }) => height || '35px'};
-  background-color: ${({ backgroundColor }) => backgroundColor || `${blue}`};
-  color: ${({ color }) => color || `${white}`};
+  background-color: ${({ backgroundColor }) =>
+    backgroundColor || `${colors.blue}`};
+  color: ${({ color }) => color || `${colors.white}`};
   border-radius: ${({ borderRadius }) => borderRadius || '15px'};
   border: ${({ border }) => border || `none`};
+  border-width: 0;
+  outline: none;
 `;
 export const ButtonText = styled.span`
   display: ${({ display }) => display || 'block'};
   padding: ${({ margin }) => margin || '12px 24px'};
   font-size: ${({ fontSize }) => fontSize || '1em'};
-  color: ${({ color }) => color || `${white}`};
+  color: ${({ color }) => color || `${colors.white}`};
 `;
 
 export const Title = styled.h1`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-weight: ${({ fontWeight }) => fontWeight || '600px'};
-  color: ${({ color }) => color || `${darkGrey}`};
+  color: ${({ color }) => color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '2.2em'};
   text-align: ${({ textAlign }) => textAlign || 'center'};
   margin: ${({ margin }) => margin || '5px auto'};
@@ -55,7 +58,7 @@ export const Title = styled.h1`
 export const Title2 = styled.h2`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-weight: ${({ fontWeight }) => fontWeight || '300px'}
-  color: ${props => props.color || `${darkGrey}`};
+  color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '1.2em'};
   text-align: ${({ textAlign }) => textAlign || 'center'};s
   margin: ${({ margin }) => margin || '1px auto'};
@@ -64,16 +67,15 @@ export const Title2 = styled.h2`
 export const Title3 = styled.h3`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-weight: ${({ fontWeight }) => fontWeight || '300px'}
-  color: ${props => props.color || `${darkGrey}`};
+  color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '0.8em'};
   margin: ${({ margin }) => margin || '1px auto'};
 `;
 
 export const Text = styled.p`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
-  color: ${props => props.color || `${darkGrey}`};
-  padding: 8px 0;
-  margin: 0;
+  color: ${props => props.color || `${colors.darkGrey}`};
+  margin: ${props => props.margin || '0'};
 `;
 
 export const Nav = styled.nav`
@@ -97,6 +99,7 @@ export const Aside = styled.aside`
 `;
 
 export const Header = styled.header`
+  margin: ${({ margin }) => margin || '5px auto'};
   padding: ${({ margin }) => margin || '5px'};
 `;
 
@@ -104,12 +107,12 @@ export const Footer = styled.footer`
   margin: ${({ margin }) => margin || '1px auto'};
   padding: ${({ margin }) => margin || '0'};
   width: ${({ width }) => width || '100%'};
-  ${({ background }) => `background: ${background};`}
-  height:  ${props => (props.small ? `30px` : `50px`)}
+  height: ${({ height }) => height || '50px'};
+  ${({ background }) => background && ` background:${colors.black}`};
   ${({ absolute }) =>
     absolute &&
-    `position: absolute;
-    bottom: 0;`}
+    ` position: absolute;
+      bottom: 0;`};
 `;
 export const Main = styled.main`
   margin: ${({ margin }) => margin || '0'};

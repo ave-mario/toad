@@ -6,8 +6,8 @@ import RoutesName from '../../../enums/routes-name.enums';
 
 const LeftMenu = () => {
   return (
-    <Card padding="0" lg>
-      <Card background="#0d9198">
+    <Card padding="0" lgW>
+      <Card background="#0d9198" lgH>
         <Text color="white">Photo employee</Text>
       </Card>
       <Menu>

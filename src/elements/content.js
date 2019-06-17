@@ -27,7 +27,8 @@ export const Card = styled.section`
     css`
       position: relative;
     `}
-  ${({ lg }) => lg && 'width: 250px'}
+  ${({ lgW }) => lgW && 'width: 250px;'}
+  ${({ lgH }) => lgH && 'height: 80px'}
 `;
 
 export const Image = styled.div`

@@ -10,6 +10,7 @@ describe('Auth reducer test', () => {
       user: null,
       tokens: null,
       error: '',
+      isAuthenticated: false,
       createPassword: {
         success: null,
         error: null
@@ -36,6 +37,7 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: 'user',
       tokens: 'tokens',
+      isAuthenticated: true,
       error: '',
       isFailed: false
     });
@@ -49,6 +51,7 @@ describe('Auth reducer test', () => {
     expect(authReducer({}, action)).toEqual({
       isRequesting: false,
       error: 'error',
+      isAuthenticated: false,
       isFailed: true,
       tokens: null
     });
@@ -72,6 +75,7 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: 'user',
       error: '',
+      isAuthenticated: true,
       isFailed: false
     });
   });
@@ -84,6 +88,7 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: null,
       tokens: null,
+      isAuthenticated: false,
       error: 'error',
       isFailed: true
     });
@@ -133,6 +138,7 @@ describe('Auth reducer test', () => {
       isRequesting: false,
       user: null,
       tokens: null,
+      isAuthenticated: false,
       error: '',
       isFailed: false
     });

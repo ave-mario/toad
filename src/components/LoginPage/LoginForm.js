@@ -6,7 +6,7 @@ import { Header, Main, Footer, ErrorText } from '../../elements';
 import ErrorBar from '../ErrorBar';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
-import { addResourse } from '../../config/localize';
+import { addResource } from '../../config/localize';
 import { loginValidationSchema } from '../../config/validation.schemas';
 import {
   SubmitButton,
@@ -17,7 +17,7 @@ import {
 } from './elements/login.form';
 import localization from './localize.login';
 
-addResourse('Login', localization);
+addResource('Login', localization);
 const { Creators } = authActions;
 
 export const handleSubmit = values => {

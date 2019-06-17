@@ -3,17 +3,15 @@ import PropTypes from 'prop-types';
 import { push } from 'connected-react-router';
 import { Login } from './LoginForm';
 import { dispatcher } from '../../config/redux.store';
-import { Loader } from '../../elements';
 
 class LoginPage extends Component {
   componentDidMount() {
-    const { user, load, isFailed } = this.props;
+    const { user } = this.props;
     if (user) dispatcher(push('/'));
-    if (!isFailed) load();
   }
 
   render() {
-    const { isFailed, user } = this.props;
+    const { isFailed } = this.props;
     return (
       <div
         style={{
@@ -23,7 +21,7 @@ class LoginPage extends Component {
           height: '100%'
         }}
       >
-        {!user && !isFailed ? <Loader /> : <Login isFailed={isFailed} />}
+        <Login isFailed={isFailed} />
       </div>
     );
   }
@@ -33,8 +31,7 @@ LoginPage.propTypes = {
   isFailed: PropTypes.bool,
   user: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  ),
-  load: PropTypes.func.isRequired
+  )
 };
 LoginPage.defaultProps = {
   isFailed: false,

@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import { Title, Button, Loader } from '../../elements';
+import { Title, Button } from '../../elements';
+import { addResource } from '../../config/localize';
+import localization from './localization.main';
 
+addResource('Login', localization);
 class MainPage extends Component {
   constructor(props) {
     super(props);
     this.handleLogout = this.handleLogout.bind(this);
-  }
-
-  componentDidMount() {
-    const { load, user } = this.props;
-    if (!user) load();
   }
 
   handleLogout() {
@@ -20,7 +18,7 @@ class MainPage extends Component {
   }
 
   render() {
-    const { user, t } = this.props;
+    const { t } = this.props;
     return (
       <div
         style={{
@@ -30,16 +28,10 @@ class MainPage extends Component {
           height: '100%'
         }}
       >
-        {!user ? (
-          <Loader />
-        ) : (
-          <>
-            <Title>Main Page</Title>
-            <Button type="button" onClick={this.handleLogout}>
-              {t('button.Logout')}
-            </Button>
-          </>
-        )}
+        <Title>Main Page</Title>
+        <Button type="button" onClick={this.handleLogout}>
+          {t('buttons.Logout')}
+        </Button>
       </div>
     );
   }
@@ -47,14 +39,7 @@ class MainPage extends Component {
 
 MainPage.propTypes = {
   logout: PropTypes.func.isRequired,
-  load: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired,
-  user: PropTypes.objectOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  )
-};
-MainPage.defaultProps = {
-  user: false
+  t: PropTypes.func.isRequired
 };
 
-export default withTranslation()(MainPage);
+export default withTranslation('Login')(MainPage);

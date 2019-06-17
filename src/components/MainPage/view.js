@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 import { Title, Button, Loader } from '../../elements';
 
 class MainPage extends Component {
@@ -19,7 +20,7 @@ class MainPage extends Component {
   }
 
   render() {
-    const { user } = this.props;
+    const { user, t } = this.props;
     return (
       <div
         style={{
@@ -35,7 +36,7 @@ class MainPage extends Component {
           <>
             <Title>Main Page</Title>
             <Button type="button" onClick={this.handleLogout}>
-              LOGOUT
+              {t('button.Logout')}
             </Button>
           </>
         )}
@@ -47,6 +48,7 @@ class MainPage extends Component {
 MainPage.propTypes = {
   logout: PropTypes.func.isRequired,
   load: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
   user: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   )
@@ -55,4 +57,4 @@ MainPage.defaultProps = {
   user: false
 };
 
-export default MainPage;
+export default withTranslation()(MainPage);

@@ -1,18 +1,16 @@
 import { string, object } from 'yup';
 import reg from './regex';
+import i18n from './localize';
 
 export const loginValidationSchema = object().shape({
   email: string()
-    .email()
-    .required('Email is required'),
-  password: string().required('Password is required')
+    .email(i18n.t('validation:incorrect:email'))
+    .required(i18n.t('validation:required:email')),
+  password: string().required(i18n.t('validation:required:password'))
 });
 
 export const passwordValidationSchema = object().shape({
   password: string()
-    .required('Password is required')
-    .matches(
-      reg.password,
-      'Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number'
-    )
+    .required(i18n.t('validation:required:password'))
+    .matches(reg.password, i18n.t('validation:incorrect:password'))
 });

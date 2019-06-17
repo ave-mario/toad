@@ -1,10 +1,12 @@
 import React from 'react';
 import { withFormik } from 'formik';
+import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { Header, Main, Footer, ErrorText } from '../../elements';
 import ErrorBar from '../ErrorBar';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
+import { addResourse } from '../../config/localize';
 import { loginValidationSchema } from '../../config/validation.schemas';
 import {
   SubmitButton,
@@ -13,7 +15,9 @@ import {
   LoginTitle,
   LoginSubTitle
 } from './elements/login.form';
+import localization from './localize.login';
 
+addResourse('Login', localization);
 const { Creators } = authActions;
 
 export const handleSubmit = values => {
@@ -34,13 +38,14 @@ export const MyFormInner = props => {
     touched,
     handleSubmit: submit,
     isSubmitting,
-    isFailed
+    isFailed,
+    t
   } = props;
   return (
     <LoginForm onSubmit={submit}>
       <Header>
-        <LoginTitle>Welcome to hotel management</LoginTitle>
-        <LoginSubTitle>Sign in</LoginSubTitle>
+        <LoginTitle>{t('lables.title')}</LoginTitle>
+        <LoginSubTitle>{t('lables.SignIn')}</LoginSubTitle>
       </Header>
       <Main>
         <LoginInput
@@ -48,7 +53,7 @@ export const MyFormInner = props => {
           className="emailInput"
           type="text"
           name="email"
-          placeholder="Email"
+          placeholder={t('lables.Email')}
           onChange={handleChange}
           border={errors.email && touched.email && '1px solid red'}
           value={values.email}
@@ -59,7 +64,7 @@ export const MyFormInner = props => {
           className="passwordInput"
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder={t('lables.Password')}
           onChange={handleChange}
           border={errors.password && touched.password && '1px solid red'}
           value={values.password}
@@ -76,7 +81,7 @@ export const MyFormInner = props => {
           type="submit"
           disabled={isSubmitting && !isFailed}
         >
-          SIGN IN
+          {t('buttons.Sumbit')}
         </SubmitButton>
       </Footer>
     </LoginForm>
@@ -91,7 +96,8 @@ MyFormInner.propTypes = {
   touched: PropTypes.objectOf(PropTypes.bool).isRequired,
   handleSubmit: PropTypes.func.isRequired,
   isSubmitting: PropTypes.bool.isRequired,
-  isFailed: PropTypes.bool
+  isFailed: PropTypes.bool,
+  t: PropTypes.func.isRequired
 };
 MyFormInner.defaultProps = {
   isFailed: false
@@ -101,4 +107,4 @@ export const Login = withFormik({
   mapPropsToValues,
   validationSchema: loginValidationSchema,
   handleSubmit
-})(MyFormInner);
+})(withTranslation('Login')(MyFormInner));

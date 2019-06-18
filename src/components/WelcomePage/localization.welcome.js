@@ -1,12 +1,26 @@
 export default {
   ru: {
+    labels: {
+      title: 'Добро пожаловать',
+      subTitle: 'Пожалуйста, придумайте пароль'
+    },
+    placeholders: {
+      password: 'Пароль'
+    },
     buttons: {
-      Logout: 'Выйти'
+      logout: 'Выйти'
     }
   },
   en: {
+    labels: {
+      title: 'Welcome',
+      subTitle: 'Please, create a password'
+    },
+    placeholders: {
+      password: 'Password'
+    },
     buttons: {
-      Logout: 'Logout'
+      logout: 'Logout'
     }
   }
 };

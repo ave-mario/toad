@@ -1,24 +1,24 @@
 export default {
   ru: {
-    lables: {
+    labels: {
       title: 'Добро пожаловать в гостиничный менеджмент',
-      SignIn: 'Вход',
-      Email: 'Email',
-      Password: 'Пароль'
+      signIn: 'Вход',
+      email: 'Email',
+      password: 'Пароль'
     },
     buttons: {
-      Sumbit: 'Войти'
+      submit: 'Войти'
     }
   },
   en: {
-    lables: {
+    labels: {
       title: 'Welcome to hotel management',
-      SignIn: 'Sign in',
-      Email: 'Email',
-      Password: 'Password'
+      signIn: 'Sign in',
+      email: 'Email',
+      password: 'Password'
     },
     buttons: {
-      Sumbit: 'Sign in'
+      submit: 'Sign in'
     }
   }
 };

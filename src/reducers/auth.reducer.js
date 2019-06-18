@@ -9,7 +9,7 @@ const INITIAL_STATE = {
   user: null,
   isAuthenticated: false,
   tokens: null,
-  error: '',
+  error: false,
   createPassword: {
     success: null,
     error: null
@@ -21,7 +21,7 @@ export const loginRequest = (state = INITIAL_STATE) => {
     ...state,
     isRequesting: true,
     isFailed: false,
-    error: ''
+    error: false
   };
 };
 export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
@@ -31,7 +31,7 @@ export const loginSuccess = (state = INITIAL_STATE, { user, tokens }) => {
     user,
     isAuthenticated: true,
     tokens,
-    error: '',
+    error: false,
     isFailed: false
   };
 };
@@ -49,7 +49,7 @@ export const loadRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
     isRequesting: true,
-    error: ''
+    error: false
   };
 };
 export const loadSuccess = (state = INITIAL_STATE, { user }) => {
@@ -58,7 +58,7 @@ export const loadSuccess = (state = INITIAL_STATE, { user }) => {
     isRequesting: false,
     user,
     isAuthenticated: true,
-    error: '',
+    error: false,
     isFailed: false
   };
 };
@@ -78,7 +78,7 @@ export const createPasswordRequest = (state = INITIAL_STATE) => {
     ...state,
     isRequesting: true,
     isFailed: false,
-    error: ''
+    error: false
   };
 };
 export const createPasswordSuccess = (state = INITIAL_STATE, { success }) => {
@@ -110,7 +110,7 @@ export const logout = (state = INITIAL_STATE) => {
     user: null,
     isAuthenticated: false,
     tokens: null,
-    error: '',
+    error: false,
     isFailed: false
   };
 };

@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Close from '@material-ui/icons/Close';
 import { ServerError, ServerErrorText } from '../../elements';
+import services from '../../services';
 
 class ErrorBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isShow: true
+      isShow: true,
+      handledError: false
     };
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    const { error } = this.props;
+    this.setState({ handledError: services.errorHandler(error) });
   }
 
   handleClick() {
@@ -19,22 +26,18 @@ class ErrorBar extends Component {
   }
 
   render() {
-    const { isShow } = this.state;
-    const { error } = this.props;
+    const { isShow, handledError } = this.state;
     return (
       <>
-        {error !== 'Unauthorized' &&
-          error !== 'There are no tokens' &&
-          error !== '' &&
-          isShow && (
-            <ServerError>
-              <ServerErrorText>{error.message}</ServerErrorText>
-              <Close
-                style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
-                onClick={this.handleClick}
-              />
-            </ServerError>
-          )}
+        {handledError && isShow && (
+          <ServerError>
+            <ServerErrorText>{handledError}</ServerErrorText>
+            <Close
+              style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
+              onClick={this.handleClick}
+            />
+          </ServerError>
+        )}
       </>
     );
   }
@@ -43,6 +46,7 @@ class ErrorBar extends Component {
 ErrorBar.propTypes = {
   error: PropTypes.oneOfType([
     PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.bool])),
+    PropTypes.bool,
     PropTypes.string
   ]).isRequired
 };

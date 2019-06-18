@@ -46,7 +46,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "ns": Array [
             "translations",
             "validation",
-            "Login",
+            "MainPage",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -60,9 +60,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Logout",
+                  "logout": "Logout",
                 },
               },
               "validation": Object {
@@ -77,9 +77,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Выйти",
+                  "logout": "Выйти",
                 },
               },
               "validation": Object {
@@ -140,7 +140,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "ns": Array [
           "translations",
           "validation",
-          "Login",
+          "MainPage",
         ],
         "nsSeparator": ":",
         "overloadTranslationOptionHandler": [Function],
@@ -154,9 +154,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resources": Object {
           "en": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Logout",
+                "logout": "Logout",
               },
             },
             "validation": Object {
@@ -171,9 +171,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Выйти",
+                "logout": "Выйти",
               },
             },
             "validation": Object {
@@ -202,7 +202,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       "removeResourceBundle": [Function],
       "reportNamespaces": ReportNamespaces {
         "usedNamespaces": Object {
-          "Login": true,
+          "MainPage": true,
         },
       },
       "services": Object {
@@ -242,7 +242,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
-                  "Login",
+                  "MainPage",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -257,9 +257,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Logout",
+                        "logout": "Logout",
                       },
                     },
                     "validation": Object {
@@ -274,9 +274,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Выйти",
+                        "logout": "Выйти",
                       },
                     },
                     "validation": Object {
@@ -328,7 +328,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -342,9 +342,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -359,9 +359,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -422,7 +422,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -437,9 +437,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -454,9 +454,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -513,7 +513,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -527,9 +527,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -544,9 +544,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -576,9 +576,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Logout",
+                  "logout": "Logout",
                 },
               },
               "validation": Object {
@@ -593,9 +593,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Выйти",
+                  "logout": "Выйти",
                 },
               },
               "validation": Object {
@@ -649,7 +649,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -664,9 +664,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -681,9 +681,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -739,7 +739,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -753,9 +753,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -770,9 +770,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -840,7 +840,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -855,9 +855,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -872,9 +872,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -926,7 +926,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -940,9 +940,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -957,9 +957,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -1020,7 +1020,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -1034,9 +1034,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -1051,9 +1051,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -1116,7 +1116,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
-                  "Login",
+                  "MainPage",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -1131,9 +1131,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Logout",
+                        "logout": "Logout",
                       },
                     },
                     "validation": Object {
@@ -1148,9 +1148,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Выйти",
+                        "logout": "Выйти",
                       },
                     },
                     "validation": Object {
@@ -1202,7 +1202,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1216,9 +1216,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -1233,9 +1233,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -1296,7 +1296,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1311,9 +1311,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -1328,9 +1328,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -2297,9 +2297,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Logout",
+                "logout": "Logout",
               },
             },
             "validation": Object {
@@ -2314,9 +2314,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Выйти",
+                "logout": "Выйти",
               },
             },
             "validation": Object {
@@ -2334,9 +2334,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       },
       "store": Object {
         "en": Object {
-          "Login": Object {
+          "MainPage": Object {
             "buttons": Object {
-              "Logout": "Logout",
+              "logout": "Logout",
             },
           },
           "validation": Object {
@@ -2351,9 +2351,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
         },
         "ru": Object {
-          "Login": Object {
+          "MainPage": Object {
             "buttons": Object {
-              "Logout": "Выйти",
+              "logout": "Выйти",
             },
           },
           "validation": Object {
@@ -2405,7 +2405,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
-                  "Login",
+                  "MainPage",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2420,9 +2420,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Logout",
+                        "logout": "Logout",
                       },
                     },
                     "validation": Object {
@@ -2437,9 +2437,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Выйти",
+                        "logout": "Выйти",
                       },
                     },
                     "validation": Object {
@@ -2491,7 +2491,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2505,9 +2505,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -2522,9 +2522,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -2585,7 +2585,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2600,9 +2600,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -2617,9 +2617,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -2676,7 +2676,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -2690,9 +2690,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -2707,9 +2707,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -2739,9 +2739,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Logout",
+                  "logout": "Logout",
                 },
               },
               "validation": Object {
@@ -2756,9 +2756,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Выйти",
+                  "logout": "Выйти",
                 },
               },
               "validation": Object {
@@ -2812,7 +2812,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2827,9 +2827,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -2844,9 +2844,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -2902,7 +2902,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -2916,9 +2916,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -2933,9 +2933,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -3003,7 +3003,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3018,9 +3018,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -3035,9 +3035,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -3089,7 +3089,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3103,9 +3103,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -3120,9 +3120,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -3183,7 +3183,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
-              "Login",
+              "MainPage",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3198,9 +3198,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Logout",
+                    "logout": "Logout",
                   },
                 },
                 "validation": Object {
@@ -3215,9 +3215,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "Login": Object {
+                "MainPage": Object {
                   "buttons": Object {
-                    "Logout": "Выйти",
+                    "logout": "Выйти",
                   },
                 },
                 "validation": Object {
@@ -3274,7 +3274,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "ns": Array [
             "translations",
             "validation",
-            "Login",
+            "MainPage",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -3288,9 +3288,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Logout",
+                  "logout": "Logout",
                 },
               },
               "validation": Object {
@@ -3305,9 +3305,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "Login": Object {
+              "MainPage": Object {
                 "buttons": Object {
-                  "Logout": "Выйти",
+                  "logout": "Выйти",
                 },
               },
               "validation": Object {
@@ -3368,7 +3368,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
-                  "Login",
+                  "MainPage",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -3383,9 +3383,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Logout",
+                        "logout": "Logout",
                       },
                     },
                     "validation": Object {
@@ -3400,9 +3400,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "Login": Object {
+                    "MainPage": Object {
                       "buttons": Object {
-                        "Logout": "Выйти",
+                        "logout": "Выйти",
                       },
                     },
                     "validation": Object {
@@ -3454,7 +3454,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3468,9 +3468,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -3485,9 +3485,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -3548,7 +3548,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
-                "Login",
+                "MainPage",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3563,9 +3563,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Logout",
+                      "logout": "Logout",
                     },
                   },
                   "validation": Object {
@@ -3580,9 +3580,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "Login": Object {
+                  "MainPage": Object {
                     "buttons": Object {
-                      "Logout": "Выйти",
+                      "logout": "Выйти",
                     },
                   },
                   "validation": Object {
@@ -4549,9 +4549,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Logout",
+                "logout": "Logout",
               },
             },
             "validation": Object {
@@ -4566,9 +4566,9 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "Login": Object {
+            "MainPage": Object {
               "buttons": Object {
-                "Logout": "Выйти",
+                "logout": "Выйти",
               },
             },
             "validation": Object {

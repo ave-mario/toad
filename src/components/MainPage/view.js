@@ -5,7 +5,7 @@ import { Title, Button } from '../../elements';
 import { addResource } from '../../config/localize';
 import localization from './localization.main';
 
-addResource('Login', localization);
+addResource('MainPage', localization);
 class MainPage extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +30,7 @@ class MainPage extends Component {
       >
         <Title>Main Page</Title>
         <Button type="button" onClick={this.handleLogout}>
-          {t('buttons.Logout')}
+          {t('buttons.logout')}
         </Button>
       </div>
     );
@@ -42,4 +42,4 @@ MainPage.propTypes = {
   t: PropTypes.func.isRequired
 };
 
-export default withTranslation('Login')(MainPage);
+export default withTranslation('MainPage')(MainPage);

@@ -17,7 +17,8 @@ import {
 } from './elements/login.form';
 import localization from './localize.login';
 
-addResource('Login', localization);
+addResource('LoginForm', localization);
+
 const { Creators } = authActions;
 
 export const handleSubmit = values => {
@@ -44,8 +45,8 @@ export const MyFormInner = props => {
   return (
     <LoginForm onSubmit={submit}>
       <Header>
-        <LoginTitle>{t('lables.title')}</LoginTitle>
-        <LoginSubTitle>{t('lables.SignIn')}</LoginSubTitle>
+        <LoginTitle>{t('labels.title')}</LoginTitle>
+        <LoginSubTitle>{t('labels.signIn')}</LoginSubTitle>
       </Header>
       <Main>
         <LoginInput
@@ -53,7 +54,7 @@ export const MyFormInner = props => {
           className="emailInput"
           type="text"
           name="email"
-          placeholder={t('lables.Email')}
+          placeholder={t('labels.email')}
           onChange={handleChange}
           border={errors.email && touched.email && '1px solid red'}
           value={values.email}
@@ -64,7 +65,7 @@ export const MyFormInner = props => {
           className="passwordInput"
           type="password"
           name="password"
-          placeholder={t('lables.Password')}
+          placeholder={t('labels.password')}
           onChange={handleChange}
           border={errors.password && touched.password && '1px solid red'}
           value={values.password}
@@ -81,7 +82,7 @@ export const MyFormInner = props => {
           type="submit"
           disabled={isSubmitting && !isFailed}
         >
-          {t('buttons.Sumbit')}
+          {t('buttons.submit')}
         </SubmitButton>
       </Footer>
     </LoginForm>
@@ -107,4 +108,4 @@ export const Login = withFormik({
   mapPropsToValues,
   validationSchema: loginValidationSchema,
   handleSubmit
-})(withTranslation('Login')(MyFormInner));
+})(withTranslation('LoginForm')(MyFormInner));

@@ -150,7 +150,8 @@ exports[`LoginPage should render correctly 1`] = `
                         "ns": Array [
                           "translations",
                           "validation",
-                          "Login",
+                          "ErrorHandler",
+                          "LoginForm",
                         ],
                         "nsSeparator": ":",
                         "overloadTranslationOptionHandler": [Function],
@@ -164,14 +165,20 @@ exports[`LoginPage should render correctly 1`] = `
                         },
                         "resources": Object {
                           "en": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Sign in",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Invalid Credentials",
+                                "networkError": "Network Error",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Password",
-                                "SignIn": "Sign in",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Sign in",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Password",
+                                "signIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
                             },
@@ -187,14 +194,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                           },
                           "ru": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Войти",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Неверно введенные данные",
+                                "networkError": "Ошибка подключения к сети",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Пароль",
-                                "SignIn": "Вход",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Войти",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Пароль",
+                                "signIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
@@ -263,7 +276,8 @@ exports[`LoginPage should render correctly 1`] = `
                       "ns": Array [
                         "translations",
                         "validation",
-                        "Login",
+                        "ErrorHandler",
+                        "LoginForm",
                       ],
                       "nsSeparator": ":",
                       "overloadTranslationOptionHandler": [Function],
@@ -277,14 +291,20 @@ exports[`LoginPage should render correctly 1`] = `
                       },
                       "resources": Object {
                         "en": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Sign in",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Invalid Credentials",
+                              "networkError": "Network Error",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Password",
-                              "SignIn": "Sign in",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Sign in",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Password",
+                              "signIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
                           },
@@ -300,14 +320,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                         },
                         "ru": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Войти",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Неверно введенные данные",
+                              "networkError": "Ошибка подключения к сети",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Пароль",
-                              "SignIn": "Вход",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Войти",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Пароль",
+                              "signIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
@@ -337,7 +363,7 @@ exports[`LoginPage should render correctly 1`] = `
                     "removeResourceBundle": [Function],
                     "reportNamespaces": ReportNamespaces {
                       "usedNamespaces": Object {
-                        "Login": true,
+                        "LoginForm": true,
                       },
                     },
                     "services": Object {
@@ -377,7 +403,8 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
-                                "Login",
+                                "ErrorHandler",
+                                "LoginForm",
                               ],
                               "nsSeparator": ":",
                               "overloadTranslationOptionHandler": [Function],
@@ -392,14 +419,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "resources": Object {
                                 "en": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Sign in",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Invalid Credentials",
+                                      "networkError": "Network Error",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Password",
-                                      "SignIn": "Sign in",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Sign in",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Password",
+                                      "signIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
                                   },
@@ -415,14 +448,20 @@ exports[`LoginPage should render correctly 1`] = `
                                   },
                                 },
                                 "ru": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Войти",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Неверно введенные данные",
+                                      "networkError": "Ошибка подключения к сети",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Пароль",
-                                      "SignIn": "Вход",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Войти",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Пароль",
+                                      "signIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
@@ -475,7 +514,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -489,14 +529,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -512,14 +558,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -581,7 +633,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -596,14 +649,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -619,14 +678,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -684,7 +749,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -698,14 +764,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -721,14 +793,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -759,14 +837,20 @@ exports[`LoginPage should render correctly 1`] = `
                         "state": Object {},
                         "store": Object {
                           "en": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Sign in",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Invalid Credentials",
+                                "networkError": "Network Error",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Password",
-                                "SignIn": "Sign in",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Sign in",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Password",
+                                "signIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
                             },
@@ -782,14 +866,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                           },
                           "ru": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Войти",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Неверно введенные данные",
+                                "networkError": "Ошибка подключения к сети",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Пароль",
-                                "SignIn": "Вход",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Войти",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Пароль",
+                                "signIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
@@ -844,7 +934,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -859,14 +950,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -882,14 +979,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -946,7 +1049,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -960,14 +1064,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -983,14 +1093,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -1059,7 +1175,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -1074,14 +1191,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -1097,14 +1220,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -1157,7 +1286,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -1171,14 +1301,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -1194,14 +1330,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -1263,7 +1405,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -1277,14 +1420,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -1300,14 +1449,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -1371,7 +1526,8 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
-                                "Login",
+                                "ErrorHandler",
+                                "LoginForm",
                               ],
                               "nsSeparator": ":",
                               "overloadTranslationOptionHandler": [Function],
@@ -1386,14 +1542,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "resources": Object {
                                 "en": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Sign in",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Invalid Credentials",
+                                      "networkError": "Network Error",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Password",
-                                      "SignIn": "Sign in",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Sign in",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Password",
+                                      "signIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
                                   },
@@ -1409,14 +1571,20 @@ exports[`LoginPage should render correctly 1`] = `
                                   },
                                 },
                                 "ru": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Войти",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Неверно введенные данные",
+                                      "networkError": "Ошибка подключения к сети",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Пароль",
-                                      "SignIn": "Вход",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Войти",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Пароль",
+                                      "signIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
@@ -1469,7 +1637,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -1483,14 +1652,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -1506,14 +1681,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -1575,7 +1756,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -1590,14 +1772,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -1613,14 +1801,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -2588,14 +2782,20 @@ exports[`LoginPage should render correctly 1`] = `
                       },
                       "resourceStore": Object {
                         "en": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Sign in",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Invalid Credentials",
+                              "networkError": "Network Error",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Password",
-                              "SignIn": "Sign in",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Sign in",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Password",
+                              "signIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
                           },
@@ -2611,14 +2811,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                         },
                         "ru": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Войти",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Неверно введенные данные",
+                              "networkError": "Ошибка подключения к сети",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Пароль",
-                              "SignIn": "Вход",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Войти",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Пароль",
+                              "signIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
@@ -2637,14 +2843,20 @@ exports[`LoginPage should render correctly 1`] = `
                     },
                     "store": Object {
                       "en": Object {
-                        "Login": Object {
-                          "buttons": Object {
-                            "Sumbit": "Sign in",
+                        "ErrorHandler": Object {
+                          "error": Object {
+                            "invalidCredentials": "Invalid Credentials",
+                            "networkError": "Network Error",
                           },
-                          "lables": Object {
-                            "Email": "Email",
-                            "Password": "Password",
-                            "SignIn": "Sign in",
+                        },
+                        "LoginForm": Object {
+                          "buttons": Object {
+                            "submit": "Sign in",
+                          },
+                          "labels": Object {
+                            "email": "Email",
+                            "password": "Password",
+                            "signIn": "Sign in",
                             "title": "Welcome to hotel management",
                           },
                         },
@@ -2660,14 +2872,20 @@ exports[`LoginPage should render correctly 1`] = `
                         },
                       },
                       "ru": Object {
-                        "Login": Object {
-                          "buttons": Object {
-                            "Sumbit": "Войти",
+                        "ErrorHandler": Object {
+                          "error": Object {
+                            "invalidCredentials": "Неверно введенные данные",
+                            "networkError": "Ошибка подключения к сети",
                           },
-                          "lables": Object {
-                            "Email": "Email",
-                            "Password": "Пароль",
-                            "SignIn": "Вход",
+                        },
+                        "LoginForm": Object {
+                          "buttons": Object {
+                            "submit": "Войти",
+                          },
+                          "labels": Object {
+                            "email": "Email",
+                            "password": "Пароль",
+                            "signIn": "Вход",
                             "title": "Добро пожаловать в гостиничный менеджмент",
                           },
                         },
@@ -2720,7 +2938,8 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
-                                "Login",
+                                "ErrorHandler",
+                                "LoginForm",
                               ],
                               "nsSeparator": ":",
                               "overloadTranslationOptionHandler": [Function],
@@ -2735,14 +2954,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "resources": Object {
                                 "en": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Sign in",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Invalid Credentials",
+                                      "networkError": "Network Error",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Password",
-                                      "SignIn": "Sign in",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Sign in",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Password",
+                                      "signIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
                                   },
@@ -2758,14 +2983,20 @@ exports[`LoginPage should render correctly 1`] = `
                                   },
                                 },
                                 "ru": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Войти",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Неверно введенные данные",
+                                      "networkError": "Ошибка подключения к сети",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Пароль",
-                                      "SignIn": "Вход",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Войти",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Пароль",
+                                      "signIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
@@ -2818,7 +3049,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -2832,14 +3064,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -2855,14 +3093,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -2924,7 +3168,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -2939,14 +3184,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -2962,14 +3213,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -3027,7 +3284,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -3041,14 +3299,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -3064,14 +3328,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -3102,14 +3372,20 @@ exports[`LoginPage should render correctly 1`] = `
                         "state": Object {},
                         "store": Object {
                           "en": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Sign in",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Invalid Credentials",
+                                "networkError": "Network Error",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Password",
-                                "SignIn": "Sign in",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Sign in",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Password",
+                                "signIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
                             },
@@ -3125,14 +3401,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                           },
                           "ru": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Войти",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Неверно введенные данные",
+                                "networkError": "Ошибка подключения к сети",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Пароль",
-                                "SignIn": "Вход",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Войти",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Пароль",
+                                "signIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
@@ -3187,7 +3469,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -3202,14 +3485,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -3225,14 +3514,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -3289,7 +3584,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -3303,14 +3599,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -3326,14 +3628,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -3402,7 +3710,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -3417,14 +3726,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -3440,14 +3755,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -3500,7 +3821,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -3514,14 +3836,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -3537,14 +3865,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -3606,7 +3940,8 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
-                            "Login",
+                            "ErrorHandler",
+                            "LoginForm",
                           ],
                           "nsSeparator": ":",
                           "overloadTranslationOptionHandler": [Function],
@@ -3621,14 +3956,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "resources": Object {
                             "en": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Sign in",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Invalid Credentials",
+                                  "networkError": "Network Error",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Password",
-                                  "SignIn": "Sign in",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Sign in",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Password",
+                                  "signIn": "Sign in",
                                   "title": "Welcome to hotel management",
                                 },
                               },
@@ -3644,14 +3985,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                             },
                             "ru": Object {
-                              "Login": Object {
-                                "buttons": Object {
-                                  "Sumbit": "Войти",
+                              "ErrorHandler": Object {
+                                "error": Object {
+                                  "invalidCredentials": "Неверно введенные данные",
+                                  "networkError": "Ошибка подключения к сети",
                                 },
-                                "lables": Object {
-                                  "Email": "Email",
-                                  "Password": "Пароль",
-                                  "SignIn": "Вход",
+                              },
+                              "LoginForm": Object {
+                                "buttons": Object {
+                                  "submit": "Войти",
+                                },
+                                "labels": Object {
+                                  "email": "Email",
+                                  "password": "Пароль",
+                                  "signIn": "Вход",
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
@@ -3709,7 +4056,8 @@ exports[`LoginPage should render correctly 1`] = `
                         "ns": Array [
                           "translations",
                           "validation",
-                          "Login",
+                          "ErrorHandler",
+                          "LoginForm",
                         ],
                         "nsSeparator": ":",
                         "overloadTranslationOptionHandler": [Function],
@@ -3723,14 +4071,20 @@ exports[`LoginPage should render correctly 1`] = `
                         },
                         "resources": Object {
                           "en": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Sign in",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Invalid Credentials",
+                                "networkError": "Network Error",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Password",
-                                "SignIn": "Sign in",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Sign in",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Password",
+                                "signIn": "Sign in",
                                 "title": "Welcome to hotel management",
                               },
                             },
@@ -3746,14 +4100,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                           },
                           "ru": Object {
-                            "Login": Object {
-                              "buttons": Object {
-                                "Sumbit": "Войти",
+                            "ErrorHandler": Object {
+                              "error": Object {
+                                "invalidCredentials": "Неверно введенные данные",
+                                "networkError": "Ошибка подключения к сети",
                               },
-                              "lables": Object {
-                                "Email": "Email",
-                                "Password": "Пароль",
-                                "SignIn": "Вход",
+                            },
+                            "LoginForm": Object {
+                              "buttons": Object {
+                                "submit": "Войти",
+                              },
+                              "labels": Object {
+                                "email": "Email",
+                                "password": "Пароль",
+                                "signIn": "Вход",
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
@@ -3815,7 +4175,8 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
-                                "Login",
+                                "ErrorHandler",
+                                "LoginForm",
                               ],
                               "nsSeparator": ":",
                               "overloadTranslationOptionHandler": [Function],
@@ -3830,14 +4191,20 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "resources": Object {
                                 "en": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Sign in",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Invalid Credentials",
+                                      "networkError": "Network Error",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Password",
-                                      "SignIn": "Sign in",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Sign in",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Password",
+                                      "signIn": "Sign in",
                                       "title": "Welcome to hotel management",
                                     },
                                   },
@@ -3853,14 +4220,20 @@ exports[`LoginPage should render correctly 1`] = `
                                   },
                                 },
                                 "ru": Object {
-                                  "Login": Object {
-                                    "buttons": Object {
-                                      "Sumbit": "Войти",
+                                  "ErrorHandler": Object {
+                                    "error": Object {
+                                      "invalidCredentials": "Неверно введенные данные",
+                                      "networkError": "Ошибка подключения к сети",
                                     },
-                                    "lables": Object {
-                                      "Email": "Email",
-                                      "Password": "Пароль",
-                                      "SignIn": "Вход",
+                                  },
+                                  "LoginForm": Object {
+                                    "buttons": Object {
+                                      "submit": "Войти",
+                                    },
+                                    "labels": Object {
+                                      "email": "Email",
+                                      "password": "Пароль",
+                                      "signIn": "Вход",
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
@@ -3913,7 +4286,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -3927,14 +4301,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -3950,14 +4330,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -4019,7 +4405,8 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
-                              "Login",
+                              "ErrorHandler",
+                              "LoginForm",
                             ],
                             "nsSeparator": ":",
                             "overloadTranslationOptionHandler": [Function],
@@ -4034,14 +4421,20 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "resources": Object {
                               "en": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Sign in",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Invalid Credentials",
+                                    "networkError": "Network Error",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Password",
-                                    "SignIn": "Sign in",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Sign in",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Password",
+                                    "signIn": "Sign in",
                                     "title": "Welcome to hotel management",
                                   },
                                 },
@@ -4057,14 +4450,20 @@ exports[`LoginPage should render correctly 1`] = `
                                 },
                               },
                               "ru": Object {
-                                "Login": Object {
-                                  "buttons": Object {
-                                    "Sumbit": "Войти",
+                                "ErrorHandler": Object {
+                                  "error": Object {
+                                    "invalidCredentials": "Неверно введенные данные",
+                                    "networkError": "Ошибка подключения к сети",
                                   },
-                                  "lables": Object {
-                                    "Email": "Email",
-                                    "Password": "Пароль",
-                                    "SignIn": "Вход",
+                                },
+                                "LoginForm": Object {
+                                  "buttons": Object {
+                                    "submit": "Войти",
+                                  },
+                                  "labels": Object {
+                                    "email": "Email",
+                                    "password": "Пароль",
+                                    "signIn": "Вход",
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
@@ -5032,14 +5431,20 @@ exports[`LoginPage should render correctly 1`] = `
                       },
                       "resourceStore": Object {
                         "en": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Sign in",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Invalid Credentials",
+                              "networkError": "Network Error",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Password",
-                              "SignIn": "Sign in",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Sign in",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Password",
+                              "signIn": "Sign in",
                               "title": "Welcome to hotel management",
                             },
                           },
@@ -5055,14 +5460,20 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                         },
                         "ru": Object {
-                          "Login": Object {
-                            "buttons": Object {
-                              "Sumbit": "Войти",
+                          "ErrorHandler": Object {
+                            "error": Object {
+                              "invalidCredentials": "Неверно введенные данные",
+                              "networkError": "Ошибка подключения к сети",
                             },
-                            "lables": Object {
-                              "Email": "Email",
-                              "Password": "Пароль",
-                              "SignIn": "Вход",
+                          },
+                          "LoginForm": Object {
+                            "buttons": Object {
+                              "submit": "Войти",
+                            },
+                            "labels": Object {
+                              "email": "Email",
+                              "password": "Пароль",
+                              "signIn": "Вход",
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
@@ -5552,204 +5963,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "success": false,
                                   }
                                 }
-                              >
-                                <styled.div>
-                                  <StyledComponent
-                                    forwardedComponent={
-                                      Object {
-                                        "$$typeof": Symbol(react.forward_ref),
-                                        "attrs": Array [],
-                                        "componentStyle": ComponentStyle {
-                                          "componentId": "sc-jzJRlG",
-                                          "isStatic": false,
-                                          "lastClassName": "cSdUnJ",
-                                          "rules": Array [
-                                            "
-  text-align: ",
-                                            [Function],
-                                            ";
-  color: ",
-                                            [Function],
-                                            ";
-  background-color: ",
-                                            [Function],
-                                            ";
-  font-family: ",
-                                            [Function],
-                                            ";
-  font-size: ",
-                                            [Function],
-                                            ";
-  width: ",
-                                            [Function],
-                                            ";
-  height: ",
-                                            [Function],
-                                            ";
-  padding: ",
-                                            [Function],
-                                            ";
-  padding-left: ",
-                                            [Function],
-                                            ";
-  margin: ",
-                                            [Function],
-                                            ";
-  border-radius: ",
-                                            [Function],
-                                            ";
-  display: ",
-                                            [Function],
-                                            ";
-  align-items: ",
-                                            [Function],
-                                            ";
-  justify-content: ",
-                                            [Function],
-                                            ";
-  flex-wrap: ",
-                                            [Function],
-                                            ";
-",
-                                          ],
-                                        },
-                                        "displayName": "styled.div",
-                                        "foldedComponentIds": Array [],
-                                        "render": [Function],
-                                        "styledComponentId": "sc-jzJRlG",
-                                        "target": "div",
-                                        "toString": [Function],
-                                        "warnTooManyClasses": [Function],
-                                        "withComponent": [Function],
-                                      }
-                                    }
-                                    forwardedRef={null}
-                                  >
-                                    <div
-                                      className="sc-jzJRlG cSdUnJ"
-                                    >
-                                      <styled.span>
-                                        <StyledComponent
-                                          forwardedComponent={
-                                            Object {
-                                              "$$typeof": Symbol(react.forward_ref),
-                                              "attrs": Array [],
-                                              "componentStyle": ComponentStyle {
-                                                "componentId": "sc-cSHVUG",
-                                                "isStatic": false,
-                                                "lastClassName": "ipeltD",
-                                                "rules": Array [
-                                                  "
-  color: ",
-                                                  [Function],
-                                                  ";
-  font-family: ",
-                                                  [Function],
-                                                  ";
-  font-size: ",
-                                                  [Function],
-                                                  ";
-  max-width: ",
-                                                  [Function],
-                                                  ";
-  overflow: ",
-                                                  [Function],
-                                                  ";
-",
-                                                ],
-                                              },
-                                              "displayName": "styled.span",
-                                              "foldedComponentIds": Array [],
-                                              "render": [Function],
-                                              "styledComponentId": "sc-cSHVUG",
-                                              "target": "span",
-                                              "toString": [Function],
-                                              "warnTooManyClasses": [Function],
-                                              "withComponent": [Function],
-                                            }
-                                          }
-                                          forwardedRef={null}
-                                        >
-                                          <span
-                                            className="sc-cSHVUG ipeltD"
-                                          >
-                                            message
-                                          </span>
-                                        </StyledComponent>
-                                      </styled.span>
-                                      <ForwardRef
-                                        onClick={[Function]}
-                                        style={
-                                          Object {
-                                            "color": "white",
-                                            "cursor": "pointer",
-                                            "fontSize": "30",
-                                          }
-                                        }
-                                      >
-                                        <WithStyles(ForwardRef(SvgIcon))
-                                          onClick={[Function]}
-                                          style={
-                                            Object {
-                                              "color": "white",
-                                              "cursor": "pointer",
-                                              "fontSize": "30",
-                                            }
-                                          }
-                                        >
-                                          <ForwardRef(SvgIcon)
-                                            classes={
-                                              Object {
-                                                "colorAction": "MuiSvgIcon-colorAction",
-                                                "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                "colorError": "MuiSvgIcon-colorError",
-                                                "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                "root": "MuiSvgIcon-root",
-                                              }
-                                            }
-                                            onClick={[Function]}
-                                            style={
-                                              Object {
-                                                "color": "white",
-                                                "cursor": "pointer",
-                                                "fontSize": "30",
-                                              }
-                                            }
-                                          >
-                                            <svg
-                                              aria-hidden="true"
-                                              className="MuiSvgIcon-root"
-                                              focusable="false"
-                                              onClick={[Function]}
-                                              role="presentation"
-                                              style={
-                                                Object {
-                                                  "color": "white",
-                                                  "cursor": "pointer",
-                                                  "fontSize": "30",
-                                                }
-                                              }
-                                              viewBox="0 0 24 24"
-                                            >
-                                              <path
-                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                                              />
-                                              <path
-                                                d="M0 0h24v24H0z"
-                                                fill="none"
-                                              />
-                                            </svg>
-                                          </ForwardRef(SvgIcon)>
-                                        </WithStyles(ForwardRef(SvgIcon))>
-                                      </ForwardRef>
-                                    </div>
-                                  </StyledComponent>
-                                </styled.div>
-                              </ErrorBar>
+                              />
                             </Connect(ErrorBar)>
                           </main>
                         </StyledComponent>

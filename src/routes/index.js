@@ -24,8 +24,8 @@ class Routes extends Component {
           <Loader />
         ) : (
           <>
-            <Route exact path="/welcome" component={WelcomePage} />
             <Route exact path="/login" component={LoginPage} />
+            <Route exact path="/welcome" component={WelcomePage} />
             <PrivateRoute exact path="/" component={MainPage} />
           </>
         )}

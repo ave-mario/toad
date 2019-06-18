@@ -7,7 +7,7 @@ export const Header = styled.div`
   background: ${({ background }) => background || `${blackColor}`};
   display: flex;
   justify-content: ${({ justify }) => justify || 'space-between'};
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
 `;
 
 export const Navbar = styled.nav`

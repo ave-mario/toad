@@ -65,6 +65,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "logout": "Logout",
                 },
               },
+              "routes": Object {
+                "Addition": "Services on room",
+                "Main": "Main page",
+                "Rooms": "Rooms",
+                "Services": "Services of hotel",
+              },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
@@ -81,6 +87,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "buttons": Object {
                   "logout": "Выйти",
                 },
+              },
+              "routes": Object {
+                "Addition": "Услуги комнат",
+                "Main": "Главная",
+                "Rooms": "Комнаты",
+                "Services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
@@ -159,6 +171,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "logout": "Logout",
               },
             },
+            "routes": Object {
+              "Addition": "Services on room",
+              "Main": "Main page",
+              "Rooms": "Rooms",
+              "Services": "Services of hotel",
+            },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
@@ -175,6 +193,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "buttons": Object {
                 "logout": "Выйти",
               },
+            },
+            "routes": Object {
+              "Addition": "Услуги комнат",
+              "Main": "Главная",
+              "Rooms": "Комнаты",
+              "Services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {
@@ -262,6 +286,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                         "logout": "Logout",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -278,6 +308,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "buttons": Object {
                         "logout": "Выйти",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -347,6 +383,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -363,6 +405,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -442,6 +490,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -458,6 +512,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -532,6 +592,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -548,6 +614,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -581,6 +653,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "logout": "Logout",
                 },
               },
+              "routes": Object {
+                "Addition": "Services on room",
+                "Main": "Main page",
+                "Rooms": "Rooms",
+                "Services": "Services of hotel",
+              },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
@@ -597,6 +675,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "buttons": Object {
                   "logout": "Выйти",
                 },
+              },
+              "routes": Object {
+                "Addition": "Услуги комнат",
+                "Main": "Главная",
+                "Rooms": "Комнаты",
+                "Services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
@@ -669,6 +753,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -685,6 +775,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -758,6 +854,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -774,6 +876,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -860,6 +968,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -876,6 +990,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -945,6 +1065,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -961,6 +1087,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -1039,6 +1171,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -1055,6 +1193,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -1136,6 +1280,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                         "logout": "Logout",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -1152,6 +1302,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "buttons": Object {
                         "logout": "Выйти",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -1221,6 +1377,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -1237,6 +1399,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -1316,6 +1484,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -1332,6 +1506,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -2302,6 +2482,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "logout": "Logout",
               },
             },
+            "routes": Object {
+              "Addition": "Services on room",
+              "Main": "Main page",
+              "Rooms": "Rooms",
+              "Services": "Services of hotel",
+            },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
@@ -2318,6 +2504,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "buttons": Object {
                 "logout": "Выйти",
               },
+            },
+            "routes": Object {
+              "Addition": "Услуги комнат",
+              "Main": "Главная",
+              "Rooms": "Комнаты",
+              "Services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {
@@ -2339,6 +2531,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "logout": "Logout",
             },
           },
+          "routes": Object {
+            "Addition": "Services on room",
+            "Main": "Main page",
+            "Rooms": "Rooms",
+            "Services": "Services of hotel",
+          },
           "validation": Object {
             "incorrect": Object {
               "email": "The email is incorrect",
@@ -2355,6 +2553,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "buttons": Object {
               "logout": "Выйти",
             },
+          },
+          "routes": Object {
+            "Addition": "Услуги комнат",
+            "Main": "Главная",
+            "Rooms": "Комнаты",
+            "Services": "Услуги отеля",
           },
           "validation": Object {
             "incorrect": Object {
@@ -2425,6 +2629,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                         "logout": "Logout",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -2441,6 +2651,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "buttons": Object {
                         "logout": "Выйти",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -2510,6 +2726,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -2526,6 +2748,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -2605,6 +2833,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -2621,6 +2855,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -2695,6 +2935,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -2711,6 +2957,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -2744,6 +2996,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "logout": "Logout",
                 },
               },
+              "routes": Object {
+                "Addition": "Services on room",
+                "Main": "Main page",
+                "Rooms": "Rooms",
+                "Services": "Services of hotel",
+              },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
@@ -2760,6 +3018,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "buttons": Object {
                   "logout": "Выйти",
                 },
+              },
+              "routes": Object {
+                "Addition": "Услуги комнат",
+                "Main": "Главная",
+                "Rooms": "Комнаты",
+                "Services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
@@ -2832,6 +3096,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -2848,6 +3118,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -2921,6 +3197,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -2937,6 +3219,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -3023,6 +3311,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -3039,6 +3333,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -3108,6 +3408,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -3124,6 +3430,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -3203,6 +3515,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "logout": "Logout",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -3219,6 +3537,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "buttons": Object {
                     "logout": "Выйти",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -3293,6 +3617,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "logout": "Logout",
                 },
               },
+              "routes": Object {
+                "Addition": "Services on room",
+                "Main": "Main page",
+                "Rooms": "Rooms",
+                "Services": "Services of hotel",
+              },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
@@ -3309,6 +3639,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "buttons": Object {
                   "logout": "Выйти",
                 },
+              },
+              "routes": Object {
+                "Addition": "Услуги комнат",
+                "Main": "Главная",
+                "Rooms": "Комнаты",
+                "Services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
@@ -3388,6 +3724,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                         "logout": "Logout",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -3404,6 +3746,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "buttons": Object {
                         "logout": "Выйти",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -3473,6 +3821,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -3489,6 +3843,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -3568,6 +3928,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       "logout": "Logout",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -3584,6 +3950,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     "buttons": Object {
                       "logout": "Выйти",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -4554,6 +4926,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "logout": "Logout",
               },
             },
+            "routes": Object {
+              "Addition": "Services on room",
+              "Main": "Main page",
+              "Rooms": "Rooms",
+              "Services": "Services of hotel",
+            },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
@@ -4570,6 +4948,12 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "buttons": Object {
                 "logout": "Выйти",
               },
+            },
+            "routes": Object {
+              "Addition": "Услуги комнат",
+              "Main": "Главная",
+              "Rooms": "Комнаты",
+              "Services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {

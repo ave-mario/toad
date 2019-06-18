@@ -3,7 +3,7 @@ import { Footer, Text } from '../../elements';
 
 const FooterLayout = () => {
   return (
-    <Footer background="#123" absolute>
+    <Footer background="#123" fix>
       <Text color="white">Footer 2019</Text>
     </Footer>
   );

@@ -112,6 +112,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "password": "Password",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -153,6 +159,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "placeholders": Object {
                         "password": "Пароль",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -267,6 +279,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "password": "Password",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -308,6 +326,12 @@ exports[`WelcomePage should render correctly 1`] = `
                     "placeholders": Object {
                       "password": "Пароль",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -423,6 +447,12 @@ exports[`WelcomePage should render correctly 1`] = `
                               "password": "Password",
                             },
                           },
+                          "routes": Object {
+                            "Addition": "Services on room",
+                            "Main": "Main page",
+                            "Rooms": "Rooms",
+                            "Services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
@@ -464,6 +494,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "placeholders": Object {
                               "password": "Пароль",
                             },
+                          },
+                          "routes": Object {
+                            "Addition": "Услуги комнат",
+                            "Main": "Главная",
+                            "Rooms": "Комнаты",
+                            "Services": "Услуги отеля",
                           },
                           "validation": Object {
                             "incorrect": Object {
@@ -560,6 +596,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -601,6 +643,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -707,6 +755,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -748,6 +802,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -849,6 +909,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -890,6 +956,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -948,6 +1020,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "password": "Password",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -989,6 +1067,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "placeholders": Object {
                         "password": "Пароль",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -1088,6 +1172,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -1129,6 +1219,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -1229,6 +1325,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -1270,6 +1372,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -1383,6 +1491,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -1424,6 +1538,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -1520,6 +1640,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -1561,6 +1687,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -1673,6 +1805,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -1714,6 +1852,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -1822,6 +1966,12 @@ exports[`WelcomePage should render correctly 1`] = `
                               "password": "Password",
                             },
                           },
+                          "routes": Object {
+                            "Addition": "Services on room",
+                            "Main": "Main page",
+                            "Rooms": "Rooms",
+                            "Services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
@@ -1863,6 +2013,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "placeholders": Object {
                               "password": "Пароль",
                             },
+                          },
+                          "routes": Object {
+                            "Addition": "Услуги комнат",
+                            "Main": "Главная",
+                            "Rooms": "Комнаты",
+                            "Services": "Услуги отеля",
                           },
                           "validation": Object {
                             "incorrect": Object {
@@ -2001,6 +2157,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Пароль",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "Неверный email",
@@ -2106,6 +2268,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -2147,6 +2315,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -3142,6 +3316,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "password": "Password",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -3183,6 +3363,12 @@ exports[`WelcomePage should render correctly 1`] = `
                     "placeholders": Object {
                       "password": "Пароль",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
@@ -3229,6 +3415,12 @@ exports[`WelcomePage should render correctly 1`] = `
                     "password": "Password",
                   },
                 },
+                "routes": Object {
+                  "Addition": "Services on room",
+                  "Main": "Main page",
+                  "Rooms": "Rooms",
+                  "Services": "Services of hotel",
+                },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
@@ -3270,6 +3462,12 @@ exports[`WelcomePage should render correctly 1`] = `
                   "placeholders": Object {
                     "password": "Пароль",
                   },
+                },
+                "routes": Object {
+                  "Addition": "Услуги комнат",
+                  "Main": "Главная",
+                  "Rooms": "Комнаты",
+                  "Services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
@@ -3367,6 +3565,12 @@ exports[`WelcomePage should render correctly 1`] = `
                               "password": "Password",
                             },
                           },
+                          "routes": Object {
+                            "Addition": "Services on room",
+                            "Main": "Main page",
+                            "Rooms": "Rooms",
+                            "Services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
@@ -3408,6 +3612,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "placeholders": Object {
                               "password": "Пароль",
                             },
+                          },
+                          "routes": Object {
+                            "Addition": "Услуги комнат",
+                            "Main": "Главная",
+                            "Rooms": "Комнаты",
+                            "Services": "Услуги отеля",
                           },
                           "validation": Object {
                             "incorrect": Object {
@@ -3504,6 +3714,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -3545,6 +3761,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -3651,6 +3873,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -3692,6 +3920,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -3793,6 +4027,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -3834,6 +4074,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -3892,6 +4138,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "password": "Password",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -3933,6 +4185,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "placeholders": Object {
                         "password": "Пароль",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -4039,6 +4297,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -4080,6 +4344,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -4180,6 +4450,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -4221,6 +4497,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -4334,6 +4616,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -4375,6 +4663,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -4471,6 +4765,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -4512,6 +4812,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -4618,6 +4924,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "password": "Password",
                         },
                       },
+                      "routes": Object {
+                        "Addition": "Services on room",
+                        "Main": "Main page",
+                        "Rooms": "Rooms",
+                        "Services": "Services of hotel",
+                      },
                       "validation": Object {
                         "incorrect": Object {
                           "email": "The email is incorrect",
@@ -4659,6 +4971,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "placeholders": Object {
                           "password": "Пароль",
                         },
+                      },
+                      "routes": Object {
+                        "Addition": "Услуги комнат",
+                        "Main": "Главная",
+                        "Rooms": "Комнаты",
+                        "Services": "Услуги отеля",
                       },
                       "validation": Object {
                         "incorrect": Object {
@@ -4760,6 +5078,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         "password": "Password",
                       },
                     },
+                    "routes": Object {
+                      "Addition": "Services on room",
+                      "Main": "Main page",
+                      "Rooms": "Rooms",
+                      "Services": "Services of hotel",
+                    },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
@@ -4801,6 +5125,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "placeholders": Object {
                         "password": "Пароль",
                       },
+                    },
+                    "routes": Object {
+                      "Addition": "Услуги комнат",
+                      "Main": "Главная",
+                      "Rooms": "Комнаты",
+                      "Services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
@@ -4907,6 +5237,12 @@ exports[`WelcomePage should render correctly 1`] = `
                               "password": "Password",
                             },
                           },
+                          "routes": Object {
+                            "Addition": "Services on room",
+                            "Main": "Main page",
+                            "Rooms": "Rooms",
+                            "Services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
@@ -4948,6 +5284,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "placeholders": Object {
                               "password": "Пароль",
                             },
+                          },
+                          "routes": Object {
+                            "Addition": "Услуги комнат",
+                            "Main": "Главная",
+                            "Rooms": "Комнаты",
+                            "Services": "Услуги отеля",
                           },
                           "validation": Object {
                             "incorrect": Object {
@@ -5044,6 +5386,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -5085,6 +5433,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -5191,6 +5545,12 @@ exports[`WelcomePage should render correctly 1`] = `
                             "password": "Password",
                           },
                         },
+                        "routes": Object {
+                          "Addition": "Services on room",
+                          "Main": "Main page",
+                          "Rooms": "Rooms",
+                          "Services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
@@ -5232,6 +5592,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Пароль",
                           },
+                        },
+                        "routes": Object {
+                          "Addition": "Услуги комнат",
+                          "Main": "Главная",
+                          "Rooms": "Комнаты",
+                          "Services": "Услуги отеля",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -6227,6 +6593,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       "password": "Password",
                     },
                   },
+                  "routes": Object {
+                    "Addition": "Services on room",
+                    "Main": "Main page",
+                    "Rooms": "Rooms",
+                    "Services": "Services of hotel",
+                  },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
@@ -6268,6 +6640,12 @@ exports[`WelcomePage should render correctly 1`] = `
                     "placeholders": Object {
                       "password": "Пароль",
                     },
+                  },
+                  "routes": Object {
+                    "Addition": "Услуги комнат",
+                    "Main": "Главная",
+                    "Rooms": "Комнаты",
+                    "Services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {

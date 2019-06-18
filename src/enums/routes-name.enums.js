@@ -1,20 +1,22 @@
 import i18n from '../config/localize';
 
-export default Object.freeze([
+const routes = Object.freeze([
   {
-    name: i18n.t('routes:Main'),
+    name: i18n.t('routes:main'),
     link: '/'
   },
   {
-    name: i18n.t('routes:Rooms'),
+    name: i18n.t('routes:rooms'),
     link: '/rooms'
   },
   {
-    name: i18n.t('routes:Addition'),
+    name: i18n.t('routes:addition'),
     link: '/rooms-services'
   },
   {
-    name: i18n.t('routes:Services'),
+    name: i18n.t('routes:services'),
     link: '/services'
   }
 ]);
+
+export default routes;

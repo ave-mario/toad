@@ -31,14 +31,14 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: ${({ width }) => width || '300px'};
   height: ${({ height }) => height || '35px'};
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor || `${colors.blue}`};
+  background: ${({ background }) => background || `${colors.blue}`};
   color: ${({ color }) => color || `${colors.white}`};
   border-radius: ${({ borderRadius }) => borderRadius || '15px'};
   border: ${({ border }) => border || `none`};
   border-width: 0;
   outline: none;
 `;
+
 export const ButtonText = styled.span`
   display: ${({ display }) => display || 'block'};
   padding: ${({ margin }) => margin || '12px 24px'};
@@ -100,7 +100,7 @@ export const Aside = styled.aside`
 
 export const Header = styled.header`
   margin: ${({ margin }) => margin || '5px auto'};
-  padding: ${({ margin }) => margin || '5px'};
+  padding: ${({ padding }) => padding || '5px'};
 `;
 
 export const Footer = styled.footer`
@@ -109,10 +109,13 @@ export const Footer = styled.footer`
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || '50px'};
   ${({ background }) => background && ` background:${colors.black}`};
-  ${({ absolute }) =>
-    absolute &&
-    ` position: absolute;
-      bottom: 0;`};
+  ${({ absolute, fix }) =>
+    absolute
+      ? ` position: absolute;
+      bottom: 0;`
+      : fix &&
+        ` bottom: 0;
+    position: fixed;`};
 `;
 export const Main = styled.main`
   margin: ${({ margin }) => margin || '0'};

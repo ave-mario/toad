@@ -1,14 +1,14 @@
 export default {
   ru: {
-    Main: 'Главная',
-    Rooms: 'Комнаты',
-    Addition: 'Услуги комнат',
-    Services: 'Услуги отеля'
+    main: 'Главная',
+    rooms: 'Комнаты',
+    addition: 'Услуги комнат',
+    services: 'Услуги отеля'
   },
   en: {
-    Main: 'Main page',
-    Rooms: 'Rooms',
-    Addition: 'Services on room',
-    Services: 'Services of hotel'
+    main: 'Main page',
+    rooms: 'Rooms',
+    addition: 'Services of room',
+    services: 'Services of hotel'
   }
 };

@@ -6,6 +6,7 @@ export const Content = styled.div`
     flex
       ? `display: flex;`
       : 'display: block;  width: -webkit-fill-available; '};
+  ${({ relative }) => relative && `position: relative; left: 150px`}
 `;
 
 export const Menu = styled.nav`
@@ -29,6 +30,7 @@ export const Card = styled.section`
     `}
   ${({ lgW }) => lgW && 'width: 250px;'}
   ${({ lgH }) => lgH && 'height: 80px'}
+  ${({ border }) => border && 'border-bottom: 1px solid'}
 `;
 
 export const Image = styled.div`

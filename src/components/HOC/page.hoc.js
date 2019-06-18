@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Footer from '../Footer';
 import Header from '../Header';
 import Menu from '../Menu/LeftMenu/left-menu.view';
@@ -9,11 +9,14 @@ import Titles from '../../enums/routes-name.enums';
 export const LayoutPage = Component => {
   const Layout = props => {
     const [title, setTitle] = useState('');
+    const {
+      match: { url }
+    } = props;
 
     useEffect(() => {
-      const router = Titles.find(({ link }) => link === props.match.url);
+      const router = Titles.find(({ link }) => link === url);
       setTitle(router.name);
-    });
+    }, [url]);
 
     return (
       <>
@@ -28,6 +31,13 @@ export const LayoutPage = Component => {
       </>
     );
   };
+
+  Layout.propTypes = {
+    match: PropTypes.objectOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
+    ).isRequired
+  };
+
   return Layout;
 };
 

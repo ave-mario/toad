@@ -1,6 +1,7 @@
 import React from 'react';
 import { withFormik } from 'formik';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 import { Header, Main, Footer, ErrorText } from '../../elements';
 import { dispatcher } from '../../config/redux.store';
 import authActions from '../../actions/auth.actions';
@@ -13,7 +14,10 @@ import {
   WelcomeTitle,
   WelcomeSubTitle
 } from './elements/welcome.form';
+import localization from './localization.welcome';
+import { addResource } from '../../config/localize';
 
+addResource('WelcomeForm', localization);
 const { Creators } = authActions;
 
 export const handleSubmit = (values, { props }) => {
@@ -35,20 +39,24 @@ export const MyFormInner = props => {
     handleSubmit: submit,
     isSubmitting,
     isFailed,
-    name
+    name,
+    t
   } = props;
   return (
     <WelcomeForm onSubmit={submit}>
       <Header>
-        <WelcomeTitle>Welcome{name && `, ${name}`}</WelcomeTitle>
-        <WelcomeSubTitle>Please, create a password</WelcomeSubTitle>
+        <WelcomeTitle>
+          {t('labels.title')}
+          {name && `, ${name}`}
+        </WelcomeTitle>
+        <WelcomeSubTitle>{t('labels.subTitle')}</WelcomeSubTitle>
       </Header>
       <Main>
         <WelcomeInput
           className="passwordInput"
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder={t('placeholders.password')}
           onChange={handleChange}
           border={errors.password && touched.password && '1px solid red'}
           value={values.password}
@@ -79,6 +87,7 @@ MyFormInner.propTypes = {
   errors: PropTypes.objectOf(PropTypes.string).isRequired,
   touched: PropTypes.objectOf(PropTypes.bool).isRequired,
   handleSubmit: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
   isSubmitting: PropTypes.bool.isRequired,
   isFailed: PropTypes.bool,
   name: PropTypes.string
@@ -92,4 +101,4 @@ export const Welcome = withFormik({
   mapPropsToValues,
   validationSchema: passwordValidationSchema,
   handleSubmit
-})(MyFormInner);
+})(withTranslation('WelcomeForm')(MyFormInner));

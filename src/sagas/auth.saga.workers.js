@@ -30,12 +30,10 @@ export function* load() {
       const response = yield call(loadUser, tokens.accessToken);
       const { user } = response.data;
       yield put(Creators.loadSuccess(user));
-      yield put(push('/'));
     }
   } catch (error) {
     const errorMessage = error.response ? error.response.data : error.message;
     yield put(Creators.loadFailure(errorMessage));
-    yield put(push('/login'));
   }
 }
 

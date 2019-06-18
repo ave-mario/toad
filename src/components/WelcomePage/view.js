@@ -21,7 +21,7 @@ class WelcomePage extends Component {
   componentDidMount() {
     const { search } = this.props;
     const { name, token } = services.queryStringService(search);
-    if (!name || !token) dispatcher(push('/login'));
+    if (!name || !token) dispatcher(push('/'));
     this.setState({ name, token });
   }
 

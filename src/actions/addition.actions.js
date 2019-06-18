@@ -6,7 +6,10 @@ const { Types, Creators } = createActions({
   saveAdditionFailure: ['error'],
   loadAdditionListRequest: [null],
   loadAdditionListSuccess: ['payload'],
-  loadAdditionListFailure: ['error']
+  loadAdditionListFailure: ['error'],
+  changeAdditionRequest: ['id', 'data'],
+  changeAdditionSuccess: [null],
+  changeAdditionFailure: ['error']
 });
 const additionActions = { Types, Creators };
 

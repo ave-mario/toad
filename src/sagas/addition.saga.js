@@ -1,5 +1,6 @@
+/* eslint-disable func-names */
 import { takeLeading, call, put } from 'redux-saga/effects';
-import { addNewAddition, getAddition } from '../api/additions.api';
+import { addNewAddition, getAddition, update } from '../api/additions.api';
 import Actions from '../actions/addition.actions';
 import Tokens from '../services/token.service';
 
@@ -38,6 +39,21 @@ export function* loadAdditions() {
     } catch (error) {
       const errorMessage = error.response ? error.response.data : error.message;
       yield put(Creators.loadAdditionListFailure(errorMessage));
+      return error;
+    }
+  });
+}
+
+export function* updateAddition() {
+  yield takeLeading(Types.CHANGE_ADDITION_REQUEST, function*({ id, data }) {
+    try {
+      const tokens = yield Tokens.getTokens();
+      const response = yield call(update, id, data, tokens.accessToken);
+      yield put(Creators.changeAdditionSuccess());
+      return response;
+    } catch (error) {
+      const errorMessage = error.response ? error.response.data : error.message;
+      yield put(Creators.saveAdditionFailure(errorMessage));
       return error;
     }
   });

@@ -2,8 +2,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { List } from '../../elements/list';
-import colors from '../../enums/colors.enums';
+import { List } from '../../../elements/list';
+import colors from '../../../enums/colors.enums';
 
 const ListMenu = ({ list }) => {
   return (

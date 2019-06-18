@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import { Title3, Button, Input } from '../../../elements';
-import { addResource } from '../../../config/localize';
-import localization from '../localization.addition';
 
-addResource('Addition', localization);
 function AdditionForm({
   values,
   handleChange,

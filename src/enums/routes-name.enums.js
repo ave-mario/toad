@@ -1,6 +1,6 @@
 import i18n from '../config/localize';
 
-const routes = Object.freeze([
+export default Object.freeze([
   {
     name: i18n.t('routes:main'),
     link: '/'
@@ -18,5 +18,3 @@ const routes = Object.freeze([
     link: '/services'
   }
 ]);
-
-export default routes;

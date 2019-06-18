@@ -7,7 +7,7 @@ const tableColor = '#81babd';
 export const TableRow = styled.div`
   text-align: center;
   display: flex;
-  ${({ mgHeight2 }) => mgHeight2 && `margin-bottom: 30px; margin-top: 20px;`}
+  ${({ mgHeight2 }) => mgHeight2 && `margin-bottom: 20px; margin-top: 20px;`}
 `;
 
 export const TableCell = styled.div`

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Footer from '../Footer';
 import Header from '../Header';
-import Menu from '../Menu/LeftMenu/left-menu.view';
+import Menu from '../Menu/LeftMenu';
 import { Content } from '../../elements/content';
 import Titles from '../../enums/routes-name.enums';
 

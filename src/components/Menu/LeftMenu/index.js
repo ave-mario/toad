@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, Card } from '../../../elements/content';
 import { Text } from '../../../elements';
-import List from '../../List/list.menu';
+import List from '../List';
 import RoutesName from '../../../enums/routes-name.enums';
 
 const LeftMenu = () => {

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import AdditionView from './addition.view';
-import Actions from '../../actions/addition.actions';
+import AdditionView from './addition-content.view';
+import Actions from '../../../actions/addition.actions';
 
 const mapStateToProps = state => ({
   data: state.additions.docs,
@@ -14,6 +14,9 @@ const mapDispatchToProps = dispatch => {
   return {
     load: () => {
       dispatch(Actions.Creators.loadAdditionListRequest());
+    },
+    change: (id, { name, price }) => {
+      dispatch(Actions.Creators.changeAdditionRequest(id, { name, price }));
     }
   };
 };

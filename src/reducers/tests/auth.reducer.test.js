@@ -61,7 +61,6 @@ describe('Auth reducer test', () => {
       type: Types.LOAD_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      error: false,
       isRequesting: true,
       error: false
     });

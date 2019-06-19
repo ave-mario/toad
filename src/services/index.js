@@ -1,5 +1,5 @@
 import queryStringService from './query.string.service';
-import tokenService from './token.service';
-import errorHandler from './error.handler';
+import tokenDataService from './token.data.service';
+import errorHandlerService from './error.handler.service';
 
-export default { queryStringService, tokenService, errorHandler };
+export default { queryStringService, tokenDataService, errorHandlerService };

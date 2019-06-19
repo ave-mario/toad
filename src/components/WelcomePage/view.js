@@ -1,52 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { push } from 'connected-react-router';
 import { withTranslation } from 'react-i18next';
-import services from '../../services';
 import { Welcome } from './WelcomeForm';
-import { dispatcher } from '../../config/redux.store';
 import { addResource } from '../../config/localize';
 import localization from './localization.welcome';
+import services from '../../services';
 
 addResource('Welcome', localization);
-class WelcomePage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: null,
-      token: null
-    };
-  }
 
-  componentDidMount() {
-    const { search } = this.props;
-    const { name, token } = services.queryStringService(search);
-    if (!name || !token) dispatcher(push('/'));
-    this.setState({ name, token });
-  }
-
-  render() {
-    const { isFailed, error } = this.props;
-    const { name, token } = this.state;
-    return (
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: '100%'
-        }}
-      >
-        <Welcome isFailed={isFailed} name={name} token={token} error={error} />
-      </div>
-    );
-  }
+function WelcomePage(props) {
+  const { isFailed, error, search } = props;
+  const { name, token } = services.queryStringService(search);
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100%'
+      }}
+    >
+      <Welcome name={name} token={token} isFailed={isFailed} error={error} />
+    </div>
+  );
 }
 
 WelcomePage.propTypes = {
-  search: PropTypes.string.isRequired,
   isFailed: PropTypes.bool,
-  error: PropTypes.string
+  error: PropTypes.string,
+  search: PropTypes.string.isRequired
 };
 WelcomePage.defaultProps = {
   isFailed: false,

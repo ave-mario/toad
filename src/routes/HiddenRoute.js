@@ -1,28 +1,23 @@
-import { push } from 'connected-react-router';
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { dispatcher } from '../config/redux.store';
+import history from '../config/browser.history';
 
-const PrivateRoute = ({ component, isAuthenticated, ...rest }) => {
+const HiddenRoute = ({ component, isAuthenticated, ...rest }) => {
   const ComponentToRender = component;
 
   return (
     <Route
       {...rest}
       render={props =>
-        isAuthenticated ? (
-          <ComponentToRender {...props} />
-        ) : (
-          dispatcher(push('/login'))
-        )
+        !isAuthenticated ? <ComponentToRender {...props} /> : history.goBack()
       }
     />
   );
 };
 
-PrivateRoute.propTypes = {
+HiddenRoute.propTypes = {
   component: PropTypes.shape({}).isRequired,
   isAuthenticated: PropTypes.bool.isRequired
 };
@@ -30,4 +25,4 @@ PrivateRoute.propTypes = {
 const mapStateToProps = state => ({
   isAuthenticated: state.auth.isAuthenticated
 });
-export default withRouter(connect(mapStateToProps)(PrivateRoute));
+export default withRouter(connect(mapStateToProps)(HiddenRoute));

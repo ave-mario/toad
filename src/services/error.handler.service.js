@@ -1,4 +1,4 @@
-import localization from './localization.error.handler';
+import localization from './localization.error.handler.service';
 import i18n, { addResource } from '../config/localize';
 
 addResource('ErrorHandler', localization);

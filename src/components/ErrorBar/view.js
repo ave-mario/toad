@@ -16,7 +16,7 @@ class ErrorBar extends Component {
 
   componentDidMount() {
     const { error } = this.props;
-    this.setState({ handledError: services.errorHandler(error) });
+    this.setState({ handledError: services.errorHandlerService(error) });
   }
 
   handleClick() {

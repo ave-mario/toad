@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, Form, Input, Title, Title2 } from '../../../elements';
+import { Button, Form, Input, Title, Title2 } from 'elements';
 
 export const SubmitButton = styled(Button)`
   position: relative;

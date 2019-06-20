@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Close from '@material-ui/icons/Close';
-import { ServerError, ServerErrorText } from '../../elements';
-import services from '../../services';
+import { ServerError, ServerErrorText } from 'elements';
+import services from 'services';
 
 class ErrorBar extends Component {
   constructor(props) {

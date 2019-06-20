@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Text } from 'elements';
+import i18n from 'config/localize';
 import { Header, Navbar, NavButton } from './elements';
-import { Text } from '../../elements';
-import i18n from '../../config/localize';
 
 const HeaderLayout = ({ title }) => {
   const handleClick = lang => {

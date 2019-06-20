@@ -1,14 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import {
-  Wrapper,
-  Header,
-  Form,
-  Footer,
-  HeaderLabel
-} from '../../../elements/modal.css';
-import { Button, CloseButton, CloseIcon, Text, Input } from '../../../elements';
+import { Wrapper, Header, Form, Footer, HeaderLabel } from 'elements/modal.css';
+import { Button, CloseButton, CloseIcon, Text, Input } from 'elements';
 
 const EditForm = ({
   values,

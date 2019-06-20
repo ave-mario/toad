@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
+import Actions from 'actions/addition.actions';
 import AdditionView from './addition-content.view';
-import Actions from '../../../actions/addition.actions';
 
 const mapStateToProps = state => ({
   data: state.additions.docs,

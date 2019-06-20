@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
-import colors from '../enums/colors.enums';
+import colors from 'enums/colors.enums';
 
 export const List = styled.div`
   display: flex;

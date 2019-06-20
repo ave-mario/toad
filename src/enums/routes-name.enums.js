@@ -1,4 +1,4 @@
-import i18n from '../config/localize';
+import i18n from 'config/localize';
 
 export default Object.freeze([
   {

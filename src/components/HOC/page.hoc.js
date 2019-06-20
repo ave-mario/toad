@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Content, MainContent } from 'elements/content';
+import Titles from 'enums/routes-name.enums';
 import Header from '../Header';
 import Menu from '../Menu/LeftMenu';
-import { Content, MainContent } from '../../elements/content';
-import Titles from '../../enums/routes-name.enums';
 
 export const LayoutPage = Component => {
   const Layout = props => {

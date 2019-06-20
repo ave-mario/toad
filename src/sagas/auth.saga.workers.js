@@ -1,13 +1,8 @@
 import { put, call } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
-import {
-  login,
-  loadUser,
-  createPassword,
-  callWithAuth
-} from '../actions/api.calls';
-import authActions from '../actions/auth.actions';
-import services from '../services';
+import { login, loadUser, createPassword, callWithAuth } from 'api/auth.api';
+import authActions from 'actions/auth.actions';
+import services from 'services';
 
 const { Creators } = authActions;
 

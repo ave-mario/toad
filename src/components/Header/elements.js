@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import colors from '../../enums/colors.enums';
-import { Button } from '../../elements';
+import colors from 'enums/colors.enums';
+import { Button } from 'elements';
 
 export const Header = styled.div`
   height: ${({ height }) => height || '30px'};

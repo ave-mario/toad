@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, Input as InputCommon } from '../../../elements';
+import { Button, Input as InputCommon } from 'elements';
 
 const tableBorder = '#c4c7ca';
 const tableColor = '#fff';

@@ -1,5 +1,5 @@
 import authReducer from '../auth.reducer';
-import authActions from '../../actions/auth.actions';
+import authActions from 'actions/auth.actions';
 
 const { Types } = authActions;
 describe('Auth reducer test', () => {

@@ -1,8 +1,8 @@
 /* eslint-disable func-names */
 import { takeLeading, call, put } from 'redux-saga/effects';
-import { addNewAddition, getAddition, update } from '../api/additions.api';
-import Actions from '../actions/addition.actions';
-import Tokens from '../services/token.service';
+import { addNewAddition, getAddition, update } from 'api/additions.api';
+import Actions from 'actions/addition.actions';
+import Tokens from 'services/token.data.service';
 
 const { Types, Creators } = Actions;
 

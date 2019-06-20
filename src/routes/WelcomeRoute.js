@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import history from '../config/browser.history';
-import services from '../services';
+import history from 'config/browser.history';
+import services from 'services';
 
 const WelcomeRoute = ({ component, isAuthenticated, search, ...rest }) => {
   const ComponentToRender = component;

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import colors from '../enums/colors.enums';
+import colors from 'enums/colors.enums';
 import { Text } from './index';
 
 export const Content = styled.div`

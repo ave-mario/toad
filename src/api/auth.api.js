@@ -1,5 +1,5 @@
 import axios from 'axios';
-import services from '../services';
+import services from 'services';
 
 export function login(email, password) {
   const config = {

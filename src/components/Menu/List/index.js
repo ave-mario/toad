@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, NavLink } from '../../../elements/list';
+import { List, NavLink } from 'elements/list';
 
 const ListMenu = ({ list }) => {
   const renderLink = li => (

@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import validation from '../validation/localization.validation';
-import routes from '../routes/routes.localization';
+import validation from 'validation/localization.validation';
+import routes from 'routes/routes.localization';
 
 i18n.use(initReactI18next).init({
   resources: {

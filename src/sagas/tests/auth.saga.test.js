@@ -2,7 +2,7 @@ import { loadFlow, loginFlow } from '../auth.saga.flows';
 import { load, authorize, logout } from '../auth.saga.workers';
 import { createMockTask } from '@redux-saga/testing-utils';
 import { call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
-import authActions from '../../actions/auth.actions';
+import authActions from 'actions/auth.actions';
 
 const { Types } = authActions;
 

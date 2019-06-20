@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import { Title, Button } from '../../elements';
-import { addResource } from '../../config/localize';
+import { Title, Button } from 'elements';
+import { addResource } from 'config/localize';
 import localization from './localization.main';
 
 addResource('MainPage', localization);

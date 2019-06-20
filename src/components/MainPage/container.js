@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
+import authActions from 'actions/auth.actions';
 import MainPage from './view';
-import authActions from '../../actions/auth.actions';
 
 const { Creators } = authActions;
 

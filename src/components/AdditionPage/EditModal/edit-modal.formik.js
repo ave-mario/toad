@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Formik } from 'formik';
-import validationSchema from '../../../validation/services.schema';
+import validationSchema from 'validation/services.schema';
 import EditForm from './edit-modal.view';
 
 const EditView = ({ addition: { _id, name, price }, update, close }) => (

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Close } from 'styled-icons/material/Close';
-import colors from '../enums/colors.enums';
+import colors from 'enums/colors.enums';
 
 export const Form = styled.form`
   width: ${({ width }) => width || '400px'};

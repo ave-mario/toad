@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Text } from '../../elements';
+import { Footer, Text } from 'elements';
 
 const FooterLayout = () => {
   return (

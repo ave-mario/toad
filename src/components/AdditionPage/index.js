@@ -1,9 +1,9 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
+import { Card, Content, ContentTitle as Title } from 'elements/content';
+import { addResource } from 'config/localize';
 import AdditionForm from './Forms';
 import Table from './Content';
-import { Card, Content, ContentTitle as Title } from '../../elements/content';
-import { addResource } from '../../config/localize';
 import localization from './localization.addition';
 
 addResource('Addition', localization);

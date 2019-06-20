@@ -1,6 +1,6 @@
 import { createReducer } from 'reduxsauce';
-import authActions from '../actions/auth.actions';
-import services from '../services';
+import authActions from 'actions/auth.actions';
+import services from 'services';
 
 const { Types } = authActions;
 const INITIAL_STATE = {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Menu, Card } from '../../../elements/content';
-import { Text } from '../../../elements';
+import { Menu, Card } from 'elements/content';
+import { Text } from 'elements';
+import RoutesName from 'enums/routes-name.enums';
 import ListLinks from '../List';
-import RoutesName from '../../../enums/routes-name.enums';
 
 const LeftMenu = () => {
   return (

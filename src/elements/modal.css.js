@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../enums/colors.enums';
+import colors from 'enums/colors.enums';
 
 const Wrapper = styled.div`
   background: white;

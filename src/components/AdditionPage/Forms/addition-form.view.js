@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
+import { Button } from 'elements';
 import { Content, Form, Input } from '../elements/table.elements';
-import { Button } from '../../../elements';
 
 function AdditionForm({
   values,

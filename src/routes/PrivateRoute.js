@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { dispatcher } from '../config/redux.store';
+import { dispatcher } from 'config/redux.store';
 
 const PrivateRoute = ({ component, isAuthenticated, ...rest }) => {
   const ComponentToRender = component;

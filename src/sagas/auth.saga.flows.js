@@ -1,5 +1,5 @@
 import { call, take, fork, cancel, takeLatest } from 'redux-saga/effects';
-import authActions from '../actions/auth.actions';
+import authActions from 'actions/auth.actions';
 import {
   authorize,
   load,

@@ -19,9 +19,9 @@ export const LayoutPage = Component => {
 
     return (
       <>
-        <Content flex full>
+        <Content flex>
           <Menu />
-          <Content full>
+          <Content full main>
             <Header title={title} />
             <MainContent>
               <Component {...props} />

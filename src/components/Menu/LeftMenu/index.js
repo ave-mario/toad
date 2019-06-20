@@ -13,7 +13,7 @@ const LeftMenu = () => {
       </Card>
       <Menu>
         <ListLinks list={RoutesName} />
-        <Card dark absolute padding="0">
+        <Card dark absolute padding="10px 0 0">
           <Footer />
         </Card>
       </Menu>

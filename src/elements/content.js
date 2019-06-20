@@ -7,6 +7,11 @@ export const Content = styled.div`
   background: ${({ white }) => (white ? `#fff` : '#f7f7f7')};
   width: 100%;
   ${({ padding }) => padding && `padding-bottom: 50px;`}
+  ${({ full }) =>
+    full &&
+    `margin-left: 200px; 
+    height: fit-content;
+    min-height: 100vh;`}
 `;
 
 export const MainContent = styled.div`
@@ -24,8 +29,14 @@ export const ContentTitle = styled(Text)`
 
 export const Menu = styled.nav`
   background: ${({ background }) => background || `${colors.whiteDark}`};
-  min-height: 100vh;
+  min-height: 350px;
   width: 100%;
+  min-height: calc(100vh - 166px);
+  height: 100vh;
+
+  @media (max-height: 500px) {
+    height: fit-content;
+  }
 `;
 
 export const Card = styled.section`
@@ -35,10 +46,16 @@ export const Card = styled.section`
       ? `
     padding: 0;
     position: relative;
+    width: 200px;
+    height: fit-content;
+    min-height: 500px;
     max-height: 100vh;
-    min-height: 100vh;
-    width: 250px;
-    background: ${colors.white}
+    position: fixed;
+
+    @media (max-height: 500px) {
+    overflow-y: scroll;
+    min-height: unset;
+  }
   `
       : `padding: ${padding || '16px 16px 0'};
          height: ${height || `60px`};`}
@@ -53,7 +70,13 @@ export const Card = styled.section`
       position: absolute;
       bottom: 0;
       width: 100%;
+
+      @media (max-height: 500px) {
+        position: initial;
+        margin: 150px 0 0;
+      }
     `}
+
   ${({ border }) => border && 'border-bottom: 1px solid'}
 `;
 

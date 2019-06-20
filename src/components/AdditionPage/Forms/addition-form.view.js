@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import { Title3, Button, Input } from '../../../elements';
+import { Content, Form, Input } from '../elements/table.elements';
+import { Button } from '../../../elements';
 
 function AdditionForm({
   values,
@@ -12,48 +13,42 @@ function AdditionForm({
   t
 }) {
   return (
-    <div>
-      <form
-        style={{
-          display: 'flex',
-          alignItems: 'center'
-        }}
-        onSubmit={handleSubmit}
-      >
+    <Content>
+      <Form onSubmit={handleSubmit}>
         <div>
-          <Title3>{t('labels.Name')}</Title3>
           <Input
             id="nameInput"
             className="nameInput"
             type="text"
             name="name"
-            width="250px"
-            margin="0 20px 0 0"
             onChange={handleChange}
+            placeholder={t('labels.Name')}
             border={errors.name && touched.name && '1px solid red'}
             value={values.name}
           />
         </div>
         <div>
-          <Title3>{t('labels.Price')}</Title3>
           <Input
+            number
             id="priceInput"
             className="priceInput"
             type="number"
             name="price"
             step={0.5}
-            width="100px"
-            margin="0 20px 0 0"
+            small
             onChange={handleChange}
+            placeholder={t('labels.Price')}
             border={errors.price && touched.price && '1px solid red'}
             value={values.price}
           />
         </div>
-        <Button className="submitButton" type="submit" width="100px">
-          {t('buttons.Submit')}
-        </Button>
-      </form>
-    </div>
+        <div>
+          <Button blue className="submitButton" type="submit" lg>
+            {t('buttons.Submit')}
+          </Button>
+        </div>
+      </Form>
+    </Content>
   );
 }
 

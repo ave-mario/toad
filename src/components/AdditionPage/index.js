@@ -2,21 +2,25 @@
 import React from 'react';
 import AdditionForm from './Forms';
 import Table from './Content';
-import { Card, Content } from '../../elements/content';
+import { Card, Content, ContentTitle as Title } from '../../elements/content';
 import { addResource } from '../../config/localize';
 import localization from './localization.addition';
 
 addResource('Addition', localization);
 const AdditionView = () => {
   return (
-    <Card padding="50px">
-      <Card border padding="0  0 20px 0">
-        <AdditionForm />
-      </Card>
-      <Content relative>
+    <>
+      <Title margin>Add new service of room</Title>
+      <Content white>
+        <Card border>
+          <AdditionForm />
+        </Card>
+      </Content>
+      <Title margin>Services of room</Title>
+      <Content white padding>
         <Table />
       </Content>
-    </Card>
+    </>
   );
 };
 

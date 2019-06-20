@@ -2,38 +2,54 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import { Header, Title3 } from '../../../elements';
-import { TableRow, TableCell, CloseIcon } from '../elements/table.elements';
+import { Header, Text } from '../../../elements';
+import {
+  TableRow,
+  TableCell,
+  TableButton,
+  Content
+} from '../elements/table.elements';
+import EditModal from '../EditModal';
 
 class AdditionTable extends Component {
-  componentDidMount() {
-    const { load } = this.props;
-    load();
+  constructor() {
+    super();
 
+    this.state = {
+      isShowModal: false,
+      addition: null
+    };
     this.handleClick = this.handleClick.bind(this);
     this.renderAddition = this.renderAddition.bind(this);
   }
 
-  handleClick(id) {
-    const { change } = this.props;
-    change(id, { name: 'dsrtf', price: 1.0 });
+  componentDidMount() {
+    const { load } = this.props;
+    load();
+  }
+
+  handleClick(addition = null) {
+    this.setState(prevState => ({
+      isShowModal: !prevState.isShowModal,
+      addition
+    }));
   }
 
   renderAddition(addition, index) {
     return (
-      <TableRow key={addition.name} mgHeight2>
-        <TableCell color="#f4f2f1" xs2>
-          {index + 1}
+      <TableRow key={addition.name}>
+        <TableCell xs1>{index + 1}</TableCell>
+        <TableCell xs4 padding>
+          {addition.name}
         </TableCell>
-        <TableCell xs4>{addition.name}</TableCell>
-        <TableCell xs4>{addition.price}</TableCell>
-        <TableCell
-          xs2
-          mg4
-          color="#bd5932"
-          onClick={() => this.handleClick(addition._id)}
-        >
-          <CloseIcon />
+        <TableCell xs2 padding>
+          {addition.price}
+        </TableCell>
+        <TableCell xs4>
+          <TableButton onClick={() => this.handleClick(addition)}>
+            Edit
+          </TableButton>
+          <TableButton red>Delete</TableButton>
         </TableCell>
       </TableRow>
     );
@@ -41,28 +57,33 @@ class AdditionTable extends Component {
 
   render() {
     const { t, data, total } = this.props;
+    const { isShowModal, addition } = this.state;
     return (
-      <>
+      <Content>
         <Header>
-          <Title3>
+          <Text>
             {t('labels.total')} : {total}
-          </Title3>
+          </Text>
         </Header>
-        <section>
+        <div>
+          {isShowModal && (
+            <EditModal close={this.handleClick} addition={addition} />
+          )}
           <TableRow mgHeight2>
-            <TableCell color="#f4f2f1" xs2>
-              №
-            </TableCell>
-            <TableCell xs4 color="#f4f2f1">
+            <TableCell yellow>№</TableCell>
+            <TableCell xs4 yellow padding>
               {t('labels.Name')}
             </TableCell>
-            <TableCell xs4 color="#f4f2f1">
+            <TableCell xs2 yellow padding>
               {t('labels.Price')}
+            </TableCell>
+            <TableCell xs4 yellow>
+              {t('labels.Controls')}
             </TableCell>
           </TableRow>
           {data.map(this.renderAddition)}
-        </section>
-      </>
+        </div>
+      </Content>
     );
   }
 }
@@ -79,8 +100,7 @@ AdditionTable.propTypes = {
   //   limit: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   load: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired,
-  change: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired
 };
 
 export default withTranslation('Addition')(AdditionTable);

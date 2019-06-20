@@ -12,13 +12,15 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  width: ${({ width }) => width || '300px'};
   height: ${({ height }) => height || '35px'};
   border: ${({ border }) => border || `1px solid ${colors.grey}`};
   background-color: ${({ backgroundColor }) =>
     backgroundColor || `${colors.white}`};
-  border-radius: ${({ borderRadius }) => borderRadius || '20px'};
-  margin: ${({ margin }) => margin || '3px auto'};
+  border-radius: ${({ borderRadius }) => borderRadius || '10px'};
+  margin: ${({ margin }) => margin || '3px 15px'};
+
+  ${({ number }) =>
+    number ? 'width: 80px; padding-right: 10px;' : 'width: 280px;'}
 
   padding-left: 13px;
   font-size: 1em;
@@ -29,14 +31,44 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  width: ${({ width }) => width || '300px'};
-  height: ${({ height }) => height || '35px'};
-  background: ${({ background }) => background || `${colors.blue}`};
-  color: ${({ color }) => color || `${colors.white}`};
-  border-radius: ${({ borderRadius }) => borderRadius || '15px'};
-  border: ${({ border }) => border || `none`};
+  height: 35px;
   border-width: 0;
   outline: none;
+  ${({ xs }) =>
+    xs &&
+    `
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+  `}
+  ${({ lg }) =>
+    lg &&
+    `
+    border-radius: 10px;
+    width: 100px;
+  `}
+  ${({ ms }) =>
+    ms &&
+    `
+    border-radius: 15px;
+    width: 300px;
+  `}
+
+   ${({ white }) =>
+     white &&
+     `
+    background: ${colors.white};
+    color: ${colors.darkGrey};
+  `}
+
+  ${({ blue }) =>
+    blue &&
+    `
+    border: 1.5px solid ${colors.borderGrey};
+    background: ${colors.blueGreen};
+    color: ${colors.black};
+    font-weight: bold;
+  `}
 `;
 
 export const ButtonText = styled.span`
@@ -47,7 +79,6 @@ export const ButtonText = styled.span`
 `;
 
 export const Title = styled.h1`
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-weight: ${({ fontWeight }) => fontWeight || '600px'};
   color: ${({ color }) => color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '2.2em'};
@@ -56,24 +87,21 @@ export const Title = styled.h1`
 `;
 
 export const Title2 = styled.h2`
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
-  font-weight: ${({ fontWeight }) => fontWeight || '300px'}
+  font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '1.2em'};
-  text-align: ${({ textAlign }) => textAlign || 'center'};s
+  text-align: ${({ textAlign }) => textAlign || 'center'};
   margin: ${({ margin }) => margin || '1px auto'};
 `;
 
 export const Title3 = styled.h3`
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
-  font-weight: ${({ fontWeight }) => fontWeight || '300px'}
+  font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '0.8em'};
   margin: ${({ margin }) => margin || '1px auto'};
 `;
 
 export const Text = styled.p`
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   color: ${props => props.color || `${colors.darkGrey}`};
   margin: ${props => props.margin || '0'};
 `;
@@ -108,7 +136,7 @@ export const Footer = styled.footer`
   padding: ${({ margin }) => margin || '0'};
   width: ${({ width }) => width || '100%'};
   height: ${({ height }) => height || '50px'};
-  ${({ background }) => background && ` background:${colors.black}`};
+  ${({ background }) => background && ` background:${colors.whiteDark}`};
   ${({ absolute, fix }) =>
     absolute
       ? ` position: absolute;
@@ -126,7 +154,6 @@ export const Main = styled.main`
 export const ErrorText = styled.div`
   text-align: ${({ textAlign }) => textAlign || 'center'};
   color: ${({ color }) => color || 'red'};
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-size: ${({ fontSize }) => fontSize || `13px`};
   width: ${({ width }) => width || '100%'};
   padding: ${({ padding }) => padding || '2px'};
@@ -135,7 +162,6 @@ export const ServerError = styled.div`
   text-align: ${({ textAlign }) => textAlign || 'left'};
   color: ${({ color }) => color || 'white'};
   background-color: ${({ backgroundColor }) => backgroundColor || '#ed1e3a'};
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-size: ${({ fontSize }) => fontSize || `13px`};
   width: ${({ width }) => width || '80%'};
   height: ${({ height }) => height || '25px'};
@@ -150,7 +176,6 @@ export const ServerError = styled.div`
 `;
 export const ServerErrorText = styled.span`
   color: ${({ color }) => color || 'white'};
-  font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
   font-size: ${({ fontSize }) => fontSize || `13px`};
   max-width: ${({ maxWidth }) => maxWidth || `80%`};
   overflow: ${({ overflow }) => overflow || 'hidden'};
@@ -168,7 +193,10 @@ export const CloseButton = styled.button`
     outline: none;
   }
 `;
-export const CloseIcon = styled(Close)``;
+export const CloseIcon = styled(Close)`
+  color: ${colors.red};
+  ${({ small }) => small && `width: 20px;height: 20px; `};
+`;
 export const Loader = styled.div`
   border: 10px solid #f3f3f3;
   border-radius: 50%;

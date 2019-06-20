@@ -17,8 +17,30 @@ const loadSuccess = (state = INITIAL_STATE, { payload }) => {
   };
 };
 
+const changeSuccess = (state = INITIAL_STATE, { id, name, price }) => {
+  const docs = state.docs.map(doc => {
+    const { _id } = doc;
+    if (_id === id) return { ...doc, name, price };
+    return doc;
+  });
+  return {
+    ...state,
+    docs
+  };
+};
+
+const addSuccess = (state = INITIAL_STATE, { payload }) => {
+  const docs = state.docs.concat({ ...payload });
+  return {
+    ...state,
+    docs
+  };
+};
+
 export const HANDLERS = {
-  [Types.LOAD_ADDITION_LIST_SUCCESS]: loadSuccess
+  [Types.LOAD_ADDITION_LIST_SUCCESS]: loadSuccess,
+  [Types.CHANGE_ADDITION_SUCCESS]: changeSuccess,
+  [Types.SAVE_ADDITION_SUCCESS]: addSuccess
 };
 
 const additionReducer = createReducer(INITIAL_STATE, HANDLERS);

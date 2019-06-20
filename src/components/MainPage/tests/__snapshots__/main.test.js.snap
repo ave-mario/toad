@@ -30,6 +30,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "defaultNS": "translations",
           "fallbackLng": Array [
             "en",
+            "ru",
           ],
           "fallbackNS": false,
           "initImmediate": true,
@@ -46,6 +47,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "ns": Array [
             "translations",
             "validation",
+            "routes",
             "MainPage",
           ],
           "nsSeparator": ":",
@@ -66,15 +68,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Services on room",
-                "Main": "Main page",
-                "Rooms": "Rooms",
-                "Services": "Services of hotel",
+                "addition": "Services of room",
+                "main": "Main page",
+                "rooms": "Rooms",
+                "services": "Services of hotel",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
-                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                 },
                 "required": Object {
                   "email": "Email is required",
@@ -89,15 +91,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Услуги комнат",
-                "Main": "Главная",
-                "Rooms": "Комнаты",
-                "Services": "Услуги отеля",
+                "addition": "Услуги комнат",
+                "main": "Главная",
+                "rooms": "Комнаты",
+                "services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "Неверный email",
-                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                 },
                 "required": Object {
                   "email": "Требуется email",
@@ -136,6 +138,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "defaultNS": "translations",
         "fallbackLng": Array [
           "en",
+          "ru",
         ],
         "fallbackNS": false,
         "initImmediate": true,
@@ -152,6 +155,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "ns": Array [
           "translations",
           "validation",
+          "routes",
           "MainPage",
         ],
         "nsSeparator": ":",
@@ -172,15 +176,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Services on room",
-              "Main": "Main page",
-              "Rooms": "Rooms",
-              "Services": "Services of hotel",
+              "addition": "Services of room",
+              "main": "Main page",
+              "rooms": "Rooms",
+              "services": "Services of hotel",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
-                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
               },
               "required": Object {
                 "email": "Email is required",
@@ -195,15 +199,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Услуги комнат",
-              "Main": "Главная",
-              "Rooms": "Комнаты",
-              "Services": "Услуги отеля",
+              "addition": "Услуги комнат",
+              "main": "Главная",
+              "rooms": "Комнаты",
+              "services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "Неверный email",
-                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
               },
               "required": Object {
                 "email": "Требуется email",
@@ -250,6 +254,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
+                  "ru",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -266,6 +271,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
+                  "routes",
                   "MainPage",
                 ],
                 "nsSeparator": ":",
@@ -287,15 +293,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Services on room",
-                      "Main": "Main page",
-                      "Rooms": "Rooms",
-                      "Services": "Services of hotel",
+                      "addition": "Services of room",
+                      "main": "Main page",
+                      "rooms": "Rooms",
+                      "services": "Services of hotel",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
-                        "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                        "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                       },
                       "required": Object {
                         "email": "Email is required",
@@ -310,15 +316,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Услуги комнат",
-                      "Main": "Главная",
-                      "Rooms": "Комнаты",
-                      "Services": "Услуги отеля",
+                      "addition": "Услуги комнат",
+                      "main": "Главная",
+                      "rooms": "Комнаты",
+                      "services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "Неверный email",
-                        "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                        "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                       },
                       "required": Object {
                         "email": "Требуется email",
@@ -348,6 +354,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -364,6 +371,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -384,15 +392,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -407,15 +415,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -454,6 +462,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -470,6 +479,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -491,15 +501,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -514,15 +524,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -557,6 +567,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -573,6 +584,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -593,15 +605,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -616,15 +628,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -654,15 +666,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Services on room",
-                "Main": "Main page",
-                "Rooms": "Rooms",
-                "Services": "Services of hotel",
+                "addition": "Services of room",
+                "main": "Main page",
+                "rooms": "Rooms",
+                "services": "Services of hotel",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
-                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                 },
                 "required": Object {
                   "email": "Email is required",
@@ -677,15 +689,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Услуги комнат",
-                "Main": "Главная",
-                "Rooms": "Комнаты",
-                "Services": "Услуги отеля",
+                "addition": "Услуги комнат",
+                "main": "Главная",
+                "rooms": "Комнаты",
+                "services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "Неверный email",
-                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                 },
                 "required": Object {
                   "email": "Требуется email",
@@ -717,6 +729,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -733,6 +746,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -754,15 +768,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -777,15 +791,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -819,6 +833,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -835,6 +850,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -855,15 +871,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -878,15 +894,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -932,6 +948,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -948,6 +965,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -969,15 +987,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -992,15 +1010,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -1030,6 +1048,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -1046,6 +1065,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -1066,15 +1086,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -1089,15 +1109,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -1136,6 +1156,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -1152,6 +1173,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -1172,15 +1194,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -1195,15 +1217,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -1244,6 +1266,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
+                  "ru",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -1260,6 +1283,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
+                  "routes",
                   "MainPage",
                 ],
                 "nsSeparator": ":",
@@ -1281,15 +1305,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Services on room",
-                      "Main": "Main page",
-                      "Rooms": "Rooms",
-                      "Services": "Services of hotel",
+                      "addition": "Services of room",
+                      "main": "Main page",
+                      "rooms": "Rooms",
+                      "services": "Services of hotel",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
-                        "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                        "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                       },
                       "required": Object {
                         "email": "Email is required",
@@ -1304,15 +1328,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Услуги комнат",
-                      "Main": "Главная",
-                      "Rooms": "Комнаты",
-                      "Services": "Услуги отеля",
+                      "addition": "Услуги комнат",
+                      "main": "Главная",
+                      "rooms": "Комнаты",
+                      "services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "Неверный email",
-                        "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                        "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                       },
                       "required": Object {
                         "email": "Требуется email",
@@ -1342,6 +1366,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -1358,6 +1383,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -1378,15 +1404,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -1401,15 +1427,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -1448,6 +1474,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -1464,6 +1491,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -1485,15 +1513,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -1508,15 +1536,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -2483,15 +2511,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Services on room",
-              "Main": "Main page",
-              "Rooms": "Rooms",
-              "Services": "Services of hotel",
+              "addition": "Services of room",
+              "main": "Main page",
+              "rooms": "Rooms",
+              "services": "Services of hotel",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
-                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
               },
               "required": Object {
                 "email": "Email is required",
@@ -2506,15 +2534,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Услуги комнат",
-              "Main": "Главная",
-              "Rooms": "Комнаты",
-              "Services": "Услуги отеля",
+              "addition": "Услуги комнат",
+              "main": "Главная",
+              "rooms": "Комнаты",
+              "services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "Неверный email",
-                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
               },
               "required": Object {
                 "email": "Требуется email",
@@ -2532,15 +2560,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "routes": Object {
-            "Addition": "Services on room",
-            "Main": "Main page",
-            "Rooms": "Rooms",
-            "Services": "Services of hotel",
+            "addition": "Services of room",
+            "main": "Main page",
+            "rooms": "Rooms",
+            "services": "Services of hotel",
           },
           "validation": Object {
             "incorrect": Object {
               "email": "The email is incorrect",
-              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+              "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
             },
             "required": Object {
               "email": "Email is required",
@@ -2555,15 +2583,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "routes": Object {
-            "Addition": "Услуги комнат",
-            "Main": "Главная",
-            "Rooms": "Комнаты",
-            "Services": "Услуги отеля",
+            "addition": "Услуги комнат",
+            "main": "Главная",
+            "rooms": "Комнаты",
+            "services": "Услуги отеля",
           },
           "validation": Object {
             "incorrect": Object {
               "email": "Неверный email",
-              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+              "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
             },
             "required": Object {
               "email": "Требуется email",
@@ -2593,6 +2621,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
+                  "ru",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2609,6 +2638,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
+                  "routes",
                   "MainPage",
                 ],
                 "nsSeparator": ":",
@@ -2630,15 +2660,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Services on room",
-                      "Main": "Main page",
-                      "Rooms": "Rooms",
-                      "Services": "Services of hotel",
+                      "addition": "Services of room",
+                      "main": "Main page",
+                      "rooms": "Rooms",
+                      "services": "Services of hotel",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
-                        "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                        "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                       },
                       "required": Object {
                         "email": "Email is required",
@@ -2653,15 +2683,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Услуги комнат",
-                      "Main": "Главная",
-                      "Rooms": "Комнаты",
-                      "Services": "Услуги отеля",
+                      "addition": "Услуги комнат",
+                      "main": "Главная",
+                      "rooms": "Комнаты",
+                      "services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "Неверный email",
-                        "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                        "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                       },
                       "required": Object {
                         "email": "Требуется email",
@@ -2691,6 +2721,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2707,6 +2738,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -2727,15 +2759,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -2750,15 +2782,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -2797,6 +2829,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2813,6 +2846,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -2834,15 +2868,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -2857,15 +2891,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -2900,6 +2934,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -2916,6 +2951,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -2936,15 +2972,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -2959,15 +2995,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -2997,15 +3033,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Services on room",
-                "Main": "Main page",
-                "Rooms": "Rooms",
-                "Services": "Services of hotel",
+                "addition": "Services of room",
+                "main": "Main page",
+                "rooms": "Rooms",
+                "services": "Services of hotel",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
-                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                 },
                 "required": Object {
                   "email": "Email is required",
@@ -3020,15 +3056,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Услуги комнат",
-                "Main": "Главная",
-                "Rooms": "Комнаты",
-                "Services": "Услуги отеля",
+                "addition": "Услуги комнат",
+                "main": "Главная",
+                "rooms": "Комнаты",
+                "services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "Неверный email",
-                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                 },
                 "required": Object {
                   "email": "Требуется email",
@@ -3060,6 +3096,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -3076,6 +3113,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -3097,15 +3135,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -3120,15 +3158,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -3162,6 +3200,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -3178,6 +3217,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -3198,15 +3238,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -3221,15 +3261,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -3275,6 +3315,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -3291,6 +3332,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -3312,15 +3354,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -3335,15 +3377,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -3373,6 +3415,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -3389,6 +3432,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -3409,15 +3453,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -3432,15 +3476,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -3479,6 +3523,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "defaultNS": "translations",
             "fallbackLng": Array [
               "en",
+              "ru",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -3495,6 +3540,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "ns": Array [
               "translations",
               "validation",
+              "routes",
               "MainPage",
             ],
             "nsSeparator": ":",
@@ -3516,15 +3562,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Services on room",
-                  "Main": "Main page",
-                  "Rooms": "Rooms",
-                  "Services": "Services of hotel",
+                  "addition": "Services of room",
+                  "main": "Main page",
+                  "rooms": "Rooms",
+                  "services": "Services of hotel",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "The email is incorrect",
-                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                   },
                   "required": Object {
                     "email": "Email is required",
@@ -3539,15 +3585,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "routes": Object {
-                  "Addition": "Услуги комнат",
-                  "Main": "Главная",
-                  "Rooms": "Комнаты",
-                  "Services": "Услуги отеля",
+                  "addition": "Услуги комнат",
+                  "main": "Главная",
+                  "rooms": "Комнаты",
+                  "services": "Услуги отеля",
                 },
                 "validation": Object {
                   "incorrect": Object {
                     "email": "Неверный email",
-                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                   },
                   "required": Object {
                     "email": "Требуется email",
@@ -3582,6 +3628,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "defaultNS": "translations",
           "fallbackLng": Array [
             "en",
+            "ru",
           ],
           "fallbackNS": false,
           "initImmediate": true,
@@ -3598,6 +3645,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "ns": Array [
             "translations",
             "validation",
+            "routes",
             "MainPage",
           ],
           "nsSeparator": ":",
@@ -3618,15 +3666,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Services on room",
-                "Main": "Main page",
-                "Rooms": "Rooms",
-                "Services": "Services of hotel",
+                "addition": "Services of room",
+                "main": "Main page",
+                "rooms": "Rooms",
+                "services": "Services of hotel",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "The email is incorrect",
-                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                 },
                 "required": Object {
                   "email": "Email is required",
@@ -3641,15 +3689,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "routes": Object {
-                "Addition": "Услуги комнат",
-                "Main": "Главная",
-                "Rooms": "Комнаты",
-                "Services": "Услуги отеля",
+                "addition": "Услуги комнат",
+                "main": "Главная",
+                "rooms": "Комнаты",
+                "services": "Услуги отеля",
               },
               "validation": Object {
                 "incorrect": Object {
                   "email": "Неверный email",
-                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                 },
                 "required": Object {
                   "email": "Требуется email",
@@ -3688,6 +3736,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
+                  "ru",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -3704,6 +3753,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "ns": Array [
                   "translations",
                   "validation",
+                  "routes",
                   "MainPage",
                 ],
                 "nsSeparator": ":",
@@ -3725,15 +3775,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Services on room",
-                      "Main": "Main page",
-                      "Rooms": "Rooms",
-                      "Services": "Services of hotel",
+                      "addition": "Services of room",
+                      "main": "Main page",
+                      "rooms": "Rooms",
+                      "services": "Services of hotel",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "The email is incorrect",
-                        "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                        "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                       },
                       "required": Object {
                         "email": "Email is required",
@@ -3748,15 +3798,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                       },
                     },
                     "routes": Object {
-                      "Addition": "Услуги комнат",
-                      "Main": "Главная",
-                      "Rooms": "Комнаты",
-                      "Services": "Услуги отеля",
+                      "addition": "Услуги комнат",
+                      "main": "Главная",
+                      "rooms": "Комнаты",
+                      "services": "Услуги отеля",
                     },
                     "validation": Object {
                       "incorrect": Object {
                         "email": "Неверный email",
-                        "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                        "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                       },
                       "required": Object {
                         "email": "Требуется email",
@@ -3786,6 +3836,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -3802,6 +3853,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -3822,15 +3874,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -3845,15 +3897,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -3892,6 +3944,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
+                "ru",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -3908,6 +3961,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "ns": Array [
                 "translations",
                 "validation",
+                "routes",
                 "MainPage",
               ],
               "nsSeparator": ":",
@@ -3929,15 +3983,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Services on room",
-                    "Main": "Main page",
-                    "Rooms": "Rooms",
-                    "Services": "Services of hotel",
+                    "addition": "Services of room",
+                    "main": "Main page",
+                    "rooms": "Rooms",
+                    "services": "Services of hotel",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "The email is incorrect",
-                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                     },
                     "required": Object {
                       "email": "Email is required",
@@ -3952,15 +4006,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "routes": Object {
-                    "Addition": "Услуги комнат",
-                    "Main": "Главная",
-                    "Rooms": "Комнаты",
-                    "Services": "Услуги отеля",
+                    "addition": "Услуги комнат",
+                    "main": "Главная",
+                    "rooms": "Комнаты",
+                    "services": "Услуги отеля",
                   },
                   "validation": Object {
                     "incorrect": Object {
                       "email": "Неверный email",
-                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                     },
                     "required": Object {
                       "email": "Требуется email",
@@ -4927,15 +4981,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Services on room",
-              "Main": "Main page",
-              "Rooms": "Rooms",
-              "Services": "Services of hotel",
+              "addition": "Services of room",
+              "main": "Main page",
+              "rooms": "Rooms",
+              "services": "Services of hotel",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "The email is incorrect",
-                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
               },
               "required": Object {
                 "email": "Email is required",
@@ -4950,15 +5004,15 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "routes": Object {
-              "Addition": "Услуги комнат",
-              "Main": "Главная",
-              "Rooms": "Комнаты",
-              "Services": "Услуги отеля",
+              "addition": "Услуги комнат",
+              "main": "Главная",
+              "rooms": "Комнаты",
+              "services": "Услуги отеля",
             },
             "validation": Object {
               "incorrect": Object {
                 "email": "Неверный email",
-                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
               },
               "required": Object {
                 "email": "Требуется email",

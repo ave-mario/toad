@@ -1,35 +1,15 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { List } from '../../../elements/list';
-import colors from '../../../enums/colors.enums';
+import { List, NavLink } from '../../../elements/list';
 
 const ListMenu = ({ list }) => {
-  return (
-    <List>
-      {list.map(li => {
-        return (
-          <NavLink
-            to={li.link}
-            exact
-            key={li.link}
-            style={{
-              textDecoration: 'none',
-              color: colors.black,
-              border: `1px solid ${colors.grey}`,
-              padding: '8px'
-            }}
-            activeStyle={{
-              background: colors.grey
-            }}
-          >
-            {li.name}
-          </NavLink>
-        );
-      })}
-    </List>
+  const renderLink = li => (
+    <NavLink to={li.link} exact key={li.link}>
+      {li.name}
+    </NavLink>
   );
+
+  return <List relative>{list.map(renderLink)}</List>;
 };
 
 ListMenu.propTypes = {

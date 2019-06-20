@@ -4,7 +4,7 @@ import services from '../services';
 
 const { Types } = authActions;
 const INITIAL_STATE = {
-  isRequesting: true,
+  isRequesting: false,
   isFailed: false,
   user: null,
   isAuthenticated: false,

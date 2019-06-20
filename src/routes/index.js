@@ -23,13 +23,9 @@ class Routes extends Component {
       <>
         {!isRequesting && (
           <Switch>
-            <PrivateRoute exact path="/" component={MainPage} />
+            <PrivateRoute exact path="/" component={Layout(MainPage)} />
             <HiddenRoute exact path="/login" component={LoginPage} />
-            <WelcomeRoute
-              exact
-              path="/welcome"
-              component={Layout(WelcomePage)}
-            />
+            <WelcomeRoute exact path="/welcome" component={WelcomePage} />
             <PrivateRoute
               exact
               path="/rooms-services"

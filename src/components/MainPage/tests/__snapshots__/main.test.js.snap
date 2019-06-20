@@ -63,8 +63,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "resources": Object {
             "en": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Logout",
+                "labels": Object {
+                  "title": "Main page",
                 },
               },
               "routes": Object {
@@ -86,8 +86,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "ru": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Выйти",
+                "labels": Object {
+                  "title": "Главная",
                 },
               },
               "routes": Object {
@@ -171,8 +171,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "resources": Object {
           "en": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Logout",
+              "labels": Object {
+                "title": "Main page",
               },
             },
             "routes": Object {
@@ -194,8 +194,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "ru": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Выйти",
+              "labels": Object {
+                "title": "Главная",
               },
             },
             "routes": Object {
@@ -288,8 +288,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "resources": Object {
                   "en": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Logout",
+                      "labels": Object {
+                        "title": "Main page",
                       },
                     },
                     "routes": Object {
@@ -311,8 +311,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                   "ru": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Выйти",
+                      "labels": Object {
+                        "title": "Главная",
                       },
                     },
                     "routes": Object {
@@ -387,8 +387,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -410,8 +410,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -496,8 +496,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -519,8 +519,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -600,8 +600,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -623,8 +623,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -661,8 +661,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "store": Object {
             "en": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Logout",
+                "labels": Object {
+                  "title": "Main page",
                 },
               },
               "routes": Object {
@@ -684,8 +684,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "ru": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Выйти",
+                "labels": Object {
+                  "title": "Главная",
                 },
               },
               "routes": Object {
@@ -763,8 +763,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -786,8 +786,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -866,8 +866,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -889,8 +889,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -982,8 +982,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -1005,8 +1005,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -1081,8 +1081,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -1104,8 +1104,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -1189,8 +1189,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -1212,8 +1212,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -1300,8 +1300,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "resources": Object {
                   "en": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Logout",
+                      "labels": Object {
+                        "title": "Main page",
                       },
                     },
                     "routes": Object {
@@ -1323,8 +1323,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                   "ru": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Выйти",
+                      "labels": Object {
+                        "title": "Главная",
                       },
                     },
                     "routes": Object {
@@ -1399,8 +1399,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -1422,8 +1422,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -1508,8 +1508,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -1531,8 +1531,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -2506,8 +2506,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "resourceStore": Object {
           "en": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Logout",
+              "labels": Object {
+                "title": "Main page",
               },
             },
             "routes": Object {
@@ -2529,8 +2529,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "ru": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Выйти",
+              "labels": Object {
+                "title": "Главная",
               },
             },
             "routes": Object {
@@ -2555,8 +2555,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       "store": Object {
         "en": Object {
           "MainPage": Object {
-            "buttons": Object {
-              "logout": "Logout",
+            "labels": Object {
+              "title": "Main page",
             },
           },
           "routes": Object {
@@ -2578,8 +2578,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "ru": Object {
           "MainPage": Object {
-            "buttons": Object {
-              "logout": "Выйти",
+            "labels": Object {
+              "title": "Главная",
             },
           },
           "routes": Object {
@@ -2655,8 +2655,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "resources": Object {
                   "en": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Logout",
+                      "labels": Object {
+                        "title": "Main page",
                       },
                     },
                     "routes": Object {
@@ -2678,8 +2678,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                   "ru": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Выйти",
+                      "labels": Object {
+                        "title": "Главная",
                       },
                     },
                     "routes": Object {
@@ -2754,8 +2754,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -2777,8 +2777,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -2863,8 +2863,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -2886,8 +2886,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -2967,8 +2967,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -2990,8 +2990,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -3028,8 +3028,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "store": Object {
             "en": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Logout",
+                "labels": Object {
+                  "title": "Main page",
                 },
               },
               "routes": Object {
@@ -3051,8 +3051,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "ru": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Выйти",
+                "labels": Object {
+                  "title": "Главная",
                 },
               },
               "routes": Object {
@@ -3130,8 +3130,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -3153,8 +3153,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -3233,8 +3233,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -3256,8 +3256,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -3349,8 +3349,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -3372,8 +3372,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -3448,8 +3448,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -3471,8 +3471,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -3557,8 +3557,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "resources": Object {
               "en": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Logout",
+                  "labels": Object {
+                    "title": "Main page",
                   },
                 },
                 "routes": Object {
@@ -3580,8 +3580,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "ru": Object {
                 "MainPage": Object {
-                  "buttons": Object {
-                    "logout": "Выйти",
+                  "labels": Object {
+                    "title": "Главная",
                   },
                 },
                 "routes": Object {
@@ -3661,8 +3661,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "resources": Object {
             "en": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Logout",
+                "labels": Object {
+                  "title": "Main page",
                 },
               },
               "routes": Object {
@@ -3684,8 +3684,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "ru": Object {
               "MainPage": Object {
-                "buttons": Object {
-                  "logout": "Выйти",
+                "labels": Object {
+                  "title": "Главная",
                 },
               },
               "routes": Object {
@@ -3770,8 +3770,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "resources": Object {
                   "en": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Logout",
+                      "labels": Object {
+                        "title": "Main page",
                       },
                     },
                     "routes": Object {
@@ -3793,8 +3793,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                   "ru": Object {
                     "MainPage": Object {
-                      "buttons": Object {
-                        "logout": "Выйти",
+                      "labels": Object {
+                        "title": "Главная",
                       },
                     },
                     "routes": Object {
@@ -3869,8 +3869,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -3892,8 +3892,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -3978,8 +3978,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "resources": Object {
                 "en": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Logout",
+                    "labels": Object {
+                      "title": "Main page",
                     },
                   },
                   "routes": Object {
@@ -4001,8 +4001,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "ru": Object {
                   "MainPage": Object {
-                    "buttons": Object {
-                      "logout": "Выйти",
+                    "labels": Object {
+                      "title": "Главная",
                     },
                   },
                   "routes": Object {
@@ -4976,8 +4976,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         "resourceStore": Object {
           "en": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Logout",
+              "labels": Object {
+                "title": "Main page",
               },
             },
             "routes": Object {
@@ -4999,8 +4999,8 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "ru": Object {
             "MainPage": Object {
-              "buttons": Object {
-                "logout": "Выйти",
+              "labels": Object {
+                "title": "Главная",
               },
             },
             "routes": Object {

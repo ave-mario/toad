@@ -4,6 +4,7 @@ import { Content, MainContent } from 'elements/content';
 import Titles from 'enums/routes-name.enums';
 import Header from '../Header';
 import Menu from '../Menu/LeftMenu';
+import ErrorBar from '../ErrorBar';
 
 export const LayoutPage = Component => {
   const Layout = props => {
@@ -23,6 +24,7 @@ export const LayoutPage = Component => {
           <Menu />
           <Content full main>
             <Header title={title} />
+            <ErrorBar />
             <MainContent>
               <Component {...props} />
             </MainContent>

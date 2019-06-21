@@ -9,29 +9,33 @@ class ErrorBar extends Component {
     super(props);
     this.state = {
       isShow: true,
-      handledError: false
+      error: props.error
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (prevState.error === nextProps.error) return { isShow: true };
+    return null;
+  }
+
+  changeError() {
     const { error } = this.props;
-    this.setState({ handledError: services.errorHandlerService(error) });
+    return services.errorHandlerService(error);
   }
 
   handleClick() {
-    this.setState(state => ({
-      isShow: !state.isShow
-    }));
+    this.setState(prevState => ({ isShow: !prevState.isShow }));
   }
 
   render() {
-    const { isShow, handledError } = this.state;
+    const { isShow } = this.state;
+    const message = this.changeError();
     return (
       <>
-        {handledError && isShow && (
+        {message && isShow && (
           <ServerError>
-            <ServerErrorText>{handledError}</ServerErrorText>
+            <ServerErrorText>{message}</ServerErrorText>
             <Close
               style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
               onClick={this.handleClick}

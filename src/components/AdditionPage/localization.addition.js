@@ -4,7 +4,9 @@ export default {
       Name: 'Название улуги в комнате',
       Price: 'Цена',
       total: 'Всего услуг',
-      Controls: 'Управление'
+      Controls: 'Управление',
+      titleHeader: 'Добавление новой услуги',
+      titleMain: 'Услуги комнат'
     },
     buttons: {
       Submit: 'Добавить новую'
@@ -19,7 +21,9 @@ export default {
       Name: 'Name service on room',
       Price: 'Price',
       total: 'Total services of room',
-      Controls: 'Controls'
+      Controls: 'Controls',
+      titleHeader: 'Add new service of room',
+      titleMain: 'Services of room'
     },
     buttons: {
       Submit: 'Add new'

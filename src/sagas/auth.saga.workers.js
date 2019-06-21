@@ -18,7 +18,9 @@ export function* authorize(email, password) {
 
     return response;
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.loginFailure(errorMessage));
 
@@ -39,7 +41,9 @@ export function* load() {
       yield put(Creators.loadSuccess(user, tokenData));
     }
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.loadFailure(errorMessage));
   }
@@ -51,7 +55,9 @@ export function* createNewPassword(password, token) {
 
     yield put(Creators.createPasswordSuccess(response.data.success));
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.createPasswordFailure(errorMessage));
   }

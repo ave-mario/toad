@@ -86,6 +86,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "en": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Data already exist",
                         "invalidCredentials": "Invalid Credentials",
                         "networkError": "Network Error",
                       },
@@ -134,6 +135,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "ru": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Введенные данные уже существуют",
                         "invalidCredentials": "Неверно введенные данные",
                         "networkError": "Ошибка подключения к сети",
                       },
@@ -255,6 +257,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "en": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Data already exist",
                       "invalidCredentials": "Invalid Credentials",
                       "networkError": "Network Error",
                     },
@@ -303,6 +306,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "ru": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Введенные данные уже существуют",
                       "invalidCredentials": "Неверно введенные данные",
                       "networkError": "Ошибка подключения к сети",
                     },
@@ -425,6 +429,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -473,6 +478,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -576,6 +582,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -624,6 +631,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -737,6 +745,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -785,6 +794,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -893,6 +903,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -941,6 +952,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -1004,6 +1016,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "en": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Data already exist",
                         "invalidCredentials": "Invalid Credentials",
                         "networkError": "Network Error",
                       },
@@ -1052,6 +1065,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "ru": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Введенные данные уже существуют",
                         "invalidCredentials": "Неверно введенные данные",
                         "networkError": "Ошибка подключения к сети",
                       },
@@ -1158,6 +1172,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -1206,6 +1221,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -1313,6 +1329,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -1361,6 +1378,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -1481,6 +1499,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -1529,6 +1548,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -1632,6 +1652,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -1680,6 +1701,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -1792,6 +1814,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -1847,6 +1870,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -1962,6 +1986,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -2010,6 +2035,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -2113,6 +2139,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -2155,6 +2182,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -2268,6 +2296,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -2316,6 +2345,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -3316,6 +3346,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "en": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Data already exist",
                       "invalidCredentials": "Invalid Credentials",
                       "networkError": "Network Error",
                     },
@@ -3364,6 +3395,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "ru": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Введенные данные уже существуют",
                       "invalidCredentials": "Неверно введенные данные",
                       "networkError": "Ошибка подключения к сети",
                     },
@@ -3415,6 +3447,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "en": Object {
                 "ErrorHandler": Object {
                   "error": Object {
+                    "dataExist": "Data already exist",
                     "invalidCredentials": "Invalid Credentials",
                     "networkError": "Network Error",
                   },
@@ -3463,6 +3496,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "ru": Object {
                 "ErrorHandler": Object {
                   "error": Object {
+                    "dataExist": "Введенные данные уже существуют",
                     "invalidCredentials": "Неверно введенные данные",
                     "networkError": "Ошибка подключения к сети",
                   },
@@ -3567,6 +3601,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -3615,6 +3650,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -3718,6 +3754,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -3766,6 +3803,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -3879,6 +3917,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -3927,6 +3966,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -4035,6 +4075,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -4083,6 +4124,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -4146,6 +4188,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "en": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Data already exist",
                         "invalidCredentials": "Invalid Credentials",
                         "networkError": "Network Error",
                       },
@@ -4194,6 +4237,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "ru": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Введенные данные уже существуют",
                         "invalidCredentials": "Неверно введенные данные",
                         "networkError": "Ошибка подключения к сети",
                       },
@@ -4300,6 +4344,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -4355,6 +4400,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -4462,6 +4508,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -4510,6 +4557,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -4630,6 +4678,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -4678,6 +4727,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -4781,6 +4831,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -4829,6 +4880,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -4942,6 +4994,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "en": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Data already exist",
                           "invalidCredentials": "Invalid Credentials",
                           "networkError": "Network Error",
                         },
@@ -4990,6 +5043,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "ru": Object {
                       "ErrorHandler": Object {
                         "error": Object {
+                          "dataExist": "Введенные данные уже существуют",
                           "invalidCredentials": "Неверно введенные данные",
                           "networkError": "Ошибка подключения к сети",
                         },
@@ -5098,6 +5152,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "en": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Data already exist",
                         "invalidCredentials": "Invalid Credentials",
                         "networkError": "Network Error",
                       },
@@ -5146,6 +5201,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "ru": Object {
                     "ErrorHandler": Object {
                       "error": Object {
+                        "dataExist": "Введенные данные уже существуют",
                         "invalidCredentials": "Неверно введенные данные",
                         "networkError": "Ошибка подключения к сети",
                       },
@@ -5259,6 +5315,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -5307,6 +5364,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -5410,6 +5468,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -5458,6 +5517,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -5571,6 +5631,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -5619,6 +5680,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -6619,6 +6681,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "en": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Data already exist",
                       "invalidCredentials": "Invalid Credentials",
                       "networkError": "Network Error",
                     },
@@ -6667,6 +6730,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "ru": Object {
                   "ErrorHandler": Object {
                     "error": Object {
+                      "dataExist": "Введенные данные уже существуют",
                       "invalidCredentials": "Неверно введенные данные",
                       "networkError": "Ошибка подключения к сети",
                     },
@@ -6873,6 +6937,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -6921,6 +6986,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -7042,6 +7108,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -7090,6 +7157,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -7212,6 +7280,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "en": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Data already exist",
                                         "invalidCredentials": "Invalid Credentials",
                                         "networkError": "Network Error",
                                       },
@@ -7260,6 +7329,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "ru": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Введенные данные уже существуют",
                                         "invalidCredentials": "Неверно введенные данные",
                                         "networkError": "Ошибка подключения к сети",
                                       },
@@ -7363,6 +7433,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -7411,6 +7482,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -7524,6 +7596,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -7572,6 +7645,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -7680,6 +7754,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -7728,6 +7803,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -7791,6 +7867,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -7839,6 +7916,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -7945,6 +8023,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -7993,6 +8072,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -8100,6 +8180,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -8148,6 +8229,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -8268,6 +8350,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -8316,6 +8399,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -8419,6 +8503,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -8467,6 +8552,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -8579,6 +8665,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -8627,6 +8714,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -8742,6 +8830,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "en": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Data already exist",
                                         "invalidCredentials": "Invalid Credentials",
                                         "networkError": "Network Error",
                                       },
@@ -8790,6 +8879,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "ru": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Введенные данные уже существуют",
                                         "invalidCredentials": "Неверно введенные данные",
                                         "networkError": "Ошибка подключения к сети",
                                       },
@@ -8893,6 +8983,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -8941,6 +9032,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -9054,6 +9146,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -9102,6 +9195,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -10102,6 +10196,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -10150,6 +10245,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -10201,6 +10297,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -10249,6 +10346,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -10353,6 +10451,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "en": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Data already exist",
                                         "invalidCredentials": "Invalid Credentials",
                                         "networkError": "Network Error",
                                       },
@@ -10401,6 +10500,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "ru": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Введенные данные уже существуют",
                                         "invalidCredentials": "Неверно введенные данные",
                                         "networkError": "Ошибка подключения к сети",
                                       },
@@ -10504,6 +10604,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -10552,6 +10653,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -10665,6 +10767,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -10713,6 +10816,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -10821,6 +10925,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -10869,6 +10974,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -10932,6 +11038,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -10980,6 +11087,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -11086,6 +11194,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -11134,6 +11243,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -11241,6 +11351,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -11289,6 +11400,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -11409,6 +11521,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -11457,6 +11570,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -11560,6 +11674,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -11608,6 +11723,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -11721,6 +11837,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -11769,6 +11886,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -11877,6 +11995,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -11925,6 +12044,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -12038,6 +12158,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "en": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Data already exist",
                                         "invalidCredentials": "Invalid Credentials",
                                         "networkError": "Network Error",
                                       },
@@ -12086,6 +12207,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   "ru": Object {
                                     "ErrorHandler": Object {
                                       "error": Object {
+                                        "dataExist": "Введенные данные уже существуют",
                                         "invalidCredentials": "Неверно введенные данные",
                                         "networkError": "Ошибка подключения к сети",
                                       },
@@ -12189,6 +12311,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -12237,6 +12360,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -12350,6 +12474,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -12398,6 +12523,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -13398,6 +13524,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -13446,6 +13573,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -13878,12 +14006,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               <Connect(ErrorBar)>
                                 <ErrorBar
                                   dispatch={[Function]}
-                                  error={
-                                    Object {
-                                      "message": "message",
-                                      "success": false,
-                                    }
-                                  }
+                                  error=""
                                 />
                               </Connect(ErrorBar)>
                             </main>

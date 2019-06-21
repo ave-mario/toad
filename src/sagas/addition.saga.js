@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 import { takeLeading, call, put } from 'redux-saga/effects';
 import { addNewAddition, getAddition, update } from 'api/additions.api';
 import Actions from 'actions/addition.actions';
@@ -21,7 +20,9 @@ export function* watchSaveAddition() {
       yield put(Creators.saveAdditionSuccess(response.data.addition));
       return response;
     } catch (error) {
-      const errorMessage = error.response ? error.response.data : error.message;
+      const errorMessage = error.response
+        ? error.response.data.message
+        : error.message;
       yield put(Creators.saveAdditionFailure(errorMessage));
       return error;
     }
@@ -37,7 +38,9 @@ export function* loadAdditions() {
       yield put(Creators.loadAdditionListSuccess(payload));
       return response;
     } catch (error) {
-      const errorMessage = error.response ? error.response.data : error.message;
+      const errorMessage = error.response
+        ? error.response.data.message
+        : error.message;
       yield put(Creators.loadAdditionListFailure(errorMessage));
       return error;
     }
@@ -45,14 +48,19 @@ export function* loadAdditions() {
 }
 
 export function* updateAddition() {
-  yield takeLeading(Types.CHANGE_ADDITION_REQUEST, function*({ id, data }) {
+  yield takeLeading(Types.CHANGE_ADDITION_REQUEST, function* updating({
+    id,
+    data
+  }) {
     try {
       const tokens = yield Tokens.getTokens();
       const response = yield call(update, id, data, tokens.accessToken);
       yield put(Creators.changeAdditionSuccess(id, data.name, data.price));
       return response;
     } catch (error) {
-      const errorMessage = error.response ? error.response.data : error.message;
+      const errorMessage = error.response
+        ? error.response.data.message
+        : error.message;
       yield put(Creators.saveAdditionFailure(errorMessage));
       return error;
     }

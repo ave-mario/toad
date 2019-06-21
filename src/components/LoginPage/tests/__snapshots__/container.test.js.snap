@@ -5696,7 +5696,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-jKJlTe",
                                       "isStatic": false,
-                                      "lastClassName": "anFjL",
+                                      "lastClassName": "dWNvbl",
                                       "rules": Array [
                                         "
   font-family: ",
@@ -5704,7 +5704,7 @@ exports[`LoginPage should render correctly 1`] = `
                                         ";
   font-weight: ",
                                         [Function],
-                                        "
+                                        ";
   color: ",
                                         [Function],
                                         ";
@@ -5713,7 +5713,7 @@ exports[`LoginPage should render correctly 1`] = `
                                         ";
   text-align: ",
                                         [Function],
-                                        ";s
+                                        ";
   margin: ",
                                         [Function],
                                         ";
@@ -5738,7 +5738,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 forwardedRef={null}
                               >
                                 <h2
-                                  className="sc-EHOje sc-jKJlTe anFjL"
+                                  className="sc-EHOje sc-jKJlTe dWNvbl"
                                 >
                                   Sign in
                                 </h2>
@@ -6022,7 +6022,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-kGXeez",
                                       "isStatic": false,
-                                      "lastClassName": "jDpIaV",
+                                      "lastClassName": "cBHWSL",
                                       "rules": Array [
                                         "
   width: ",
@@ -6041,6 +6041,9 @@ exports[`LoginPage should render correctly 1`] = `
                                         [Function],
                                         ";
   border: ",
+                                        [Function],
+                                        ";
+  cursor: ",
                                         [Function],
                                         ";
 ",
@@ -6082,7 +6085,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 type="submit"
                               >
                                 <button
-                                  className="sc-htpNat submitButton sc-kGXeez jDpIaV"
+                                  className="sc-htpNat submitButton sc-kGXeez cBHWSL"
                                   disabled={false}
                                   type="submit"
                                 >

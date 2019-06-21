@@ -12816,7 +12816,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-jKJlTe",
                                         "isStatic": false,
-                                        "lastClassName": "anFjL",
+                                        "lastClassName": "dWNvbl",
                                         "rules": Array [
                                           "
   font-family: ",
@@ -12824,7 +12824,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                           ";
   font-weight: ",
                                           [Function],
-                                          "
+                                          ";
   color: ",
                                           [Function],
                                           ";
@@ -12833,7 +12833,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                           ";
   text-align: ",
                                           [Function],
-                                          ";s
+                                          ";
   margin: ",
                                           [Function],
                                           ";
@@ -12858,7 +12858,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   forwardedRef={null}
                                 >
                                   <h2
-                                    className="sc-EHOje sc-jKJlTe anFjL"
+                                    className="sc-EHOje sc-jKJlTe dWNvbl"
                                   >
                                     Please, create a password
                                   </h2>
@@ -13057,7 +13057,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-kGXeez",
                                         "isStatic": false,
-                                        "lastClassName": "jDpIaV",
+                                        "lastClassName": "cBHWSL",
                                         "rules": Array [
                                           "
   width: ",
@@ -13076,6 +13076,9 @@ exports[`WelcomePage should render correctly 1`] = `
                                           [Function],
                                           ";
   border: ",
+                                          [Function],
+                                          ";
+  cursor: ",
                                           [Function],
                                           ";
 ",
@@ -13117,7 +13120,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   type="submit"
                                 >
                                   <button
-                                    className="sc-htpNat submitButton sc-kGXeez jDpIaV"
+                                    className="sc-htpNat submitButton sc-kGXeez cBHWSL"
                                     disabled={false}
                                     type="submit"
                                   >

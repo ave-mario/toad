@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test case for testing NotFound page NotFound page snapshot 1`] = `
+<Fragment>
+  <styled.div>
+    <styled.h3>
+      OOPS! PAGE NOT FOUND
+    </styled.h3>
+    <styled.h1
+      fontSize="5em"
+    >
+      404
+    </styled.h1>
+    <styled.h3>
+      WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND
+    </styled.h3>
+    <Styled(styled.button)
+      className="goBackButton"
+      onClick={[Function]}
+    >
+      GO BACK
+    </Styled(styled.button)>
+  </styled.div>
+</Fragment>
+`;

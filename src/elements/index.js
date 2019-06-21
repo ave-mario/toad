@@ -31,6 +31,7 @@ export const Button = styled.button`
   color: ${({ color }) => color || `${white}`};
   border-radius: ${({ borderRadius }) => borderRadius || '15px'};
   border: ${({ border }) => border || `none`};
+  cursor: ${({ cursor }) => cursor || `pointer`};
 `;
 export const ButtonText = styled.span`
   display: ${({ display }) => display || 'block'};
@@ -50,19 +51,21 @@ export const Title = styled.h1`
 
 export const Title2 = styled.h2`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
-  font-weight: ${({ fontWeight }) => fontWeight || '300px'}
+  font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '1.2em'};
-  text-align: ${({ textAlign }) => textAlign || 'center'};s
+  text-align: ${({ textAlign }) => textAlign || 'center'};
   margin: ${({ margin }) => margin || '1px auto'};
 `;
 
 export const Title3 = styled.h3`
   font-family: ${({ fontFamily }) => fontFamily || `'Raleway', sans-serif`};
-  font-weight: ${({ fontWeight }) => fontWeight || '300px'}
+  font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '0.8em'};
   margin: ${({ margin }) => margin || '1px auto'};
+  width: ${({ width }) => width || '80%'};
+  text-align: ${({ textAlign }) => textAlign || 'center'};
 `;
 
 export const Text = styled.p`

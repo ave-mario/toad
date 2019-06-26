@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import NotFoundPage from '../view';
+import 'jest-styled-components';
 
 describe('Test case for testing NotFound page', () => {
   test('NotFound page snapshot', () => {

@@ -7,7 +7,7 @@ import HiddenRoute from './HiddenRoute';
 import LoginPage from '../components/LoginPage';
 import MainPage from '../components/MainPage';
 import WelcomeRoute from './WelcomeRoute';
-import Test from '../components/Test';
+import NotFound from '../components/NotFoundPage';
 import WelcomePage from '../components/WelcomePage';
 import authActions from '../actions/auth.actions';
 
@@ -19,25 +19,21 @@ class Routes extends Component {
   }
 
   render() {
-    const { isRequesting } = this.props;
     return (
       <>
-        {!isRequesting && (
-          <Switch>
-            <PrivateRoute exact path="/" component={MainPage} />
-            <HiddenRoute exact path="/login" component={LoginPage} />
-            <WelcomeRoute exact path="/welcome" component={WelcomePage} />
-            <Route exact path="/test" component={Test} />
-          </Switch>
-        )}
+        <Switch>
+          <PrivateRoute exact path="/" component={MainPage} />
+          <HiddenRoute exact path="/login" component={LoginPage} />
+          <WelcomeRoute exact path="/welcome" component={WelcomePage} />
+          <Route path="*" component={NotFound} />
+        </Switch>
       </>
     );
   }
 }
 
 Routes.propTypes = {
-  load: PropTypes.func.isRequired,
-  isRequesting: PropTypes.bool.isRequired
+  load: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({

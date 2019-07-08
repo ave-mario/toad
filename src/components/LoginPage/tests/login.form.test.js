@@ -3,6 +3,7 @@ import { shallow, mount } from 'enzyme';
 import { Login } from '../LoginForm';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
+import 'jest-styled-components';
 
 describe('Login form', () => {
   const mockStore = configureStore();

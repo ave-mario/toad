@@ -1,6 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WelcomePage should render correctly 1`] = `
+.c1 {
+  margin: 5px auto;
+  padding: 5px;
+}
+
+.c6 {
+  margin: 1px auto;
+  padding: 0;
+  width: 100%;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.c7 {
+  width: 300px;
+  height: 35px;
+  background-color: #5995ef;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  margin: 10px auto 10px 10%;
+  padding: 0px;
+  width: 100px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.c7:hover {
+  background-color: #27ae60;
+}
+
+.c0 {
+  width: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 600px;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: #f7f8f9;
+  box-shadow: 0px 0px 30px -12px rgba(0,0,0,0.75);
+  margin: 8px;
+}
+
+.c5 {
+  width: 300px;
+  height: 35px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 3px auto;
+  width: 80%;
+  padding-left: 13px;
+  font-size: 1em;
+}
+
+.c5:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.c2 {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 600px;
+  color: #4d4d4d;
+  font-size: 2.2em;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 1.75em;
+}
+
+.c3 {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 300px;
+  color: #4d4d4d;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 1px auto;
+  margin: 0;
+}
+
 <Provider
   store={
     Object {
@@ -12661,7 +12771,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "sc-kpOJdX",
                             "isStatic": false,
-                            "lastClassName": "itVTit",
+                            "lastClassName": "c0",
                             "rules": Array [
                               "
   width: ",
@@ -12710,7 +12820,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       onSubmit={[Function]}
                     >
                       <form
-                        className="sc-bdVaJa sc-kpOJdX itVTit"
+                        className="c0"
                         onSubmit={[Function]}
                       >
                         <styled.header>
@@ -12722,7 +12832,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-gqjmRU",
                                   "isStatic": false,
-                                  "lastClassName": "diNjPe",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     "
   margin: ",
@@ -12747,7 +12857,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             forwardedRef={null}
                           >
                             <header
-                              className="sc-gqjmRU diNjPe"
+                              className="c1"
                             >
                               <Styled(styled.h1)>
                                 <StyledComponent
@@ -12758,7 +12868,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-ckVGcZ",
                                         "isStatic": false,
-                                        "lastClassName": "gKRcXm",
+                                        "lastClassName": "c2",
                                         "rules": Array [
                                           "
   font-family: ",
@@ -12800,7 +12910,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   forwardedRef={null}
                                 >
                                   <h1
-                                    className="sc-ifAKCX sc-ckVGcZ gKRcXm"
+                                    className="c2"
                                   >
                                     Welcome
                                     , name
@@ -12816,7 +12926,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-jKJlTe",
                                         "isStatic": false,
-                                        "lastClassName": "anFjL",
+                                        "lastClassName": "c3",
                                         "rules": Array [
                                           "
   font-family: ",
@@ -12824,7 +12934,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                           ";
   font-weight: ",
                                           [Function],
-                                          "
+                                          ";
   color: ",
                                           [Function],
                                           ";
@@ -12833,7 +12943,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                           ";
   text-align: ",
                                           [Function],
-                                          ";s
+                                          ";
   margin: ",
                                           [Function],
                                           ";
@@ -12858,7 +12968,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   forwardedRef={null}
                                 >
                                   <h2
-                                    className="sc-EHOje sc-jKJlTe anFjL"
+                                    className="c3"
                                   >
                                     Please, create a password
                                   </h2>
@@ -12876,7 +12986,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-jTzLTM",
                                   "isStatic": false,
-                                  "lastClassName": "bVLzFa",
+                                  "lastClassName": "c4",
                                   "rules": Array [
                                     "
   margin: ",
@@ -12905,7 +13015,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             forwardedRef={null}
                           >
                             <main
-                              className="sc-jTzLTM bVLzFa"
+                              className="c4"
                             >
                               <Styled(styled.input)
                                 className="passwordInput"
@@ -12925,7 +13035,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-dxgOiQ",
                                         "isStatic": false,
-                                        "lastClassName": "ekmKjS",
+                                        "lastClassName": "c5",
                                         "rules": Array [
                                           "
   width: ",
@@ -12979,7 +13089,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   value=""
                                 >
                                   <input
-                                    className="sc-bwzfXH passwordInput sc-dxgOiQ ekmKjS"
+                                    className="passwordInput c5"
                                     name="password"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -13012,7 +13122,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-VigVT",
                                   "isStatic": false,
-                                  "lastClassName": "hCqwmc",
+                                  "lastClassName": "c6",
                                   "rules": Array [
                                     "
   margin: ",
@@ -13040,7 +13150,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             forwardedRef={null}
                           >
                             <footer
-                              className="sc-VigVT hCqwmc"
+                              className="c6"
                             >
                               <Styled(styled.button)
                                 className="submitButton"
@@ -13057,7 +13167,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "sc-kGXeez",
                                         "isStatic": false,
-                                        "lastClassName": "jDpIaV",
+                                        "lastClassName": "c7",
                                         "rules": Array [
                                           "
   width: ",
@@ -13076,6 +13186,9 @@ exports[`WelcomePage should render correctly 1`] = `
                                           [Function],
                                           ";
   border: ",
+                                          [Function],
+                                          ";
+  cursor: ",
                                           [Function],
                                           ";
 ",
@@ -13117,7 +13230,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                   type="submit"
                                 >
                                   <button
-                                    className="sc-htpNat submitButton sc-kGXeez jDpIaV"
+                                    className="submitButton c7"
                                     disabled={false}
                                     type="submit"
                                   >

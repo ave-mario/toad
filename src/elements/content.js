@@ -11,7 +11,11 @@ export const Content = styled.div`
     full &&
     `margin-left: 200px; 
     height: fit-content;
-    min-height: 100vh;`}
+    min-height: 100vh;
+    
+    @media (max-width: 1024px) {
+    margin-left:0;
+`}
 `;
 
 export const MainContent = styled.div`
@@ -45,7 +49,6 @@ export const Card = styled.section`
     left
       ? `
     padding: 0;
-    position: relative;
     width: 200px;
     height: fit-content;
     min-height: 500px;
@@ -56,6 +59,15 @@ export const Card = styled.section`
     overflow-y: scroll;
     min-height: unset;
   }
+
+  @media (max-width: 1024px) {
+    position: relative;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+
+  }
+
   `
       : `padding: ${padding || '16px 16px 0'};
          height: ${height || `60px`};`}

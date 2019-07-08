@@ -1,5 +1,8 @@
 import axios from 'axios';
 import services from 'services';
+import api from 'config/api';
+
+const url = api.getBaseUrl();
 
 export function login(email, password) {
   const config = {
@@ -9,21 +12,21 @@ export function login(email, password) {
     email,
     password
   };
-  return axios.post('employees/login', body, config);
+  return axios.post(`${url}employees/login`, body, config);
 }
 
 export function loadUser(token) {
   const config = {
     headers: { Authorization: `Bearer ${token}` }
   };
-  return axios.get('employees/current', config);
+  return axios.get(`${url}employees/current`, config);
 }
 
 export function refreshToken(token) {
   const config = {
     headers: { Authorization: `Bearer ${token}` }
   };
-  return axios.post('auth/refresh-tokens', {}, config);
+  return axios.post(`${url}auth/refresh-tokens`, {}, config);
 }
 
 export function createPassword(newPassword, token) {
@@ -33,7 +36,7 @@ export function createPassword(newPassword, token) {
   const body = {
     newPassword
   };
-  return axios.put('employees/password', body, config);
+  return axios.put(`${url}employees/password`, body, config);
 }
 
 export async function callWithAuth(func) {

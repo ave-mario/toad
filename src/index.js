@@ -3,17 +3,12 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next';
 import { ConnectedRouter as Router } from 'connected-react-router';
-import axios from 'axios';
 import history from 'config/browser.history';
 import store from 'config/redux.store';
-import api from 'config/api';
 import App from 'components/App';
 import i18next from 'config/localize';
 
 export default history;
-
-axios.defaults.baseURL = `http://localhost:${api.port}/${api.route}/`;
-axios.default.timeout = api.timeout;
 
 ReactDOM.render(
   <Provider store={store}>

@@ -17,7 +17,9 @@ export function* watchSaveAddition() {
         { name, price },
         tokens.accessToken
       );
-      yield put(Creators.saveAdditionSuccess(response.data.addition));
+      yield put(
+        Creators.saveAdditionSuccess(response.data.addition, 'Success')
+      );
       return response;
     } catch (error) {
       const errorMessage = error.response
@@ -53,9 +55,16 @@ export function* updateAddition() {
     data
   }) {
     try {
-      const tokens = yield Tokens.getTokens();
-      const response = yield call(update, id, data, tokens.accessToken);
-      yield put(Creators.changeAdditionSuccess(id, data.name, data.price));
+      const tokenData = yield Tokens.getTokenData();
+      const response = yield call(
+        update,
+        id,
+        data,
+        tokenData.tokens.accessToken
+      );
+      yield put(
+        Creators.changeAdditionSuccess(id, data.name, data.price, 'Success')
+      );
       return response;
     } catch (error) {
       const errorMessage = error.response

@@ -2,14 +2,14 @@ import { createActions } from 'reduxsauce';
 
 const { Types, Creators } = createActions({
   saveAdditionRequest: ['name', 'price'],
-  saveAdditionSuccess: ['payload'],
-  saveAdditionFailure: ['error'],
+  saveAdditionSuccess: ['payload', 'message'],
+  saveAdditionFailure: ['message'],
   loadAdditionListRequest: [null],
-  loadAdditionListSuccess: ['payload'],
-  loadAdditionListFailure: ['error'],
+  loadAdditionListSuccess: ['payload', 'message'],
+  loadAdditionListFailure: ['message'],
   changeAdditionRequest: ['id', 'data'],
-  changeAdditionSuccess: ['id', 'name', 'price'],
-  changeAdditionFailure: ['error']
+  changeAdditionSuccess: ['id', 'name', 'price', 'message'],
+  changeAdditionFailure: ['message']
 });
 const additionActions = { Types, Creators };
 

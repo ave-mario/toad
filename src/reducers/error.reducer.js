@@ -1,8 +1,9 @@
 const INITIAL_STATE = {
-  message: ''
+  message: '',
+  success: ''
 };
 
-const errorReducer = (state = INITIAL_STATE, { type, error }) => {
+const errorReducer = (state = INITIAL_STATE, { type, message = '' }) => {
   const matches = /(.*)_(REQUEST|SUCCESS|FAILURE)/.exec(type);
 
   if (!matches) return INITIAL_STATE;
@@ -10,7 +11,13 @@ const errorReducer = (state = INITIAL_STATE, { type, error }) => {
   if (matches[2] === 'FAILURE') {
     return {
       ...state,
-      message: error
+      message
+    };
+  }
+  if (matches[2] === 'SUCCESS') {
+    return {
+      ...state,
+      success: message
     };
   }
   return INITIAL_STATE;

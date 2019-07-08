@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Content, MainContent } from 'elements/content';
 import Titles from 'enums/routes-name.enums';
 import Header from '../Header';
 import Menu from '../Menu/LeftMenu';
 import ErrorBar from '../ErrorBar';
+
+const Wrapper = styled.div`
+  height: 35px;
+`;
 
 export const LayoutPage = Component => {
   const Layout = props => {
@@ -24,7 +29,9 @@ export const LayoutPage = Component => {
           <Menu />
           <Content full main>
             <Header title={title} />
-            <ErrorBar />
+            <Wrapper>
+              <ErrorBar />
+            </Wrapper>
             <MainContent>
               <Component {...props} />
             </MainContent>

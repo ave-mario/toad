@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Close from '@material-ui/icons/Close';
 import { ServerError, ServerErrorText } from 'elements';
 import services from 'services';
 
-class ErrorBar extends Component {
+class ErrorBar extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       isShow: true,
-      error: props.error
+      message: props.message
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    if (prevState.error === nextProps.error) return { isShow: true };
+    if (prevState.message === nextProps.message) return { isShow: true };
     return null;
   }
 
   changeError() {
-    const { error } = this.props;
-    return services.errorHandlerService(error);
+    const { message, isError } = this.props;
+    if (isError) return services.errorHandlerService(message);
+    return message;
   }
 
   handleClick() {
@@ -30,11 +31,12 @@ class ErrorBar extends Component {
 
   render() {
     const { isShow } = this.state;
+    const { isError } = this.props;
     const message = this.changeError();
     return (
       <>
         {message && isShow && (
-          <ServerError>
+          <ServerError backgroundColor={isError ? '#ed1e3a' : '#27ae60'}>
             <ServerErrorText>{message}</ServerErrorText>
             <Close
               style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}
@@ -48,11 +50,11 @@ class ErrorBar extends Component {
 }
 
 ErrorBar.propTypes = {
-  error: PropTypes.oneOfType([
+  message: PropTypes.oneOfType([
     PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.bool])),
     PropTypes.bool,
     PropTypes.string
-  ]).isRequired
+  ]).isRequired,
+  isError: PropTypes.bool.isRequired
 };
-
 export default ErrorBar;

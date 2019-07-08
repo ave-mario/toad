@@ -19,25 +19,21 @@ class Routes extends Component {
   }
 
   render() {
-    const { isRequesting } = this.props;
     return (
       <>
-        {!isRequesting && (
-          <Switch>
-            <PrivateRoute exact path="/" component={MainPage} />
-            <HiddenRoute exact path="/login" component={LoginPage} />
-            <WelcomeRoute exact path="/welcome" component={WelcomePage} />
-            <Route path="*" component={NotFound} />
-          </Switch>
-        )}
+        <Switch>
+          <PrivateRoute exact path="/" component={MainPage} />
+          <HiddenRoute exact path="/login" component={LoginPage} />
+          <WelcomeRoute exact path="/welcome" component={WelcomePage} />
+          <Route path="*" component={NotFound} />
+        </Switch>
       </>
     );
   }
 }
 
 Routes.propTypes = {
-  load: PropTypes.func.isRequired,
-  isRequesting: PropTypes.bool.isRequired
+  load: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({

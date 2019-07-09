@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Layout from 'components/HOC';
 import WelcomePage from 'components/WelcomePage';
 import AdditionPage from 'components/AdditionPage';
+import NotFound from 'components/NotFoundPage';
 import PrivateRoute from './PrivateRoute';
 import HiddenRoute from './HiddenRoute';
 import LoginPage from '../components/LoginPage';
@@ -30,6 +31,7 @@ class Routes extends Component {
             path="/rooms-services"
             component={Layout(AdditionPage)}
           />
+          <Route path="*" component={NotFound} />
         </Switch>
       </>
     );

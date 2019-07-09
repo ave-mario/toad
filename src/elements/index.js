@@ -87,7 +87,6 @@ export const Title = styled.h1`
 `;
 
 export const Title2 = styled.h2`
-
   font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '1.2em'};

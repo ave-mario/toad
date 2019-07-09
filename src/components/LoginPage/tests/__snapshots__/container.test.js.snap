@@ -10,6 +10,7 @@ exports[`LoginPage should render correctly 1`] = `
   margin: 1px auto;
   padding: 0;
   width: 100%;
+  height: 50px;
 }
 
 .c4 {
@@ -20,16 +21,12 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c7 {
-  width: 300px;
   height: 35px;
-  background-color: #5995ef;
-  color: #fff;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
+  border-width: 0;
+  outline: none;
   position: relative;
   display: block;
-  margin: 10px auto 10px 10%;
+  margin: 10px auto 10px 9%;
   padding: 0px;
   width: 100px;
   overflow: hidden;
@@ -75,12 +72,14 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c5 {
-  width: 300px;
   height: 35px;
   border: 1px solid #ccc;
   background-color: #fff;
-  border-radius: 20px;
-  margin: 3px auto;
+  border-radius: 10px;
+  margin: 3px 15px;
+  width: 280px;
+  padding-left: 13px;
+  font-size: 1em;
   width: 80%;
   padding-left: 13px;
   font-size: 1em;
@@ -91,8 +90,12 @@ exports[`LoginPage should render correctly 1`] = `
   border: 1px solid #ccc;
 }
 
+.c5:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
 .c2 {
-  font-family: 'Raleway',sans-serif;
   font-weight: 600px;
   color: #4d4d4d;
   font-size: 2.2em;
@@ -102,7 +105,6 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c3 {
-  font-family: 'Raleway',sans-serif;
   font-weight: 300px;
   color: #4d4d4d;
   font-size: 1.2em;
@@ -6698,10 +6700,7 @@ exports[`LoginPage should render correctly 1`] = `
 
   ",
                                         [Function],
-                                        ";
-  cursor: ",
-                                        [Function],
-                                        ";
+                                        "
 ",
                                         "
   position: relative;

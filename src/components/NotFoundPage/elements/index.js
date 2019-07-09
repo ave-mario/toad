@@ -14,7 +14,7 @@ export const NotFound = styled.div`
 export const NotFoundButton = styled(Button)`
   border-radius: 2px;
   margin: 5px auto;
-  max-width: 100px;
+  max-width: 150px;
   max-height: 25px;
   background-color: ${darkGrey};
   transition: background-color 0.3s;

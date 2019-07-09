@@ -18,7 +18,7 @@ exports[`Test case for testing NotFound page NotFound page snapshot 1`] = `
       className="goBackButton"
       onClick={[Function]}
     >
-      GO BACK
+      GO MAIN PAGE
     </Styled(styled.button)>
   </styled.div>
 </Fragment>

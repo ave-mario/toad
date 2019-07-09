@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Title, Title3 } from 'elements';
 import { NotFound, NotFoundButton } from './elements';
-import { Title, Title3 } from '../../elements';
 
 function NotFoundPage(props) {
   const { goBack } = props;
@@ -17,7 +17,7 @@ function NotFoundPage(props) {
           }}
           className="goBackButton"
         >
-          GO BACK
+          GO MAIN PAGE
         </NotFoundButton>
       </NotFound>
     </>

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import history from '../../config/browser.history';
+import { push } from 'connected-react-router';
 import NotFoundPage from './view';
 
 const mapStateToProps = () => ({});
@@ -7,7 +7,7 @@ const mapStateToProps = () => ({});
 const mapDispatchToProps = dispatch => {
   return {
     goBack: () => {
-      dispatch(history.goBack());
+      dispatch(push('/login'));
     }
   };
 };

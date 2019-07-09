@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   top: 20%;
   margin: 20px auto 0;
   transition: all 0.8s;
-  width: 500px;
+  ${({ editAdd }) => editAdd && 'width:500px;'};
   left: calc(50% - 200px);
   box-shadow: 0 0 0 1000px ${colors.shadowModal};
 `;
@@ -29,6 +29,11 @@ const HeaderLabel = styled.h3`
   float: left;
   margin: 0;
   padding: 0;
+`;
+
+const Main = styled.main`
+  min-height: 50px;
+  padding: 10px 30px;
 `;
 
 const Form = styled.form`
@@ -52,4 +57,4 @@ const Footer = styled.div`
   padding: 0 30px 10px;
 `;
 
-export { Wrapper, Header, Form, Footer, HeaderLabel, Input };
+export { Wrapper, Header, Form, Footer, HeaderLabel, Input, Main };

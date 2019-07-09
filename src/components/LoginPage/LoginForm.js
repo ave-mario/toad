@@ -8,10 +8,6 @@ import authActions from 'actions/auth.actions';
 import { addResource } from 'config/localize';
 import { loginValidationSchema } from 'validation/auth.validation';
 import ErrorBar from '../ErrorBar';
-import { dispatcher } from '../../config/redux.store';
-import authActions from '../../actions/auth.actions';
-import { addResource } from '../../config/localize';
-import { loginValidationSchema } from '../../config/validation.schemas';
 import {
   SubmitButton,
   LoginForm,

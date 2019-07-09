@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import Layout from 'components/HOC';
+import WelcomePage from 'components/WelcomePage';
+import AdditionPage from 'components/AdditionPage';
 import PrivateRoute from './PrivateRoute';
 import HiddenRoute from './HiddenRoute';
 import LoginPage from '../components/LoginPage';
 import MainPage from '../components/MainPage';
-import WelcomeRoute from './WelcomeRoute';
-import HiddenRoute from './HiddenRoute';
-import PrivateRoute from './PrivateRoute';
+import authActions from '../actions/auth.actions';
 
 const { Creators } = authActions;
 class Routes extends Component {
@@ -23,7 +24,7 @@ class Routes extends Component {
         <Switch>
           <PrivateRoute exact path="/" component={Layout(MainPage)} />
           <HiddenRoute exact path="/login" component={LoginPage} />
-          <WelcomeRoute exact path="/welcome" component={WelcomePage} />
+          <PrivateRoute exact path="/welcome" component={WelcomePage} />
           <PrivateRoute
             exact
             path="/rooms-services"

@@ -6329,7 +6329,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-dxgOiQ",
                                       "isStatic": false,
-                                      "lastClassName": "ekmKjS",
+                                      "lastClassName": "briPMt",
                                       "rules": Array [
                                         "
   height: ",
@@ -6347,6 +6347,17 @@ exports[`LoginPage should render correctly 1`] = `
   margin: ",
                                         [Function],
                                         ";
+
+  ",
+                                        [Function],
+                                        "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
 ",
                                         "
   width: 80%;
@@ -6381,7 +6392,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="sc-bwzfXH emailInput sc-dxgOiQ ekmKjS"
+                                  className="sc-bwzfXH emailInput sc-dxgOiQ briPMt"
                                   id="emailInput"
                                   name="email"
                                   onBlur={[Function]}
@@ -6410,7 +6421,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-dxgOiQ",
                                       "isStatic": false,
-                                      "lastClassName": "ekmKjS",
+                                      "lastClassName": "briPMt",
                                       "rules": Array [
                                         "
   height: ",
@@ -6428,6 +6439,17 @@ exports[`LoginPage should render correctly 1`] = `
   margin: ",
                                         [Function],
                                         ";
+
+  ",
+                                        [Function],
+                                        "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
 ",
                                         "
   width: 80%;
@@ -6461,7 +6483,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 value=""
                               >
                                 <input
-                                  className="sc-bwzfXH passwordInput sc-dxgOiQ ekmKjS"
+                                  className="sc-bwzfXH passwordInput sc-dxgOiQ briPMt"
                                   name="password"
                                   onBlur={[Function]}
                                   onChange={[Function]}
@@ -6490,7 +6512,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "componentStyle": ComponentStyle {
                                 "componentId": "sc-VigVT",
                                 "isStatic": false,
-                                "lastClassName": "hCqwmc",
+                                "lastClassName": "hIFyqv",
                                 "rules": Array [
                                   "
   margin: ",
@@ -6500,6 +6522,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   [Function],
                                   ";
   width: ",
+                                  [Function],
+                                  ";
+  height: ",
+                                  [Function],
+                                  ";
+  ",
+                                  [Function],
+                                  ";
+  ",
                                   [Function],
                                   ";
 ",
@@ -6518,7 +6549,7 @@ exports[`LoginPage should render correctly 1`] = `
                           forwardedRef={null}
                         >
                           <footer
-                            className="sc-VigVT hCqwmc"
+                            className="sc-VigVT hIFyqv"
                           >
                             <Styled(styled.button)
                               className="submitButton"
@@ -6535,7 +6566,7 @@ exports[`LoginPage should render correctly 1`] = `
                                     "componentStyle": ComponentStyle {
                                       "componentId": "sc-kGXeez",
                                       "isStatic": false,
-                                      "lastClassName": "jDpIaV",
+                                      "lastClassName": "fdUIBO",
                                       "rules": Array [
                                         "
   height: 35px;
@@ -6557,7 +6588,7 @@ exports[`LoginPage should render correctly 1`] = `
 
   ",
                                         [Function],
-                                        ";
+                                        "
 ",
                                         "
   position: relative;
@@ -6597,7 +6628,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 type="submit"
                               >
                                 <button
-                                  className="sc-htpNat submitButton sc-kGXeez jDpIaV"
+                                  className="sc-htpNat submitButton sc-kGXeez fdUIBO"
                                   disabled={false}
                                   type="submit"
                                 >

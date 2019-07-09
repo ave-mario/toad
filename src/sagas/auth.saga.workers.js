@@ -14,7 +14,6 @@ export function* authorize(email, password) {
     services.tokenDataService.setTokenData(tokenData);
 
     yield put(Creators.loginSuccess(user, tokenData));
-    yield put(push('/'));
 
     return response;
   } catch (error) {

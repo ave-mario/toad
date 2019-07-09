@@ -9,13 +9,15 @@ import {
   Content
 } from '../elements/table.elements';
 import EditModal from '../EditModal';
+import DeleteModal from '../DeleteModal';
 
 class AdditionTable extends Component {
   constructor() {
     super();
 
     this.state = {
-      isShowModal: false,
+      isShowModalEdit: false,
+      isShowModalRemove: false,
       addition: null
     };
     this.handleClick = this.handleClick.bind(this);
@@ -27,9 +29,9 @@ class AdditionTable extends Component {
     load();
   }
 
-  handleClick(addition = null) {
+  handleClick(name, addition = null) {
     this.setState(prevState => ({
-      isShowModal: !prevState.isShowModal,
+      [name]: !prevState[name],
       addition
     }));
   }
@@ -46,10 +48,19 @@ class AdditionTable extends Component {
           {price}
         </TableCell>
         <TableCell xs4>
-          <TableButton id={_id} onClick={() => this.handleClick(addition)}>
+          <TableButton
+            id={`${_id}edit`}
+            onClick={() => this.handleClick('isShowModalEdit', addition)}
+          >
             Edit
           </TableButton>
-          <TableButton red>Delete</TableButton>
+          <TableButton
+            red
+            id={`${_id}delete`}
+            onClick={() => this.handleClick('isShowModalRemove', addition)}
+          >
+            Delete
+          </TableButton>
         </TableCell>
       </TableRow>
     );
@@ -57,7 +68,7 @@ class AdditionTable extends Component {
 
   render() {
     const { t, docs, total } = this.props;
-    const { isShowModal, addition } = this.state;
+    const { isShowModalEdit, isShowModalRemove, addition } = this.state;
     return (
       <Content id="addition-table">
         <Header>
@@ -66,8 +77,17 @@ class AdditionTable extends Component {
           </Text>
         </Header>
         <div>
-          {isShowModal && (
-            <EditModal close={this.handleClick} addition={addition} />
+          {isShowModalEdit && (
+            <EditModal
+              close={() => this.handleClick('isShowModalEdit')}
+              addition={addition}
+            />
+          )}
+          {isShowModalRemove && (
+            <DeleteModal
+              close={() => this.handleClick('isShowModalRemove')}
+              addition={addition}
+            />
           )}
           <TableRow mgHeight2>
             <TableCell yellow>№</TableCell>

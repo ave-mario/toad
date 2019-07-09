@@ -1837,19 +1837,12 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "Welcome": Object {
                         "buttons": Object {
-                          "Logout": "Logout",
                           "logout": "Logout",
                         },
-                      },
-                      "validation": Object {
-                        "incorrect": Object {
-                          "email": "The email is incorrect",
-                          "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
                         "labels": Object {
                           "subTitle": "Please, create a password",
                           "title": "Welcome",
                         },
-                        "required": Object {
                         "placeholders": Object {
                           "password": "Password",
                         },
@@ -2185,6 +2178,12 @@ exports[`WelcomePage should render correctly 1`] = `
                           "placeholders": Object {
                             "password": "Password",
                           },
+                        },
+                        "routes": Object {
+                          "addition": "Services of room",
+                          "main": "Main page",
+                          "rooms": "Rooms",
+                          "services": "Services of hotel",
                         },
                         "validation": Object {
                           "incorrect": Object {
@@ -4375,19 +4374,12 @@ exports[`WelcomePage should render correctly 1`] = `
                         },
                         "Welcome": Object {
                           "buttons": Object {
-                            "Logout": "Logout",
                             "logout": "Logout",
                           },
-                        },
-                        "validation": Object {
-                          "incorrect": Object {
-                            "email": "The email is incorrect",
-                            "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
                           "labels": Object {
                             "subTitle": "Please, create a password",
                             "title": "Welcome",
                           },
-                          "required": Object {
                           "placeholders": Object {
                             "password": "Password",
                           },
@@ -5376,10 +5368,10 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                           },
                           "routes": Object {
-                            "Addition": "Services on room",
-                            "Main": "Main page",
-                            "Rooms": "Rooms",
-                            "Services": "Services of hotel",
+                            "addition": "Services of room",
+                            "main": "Main page",
+                            "rooms": "Rooms",
+                            "services": "Services of hotel",
                           },
                           "validation": Object {
                             "incorrect": Object {

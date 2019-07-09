@@ -9,7 +9,10 @@ const { Types, Creators } = createActions({
   loadAdditionListFailure: ['message'],
   changeAdditionRequest: ['id', 'data'],
   changeAdditionSuccess: ['id', 'name', 'price', 'message'],
-  changeAdditionFailure: ['message']
+  changeAdditionFailure: ['message'],
+  removeAdditionRequest: ['id'],
+  removeAdditionSuccess: ['id', 'message'],
+  removeAdditionFailure: ['message']
 });
 const additionActions = { Types, Creators };
 

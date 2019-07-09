@@ -22,3 +22,10 @@ export const update = (id, data, token) => {
   };
   return axios.put(`${url}rooms-services/${id}`, data, config);
 };
+
+export const remove = (id, token) => {
+  const config = {
+    headers: { Authorization: `Bearer ${token}` }
+  };
+  return axios.delete(`${url}rooms-services/${id}`, config);
+};

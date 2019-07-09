@@ -20,7 +20,7 @@ const EditForm = ({
   }
 
   return (
-    <Wrapper>
+    <Wrapper editAdd>
       <Header>
         <HeaderLabel>{t('edit.title')}</HeaderLabel>
         <CloseButton

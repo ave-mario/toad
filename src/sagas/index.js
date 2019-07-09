@@ -3,7 +3,8 @@ import { loadFlow, loginFlow, createPasswordFlow } from './auth.saga.flows';
 import {
   watchSaveAddition,
   loadAdditionsFlow,
-  updateAddition
+  updateAddition,
+  watchRemoveAddition
 } from './addition.saga';
 
 export default function* rootSaga() {
@@ -13,6 +14,7 @@ export default function* rootSaga() {
     createPasswordFlow(),
     watchSaveAddition(),
     loadAdditionsFlow(),
-    updateAddition()
+    updateAddition(),
+    watchRemoveAddition()
   ]);
 }

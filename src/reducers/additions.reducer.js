@@ -37,10 +37,19 @@ const addSuccess = (state = INITIAL_STATE, { payload }) => {
   };
 };
 
+const removeSuccess = (state = INITIAL_STATE, { id }) => {
+  const docs = state.docs.filter(({ _id }) => _id !== id);
+  return {
+    ...state,
+    docs
+  };
+};
+
 export const HANDLERS = {
   [Types.LOAD_ADDITION_LIST_SUCCESS]: loadSuccess,
   [Types.CHANGE_ADDITION_SUCCESS]: changeSuccess,
-  [Types.SAVE_ADDITION_SUCCESS]: addSuccess
+  [Types.SAVE_ADDITION_SUCCESS]: addSuccess,
+  [Types.REMOVE_ADDITION_SUCCESS]: removeSuccess
 };
 
 const additionReducer = createReducer(INITIAL_STATE, HANDLERS);

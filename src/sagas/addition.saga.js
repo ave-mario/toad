@@ -1,5 +1,5 @@
 import { takeLeading, call, put } from 'redux-saga/effects';
-import { addNewAddition, getAddition, update } from 'api/additions.api';
+import { addNewAddition, getAddition, update, remove } from 'api/additions.api';
 import Actions from 'actions/addition.actions';
 import Tokens from 'services/token.data.service';
 
@@ -11,11 +11,11 @@ export function* watchSaveAddition() {
     price
   }) {
     try {
-      const tokens = yield Tokens.getTokens();
+      const tokenData = yield Tokens.getTokenData();
       const response = yield call(
         addNewAddition,
         { name, price },
-        tokens.accessToken
+        tokenData.tokens.accessToken
       );
       yield put(
         Creators.saveAdditionSuccess(response.data.addition, 'Success')
@@ -73,6 +73,27 @@ export function* updateAddition() {
         ? error.response.data.message
         : error.message;
       yield put(Creators.saveAdditionFailure(errorMessage));
+      return error;
+    }
+  });
+}
+
+export function* watchRemoveAddition() {
+  yield takeLeading(Types.REMOVE_ADDITION_REQUEST, function* removeAddition({
+    id
+  }) {
+    try {
+      const tokenData = yield Tokens.getTokenData();
+      const response = yield call(remove, id, tokenData.tokens.accessToken);
+      yield put(
+        Creators.removeAdditionSuccess(id, 'Success remove room service')
+      );
+      return response;
+    } catch (error) {
+      const errorMessage = error.response
+        ? error.response.data.message
+        : error.message;
+      yield put(Creators.removeAdditionFailure(errorMessage));
       return error;
     }
   });

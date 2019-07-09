@@ -30,14 +30,14 @@ export function* authorize(email, password) {
 export function* load() {
   try {
     const tokenData = yield services.tokenDataService.getTokenData();
-
-    if (tokenData === null) {
-      throw new Error('There are no tokens');
-    } else {
+    if (tokenData) {
+      yield put(Creators.loadTokenSuccess(tokenData));
       const response = yield call(callWithAuth, loadUser);
       const { user } = response.data;
 
       yield put(Creators.loadSuccess(user, tokenData));
+    } else if (tokenData === null) {
+      throw new Error('There are no tokens');
     }
   } catch (error) {
     const errorMessage = error.response

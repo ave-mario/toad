@@ -69,6 +69,32 @@ export const loadFailure = (state = INITIAL_STATE) => {
   };
 };
 
+export const loadTokenRequest = (state = INITIAL_STATE) => {
+  return {
+    ...state,
+    isRequesting: true
+  };
+};
+export const loadTokenSuccess = (state = INITIAL_STATE, { tokenData }) => {
+  return {
+    ...state,
+    isRequesting: false,
+    tokenData,
+    isAuthenticated: true,
+    isFailed: false
+  };
+};
+export const loadTokenFailure = (state = INITIAL_STATE) => {
+  return {
+    ...state,
+    isRequesting: false,
+    user: null,
+    tokenData: null,
+    isAuthenticated: false,
+    isFailed: true
+  };
+};
+
 export const createPasswordRequest = (state = INITIAL_STATE) => {
   return {
     ...state,
@@ -118,6 +144,10 @@ export const HANDLERS = {
   [Types.LOAD_REQUEST]: loadRequest,
   [Types.LOAD_SUCCESS]: loadSuccess,
   [Types.LOAD_FAILURE]: loadFailure,
+
+  [Types.LOAD_TOKEN_REQUEST]: loadTokenRequest,
+  [Types.LOAD_TOKEN_SUCCESS]: loadTokenSuccess,
+  [Types.LOAD_TOKEN_FAILURE]: loadTokenFailure,
 
   [Types.CREATE_PASSWORD_REQUEST]: createPasswordRequest,
   [Types.CREATE_PASSWORD_SUCCESS]: createPasswordSuccess,

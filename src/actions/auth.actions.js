@@ -9,6 +9,10 @@ const { Types, Creators } = createActions({
   loadSuccess: ['user', 'tokenData'],
   loadFailure: ['message'],
 
+  loadTokenRequest: null,
+  loadTokenSuccess: ['tokenData'],
+  loadTokenFailure: null,
+
   createPasswordRequest: ['password', 'token'],
   createPasswordSuccess: ['success'],
   createPasswordFailure: ['message'],

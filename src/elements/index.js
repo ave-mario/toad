@@ -87,6 +87,7 @@ export const Title = styled.h1`
 `;
 
 export const Title2 = styled.h2`
+
   font-weight: ${({ fontWeight }) => fontWeight || '300px'};
   color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '1.2em'};
@@ -99,6 +100,8 @@ export const Title3 = styled.h3`
   color: ${props => props.color || `${colors.darkGrey}`};
   font-size: ${({ fontSize }) => fontSize || '0.8em'};
   margin: ${({ margin }) => margin || '1px auto'};
+  width: ${({ width }) => width || '80%'};
+  text-align: ${({ textAlign }) => textAlign || 'center'};
 `;
 
 export const Text = styled.p`

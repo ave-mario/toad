@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { mount } from 'enzyme';
 import configureStore from 'redux-mock-store';
 import LoginPage from '../container';
+import 'jest-styled-components';
 
 test('LoginPage should render correctly', () => {
   const mockStore = configureStore();

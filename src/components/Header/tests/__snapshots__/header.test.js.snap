@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render correctly 1`] = `
+<HeaderLayout
+  title="Rooms"
+>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-kGXeez",
+            "isStatic": false,
+            "lastClassName": "jHIXnh",
+            "rules": Array [
+              "
+  height: ",
+              [Function],
+              ";
+  background: ",
+              [Function],
+              ";
+  display: flex;
+  justify-content: ",
+              [Function],
+              ";
+  padding: 20px 30px 10px;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-kGXeez",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-kGXeez jHIXnh"
+      >
+        <styled.p
+          color="white"
+        >
+          <StyledComponent
+            color="white"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "gJqgrq",
+                  "rules": Array [
+                    "
+  color: ",
+                    [Function],
+                    ";
+  margin: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <p
+              className="sc-gzVnrw gJqgrq"
+              color="white"
+            >
+              Rooms
+            </p>
+          </StyledComponent>
+        </styled.p>
+        <styled.nav>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-kpOJdX",
+                  "isStatic": false,
+                  "lastClassName": "iynNXL",
+                  "rules": Array [
+                    "
+  width: ",
+                    [Function],
+                    ";
+  display: flex;
+  justify-content: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.nav",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-kpOJdX",
+                "target": "nav",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <nav
+              className="sc-kpOJdX iynNXL"
+            >
+              <Styled(styled.button)
+                color="white"
+                onClick={[Function]}
+                white={true}
+                xs={true}
+              >
+                <StyledComponent
+                  color="white"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-dxgOiQ",
+                        "isStatic": false,
+                        "lastClassName": "hRkUJT",
+                        "rules": Array [
+                          "
+  height: 35px;
+  border-width: 0;
+  outline: none;
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+
+   ",
+                          [Function],
+                          "
+
+  ",
+                          [Function],
+                          "
+",
+                          "
+  margin: 0 5px;
+",
+                        ],
+                      },
+                      "displayName": "Styled(styled.button)",
+                      "foldedComponentIds": Array [
+                        "sc-htpNat",
+                      ],
+                      "render": [Function],
+                      "styledComponentId": "sc-dxgOiQ",
+                      "target": "button",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                  white={true}
+                  xs={true}
+                >
+                  <button
+                    className="sc-htpNat sc-dxgOiQ hRkUJT"
+                    color="white"
+                    onClick={[Function]}
+                  >
+                    RU
+                  </button>
+                </StyledComponent>
+              </Styled(styled.button)>
+              <Styled(styled.button)
+                onClick={[Function]}
+                white={true}
+                xs={true}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-dxgOiQ",
+                        "isStatic": false,
+                        "lastClassName": "hRkUJT",
+                        "rules": Array [
+                          "
+  height: 35px;
+  border-width: 0;
+  outline: none;
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+
+   ",
+                          [Function],
+                          "
+
+  ",
+                          [Function],
+                          "
+",
+                          "
+  margin: 0 5px;
+",
+                        ],
+                      },
+                      "displayName": "Styled(styled.button)",
+                      "foldedComponentIds": Array [
+                        "sc-htpNat",
+                      ],
+                      "render": [Function],
+                      "styledComponentId": "sc-dxgOiQ",
+                      "target": "button",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[Function]}
+                  white={true}
+                  xs={true}
+                >
+                  <button
+                    className="sc-htpNat sc-dxgOiQ hRkUJT"
+                    onClick={[Function]}
+                  >
+                    EN
+                  </button>
+                </StyledComponent>
+              </Styled(styled.button)>
+            </nav>
+          </StyledComponent>
+        </styled.nav>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</HeaderLayout>
+`;

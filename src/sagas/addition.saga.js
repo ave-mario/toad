@@ -32,21 +32,23 @@ export function* watchSaveAddition() {
 }
 
 export function* loadAdditions() {
-  yield takeLeading(Types.LOAD_ADDITION_LIST_REQUEST, function* load() {
-    try {
-      const tokens = yield Tokens.getTokens();
-      const response = yield call(getAddition, tokens.accessToken);
-      const { success, ...payload } = response.data;
-      yield put(Creators.loadAdditionListSuccess(payload));
-      return response;
-    } catch (error) {
-      const errorMessage = error.response
-        ? error.response.data.message
-        : error.message;
-      yield put(Creators.loadAdditionListFailure(errorMessage));
-      return error;
-    }
-  });
+  try {
+    const tokenData = yield Tokens.getTokenData();
+    const response = yield call(getAddition, tokenData.tokens.accessToken);
+    const { success, ...payload } = response.data;
+    yield put(Creators.loadAdditionListSuccess(payload));
+    return response;
+  } catch (error) {
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
+    yield put(Creators.loadAdditionListFailure(errorMessage));
+    return error;
+  }
+}
+
+export function* loadAdditionsFlow() {
+  yield takeLeading(Types.LOAD_ADDITION_LIST_REQUEST, loadAdditions);
 }
 
 export function* updateAddition() {

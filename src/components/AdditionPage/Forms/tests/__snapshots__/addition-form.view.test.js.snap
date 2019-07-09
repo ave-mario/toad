@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form add new room service should render correctly 1`] = `
+<Addition
+  saveService={[MockFunction]}
+>
+  <Formik
+    enableReinitialize={false}
+    initialValues={
+      Object {
+        "name": "",
+        "price": 0,
+      }
+    }
+    isInitialValid={false}
+    onSubmit={[Function]}
+    render={[Function]}
+    validateOnBlur="true"
+    validateOnChange="false"
+    validationSchema={
+      ObjectSchema {
+        "_blacklist": RefSet {
+          "list": Set {},
+          "refs": Map {},
+        },
+        "_conditions": Array [],
+        "_defaultDefault": [Function],
+        "_deps": Array [],
+        "_excludedEdges": Array [],
+        "_exclusive": Object {},
+        "_mutate": undefined,
+        "_nodes": Array [
+          "price",
+          "name",
+        ],
+        "_options": Object {
+          "abortEarly": true,
+          "recursive": true,
+        },
+        "_type": "object",
+        "_typeError": [Function],
+        "_whitelist": RefSet {
+          "list": Set {},
+          "refs": Map {},
+        },
+        "fields": Object {
+          "name": StringSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_deps": Array [],
+            "_exclusive": Object {
+              "required": true,
+            },
+            "_mutate": undefined,
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "string",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "tests": Array [
+              [Function],
+            ],
+            "transforms": Array [
+              [Function],
+            ],
+          },
+          "price": NumberSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_deps": Array [],
+            "_exclusive": Object {
+              "min": true,
+              "required": true,
+            },
+            "_mutate": undefined,
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "number",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "tests": Array [
+              [Function],
+              [Function],
+            ],
+            "transforms": Array [
+              [Function],
+            ],
+          },
+        },
+        "tests": Array [],
+        "transforms": Array [
+          [Function],
+        ],
+      }
+    }
+  >
+    <withI18nextTranslation(AdditionForm)
+      dirty={false}
+      errors={Object {}}
+      handleBlur={[Function]}
+      handleChange={[Function]}
+      handleReset={[Function]}
+      handleSubmit={[Function]}
+      initialValues={
+        Object {
+          "name": "",
+          "price": 0,
+        }
+      }
+      isSubmitting={false}
+      isValid={false}
+      isValidating={false}
+      registerField={[Function]}
+      resetForm={[Function]}
+      setError={[Function]}
+      setErrors={[Function]}
+      setFieldError={[Function]}
+      setFieldTouched={[Function]}
+      setFieldValue={[Function]}
+      setFormikState={[Function]}
+      setStatus={[Function]}
+      setSubmitting={[Function]}
+      setTouched={[Function]}
+      setValues={[Function]}
+      submitCount={0}
+      submitForm={[Function]}
+      touched={Object {}}
+      unregisterField={[Function]}
+      validateField={[Function]}
+      validateForm={[Function]}
+      validateOnBlur="true"
+      validateOnChange="false"
+      values={
+        Object {
+          "name": "",
+          "price": 0,
+        }
+      }
+    >
+      <AdditionForm
+        dirty={false}
+        errors={Object {}}
+        handleBlur={[Function]}
+        handleChange={[Function]}
+        handleReset={[Function]}
+        handleSubmit={[Function]}
+        i18n={Object {}}
+        initialValues={
+          Object {
+            "name": "",
+            "price": 0,
+          }
+        }
+        isSubmitting={false}
+        isValid={false}
+        isValidating={false}
+        registerField={[Function]}
+        resetForm={[Function]}
+        setError={[Function]}
+        setErrors={[Function]}
+        setFieldError={[Function]}
+        setFieldTouched={[Function]}
+        setFieldValue={[Function]}
+        setFormikState={[Function]}
+        setStatus={[Function]}
+        setSubmitting={[Function]}
+        setTouched={[Function]}
+        setValues={[Function]}
+        submitCount={0}
+        submitForm={[Function]}
+        t={[Function]}
+        tReady={true}
+        touched={Object {}}
+        unregisterField={[Function]}
+        validateField={[Function]}
+        validateForm={[Function]}
+        validateOnBlur="true"
+        validateOnChange="false"
+        values={
+          Object {
+            "name": "",
+            "price": 0,
+          }
+        }
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ckVGcZ",
+                  "isStatic": true,
+                  "lastClassName": "dsRPXs",
+                  "rules": Array [
+                    "
+  margin-left: 14%;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ckVGcZ",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-ckVGcZ dsRPXs"
+            >
+              <styled.form
+                onSubmit={[Function]}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-jKJlTe",
+                        "isStatic": true,
+                        "lastClassName": "kpMCSe",
+                        "rules": Array [
+                          "
+  display: flex;
+  align-items: center;
+  margin-right: 14%;
+",
+                        ],
+                      },
+                      "displayName": "styled.form",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-jKJlTe",
+                      "target": "form",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onSubmit={[Function]}
+                >
+                  <form
+                    className="sc-jKJlTe kpMCSe"
+                    onSubmit={[Function]}
+                  >
+                    <div>
+                      <Styled(styled.input)
+                        className="nameInput"
+                        id="nameInput"
+                        name="name"
+                        onChange={[Function]}
+                        placeholder="labels.Name"
+                        type="text"
+                        value=""
+                      >
+                        <StyledComponent
+                          className="nameInput"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-eNQAEJ",
+                                "isStatic": false,
+                                "lastClassName": "jNjJqQ",
+                                "rules": Array [
+                                  "
+  height: ",
+                                  [Function],
+                                  ";
+  border: ",
+                                  [Function],
+                                  ";
+  background-color: ",
+                                  [Function],
+                                  ";
+  border-radius: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+
+  ",
+                                  [Function],
+                                  "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+",
+                                  "
+  margin: 0 15px 0 0;
+",
+                                ],
+                              },
+                              "displayName": "Styled(styled.input)",
+                              "foldedComponentIds": Array [
+                                "sc-bwzfXH",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-eNQAEJ",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          id="nameInput"
+                          name="name"
+                          onChange={[Function]}
+                          placeholder="labels.Name"
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            className="sc-bwzfXH nameInput sc-eNQAEJ ckdKnO"
+                            id="nameInput"
+                            name="name"
+                            onChange={[Function]}
+                            placeholder="labels.Name"
+                            type="text"
+                            value=""
+                          />
+                        </StyledComponent>
+                      </Styled(styled.input)>
+                    </div>
+                    <div>
+                      <Styled(styled.input)
+                        className="priceInput"
+                        id="priceInput"
+                        name="price"
+                        number={true}
+                        onChange={[Function]}
+                        placeholder="labels.Price"
+                        small={true}
+                        step={0.5}
+                        type="number"
+                        value={0}
+                      >
+                        <StyledComponent
+                          className="priceInput"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-eNQAEJ",
+                                "isStatic": false,
+                                "lastClassName": "jNjJqQ",
+                                "rules": Array [
+                                  "
+  height: ",
+                                  [Function],
+                                  ";
+  border: ",
+                                  [Function],
+                                  ";
+  background-color: ",
+                                  [Function],
+                                  ";
+  border-radius: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+
+  ",
+                                  [Function],
+                                  "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+",
+                                  "
+  margin: 0 15px 0 0;
+",
+                                ],
+                              },
+                              "displayName": "Styled(styled.input)",
+                              "foldedComponentIds": Array [
+                                "sc-bwzfXH",
+                              ],
+                              "render": [Function],
+                              "styledComponentId": "sc-eNQAEJ",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          id="priceInput"
+                          name="price"
+                          number={true}
+                          onChange={[Function]}
+                          placeholder="labels.Price"
+                          small={true}
+                          step={0.5}
+                          type="number"
+                          value={0}
+                        >
+                          <input
+                            className="sc-bwzfXH priceInput sc-eNQAEJ jNjJqQ"
+                            id="priceInput"
+                            name="price"
+                            onChange={[Function]}
+                            placeholder="labels.Price"
+                            step={0.5}
+                            type="number"
+                            value={0}
+                          />
+                        </StyledComponent>
+                      </Styled(styled.input)>
+                    </div>
+                    <div>
+                      <styled.button
+                        blue={true}
+                        className="submitButton"
+                        lg={true}
+                        type="submit"
+                      >
+                        <StyledComponent
+                          blue={true}
+                          className="submitButton"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": false,
+                                "lastClassName": "gqBxca",
+                                "rules": Array [
+                                  "
+  height: 35px;
+  border-width: 0;
+  outline: none;
+  ",
+                                  [Function],
+                                  "
+  ",
+                                  [Function],
+                                  "
+  ",
+                                  [Function],
+                                  "
+
+   ",
+                                  [Function],
+                                  "
+
+  ",
+                                  [Function],
+                                  "
+",
+                                ],
+                              },
+                              "displayName": "styled.button",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "button",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          lg={true}
+                          type="submit"
+                        >
+                          <button
+                            className="submitButton sc-htpNat gqBxca"
+                            type="submit"
+                          >
+                            buttons.Submit
+                          </button>
+                        </StyledComponent>
+                      </styled.button>
+                    </div>
+                  </form>
+                </StyledComponent>
+              </styled.form>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </AdditionForm>
+    </withI18nextTranslation(AdditionForm)>
+  </Formik>
+</Addition>
+`;

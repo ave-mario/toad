@@ -54,7 +54,11 @@ ErrorBar.propTypes = {
     PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.bool])),
     PropTypes.bool,
     PropTypes.string
-  ]).isRequired,
+  ]),
   isError: PropTypes.bool.isRequired
+};
+
+ErrorBar.defaultProps = {
+  message: ''
 };
 export default ErrorBar;

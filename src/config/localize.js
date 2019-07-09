@@ -8,8 +8,8 @@ i18n.use(initReactI18next).init({
     ru: {},
     en: {}
   },
+  lng: 'en',
   fallbackLng: ['en', 'ru'],
-  debug: true,
   ns: ['translations'],
   defaultNS: 'translations',
   keySeparator: '.',

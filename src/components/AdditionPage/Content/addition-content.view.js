@@ -35,17 +35,18 @@ class AdditionTable extends Component {
   }
 
   renderAddition(addition, index) {
+    const { _id, price, name } = addition;
     return (
-      <TableRow key={addition.name}>
+      <TableRow key={_id}>
         <TableCell xs1>{index + 1}</TableCell>
         <TableCell xs4 padding>
-          {addition.name}
+          {name}
         </TableCell>
         <TableCell xs2 padding>
-          {addition.price}
+          {price}
         </TableCell>
         <TableCell xs4>
-          <TableButton onClick={() => this.handleClick(addition)}>
+          <TableButton id={_id} onClick={() => this.handleClick(addition)}>
             Edit
           </TableButton>
           <TableButton red>Delete</TableButton>
@@ -55,10 +56,10 @@ class AdditionTable extends Component {
   }
 
   render() {
-    const { t, data, total } = this.props;
+    const { t, docs, total } = this.props;
     const { isShowModal, addition } = this.state;
     return (
-      <Content>
+      <Content id="addition-table">
         <Header>
           <Text>
             {t('labels.total')} : {total}
@@ -80,7 +81,7 @@ class AdditionTable extends Component {
               {t('labels.Controls')}
             </TableCell>
           </TableRow>
-          {data.map(this.renderAddition)}
+          {docs.map(this.renderAddition)}
         </div>
       </Content>
     );
@@ -88,7 +89,7 @@ class AdditionTable extends Component {
 }
 
 AdditionTable.propTypes = {
-  data: PropTypes.arrayOf(
+  docs: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,

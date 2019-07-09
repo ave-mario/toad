@@ -2,7 +2,7 @@ import { all } from 'redux-saga/effects';
 import { loadFlow, loginFlow, createPasswordFlow } from './auth.saga.flows';
 import {
   watchSaveAddition,
-  loadAdditions,
+  loadAdditionsFlow,
   updateAddition
 } from './addition.saga';
 
@@ -12,7 +12,7 @@ export default function* rootSaga() {
     loginFlow(),
     createPasswordFlow(),
     watchSaveAddition(),
-    loadAdditions(),
+    loadAdditionsFlow(),
     updateAddition()
   ]);
 }

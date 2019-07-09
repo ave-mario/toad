@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test case for testing main page Main page snapshot 1`] = `
-<MainPage
+exports[`Addition page component should render correctly 1`] = `
+<AdditionView
   i18n={
     I18n {
       "addResource": [Function],
@@ -54,7 +54,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "translations",
             "validation",
             "routes",
-            "MainPage",
+            "Addition",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -68,9 +68,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Add new",
+                },
+                "edit": Object {
+                  "button": "Save",
+                  "title": "Edit service of room",
+                },
                 "labels": Object {
-                  "title": "Main page",
+                  "Controls": "Controls",
+                  "Name": "Name service on room",
+                  "Price": "Price",
+                  "titleHeader": "Add new service of room",
+                  "titleMain": "Services of room",
+                  "total": "Total services of room",
                 },
               },
               "routes": Object {
@@ -91,9 +103,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Добавить новую",
+                },
+                "edit": Object {
+                  "button": "Сохранить",
+                  "title": "Редактирование услуги комнаты",
+                },
                 "labels": Object {
-                  "title": "Главная",
+                  "Controls": "Управление",
+                  "Name": "Название улуги в комнате",
+                  "Price": "Цена",
+                  "titleHeader": "Добавление новой услуги",
+                  "titleMain": "Услуги комнат",
+                  "total": "Всего услуг",
                 },
               },
               "routes": Object {
@@ -163,7 +187,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "translations",
           "validation",
           "routes",
-          "MainPage",
+          "Addition",
         ],
         "nsSeparator": ":",
         "overloadTranslationOptionHandler": [Function],
@@ -177,9 +201,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resources": Object {
           "en": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Add new",
+              },
+              "edit": Object {
+                "button": "Save",
+                "title": "Edit service of room",
+              },
               "labels": Object {
-                "title": "Main page",
+                "Controls": "Controls",
+                "Name": "Name service on room",
+                "Price": "Price",
+                "titleHeader": "Add new service of room",
+                "titleMain": "Services of room",
+                "total": "Total services of room",
               },
             },
             "routes": Object {
@@ -200,9 +236,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Добавить новую",
+              },
+              "edit": Object {
+                "button": "Сохранить",
+                "title": "Редактирование услуги комнаты",
+              },
               "labels": Object {
-                "title": "Главная",
+                "Controls": "Управление",
+                "Name": "Название улуги в комнате",
+                "Price": "Цена",
+                "titleHeader": "Добавление новой услуги",
+                "titleMain": "Услуги комнат",
+                "total": "Всего услуг",
               },
             },
             "routes": Object {
@@ -237,7 +285,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       "removeResourceBundle": [Function],
       "reportNamespaces": ReportNamespaces {
         "usedNamespaces": Object {
-          "MainPage": true,
+          "Addition": true,
         },
       },
       "services": Object {
@@ -280,7 +328,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "MainPage",
+                  "Addition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -295,9 +343,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Add new",
+                      },
+                      "edit": Object {
+                        "button": "Save",
+                        "title": "Edit service of room",
+                      },
                       "labels": Object {
-                        "title": "Main page",
+                        "Controls": "Controls",
+                        "Name": "Name service on room",
+                        "Price": "Price",
+                        "titleHeader": "Add new service of room",
+                        "titleMain": "Services of room",
+                        "total": "Total services of room",
                       },
                     },
                     "routes": Object {
@@ -318,9 +378,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Добавить новую",
+                      },
+                      "edit": Object {
+                        "button": "Сохранить",
+                        "title": "Редактирование услуги комнаты",
+                      },
                       "labels": Object {
-                        "title": "Главная",
+                        "Controls": "Управление",
+                        "Name": "Название улуги в комнате",
+                        "Price": "Цена",
+                        "titleHeader": "Добавление новой услуги",
+                        "titleMain": "Услуги комнат",
+                        "total": "Всего услуг",
                       },
                     },
                     "routes": Object {
@@ -381,7 +453,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -395,9 +467,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -418,9 +502,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -490,7 +586,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -505,9 +601,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -528,9 +636,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -596,7 +716,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -610,9 +730,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -633,9 +765,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -671,9 +815,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Add new",
+                },
+                "edit": Object {
+                  "button": "Save",
+                  "title": "Edit service of room",
+                },
                 "labels": Object {
-                  "title": "Main page",
+                  "Controls": "Controls",
+                  "Name": "Name service on room",
+                  "Price": "Price",
+                  "titleHeader": "Add new service of room",
+                  "titleMain": "Services of room",
+                  "total": "Total services of room",
                 },
               },
               "routes": Object {
@@ -694,9 +850,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Добавить новую",
+                },
+                "edit": Object {
+                  "button": "Сохранить",
+                  "title": "Редактирование услуги комнаты",
+                },
                 "labels": Object {
-                  "title": "Главная",
+                  "Controls": "Управление",
+                  "Name": "Название улуги в комнате",
+                  "Price": "Цена",
+                  "titleHeader": "Добавление новой услуги",
+                  "titleMain": "Услуги комнат",
+                  "total": "Всего услуг",
                 },
               },
               "routes": Object {
@@ -759,7 +927,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -774,9 +942,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -797,9 +977,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -864,7 +1056,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -878,9 +1070,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -901,9 +1105,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -980,7 +1196,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -995,9 +1211,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -1018,9 +1246,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -1081,7 +1321,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -1095,9 +1335,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -1118,9 +1370,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -1190,7 +1454,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -1204,9 +1468,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -1227,9 +1503,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -1301,7 +1589,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "MainPage",
+                  "Addition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -1316,9 +1604,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Add new",
+                      },
+                      "edit": Object {
+                        "button": "Save",
+                        "title": "Edit service of room",
+                      },
                       "labels": Object {
-                        "title": "Main page",
+                        "Controls": "Controls",
+                        "Name": "Name service on room",
+                        "Price": "Price",
+                        "titleHeader": "Add new service of room",
+                        "titleMain": "Services of room",
+                        "total": "Total services of room",
                       },
                     },
                     "routes": Object {
@@ -1339,9 +1639,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Добавить новую",
+                      },
+                      "edit": Object {
+                        "button": "Сохранить",
+                        "title": "Редактирование услуги комнаты",
+                      },
                       "labels": Object {
-                        "title": "Главная",
+                        "Controls": "Управление",
+                        "Name": "Название улуги в комнате",
+                        "Price": "Цена",
+                        "titleHeader": "Добавление новой услуги",
+                        "titleMain": "Услуги комнат",
+                        "total": "Всего услуг",
                       },
                     },
                     "routes": Object {
@@ -1402,7 +1714,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1416,9 +1728,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -1439,9 +1763,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -1511,7 +1847,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1526,9 +1862,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -1549,9 +1897,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -2524,9 +2884,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Add new",
+              },
+              "edit": Object {
+                "button": "Save",
+                "title": "Edit service of room",
+              },
               "labels": Object {
-                "title": "Main page",
+                "Controls": "Controls",
+                "Name": "Name service on room",
+                "Price": "Price",
+                "titleHeader": "Add new service of room",
+                "titleMain": "Services of room",
+                "total": "Total services of room",
               },
             },
             "routes": Object {
@@ -2547,9 +2919,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Добавить новую",
+              },
+              "edit": Object {
+                "button": "Сохранить",
+                "title": "Редактирование услуги комнаты",
+              },
               "labels": Object {
-                "title": "Главная",
+                "Controls": "Управление",
+                "Name": "Название улуги в комнате",
+                "Price": "Цена",
+                "titleHeader": "Добавление новой услуги",
+                "titleMain": "Услуги комнат",
+                "total": "Всего услуг",
               },
             },
             "routes": Object {
@@ -2573,9 +2957,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       },
       "store": Object {
         "en": Object {
-          "MainPage": Object {
+          "Addition": Object {
+            "buttons": Object {
+              "Submit": "Add new",
+            },
+            "edit": Object {
+              "button": "Save",
+              "title": "Edit service of room",
+            },
             "labels": Object {
-              "title": "Main page",
+              "Controls": "Controls",
+              "Name": "Name service on room",
+              "Price": "Price",
+              "titleHeader": "Add new service of room",
+              "titleMain": "Services of room",
+              "total": "Total services of room",
             },
           },
           "routes": Object {
@@ -2596,9 +2992,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
         },
         "ru": Object {
-          "MainPage": Object {
+          "Addition": Object {
+            "buttons": Object {
+              "Submit": "Добавить новую",
+            },
+            "edit": Object {
+              "button": "Сохранить",
+              "title": "Редактирование услуги комнаты",
+            },
             "labels": Object {
-              "title": "Главная",
+              "Controls": "Управление",
+              "Name": "Название улуги в комнате",
+              "Price": "Цена",
+              "titleHeader": "Добавление новой услуги",
+              "titleMain": "Услуги комнат",
+              "total": "Всего услуг",
             },
           },
           "routes": Object {
@@ -2659,7 +3067,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "MainPage",
+                  "Addition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2674,9 +3082,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Add new",
+                      },
+                      "edit": Object {
+                        "button": "Save",
+                        "title": "Edit service of room",
+                      },
                       "labels": Object {
-                        "title": "Main page",
+                        "Controls": "Controls",
+                        "Name": "Name service on room",
+                        "Price": "Price",
+                        "titleHeader": "Add new service of room",
+                        "titleMain": "Services of room",
+                        "total": "Total services of room",
                       },
                     },
                     "routes": Object {
@@ -2697,9 +3117,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Добавить новую",
+                      },
+                      "edit": Object {
+                        "button": "Сохранить",
+                        "title": "Редактирование услуги комнаты",
+                      },
                       "labels": Object {
-                        "title": "Главная",
+                        "Controls": "Управление",
+                        "Name": "Название улуги в комнате",
+                        "Price": "Цена",
+                        "titleHeader": "Добавление новой услуги",
+                        "titleMain": "Услуги комнат",
+                        "total": "Всего услуг",
                       },
                     },
                     "routes": Object {
@@ -2760,7 +3192,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2774,9 +3206,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -2797,9 +3241,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -2869,7 +3325,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2884,9 +3340,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -2907,9 +3375,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -2975,7 +3455,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -2989,9 +3469,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -3012,9 +3504,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -3050,9 +3554,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Add new",
+                },
+                "edit": Object {
+                  "button": "Save",
+                  "title": "Edit service of room",
+                },
                 "labels": Object {
-                  "title": "Main page",
+                  "Controls": "Controls",
+                  "Name": "Name service on room",
+                  "Price": "Price",
+                  "titleHeader": "Add new service of room",
+                  "titleMain": "Services of room",
+                  "total": "Total services of room",
                 },
               },
               "routes": Object {
@@ -3073,9 +3589,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Добавить новую",
+                },
+                "edit": Object {
+                  "button": "Сохранить",
+                  "title": "Редактирование услуги комнаты",
+                },
                 "labels": Object {
-                  "title": "Главная",
+                  "Controls": "Управление",
+                  "Name": "Название улуги в комнате",
+                  "Price": "Цена",
+                  "titleHeader": "Добавление новой услуги",
+                  "titleMain": "Услуги комнат",
+                  "total": "Всего услуг",
                 },
               },
               "routes": Object {
@@ -3138,7 +3666,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3153,9 +3681,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -3176,9 +3716,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -3243,7 +3795,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3257,9 +3809,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -3280,9 +3844,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -3360,7 +3936,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3375,9 +3951,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -3398,9 +3986,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -3461,7 +4061,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3475,9 +4075,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -3498,9 +4110,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -3570,7 +4194,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               "translations",
               "validation",
               "routes",
-              "MainPage",
+              "Addition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3585,9 +4209,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Add new",
+                  },
+                  "edit": Object {
+                    "button": "Save",
+                    "title": "Edit service of room",
+                  },
                   "labels": Object {
-                    "title": "Main page",
+                    "Controls": "Controls",
+                    "Name": "Name service on room",
+                    "Price": "Price",
+                    "titleHeader": "Add new service of room",
+                    "titleMain": "Services of room",
+                    "total": "Total services of room",
                   },
                 },
                 "routes": Object {
@@ -3608,9 +4244,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
               },
               "ru": Object {
-                "MainPage": Object {
+                "Addition": Object {
+                  "buttons": Object {
+                    "Submit": "Добавить новую",
+                  },
+                  "edit": Object {
+                    "button": "Сохранить",
+                    "title": "Редактирование услуги комнаты",
+                  },
                   "labels": Object {
-                    "title": "Главная",
+                    "Controls": "Управление",
+                    "Name": "Название улуги в комнате",
+                    "Price": "Цена",
+                    "titleHeader": "Добавление новой услуги",
+                    "titleMain": "Услуги комнат",
+                    "total": "Всего услуг",
                   },
                 },
                 "routes": Object {
@@ -3676,7 +4324,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             "translations",
             "validation",
             "routes",
-            "MainPage",
+            "Addition",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -3690,9 +4338,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Add new",
+                },
+                "edit": Object {
+                  "button": "Save",
+                  "title": "Edit service of room",
+                },
                 "labels": Object {
-                  "title": "Main page",
+                  "Controls": "Controls",
+                  "Name": "Name service on room",
+                  "Price": "Price",
+                  "titleHeader": "Add new service of room",
+                  "titleMain": "Services of room",
+                  "total": "Total services of room",
                 },
               },
               "routes": Object {
@@ -3713,9 +4373,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
             },
             "ru": Object {
-              "MainPage": Object {
+              "Addition": Object {
+                "buttons": Object {
+                  "Submit": "Добавить новую",
+                },
+                "edit": Object {
+                  "button": "Сохранить",
+                  "title": "Редактирование услуги комнаты",
+                },
                 "labels": Object {
-                  "title": "Главная",
+                  "Controls": "Управление",
+                  "Name": "Название улуги в комнате",
+                  "Price": "Цена",
+                  "titleHeader": "Добавление новой услуги",
+                  "titleMain": "Услуги комнат",
+                  "total": "Всего услуг",
                 },
               },
               "routes": Object {
@@ -3785,7 +4457,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "MainPage",
+                  "Addition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -3800,9 +4472,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Add new",
+                      },
+                      "edit": Object {
+                        "button": "Save",
+                        "title": "Edit service of room",
+                      },
                       "labels": Object {
-                        "title": "Main page",
+                        "Controls": "Controls",
+                        "Name": "Name service on room",
+                        "Price": "Price",
+                        "titleHeader": "Add new service of room",
+                        "titleMain": "Services of room",
+                        "total": "Total services of room",
                       },
                     },
                     "routes": Object {
@@ -3823,9 +4507,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                     },
                   },
                   "ru": Object {
-                    "MainPage": Object {
+                    "Addition": Object {
+                      "buttons": Object {
+                        "Submit": "Добавить новую",
+                      },
+                      "edit": Object {
+                        "button": "Сохранить",
+                        "title": "Редактирование услуги комнаты",
+                      },
                       "labels": Object {
-                        "title": "Главная",
+                        "Controls": "Управление",
+                        "Name": "Название улуги в комнате",
+                        "Price": "Цена",
+                        "titleHeader": "Добавление новой услуги",
+                        "titleMain": "Услуги комнат",
+                        "total": "Всего услуг",
                       },
                     },
                     "routes": Object {
@@ -3886,7 +4582,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3900,9 +4596,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -3923,9 +4631,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -3995,7 +4715,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "MainPage",
+                "Addition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -4010,9 +4730,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Add new",
+                    },
+                    "edit": Object {
+                      "button": "Save",
+                      "title": "Edit service of room",
+                    },
                     "labels": Object {
-                      "title": "Main page",
+                      "Controls": "Controls",
+                      "Name": "Name service on room",
+                      "Price": "Price",
+                      "titleHeader": "Add new service of room",
+                      "titleMain": "Services of room",
+                      "total": "Total services of room",
                     },
                   },
                   "routes": Object {
@@ -4033,9 +4765,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
                   },
                 },
                 "ru": Object {
-                  "MainPage": Object {
+                  "Addition": Object {
+                    "buttons": Object {
+                      "Submit": "Добавить новую",
+                    },
+                    "edit": Object {
+                      "button": "Сохранить",
+                      "title": "Редактирование услуги комнаты",
+                    },
                     "labels": Object {
-                      "title": "Главная",
+                      "Controls": "Управление",
+                      "Name": "Название улуги в комнате",
+                      "Price": "Цена",
+                      "titleHeader": "Добавление новой услуги",
+                      "titleMain": "Услуги комнат",
+                      "total": "Всего услуг",
                     },
                   },
                   "routes": Object {
@@ -5008,9 +5752,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Add new",
+              },
+              "edit": Object {
+                "button": "Save",
+                "title": "Edit service of room",
+              },
               "labels": Object {
-                "title": "Main page",
+                "Controls": "Controls",
+                "Name": "Name service on room",
+                "Price": "Price",
+                "titleHeader": "Add new service of room",
+                "titleMain": "Services of room",
+                "total": "Total services of room",
               },
             },
             "routes": Object {
@@ -5031,9 +5787,21 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
             },
           },
           "ru": Object {
-            "MainPage": Object {
+            "Addition": Object {
+              "buttons": Object {
+                "Submit": "Добавить новую",
+              },
+              "edit": Object {
+                "button": "Сохранить",
+                "title": "Редактирование услуги комнаты",
+              },
               "labels": Object {
-                "title": "Главная",
+                "Controls": "Управление",
+                "Name": "Название улуги в комнате",
+                "Price": "Цена",
+                "titleHeader": "Добавление новой услуги",
+                "titleMain": "Услуги комнат",
+                "total": "Всего услуг",
               },
             },
             "routes": Object {
@@ -5057,10 +5825,7 @@ exports[`Test case for testing main page Main page snapshot 1`] = `
       },
     }
   }
-  load={[Function]}
-  logout={[Function]}
   t={[Function]}
   tReady={true}
-  user={Object {}}
 />
 `;

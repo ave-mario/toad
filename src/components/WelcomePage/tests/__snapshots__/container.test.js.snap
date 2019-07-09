@@ -33,8 +33,13 @@ exports[`WelcomePage should render correctly 1`] = `
             "getResourceBundle": [Function],
             "hasResourceBundle": [Function],
             "isInitialized": true,
+            "language": "en",
+            "languages": Array [
+              "en",
+              "ru",
+            ],
             "logger": Logger {
-              "debug": true,
+              "debug": false,
               "logger": Object {
                 "error": [Function],
                 "log": [Function],
@@ -46,7 +51,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "appendNamespaceToCIMode": false,
                 "appendNamespaceToMissingKey": false,
                 "contextSeparator": "_",
-                "debug": true,
+                "debug": false,
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
@@ -60,6 +65,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 },
                 "joinArrays": false,
                 "keySeparator": ".",
+                "lng": "en",
                 "load": "all",
                 "missingInterpolationHandler": false,
                 "missingKeyHandler": false,
@@ -217,7 +223,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "appendNamespaceToCIMode": false,
               "appendNamespaceToMissingKey": false,
               "contextSeparator": "_",
-              "debug": true,
+              "debug": false,
               "defaultNS": "translations",
               "fallbackLng": Array [
                 "en",
@@ -231,6 +237,7 @@ exports[`WelcomePage should render correctly 1`] = `
               },
               "joinArrays": false,
               "keySeparator": ".",
+              "lng": "en",
               "load": "all",
               "missingInterpolationHandler": false,
               "missingKeyHandler": false,
@@ -376,7 +383,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "backend": null,
                 "languageUtils": LanguageUtil {
                   "logger": Logger {
-                    "debug": true,
+                    "debug": false,
                     "logger": Object {
                       "error": [Function],
                       "log": [Function],
@@ -388,7 +395,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "appendNamespaceToCIMode": false,
                       "appendNamespaceToMissingKey": false,
                       "contextSeparator": "_",
-                      "debug": true,
+                      "debug": false,
                       "defaultNS": "translations",
                       "fallbackLng": Array [
                         "en",
@@ -402,6 +409,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "joinArrays": false,
                       "keySeparator": ".",
+                      "lng": "en",
                       "load": "all",
                       "missingInterpolationHandler": false,
                       "missingKeyHandler": false,
@@ -542,7 +550,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -556,6 +564,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -692,7 +701,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "whitelist": false,
                 },
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -704,7 +713,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -718,6 +727,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -863,7 +873,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -877,6 +887,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -1119,7 +1130,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "format": [Function],
                 "formatSeparator": ",",
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -1131,7 +1142,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -1145,6 +1156,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -1289,7 +1301,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -1303,6 +1315,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -1446,7 +1459,7 @@ exports[`WelcomePage should render correctly 1`] = `
               },
               "languageUtils": LanguageUtil {
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -1458,7 +1471,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -1472,6 +1485,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -1612,7 +1626,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -1626,6 +1640,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -1762,7 +1777,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "whitelist": false,
               },
               "logger": Logger {
-                "debug": true,
+                "debug": false,
                 "logger": Object {
                   "error": [Function],
                   "log": [Function],
@@ -1774,7 +1789,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -1788,6 +1803,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -1933,7 +1949,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "pluralResolver": PluralResolver {
                 "languageUtils": LanguageUtil {
                   "logger": Logger {
-                    "debug": true,
+                    "debug": false,
                     "logger": Object {
                       "error": [Function],
                       "log": [Function],
@@ -1945,7 +1961,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "appendNamespaceToCIMode": false,
                       "appendNamespaceToMissingKey": false,
                       "contextSeparator": "_",
-                      "debug": true,
+                      "debug": false,
                       "defaultNS": "translations",
                       "fallbackLng": Array [
                         "en",
@@ -1959,6 +1975,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "joinArrays": false,
                       "keySeparator": ".",
+                      "lng": "en",
                       "load": "all",
                       "missingInterpolationHandler": false,
                       "missingKeyHandler": false,
@@ -2099,7 +2116,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -2113,6 +2130,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -2243,7 +2261,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "whitelist": false,
                 },
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -2255,7 +2273,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -2269,6 +2287,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -3548,7 +3567,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "backend": null,
                 "languageUtils": LanguageUtil {
                   "logger": Logger {
-                    "debug": true,
+                    "debug": false,
                     "logger": Object {
                       "error": [Function],
                       "log": [Function],
@@ -3560,7 +3579,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "appendNamespaceToCIMode": false,
                       "appendNamespaceToMissingKey": false,
                       "contextSeparator": "_",
-                      "debug": true,
+                      "debug": false,
                       "defaultNS": "translations",
                       "fallbackLng": Array [
                         "en",
@@ -3574,6 +3593,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "joinArrays": false,
                       "keySeparator": ".",
+                      "lng": "en",
                       "load": "all",
                       "missingInterpolationHandler": false,
                       "missingKeyHandler": false,
@@ -3714,7 +3734,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -3728,6 +3748,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -3864,7 +3885,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "whitelist": false,
                 },
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -3876,7 +3897,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -3890,6 +3911,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -4035,7 +4057,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -4049,6 +4071,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -4291,7 +4314,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "format": [Function],
                 "formatSeparator": ",",
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -4303,7 +4326,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -4317,6 +4340,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -4468,7 +4492,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -4482,6 +4506,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -4623,9 +4648,10 @@ exports[`WelcomePage should render correctly 1`] = `
                 "unescapeSuffix": "",
                 "useRawValueToEscape": false,
               },
+              "language": "en",
               "languageUtils": LanguageUtil {
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -4637,7 +4663,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -4651,6 +4677,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -4791,7 +4818,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -4805,6 +4832,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -4941,7 +4969,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "whitelist": false,
               },
               "logger": Logger {
-                "debug": true,
+                "debug": false,
                 "logger": Object {
                   "error": [Function],
                   "log": [Function],
@@ -4953,7 +4981,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "appendNamespaceToCIMode": false,
                   "appendNamespaceToMissingKey": false,
                   "contextSeparator": "_",
-                  "debug": true,
+                  "debug": false,
                   "defaultNS": "translations",
                   "fallbackLng": Array [
                     "en",
@@ -4967,6 +4995,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   },
                   "joinArrays": false,
                   "keySeparator": ".",
+                  "lng": "en",
                   "load": "all",
                   "missingInterpolationHandler": false,
                   "missingKeyHandler": false,
@@ -5112,7 +5141,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 "appendNamespaceToCIMode": false,
                 "appendNamespaceToMissingKey": false,
                 "contextSeparator": "_",
-                "debug": true,
+                "debug": false,
                 "defaultNS": "translations",
                 "fallbackLng": Array [
                   "en",
@@ -5126,6 +5155,7 @@ exports[`WelcomePage should render correctly 1`] = `
                 },
                 "joinArrays": false,
                 "keySeparator": ".",
+                "lng": "en",
                 "load": "all",
                 "missingInterpolationHandler": false,
                 "missingKeyHandler": false,
@@ -5262,7 +5292,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "pluralResolver": PluralResolver {
                 "languageUtils": LanguageUtil {
                   "logger": Logger {
-                    "debug": true,
+                    "debug": false,
                     "logger": Object {
                       "error": [Function],
                       "log": [Function],
@@ -5274,7 +5304,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       "appendNamespaceToCIMode": false,
                       "appendNamespaceToMissingKey": false,
                       "contextSeparator": "_",
-                      "debug": true,
+                      "debug": false,
                       "defaultNS": "translations",
                       "fallbackLng": Array [
                         "en",
@@ -5288,6 +5318,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "joinArrays": false,
                       "keySeparator": ".",
+                      "lng": "en",
                       "load": "all",
                       "missingInterpolationHandler": false,
                       "missingKeyHandler": false,
@@ -5428,7 +5459,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -5442,6 +5473,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -5578,7 +5610,7 @@ exports[`WelcomePage should render correctly 1`] = `
                   "whitelist": false,
                 },
                 "logger": Logger {
-                  "debug": true,
+                  "debug": false,
                   "logger": Object {
                     "error": [Function],
                     "log": [Function],
@@ -5590,7 +5622,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     "appendNamespaceToCIMode": false,
                     "appendNamespaceToMissingKey": false,
                     "contextSeparator": "_",
-                    "debug": true,
+                    "debug": false,
                     "defaultNS": "translations",
                     "fallbackLng": Array [
                       "en",
@@ -5604,6 +5636,7 @@ exports[`WelcomePage should render correctly 1`] = `
                     },
                     "joinArrays": false,
                     "keySeparator": ".",
+                    "lng": "en",
                     "load": "all",
                     "missingInterpolationHandler": false,
                     "missingKeyHandler": false,
@@ -6884,8 +6917,13 @@ exports[`WelcomePage should render correctly 1`] = `
                       "getResourceBundle": [Function],
                       "hasResourceBundle": [Function],
                       "isInitialized": true,
+                      "language": "en",
+                      "languages": Array [
+                        "en",
+                        "ru",
+                      ],
                       "logger": Logger {
-                        "debug": true,
+                        "debug": false,
                         "logger": Object {
                           "error": [Function],
                           "log": [Function],
@@ -6897,7 +6935,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
@@ -6911,6 +6949,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -7068,7 +7107,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "appendNamespaceToCIMode": false,
                         "appendNamespaceToMissingKey": false,
                         "contextSeparator": "_",
-                        "debug": true,
+                        "debug": false,
                         "defaultNS": "translations",
                         "fallbackLng": Array [
                           "en",
@@ -7082,6 +7121,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         },
                         "joinArrays": false,
                         "keySeparator": ".",
+                        "lng": "en",
                         "load": "all",
                         "missingInterpolationHandler": false,
                         "missingKeyHandler": false,
@@ -7227,7 +7267,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "backend": null,
                           "languageUtils": LanguageUtil {
                             "logger": Logger {
-                              "debug": true,
+                              "debug": false,
                               "logger": Object {
                                 "error": [Function],
                                 "log": [Function],
@@ -7239,7 +7279,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "appendNamespaceToCIMode": false,
                                 "appendNamespaceToMissingKey": false,
                                 "contextSeparator": "_",
-                                "debug": true,
+                                "debug": false,
                                 "defaultNS": "translations",
                                 "fallbackLng": Array [
                                   "en",
@@ -7253,6 +7293,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 },
                                 "joinArrays": false,
                                 "keySeparator": ".",
+                                "lng": "en",
                                 "load": "all",
                                 "missingInterpolationHandler": false,
                                 "missingKeyHandler": false,
@@ -7393,7 +7434,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -7407,6 +7448,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -7543,7 +7585,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "whitelist": false,
                           },
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -7555,7 +7597,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -7569,6 +7611,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -7714,7 +7757,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -7728,6 +7771,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -7970,7 +8014,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "format": [Function],
                           "formatSeparator": ",",
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -7982,7 +8026,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -7996,6 +8040,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -8140,7 +8185,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -8154,6 +8199,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -8297,7 +8343,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         },
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -8309,7 +8355,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -8323,6 +8369,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -8463,7 +8510,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -8477,6 +8524,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -8613,7 +8661,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -8625,7 +8673,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -8639,6 +8687,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -8777,7 +8826,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "pluralResolver": PluralResolver {
                           "languageUtils": LanguageUtil {
                             "logger": Logger {
-                              "debug": true,
+                              "debug": false,
                               "logger": Object {
                                 "error": [Function],
                                 "log": [Function],
@@ -8789,7 +8838,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "appendNamespaceToCIMode": false,
                                 "appendNamespaceToMissingKey": false,
                                 "contextSeparator": "_",
-                                "debug": true,
+                                "debug": false,
                                 "defaultNS": "translations",
                                 "fallbackLng": Array [
                                   "en",
@@ -8803,6 +8852,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 },
                                 "joinArrays": false,
                                 "keySeparator": ".",
+                                "lng": "en",
                                 "load": "all",
                                 "missingInterpolationHandler": false,
                                 "missingKeyHandler": false,
@@ -8943,7 +8993,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -8957,6 +9007,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -9093,7 +9144,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "whitelist": false,
                           },
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -9105,7 +9156,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -9119,6 +9170,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -10398,7 +10450,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "backend": null,
                           "languageUtils": LanguageUtil {
                             "logger": Logger {
-                              "debug": true,
+                              "debug": false,
                               "logger": Object {
                                 "error": [Function],
                                 "log": [Function],
@@ -10410,7 +10462,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "appendNamespaceToCIMode": false,
                                 "appendNamespaceToMissingKey": false,
                                 "contextSeparator": "_",
-                                "debug": true,
+                                "debug": false,
                                 "defaultNS": "translations",
                                 "fallbackLng": Array [
                                   "en",
@@ -10424,6 +10476,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 },
                                 "joinArrays": false,
                                 "keySeparator": ".",
+                                "lng": "en",
                                 "load": "all",
                                 "missingInterpolationHandler": false,
                                 "missingKeyHandler": false,
@@ -10564,7 +10617,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -10578,6 +10631,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -10714,7 +10768,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "whitelist": false,
                           },
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -10726,7 +10780,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -10740,6 +10794,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -10885,7 +10940,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -10899,6 +10954,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -11141,7 +11197,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "format": [Function],
                           "formatSeparator": ",",
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -11153,7 +11209,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -11167,6 +11223,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -11311,7 +11368,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -11325,6 +11382,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -11466,9 +11524,10 @@ exports[`WelcomePage should render correctly 1`] = `
                           "unescapeSuffix": "",
                           "useRawValueToEscape": false,
                         },
+                        "language": "en",
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -11480,7 +11539,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -11494,6 +11553,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -11634,7 +11694,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -11648,6 +11708,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -11784,7 +11845,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -11796,7 +11857,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
@@ -11810,6 +11871,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -11955,7 +12017,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
@@ -11969,6 +12031,7 @@ exports[`WelcomePage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -12105,7 +12168,7 @@ exports[`WelcomePage should render correctly 1`] = `
                         "pluralResolver": PluralResolver {
                           "languageUtils": LanguageUtil {
                             "logger": Logger {
-                              "debug": true,
+                              "debug": false,
                               "logger": Object {
                                 "error": [Function],
                                 "log": [Function],
@@ -12117,7 +12180,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 "appendNamespaceToCIMode": false,
                                 "appendNamespaceToMissingKey": false,
                                 "contextSeparator": "_",
-                                "debug": true,
+                                "debug": false,
                                 "defaultNS": "translations",
                                 "fallbackLng": Array [
                                   "en",
@@ -12131,6 +12194,7 @@ exports[`WelcomePage should render correctly 1`] = `
                                 },
                                 "joinArrays": false,
                                 "keySeparator": ".",
+                                "lng": "en",
                                 "load": "all",
                                 "missingInterpolationHandler": false,
                                 "missingKeyHandler": false,
@@ -12271,7 +12335,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -12285,6 +12349,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -12421,7 +12486,7 @@ exports[`WelcomePage should render correctly 1`] = `
                             "whitelist": false,
                           },
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -12433,7 +12498,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
@@ -12447,6 +12512,7 @@ exports[`WelcomePage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -14006,7 +14072,8 @@ exports[`WelcomePage should render correctly 1`] = `
                               <Connect(ErrorBar)>
                                 <ErrorBar
                                   dispatch={[Function]}
-                                  error=""
+                                  isError={false}
+                                  message=""
                                 />
                               </Connect(ErrorBar)>
                             </main>

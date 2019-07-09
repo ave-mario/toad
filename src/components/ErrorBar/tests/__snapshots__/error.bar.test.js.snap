@@ -16,7 +16,8 @@ exports[`ErrorBar should render correctly 1`] = `
   <Connect(ErrorBar)>
     <ErrorBar
       dispatch={[Function]}
-      error=""
+      isError={false}
+      message=""
     />
   </Connect(ErrorBar)>
 </Provider>

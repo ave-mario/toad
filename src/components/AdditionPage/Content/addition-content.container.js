@@ -3,11 +3,7 @@ import Actions from 'actions/addition.actions';
 import AdditionView from './addition-content.view';
 
 const mapStateToProps = state => ({
-  data: state.additions.docs,
-  total: state.additions.total,
-  page: state.additions.page,
-  limit: state.additions.limit,
-  pages: state.additions.pages
+  ...state.additions
 });
 
 const mapDispatchToProps = dispatch => {

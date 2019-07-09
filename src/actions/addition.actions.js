@@ -5,7 +5,7 @@ const { Types, Creators } = createActions({
   saveAdditionSuccess: ['payload', 'message'],
   saveAdditionFailure: ['message'],
   loadAdditionListRequest: [null],
-  loadAdditionListSuccess: ['payload', 'message'],
+  loadAdditionListSuccess: ['payload'],
   loadAdditionListFailure: ['message'],
   changeAdditionRequest: ['id', 'data'],
   changeAdditionSuccess: ['id', 'name', 'price', 'message'],

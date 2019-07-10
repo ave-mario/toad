@@ -36,7 +36,7 @@ class ErrorBar extends PureComponent {
     return (
       <>
         {message && isShow && (
-          <ServerError backgroundColor={isError ? '#ed1e3a' : '#27ae60'}>
+          <ServerError fixed backgroundColor={isError ? '#ed1e3a' : '#27ae60'}>
             <ServerErrorText>{message}</ServerErrorText>
             <Close
               style={{ cursor: 'pointer', color: 'white', fontSize: '30' }}

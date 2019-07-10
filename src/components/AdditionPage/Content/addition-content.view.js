@@ -37,6 +37,7 @@ class AdditionTable extends Component {
   }
 
   renderAddition(addition, index) {
+    const { t } = this.props;
     const { _id, price, name } = addition;
     return (
       <TableRow key={_id}>
@@ -49,17 +50,18 @@ class AdditionTable extends Component {
         </TableCell>
         <TableCell xs4>
           <TableButton
+            big
             id={`${_id}edit`}
             onClick={() => this.handleClick('isShowModalEdit', addition)}
           >
-            Edit
+            {t('buttons.edit')}
           </TableButton>
           <TableButton
             red
             id={`${_id}delete`}
             onClick={() => this.handleClick('isShowModalRemove', addition)}
           >
-            Delete
+            {t('buttons.delete')}
           </TableButton>
         </TableCell>
       </TableRow>

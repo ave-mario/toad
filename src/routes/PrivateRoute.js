@@ -24,7 +24,11 @@ const PrivateRoute = ({ component, tokenData, ...rest }) => {
 
 PrivateRoute.propTypes = {
   component: PropTypes.func.isRequired,
-  tokenData: PropTypes.shape({}).isRequired
+  tokenData: PropTypes.shape({})
+};
+
+PrivateRoute.defaultProps = {
+  tokenData: {}
 };
 
 const mapStateToProps = state => ({

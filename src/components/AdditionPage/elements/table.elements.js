@@ -25,7 +25,7 @@ export const TableCell = styled.div`
 export const TableButton = styled(Button)`
   margin: 0 8px;
 
-  width: 60px;
+  ${({ big }) => (big ? 'width: 110px' : 'width: 70px;')}
   border-radius: 5px;
   ${({ red }) =>
     red

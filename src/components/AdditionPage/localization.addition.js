@@ -9,7 +9,9 @@ export default {
       titleMain: 'Услуги комнат'
     },
     buttons: {
-      Submit: 'Добавить новую'
+      Submit: 'Добавить новую',
+      delete: 'Удалить',
+      edit: 'Редактировать'
     },
     edit: {
       title: 'Редактирование услуги комнаты',
@@ -26,7 +28,9 @@ export default {
       titleMain: 'Services of room'
     },
     buttons: {
-      Submit: 'Add new'
+      Submit: 'Add new',
+      delete: 'Delete',
+      edit: 'Edit'
     },
     edit: {
       title: 'Edit service of room',

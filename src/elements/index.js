@@ -161,20 +161,37 @@ export const ErrorText = styled.div`
   padding: ${({ padding }) => padding || '2px'};
 `;
 export const ServerError = styled.div`
-  text-align: ${({ textAlign }) => textAlign || 'left'};
+  text-align: left;
+
   color: ${({ color }) => color || 'white'};
   background-color: ${({ backgroundColor }) => backgroundColor || '#ed1e3a'};
-  font-size: ${({ fontSize }) => fontSize || `13px`};
+
   width: ${({ width }) => width || '80%'};
   height: ${({ height }) => height || '25px'};
-  padding: ${({ padding }) => padding || '5px'};
-  padding-left: ${({ padding }) => padding || '12px'};
-  margin: ${({ margin }) => margin || '0 auto'};
-  border-radius: ${({ borderRadius }) => borderRadius || '5px'};
-  display: ${({ display }) => display || 'flex'};
-  align-items: ${({ alignItems }) => alignItems || 'center'};
-  justify-content: ${({ justifyContent }) => justifyContent || 'space-between'};
-  flex-wrap: ${({ flexWrap }) => flexWrap || 'no-wrap'};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ${({ fixed }) =>
+    fixed &&
+    `
+    right: 80px;
+    bottom: 20px;
+    position: fixed;
+    width: 400px;
+
+    @media (max-width: 800px) {
+      right: 10px;
+      width: 200px;
+    }
+ `}
+
+  font-size: 13px;
+  height: 25px;
+  padding: 5px;
+  padding-left: 12px;
+  margin: 0 auto;
+  border-radius: 5px;
 `;
 export const ServerErrorText = styled.span`
   color: ${({ color }) => color || 'white'};

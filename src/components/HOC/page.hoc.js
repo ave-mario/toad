@@ -7,9 +7,7 @@ import Header from '../Header';
 import Menu from '../Menu/LeftMenu';
 import ErrorBar from '../ErrorBar';
 
-const Wrapper = styled.div`
-  height: 35px;
-`;
+const Wrapper = styled(MainContent)``;
 
 export const LayoutPage = Component => {
   const Layout = props => {
@@ -21,6 +19,7 @@ export const LayoutPage = Component => {
     useEffect(() => {
       const router = Titles.find(({ link }) => link === url);
       setTitle(router.name);
+      document.title = router.name;
     }, [url]);
 
     return (
@@ -30,11 +29,9 @@ export const LayoutPage = Component => {
           <Content full main>
             <Header title={title} />
             <Wrapper>
+              <Component {...props} />
               <ErrorBar />
             </Wrapper>
-            <MainContent>
-              <Component {...props} />
-            </MainContent>
           </Content>
         </Content>
       </>

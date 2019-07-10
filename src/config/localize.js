@@ -22,6 +22,10 @@ i18n.use(initReactI18next).init({
   }
 });
 
+i18n.on('languageChanged', lng => {
+  i18n.language = lng;
+});
+
 export const addResource = (ns, resources) => {
   ['ru', 'en'].forEach(lng => {
     i18n.addResourceBundle(lng, ns, resources[lng]);

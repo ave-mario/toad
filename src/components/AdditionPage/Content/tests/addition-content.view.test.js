@@ -17,7 +17,6 @@ describe('Addition Content view', () => {
     const wrapper = shallow(<AdditionContent {...props} />).dive();
 
     expect(wrapper.state().isShowModalEdit).toEqual(false);
-    console.log({ buttons: wrapper.find('.edit') });
     wrapper
       .find(`.edit`)
       .at(0)

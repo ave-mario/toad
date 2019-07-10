@@ -4,7 +4,8 @@ import api from 'config/api';
 
 const url = api.getBaseUrl();
 
-export function login(email, password) {
+export function login(args) {
+  const [email, password] = args;
   const config = {
     headers: { 'Content-Type': 'application/json' }
   };
@@ -39,7 +40,8 @@ export function createPassword(newPassword, token) {
   return axios.put(`${url}employees/password`, body, config);
 }
 
-export async function callWithAuth(func) {
+export async function callWithAuth(args) {
+  const func = args[0];
   const tokenData = await services.tokenDataService.getTokenData();
   let newTokenData = tokenData;
 
@@ -51,6 +53,26 @@ export async function callWithAuth(func) {
     newTokenData = data.tokenData;
     services.tokenDataService.setTokenData(newTokenData);
   }
-
   return func(newTokenData.tokens.accessToken);
+}
+
+export async function wrapper(func, ...args) {
+  let attempts = 3;
+  let response = {};
+
+  while (attempts > 0) {
+    try {
+      response = await func(args);
+      if (response) return response;
+    } catch (e) {
+      response.error = e.response ? e.response.data.message : 'Network error';
+      if (!e.response || e.response.status === 500) {
+        attempts -= 1;
+      } else {
+        attempts = 0;
+      }
+    }
+  }
+
+  return response;
 }

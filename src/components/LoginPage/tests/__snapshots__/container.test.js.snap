@@ -375,6 +375,7 @@ exports[`LoginPage should render correctly 1`] = `
                     "observers": Object {
                       "languageChanged": Array [
                         [Function],
+                        [Function],
                       ],
                       "languageChanging": Array [
                         [Function],

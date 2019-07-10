@@ -1,25 +1,20 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import NotFoundPage from '../view';
+import NotFoundPage from '../';
 import 'jest-styled-components';
 
 describe('Test case for testing NotFound page', () => {
   test('NotFound page snapshot', () => {
-    const props = {
-      goBack: () => {}
-    };
-    const component = shallow(<NotFoundPage {...props} />);
+    const component = shallow(<NotFoundPage />);
 
     expect(component).toMatchSnapshot();
   });
   test('should call go back on button click', () => {
-    const mockGoBack = jest.fn();
-    const props = {
-      goBack: mockGoBack
-    };
-    const component = mount(<NotFoundPage {...props} />);
-
+    const component = mount(<NotFoundPage />);
+    component.instance().handleClick = jest.fn();
+    expect(component.instance().handleClick).not.toHaveBeenCalled();
+    component.instance().forceUpdate();
     component.find('button.goBackButton').simulate('click');
-    expect(mockGoBack).toHaveBeenCalled();
+    expect(component.instance().handleClick).toHaveBeenCalledTimes(1);
   });
 });

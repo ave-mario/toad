@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route, withRouter, Redirect } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { goBackOrReplace } from 'config/browser.history';
 
 const HiddenRoute = ({ component, isAuthenticated, ...rest }) => {
   const ComponentToRender = component;
@@ -13,7 +14,7 @@ const HiddenRoute = ({ component, isAuthenticated, ...rest }) => {
         !isAuthenticated ? (
           <ComponentToRender {...props} />
         ) : (
-          <Redirect to="/" />
+          goBackOrReplace('/')
         )
       }
     />

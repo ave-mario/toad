@@ -325,6 +325,7 @@ exports[`WelcomePage should render correctly 1`] = `
               "languageChanged": Array [
                 [Function],
                 [Function],
+                [Function],
               ],
               "languageChanging": Array [
                 [Function],
@@ -7199,6 +7200,7 @@ exports[`WelcomePage should render correctly 1`] = `
                       },
                       "observers": Object {
                         "languageChanged": Array [
+                          [Function],
                           [Function],
                           [Function],
                         ],

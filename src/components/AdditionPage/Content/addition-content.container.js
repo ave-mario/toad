@@ -13,6 +13,12 @@ const mapDispatchToProps = dispatch => {
     },
     change: (id, { name, price }) => {
       dispatch(Actions.Creators.changeAdditionRequest(id, { name, price }));
+    },
+    update: (id, { name, price }) => {
+      dispatch(Actions.Creators.changeAdditionRequest(id, { name, price }));
+    },
+    remove: id => {
+      dispatch(Actions.Creators.removeAdditionRequest(id));
     }
   };
 };

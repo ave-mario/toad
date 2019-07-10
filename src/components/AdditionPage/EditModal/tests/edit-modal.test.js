@@ -1,6 +1,6 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import Modal from '../edit-modal.formik.js';
+import { mount } from 'enzyme';
+import Modal from '../';
 import faker from 'faker';
 
 describe('Edit addition modal view', () => {

@@ -51,14 +51,14 @@ class AdditionTable extends Component {
         <TableCell xs4>
           <TableButton
             big
-            id={`${_id}edit`}
+            className="edit"
             onClick={() => this.handleClick('isShowModalEdit', addition)}
           >
             {t('buttons.edit')}
           </TableButton>
           <TableButton
             red
-            id={`${_id}delete`}
+            className="delete"
             onClick={() => this.handleClick('isShowModalRemove', addition)}
           >
             {t('buttons.delete')}
@@ -69,7 +69,7 @@ class AdditionTable extends Component {
   }
 
   render() {
-    const { t, docs, total } = this.props;
+    const { t, docs, total, remove, update } = this.props;
     const { isShowModalEdit, isShowModalRemove, addition } = this.state;
     return (
       <Content id="addition-table">
@@ -83,12 +83,14 @@ class AdditionTable extends Component {
             <EditModal
               close={() => this.handleClick('isShowModalEdit')}
               addition={addition}
+              update={update}
             />
           )}
           {isShowModalRemove && (
             <DeleteModal
               close={() => this.handleClick('isShowModalRemove')}
               addition={addition}
+              remove={remove}
             />
           )}
           <TableRow mgHeight2>
@@ -122,7 +124,9 @@ AdditionTable.propTypes = {
   //   limit: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   load: PropTypes.func.isRequired,
-  t: PropTypes.func.isRequired
+  t: PropTypes.func.isRequired,
+  remove: PropTypes.func.isRequired,
+  update: PropTypes.func.isRequired
 };
 
 export default withTranslation('Addition')(AdditionTable);

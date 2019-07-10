@@ -93,7 +93,7 @@ exports[`Addition Content view should render addition table 1`] = `
             "translations",
             "validation",
             "routes",
-            "DeleteModalAddiition",
+            "DeleteModalAddition",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -107,7 +107,7 @@ exports[`Addition Content view should render addition table 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Cancel",
                   "submit": "Remove",
@@ -134,7 +134,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
             },
             "ru": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Отмена",
                   "submit": "Удалить",
@@ -185,6 +185,7 @@ exports[`Addition Content view should render addition table 1`] = `
       "observers": Object {
         "languageChanged": Array [
           [Function],
+          [Function],
         ],
         "languageChanging": Array [
           [Function],
@@ -217,7 +218,7 @@ exports[`Addition Content view should render addition table 1`] = `
           "translations",
           "validation",
           "routes",
-          "DeleteModalAddiition",
+          "DeleteModalAddition",
         ],
         "nsSeparator": ":",
         "overloadTranslationOptionHandler": [Function],
@@ -231,7 +232,7 @@ exports[`Addition Content view should render addition table 1`] = `
         },
         "resources": Object {
           "en": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Cancel",
                 "submit": "Remove",
@@ -258,7 +259,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
           },
           "ru": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Отмена",
                 "submit": "Удалить",
@@ -342,7 +343,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "DeleteModalAddiition",
+                  "DeleteModalAddition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -357,7 +358,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Cancel",
                         "submit": "Remove",
@@ -384,7 +385,7 @@ exports[`Addition Content view should render addition table 1`] = `
                     },
                   },
                   "ru": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Отмена",
                         "submit": "Удалить",
@@ -451,7 +452,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -465,7 +466,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -492,7 +493,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -568,7 +569,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -583,7 +584,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -610,7 +611,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -682,7 +683,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -696,7 +697,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -723,7 +724,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -765,7 +766,7 @@ exports[`Addition Content view should render addition table 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Cancel",
                   "submit": "Remove",
@@ -792,7 +793,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
             },
             "ru": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Отмена",
                   "submit": "Удалить",
@@ -861,7 +862,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -876,7 +877,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -903,7 +904,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -974,7 +975,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -988,7 +989,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -1015,7 +1016,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -1098,7 +1099,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1113,7 +1114,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -1140,7 +1141,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -1207,7 +1208,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -1221,7 +1222,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -1248,7 +1249,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -1324,7 +1325,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -1338,7 +1339,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -1365,7 +1366,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -1443,7 +1444,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "DeleteModalAddiition",
+                  "DeleteModalAddition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -1458,7 +1459,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Cancel",
                         "submit": "Remove",
@@ -1485,7 +1486,7 @@ exports[`Addition Content view should render addition table 1`] = `
                     },
                   },
                   "ru": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Отмена",
                         "submit": "Удалить",
@@ -1552,7 +1553,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1566,7 +1567,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -1593,7 +1594,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -1669,7 +1670,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -1684,7 +1685,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -1711,7 +1712,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -2690,7 +2691,7 @@ exports[`Addition Content view should render addition table 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Cancel",
                 "submit": "Remove",
@@ -2717,7 +2718,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
           },
           "ru": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Отмена",
                 "submit": "Удалить",
@@ -2747,7 +2748,7 @@ exports[`Addition Content view should render addition table 1`] = `
       },
       "store": Object {
         "en": Object {
-          "DeleteModalAddiition": Object {
+          "DeleteModalAddition": Object {
             "buttons": Object {
               "cancel": "Cancel",
               "submit": "Remove",
@@ -2774,7 +2775,7 @@ exports[`Addition Content view should render addition table 1`] = `
           },
         },
         "ru": Object {
-          "DeleteModalAddiition": Object {
+          "DeleteModalAddition": Object {
             "buttons": Object {
               "cancel": "Отмена",
               "submit": "Удалить",
@@ -2841,7 +2842,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "DeleteModalAddiition",
+                  "DeleteModalAddition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2856,7 +2857,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Cancel",
                         "submit": "Remove",
@@ -2883,7 +2884,7 @@ exports[`Addition Content view should render addition table 1`] = `
                     },
                   },
                   "ru": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Отмена",
                         "submit": "Удалить",
@@ -2950,7 +2951,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2964,7 +2965,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -2991,7 +2992,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -3067,7 +3068,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3082,7 +3083,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -3109,7 +3110,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -3181,7 +3182,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3195,7 +3196,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -3222,7 +3223,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -3264,7 +3265,7 @@ exports[`Addition Content view should render addition table 1`] = `
           "state": Object {},
           "store": Object {
             "en": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Cancel",
                   "submit": "Remove",
@@ -3291,7 +3292,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
             },
             "ru": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Отмена",
                   "submit": "Удалить",
@@ -3360,7 +3361,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3375,7 +3376,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -3402,7 +3403,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -3473,7 +3474,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3487,7 +3488,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -3514,7 +3515,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -3598,7 +3599,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -3613,7 +3614,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -3640,7 +3641,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -3707,7 +3708,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3721,7 +3722,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -3748,7 +3749,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -3824,7 +3825,7 @@ exports[`Addition Content view should render addition table 1`] = `
               "translations",
               "validation",
               "routes",
-              "DeleteModalAddiition",
+              "DeleteModalAddition",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -3839,7 +3840,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
             "resources": Object {
               "en": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Cancel",
                     "submit": "Remove",
@@ -3866,7 +3867,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
               },
               "ru": Object {
-                "DeleteModalAddiition": Object {
+                "DeleteModalAddition": Object {
                   "buttons": Object {
                     "cancel": "Отмена",
                     "submit": "Удалить",
@@ -3938,7 +3939,7 @@ exports[`Addition Content view should render addition table 1`] = `
             "translations",
             "validation",
             "routes",
-            "DeleteModalAddiition",
+            "DeleteModalAddition",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -3952,7 +3953,7 @@ exports[`Addition Content view should render addition table 1`] = `
           },
           "resources": Object {
             "en": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Cancel",
                   "submit": "Remove",
@@ -3979,7 +3980,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
             },
             "ru": Object {
-              "DeleteModalAddiition": Object {
+              "DeleteModalAddition": Object {
                 "buttons": Object {
                   "cancel": "Отмена",
                   "submit": "Удалить",
@@ -4055,7 +4056,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   "translations",
                   "validation",
                   "routes",
-                  "DeleteModalAddiition",
+                  "DeleteModalAddition",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -4070,7 +4071,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 },
                 "resources": Object {
                   "en": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Cancel",
                         "submit": "Remove",
@@ -4097,7 +4098,7 @@ exports[`Addition Content view should render addition table 1`] = `
                     },
                   },
                   "ru": Object {
-                    "DeleteModalAddiition": Object {
+                    "DeleteModalAddition": Object {
                       "buttons": Object {
                         "cancel": "Отмена",
                         "submit": "Удалить",
@@ -4164,7 +4165,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -4178,7 +4179,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -4205,7 +4206,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -4281,7 +4282,7 @@ exports[`Addition Content view should render addition table 1`] = `
                 "translations",
                 "validation",
                 "routes",
-                "DeleteModalAddiition",
+                "DeleteModalAddition",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -4296,7 +4297,7 @@ exports[`Addition Content view should render addition table 1`] = `
               },
               "resources": Object {
                 "en": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Cancel",
                       "submit": "Remove",
@@ -4323,7 +4324,7 @@ exports[`Addition Content view should render addition table 1`] = `
                   },
                 },
                 "ru": Object {
-                  "DeleteModalAddiition": Object {
+                  "DeleteModalAddition": Object {
                     "buttons": Object {
                       "cancel": "Отмена",
                       "submit": "Удалить",
@@ -5302,7 +5303,7 @@ exports[`Addition Content view should render addition table 1`] = `
         },
         "resourceStore": Object {
           "en": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Cancel",
                 "submit": "Remove",
@@ -5329,7 +5330,7 @@ exports[`Addition Content view should render addition table 1`] = `
             },
           },
           "ru": Object {
-            "DeleteModalAddiition": Object {
+            "DeleteModalAddition": Object {
               "buttons": Object {
                 "cancel": "Отмена",
                 "submit": "Удалить",
@@ -5360,11 +5361,35 @@ exports[`Addition Content view should render addition table 1`] = `
     }
   }
   limit={10}
-  load={[Function]}
+  load={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+        Array [],
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
   page={1}
   pages={1}
+  remove={[MockFunction]}
   t={[Function]}
   tReady={true}
   total={8}
+  update={[MockFunction]}
 />
 `;

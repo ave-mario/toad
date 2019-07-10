@@ -1,13 +1,8 @@
 import { put, call } from 'redux-saga/effects';
 import { push } from 'connected-react-router';
-import {
-  login,
-  loadUser,
-  createPassword,
-  callWithAuth
-} from '../actions/api.calls';
-import authActions from '../actions/auth.actions';
-import services from '../services';
+import { login, loadUser, createPassword, callWithAuth } from 'api/auth.api';
+import authActions from 'actions/auth.actions';
+import services from 'services';
 
 const { Creators } = authActions;
 
@@ -19,11 +14,12 @@ export function* authorize(email, password) {
     services.tokenDataService.setTokenData(tokenData);
 
     yield put(Creators.loginSuccess(user, tokenData));
-    yield put(push('/'));
 
     return response;
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.loginFailure(errorMessage));
 
@@ -34,17 +30,19 @@ export function* authorize(email, password) {
 export function* load() {
   try {
     const tokenData = yield services.tokenDataService.getTokenData();
-
-    if (tokenData === null) {
-      throw new Error('There are no tokens');
-    } else {
+    if (tokenData) {
+      yield put(Creators.loadTokenSuccess(tokenData));
       const response = yield call(callWithAuth, loadUser);
       const { user } = response.data;
 
       yield put(Creators.loadSuccess(user, tokenData));
+    } else if (tokenData === null) {
+      throw new Error('There are no tokens');
     }
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.loadFailure(errorMessage));
   }
@@ -56,7 +54,9 @@ export function* createNewPassword(password, token) {
 
     yield put(Creators.createPasswordSuccess(response.data.success));
   } catch (error) {
-    const errorMessage = error.response ? error.response.data : error.message;
+    const errorMessage = error.response
+      ? error.response.data.message
+      : error.message;
 
     yield put(Creators.createPasswordFailure(errorMessage));
   }

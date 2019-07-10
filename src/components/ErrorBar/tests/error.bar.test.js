@@ -10,12 +10,9 @@ test('ErrorBar should render correctly', () => {
   const store = mockStore({
     auth: {
       isFailed: false,
-      user: {},
-      error: {
-        message: 'message',
-        success: false
-      }
-    }
+      user: {}
+    },
+    error: { message: '' }
   });
 
   const wrapper = mount(

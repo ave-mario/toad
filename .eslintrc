@@ -9,15 +9,15 @@
       }
     ],
     "prettier/prettier": "warn",
-    "max-len": ["warn", 80]
+    "max-len": ["warn", 80],
   },
   "env": {
     "browser": true
   },
   "settings": {
     "import/resolver": {
-      "webpack": {
-        "config": "./config/webpack-common-config.js"
+      "node": {
+        "paths": ["src"]
       }
     }
   }

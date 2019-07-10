@@ -10,12 +10,9 @@ describe('Login form', () => {
   const store = mockStore({
     auth: {
       isFailed: false,
-      user: {},
-      error: {
-        message: 'message',
-        success: false
-      }
-    }
+      user: {}
+    },
+    error: { message: '' }
   });
 
   const wrapper = mount(
@@ -35,7 +32,6 @@ describe('Login form', () => {
     let myFormInner = wrapper.find('MyFormInner');
     expect(myFormInner.props().values.email).toBe('abc');
     wrapper.update();
-    myFormInner = wrapper.find('MyFormInner');
   });
   test('should update an password input when it is changed', () => {
     wrapper.find('input.passwordInput').simulate('change', {

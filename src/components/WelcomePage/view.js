@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
+import { addResource } from 'config/localize';
+import services from 'services';
 import { Welcome } from './WelcomeForm';
-import { addResource } from '../../config/localize';
 import localization from './localization.welcome';
-import services from '../../services';
 
 addResource('Welcome', localization);
 

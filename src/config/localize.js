@@ -1,14 +1,15 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import validation from '../validation/localization.schemas';
+import validation from 'validation/localization.validation';
+import routes from 'routes/routes.localization';
 
 i18n.use(initReactI18next).init({
   resources: {
     ru: {},
     en: {}
   },
-  fallbackLng: 'en',
-  debug: true,
+  lng: 'en',
+  fallbackLng: ['en', 'ru'],
   ns: ['translations'],
   defaultNS: 'translations',
   keySeparator: '.',
@@ -21,6 +22,10 @@ i18n.use(initReactI18next).init({
   }
 });
 
+i18n.on('languageChanged', lng => {
+  i18n.language = lng;
+});
+
 export const addResource = (ns, resources) => {
   ['ru', 'en'].forEach(lng => {
     i18n.addResourceBundle(lng, ns, resources[lng]);
@@ -28,5 +33,6 @@ export const addResource = (ns, resources) => {
 };
 
 addResource('validation', validation);
+addResource('routes', routes);
 
 export default i18n;

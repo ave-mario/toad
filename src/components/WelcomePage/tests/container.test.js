@@ -17,15 +17,12 @@ test('WelcomePage should render correctly', () => {
     auth: {
       isFailed: false,
       user: {},
-      error: {
-        message: 'message',
-        success: false
-      },
       createPassword: {
         success: true,
         error: null
       }
-    }
+    },
+    error: { message: '' }
   });
 
   const wrapper = mount(

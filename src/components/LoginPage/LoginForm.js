@@ -2,12 +2,12 @@ import React from 'react';
 import { withFormik } from 'formik';
 import { withTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import { Header, Main, Footer, ErrorText } from '../../elements';
+import { Header, Main, Footer, ErrorText } from 'elements';
+import { dispatcher } from 'config/redux.store';
+import authActions from 'actions/auth.actions';
+import { addResource } from 'config/localize';
+import { loginValidationSchema } from 'validation/auth.validation';
 import ErrorBar from '../ErrorBar';
-import { dispatcher } from '../../config/redux.store';
-import authActions from '../../actions/auth.actions';
-import { addResource } from '../../config/localize';
-import { loginValidationSchema } from '../../config/validation.schemas';
 import {
   SubmitButton,
   LoginForm,

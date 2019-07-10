@@ -3,16 +3,16 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { dispatcher } from '../config/redux.store';
+import { dispatcher } from 'config/redux.store';
 
-const PrivateRoute = ({ component, isAuthenticated, ...rest }) => {
+const PrivateRoute = ({ component, tokenData, ...rest }) => {
   const ComponentToRender = component;
 
   return (
     <Route
       {...rest}
       render={props =>
-        isAuthenticated ? (
+        tokenData ? (
           <ComponentToRender {...props} />
         ) : (
           dispatcher(push('/login'))
@@ -23,11 +23,15 @@ const PrivateRoute = ({ component, isAuthenticated, ...rest }) => {
 };
 
 PrivateRoute.propTypes = {
-  component: PropTypes.shape({}).isRequired,
-  isAuthenticated: PropTypes.bool.isRequired
+  component: PropTypes.func.isRequired,
+  tokenData: PropTypes.shape({})
+};
+
+PrivateRoute.defaultProps = {
+  tokenData: {}
 };
 
 const mapStateToProps = state => ({
-  isAuthenticated: state.auth.isAuthenticated
+  tokenData: state.auth.tokenData
 });
 export default withRouter(connect(mapStateToProps)(PrivateRoute));

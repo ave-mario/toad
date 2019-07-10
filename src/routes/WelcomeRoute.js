@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import history from '../config/browser.history';
-import services from '../services';
+import services from 'services';
+import NotFound from 'components/NotFoundPage';
 
 const WelcomeRoute = ({ component, isAuthenticated, search, ...rest }) => {
   const ComponentToRender = component;
@@ -12,7 +12,7 @@ const WelcomeRoute = ({ component, isAuthenticated, search, ...rest }) => {
     <Route
       {...rest}
       render={props =>
-        name || token ? <ComponentToRender {...props} /> : history.goBack()
+        name || token ? <ComponentToRender {...props} /> : <NotFound />
       }
     />
   );

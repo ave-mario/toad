@@ -11,15 +11,12 @@ describe('Welcome form', () => {
     auth: {
       isFailed: false,
       user: {},
-      error: {
-        message: 'message',
-        success: false
-      },
       createPassword: {
         success: null,
         error: null
       }
-    }
+    },
+    error: { message: '' }
   });
 
   const wrapper = mount(

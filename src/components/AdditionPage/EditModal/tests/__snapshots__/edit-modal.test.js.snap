@@ -1,0 +1,904 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Edit addition modal view should render correctly 1`] = `
+<EditView
+  addition={
+    Object {
+      "_id": "5d024a6ced7a017a7c437b44",
+      "name": "Service fisrtyjgjyssdhs",
+      "price": 2.8,
+    }
+  }
+  close={[MockFunction]}
+  update={[MockFunction]}
+>
+  <Formik
+    enableReinitialize={false}
+    initialValues={
+      Object {
+        "action": "update",
+        "name": "Service fisrtyjgjyssdhs",
+        "price": 2.8,
+      }
+    }
+    isInitialValid={false}
+    onSubmit={[Function]}
+    render={[Function]}
+    validateOnBlur="true"
+    validateOnChange="false"
+    validationSchema={
+      ObjectSchema {
+        "_blacklist": RefSet {
+          "list": Set {},
+          "refs": Map {},
+        },
+        "_conditions": Array [],
+        "_defaultDefault": [Function],
+        "_deps": Array [],
+        "_excludedEdges": Array [],
+        "_exclusive": Object {},
+        "_mutate": undefined,
+        "_nodes": Array [
+          "price",
+          "name",
+        ],
+        "_options": Object {
+          "abortEarly": true,
+          "recursive": true,
+        },
+        "_type": "object",
+        "_typeError": [Function],
+        "_whitelist": RefSet {
+          "list": Set {},
+          "refs": Map {},
+        },
+        "fields": Object {
+          "name": StringSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_deps": Array [],
+            "_exclusive": Object {
+              "required": true,
+            },
+            "_mutate": undefined,
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "string",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "tests": Array [
+              [Function],
+            ],
+            "transforms": Array [
+              [Function],
+            ],
+          },
+          "price": NumberSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_deps": Array [],
+            "_exclusive": Object {
+              "min": true,
+              "required": true,
+            },
+            "_mutate": undefined,
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "number",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "tests": Array [
+              [Function],
+              [Function],
+            ],
+            "transforms": Array [
+              [Function],
+            ],
+          },
+        },
+        "tests": Array [],
+        "transforms": Array [
+          [Function],
+        ],
+      }
+    }
+  >
+    <withI18nextTranslation(EditForm)
+      dirty={false}
+      errors={Object {}}
+      handleBlur={[Function]}
+      handleChange={[Function]}
+      handleReset={[Function]}
+      handleSubmit={[Function]}
+      initialValues={
+        Object {
+          "action": "update",
+          "name": "Service fisrtyjgjyssdhs",
+          "price": 2.8,
+        }
+      }
+      isSubmitting={false}
+      isValid={false}
+      isValidating={false}
+      registerField={[Function]}
+      resetForm={[Function]}
+      setError={[Function]}
+      setErrors={[Function]}
+      setFieldError={[Function]}
+      setFieldTouched={[Function]}
+      setFieldValue={[Function]}
+      setFormikState={[Function]}
+      setStatus={[Function]}
+      setSubmitting={[Function]}
+      setTouched={[Function]}
+      setValues={[Function]}
+      submitCount={0}
+      submitForm={[Function]}
+      touched={Object {}}
+      unregisterField={[Function]}
+      validateField={[Function]}
+      validateForm={[Function]}
+      validateOnBlur="true"
+      validateOnChange="false"
+      values={
+        Object {
+          "action": "update",
+          "name": "Service fisrtyjgjyssdhs",
+          "price": 2.8,
+        }
+      }
+    >
+      <EditForm
+        dirty={false}
+        errors={Object {}}
+        handleBlur={[Function]}
+        handleChange={[Function]}
+        handleReset={[Function]}
+        handleSubmit={[Function]}
+        i18n={Object {}}
+        initialValues={
+          Object {
+            "action": "update",
+            "name": "Service fisrtyjgjyssdhs",
+            "price": 2.8,
+          }
+        }
+        isSubmitting={false}
+        isValid={false}
+        isValidating={false}
+        registerField={[Function]}
+        resetForm={[Function]}
+        setError={[Function]}
+        setErrors={[Function]}
+        setFieldError={[Function]}
+        setFieldTouched={[Function]}
+        setFieldValue={[Function]}
+        setFormikState={[Function]}
+        setStatus={[Function]}
+        setSubmitting={[Function]}
+        setTouched={[Function]}
+        setValues={[Function]}
+        submitCount={0}
+        submitForm={[Function]}
+        t={[Function]}
+        tReady={true}
+        touched={Object {}}
+        unregisterField={[Function]}
+        validateField={[Function]}
+        validateForm={[Function]}
+        validateOnBlur="true"
+        validateOnChange="false"
+        values={
+          Object {
+            "action": "update",
+            "name": "Service fisrtyjgjyssdhs",
+            "price": 2.8,
+          }
+        }
+      >
+        <styled.div
+          editAdd={true}
+        >
+          <StyledComponent
+            editAdd={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "hEdLlG",
+                  "rules": Array [
+                    "
+  background: white;
+  position: fixed;
+  border: 1px solid #d0cccc;
+  border-radius: 20px;
+  top: 20%;
+  margin: 20px auto 0;
+  transition: all 0.8s;
+  ",
+                    [Function],
+                    ";
+  left: calc(50% - 200px);
+  box-shadow: 0 0 0 1000px ",
+                    "#172120cc",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-bdVaJa hEdLlG"
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "grXckW",
+                        "rules": Array [
+                          "
+  background: #e9f0ca;
+  border-radius: 20px 20px 0 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 30px;
+  text-align: right;
+  border-bottom: 1px solid;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-bwzfXH grXckW"
+                  >
+                    <styled.h3>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-htpNat",
+                              "isStatic": true,
+                              "lastClassName": "gZbVaw",
+                              "rules": Array [
+                                "
+  color: #707070;
+  float: left;
+  margin: 0;
+  padding: 0;
+",
+                              ],
+                            },
+                            "displayName": "styled.h3",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-htpNat",
+                            "target": "h3",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <h3
+                          className="sc-htpNat gZbVaw"
+                        >
+                          edit.title
+                        </h3>
+                      </StyledComponent>
+                    </styled.h3>
+                    <styled.button
+                      onClick={[Function]}
+                    >
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-jKJlTe",
+                              "isStatic": true,
+                              "lastClassName": "ilHQro",
+                              "rules": Array [
+                                "
+  cursor: pointer;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  border: none;
+  background: none;
+  vertical-align: bottom;
+  :focus {
+    outline: none;
+  }
+",
+                              ],
+                            },
+                            "displayName": "styled.button",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-jKJlTe",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-jKJlTe ilHQro"
+                          onClick={[Function]}
+                        >
+                          <Styled(Close)
+                            small={true}
+                          >
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "sc-eNQAEJ",
+                                    "isStatic": false,
+                                    "lastClassName": "dOhAEU",
+                                    "rules": Array [
+                                      "
+  color: ",
+                                      "#F52525",
+                                      ";
+  ",
+                                      [Function],
+                                      ";
+",
+                                    ],
+                                  },
+                                  "displayName": "Styled(Close)",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "sc-eNQAEJ",
+                                  "target": Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "displayName": "Close",
+                                    "render": [Function],
+                                  },
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              small={true}
+                            >
+                              <Close
+                                className="sc-eNQAEJ dOhAEU"
+                                small={true}
+                              >
+                                <StyledIconBase
+                                  className="sc-eNQAEJ dOhAEU"
+                                  iconAttrs={
+                                    Object {
+                                      "fill": "currentColor",
+                                    }
+                                  }
+                                  iconVerticalAlign="middle"
+                                  iconViewBox="0 0 24 24"
+                                  small={true}
+                                >
+                                  <StyledComponent
+                                    className="sc-eNQAEJ dOhAEU"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "StyledIconBase-sc-bdy9j4",
+                                          "isStatic": false,
+                                          "lastClassName": "jbPeIR",
+                                          "rules": Array [
+                                            "
+  display: inline-block;
+  vertical-align: ",
+                                            [Function],
+                                            ";
+  overflow: hidden;
+",
+                                          ],
+                                        },
+                                        "displayName": "StyledIconBase",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "StyledIconBase-sc-bdy9j4",
+                                        "target": Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "render": [Function],
+                                        },
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                    iconAttrs={
+                                      Object {
+                                        "fill": "currentColor",
+                                      }
+                                    }
+                                    iconVerticalAlign="middle"
+                                    iconViewBox="0 0 24 24"
+                                    small={true}
+                                  >
+                                    <ForwardRef
+                                      className="sc-eNQAEJ dOhAEU StyledIconBase-sc-bdy9j4 jbPeIR"
+                                      iconAttrs={
+                                        Object {
+                                          "fill": "currentColor",
+                                        }
+                                      }
+                                      iconVerticalAlign="middle"
+                                      iconViewBox="0 0 24 24"
+                                      small={true}
+                                    >
+                                      <svg
+                                        aria-hidden="true"
+                                        className="sc-eNQAEJ dOhAEU StyledIconBase-sc-bdy9j4 jbPeIR"
+                                        fill="currentColor"
+                                        focusable="false"
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                          key="k0"
+                                        />
+                                      </svg>
+                                    </ForwardRef>
+                                  </StyledComponent>
+                                </StyledIconBase>
+                              </Close>
+                            </StyledComponent>
+                          </Styled(Close)>
+                        </button>
+                      </StyledComponent>
+                    </styled.button>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+              <styled.form
+                flex={true}
+                onSubmit={[Function]}
+              >
+                <StyledComponent
+                  flex={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-ifAKCX",
+                        "isStatic": false,
+                        "lastClassName": "cSlFyz",
+                        "rules": Array [
+                          "
+  padding: 30px 15px;
+
+  ",
+                          [Function],
+                          "
+",
+                        ],
+                      },
+                      "displayName": "styled.form",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-ifAKCX",
+                      "target": "form",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onSubmit={[Function]}
+                >
+                  <form
+                    className="sc-ifAKCX cSlFyz"
+                    onSubmit={[Function]}
+                  >
+                    <div>
+                      <styled.p
+                        margin="0 20px"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-jTzLTM",
+                                "isStatic": false,
+                                "lastClassName": "hgLpHK",
+                                "rules": Array [
+                                  "
+  color: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.p",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-jTzLTM",
+                              "target": "p",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          margin="0 20px"
+                        >
+                          <p
+                            className="sc-jTzLTM hgLpHK"
+                          >
+                            labels.Name
+                          </p>
+                        </StyledComponent>
+                      </styled.p>
+                      <styled.input
+                        name="name"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        value="Service fisrtyjgjyssdhs"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htoDjs",
+                                "isStatic": false,
+                                "lastClassName": "RZPBU",
+                                "rules": Array [
+                                  "
+  height: ",
+                                  [Function],
+                                  ";
+  border: ",
+                                  [Function],
+                                  ";
+  background-color: ",
+                                  [Function],
+                                  ";
+  border-radius: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+
+  ",
+                                  [Function],
+                                  "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htoDjs",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          name="name"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          value="Service fisrtyjgjyssdhs"
+                        >
+                          <input
+                            className="sc-htoDjs dKSLDr"
+                            name="name"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            value="Service fisrtyjgjyssdhs"
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                    <div>
+                      <styled.p
+                        margin="0 20px"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-jTzLTM",
+                                "isStatic": false,
+                                "lastClassName": "hgLpHK",
+                                "rules": Array [
+                                  "
+  color: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+",
+                                ],
+                              },
+                              "displayName": "styled.p",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-jTzLTM",
+                              "target": "p",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          margin="0 20px"
+                        >
+                          <p
+                            className="sc-jTzLTM hgLpHK"
+                          >
+                            labels.Price
+                          </p>
+                        </StyledComponent>
+                      </styled.p>
+                      <styled.input
+                        name="price"
+                        number={true}
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        step={0.2}
+                        type="number"
+                        value={2.8}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htoDjs",
+                                "isStatic": false,
+                                "lastClassName": "RZPBU",
+                                "rules": Array [
+                                  "
+  height: ",
+                                  [Function],
+                                  ";
+  border: ",
+                                  [Function],
+                                  ";
+  background-color: ",
+                                  [Function],
+                                  ";
+  border-radius: ",
+                                  [Function],
+                                  ";
+  margin: ",
+                                  [Function],
+                                  ";
+
+  ",
+                                  [Function],
+                                  "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htoDjs",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          name="price"
+                          number={true}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          step={0.2}
+                          type="number"
+                          value={2.8}
+                        >
+                          <input
+                            className="sc-htoDjs RZPBU"
+                            name="price"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            step={0.2}
+                            type="number"
+                            value={2.8}
+                          />
+                        </StyledComponent>
+                      </styled.input>
+                    </div>
+                  </form>
+                </StyledComponent>
+              </styled.form>
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "gRSJCc",
+                        "rules": Array [
+                          "
+  border-radius: 0 0 20px 20px;
+  height: 35px;
+  padding: 0 30px 10px;
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-bZQynM gRSJCc"
+                  >
+                    <styled.button
+                      blue={true}
+                      lg={true}
+                      onClick={[Function]}
+                    >
+                      <StyledComponent
+                        blue={true}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-dnqmqq",
+                              "isStatic": false,
+                              "lastClassName": "kxFgfM",
+                              "rules": Array [
+                                "
+  height: 35px;
+  border-width: 0;
+  outline: none;
+  ",
+                                [Function],
+                                "
+  ",
+                                [Function],
+                                "
+  ",
+                                [Function],
+                                "
+
+   ",
+                                [Function],
+                                "
+
+  ",
+                                [Function],
+                                "
+",
+                              ],
+                            },
+                            "displayName": "styled.button",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "sc-dnqmqq",
+                            "target": "button",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        lg={true}
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="sc-dnqmqq kxFgfM"
+                          onClick={[Function]}
+                        >
+                          edit.button
+                        </button>
+                      </StyledComponent>
+                    </styled.button>
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </EditForm>
+    </withI18nextTranslation(EditForm)>
+  </Formik>
+</EditView>
+`;

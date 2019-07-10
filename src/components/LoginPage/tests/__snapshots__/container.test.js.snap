@@ -10,6 +10,7 @@ exports[`LoginPage should render correctly 1`] = `
   margin: 1px auto;
   padding: 0;
   width: 100%;
+  height: 50px;
 }
 
 .c4 {
@@ -20,16 +21,12 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c7 {
-  width: 300px;
   height: 35px;
-  background-color: #5995ef;
-  color: #fff;
-  border-radius: 15px;
-  border: none;
-  cursor: pointer;
+  border-width: 0;
+  outline: none;
   position: relative;
   display: block;
-  margin: 10px auto 10px 10%;
+  margin: 10px auto 10px 9%;
   padding: 0px;
   width: 100px;
   overflow: hidden;
@@ -75,12 +72,14 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c5 {
-  width: 300px;
   height: 35px;
   border: 1px solid #ccc;
   background-color: #fff;
-  border-radius: 20px;
-  margin: 3px auto;
+  border-radius: 10px;
+  margin: 3px 15px;
+  width: 280px;
+  padding-left: 13px;
+  font-size: 1em;
   width: 80%;
   padding-left: 13px;
   font-size: 1em;
@@ -91,8 +90,12 @@ exports[`LoginPage should render correctly 1`] = `
   border: 1px solid #ccc;
 }
 
+.c5:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
 .c2 {
-  font-family: 'Raleway',sans-serif;
   font-weight: 600px;
   color: #4d4d4d;
   font-size: 2.2em;
@@ -102,7 +105,6 @@ exports[`LoginPage should render correctly 1`] = `
 }
 
 .c3 {
-  font-family: 'Raleway',sans-serif;
   font-weight: 300px;
   color: #4d4d4d;
   font-size: 1.2em;
@@ -125,12 +127,6 @@ exports[`LoginPage should render correctly 1`] = `
 >
   <Connect(LoginPage)>
     <LoginPage
-      error={
-        Object {
-          "message": "message",
-          "success": false,
-        }
-      }
       isFailed={false}
       load={[Function]}
       user={Object {}}
@@ -227,8 +223,13 @@ exports[`LoginPage should render correctly 1`] = `
                     "getResourceBundle": [Function],
                     "hasResourceBundle": [Function],
                     "isInitialized": true,
+                    "language": "en",
+                    "languages": Array [
+                      "en",
+                      "ru",
+                    ],
                     "logger": Logger {
-                      "debug": true,
+                      "debug": false,
                       "logger": Object {
                         "error": [Function],
                         "log": [Function],
@@ -240,10 +241,11 @@ exports[`LoginPage should render correctly 1`] = `
                         "appendNamespaceToCIMode": false,
                         "appendNamespaceToMissingKey": false,
                         "contextSeparator": "_",
-                        "debug": true,
+                        "debug": false,
                         "defaultNS": "translations",
                         "fallbackLng": Array [
                           "en",
+                          "ru",
                         ],
                         "fallbackNS": false,
                         "initImmediate": true,
@@ -253,6 +255,7 @@ exports[`LoginPage should render correctly 1`] = `
                         },
                         "joinArrays": false,
                         "keySeparator": ".",
+                        "lng": "en",
                         "load": "all",
                         "missingInterpolationHandler": false,
                         "missingKeyHandler": false,
@@ -260,6 +263,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "ns": Array [
                           "translations",
                           "validation",
+                          "routes",
                           "ErrorHandler",
                           "LoginForm",
                         ],
@@ -277,6 +281,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -292,10 +297,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Welcome to hotel management",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Services of room",
+                              "main": "Main page",
+                              "rooms": "Rooms",
+                              "services": "Services of hotel",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "The email is incorrect",
-                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                               },
                               "required": Object {
                                 "email": "Email is required",
@@ -306,6 +317,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -321,10 +333,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Услуги комнат",
+                              "main": "Главная",
+                              "rooms": "Комнаты",
+                              "services": "Услуги отеля",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "Неверный email",
-                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                               },
                               "required": Object {
                                 "email": "Требуется email",
@@ -357,6 +375,7 @@ exports[`LoginPage should render correctly 1`] = `
                     "observers": Object {
                       "languageChanged": Array [
                         [Function],
+                        [Function],
                       ],
                       "languageChanging": Array [
                         [Function],
@@ -366,10 +385,11 @@ exports[`LoginPage should render correctly 1`] = `
                       "appendNamespaceToCIMode": false,
                       "appendNamespaceToMissingKey": false,
                       "contextSeparator": "_",
-                      "debug": true,
+                      "debug": false,
                       "defaultNS": "translations",
                       "fallbackLng": Array [
                         "en",
+                        "ru",
                       ],
                       "fallbackNS": false,
                       "initImmediate": true,
@@ -379,6 +399,7 @@ exports[`LoginPage should render correctly 1`] = `
                       },
                       "joinArrays": false,
                       "keySeparator": ".",
+                      "lng": "en",
                       "load": "all",
                       "missingInterpolationHandler": false,
                       "missingKeyHandler": false,
@@ -386,6 +407,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "ns": Array [
                         "translations",
                         "validation",
+                        "routes",
                         "ErrorHandler",
                         "LoginForm",
                       ],
@@ -403,6 +425,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -418,10 +441,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Welcome to hotel management",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Services of room",
+                            "main": "Main page",
+                            "rooms": "Rooms",
+                            "services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
-                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                             },
                             "required": Object {
                               "email": "Email is required",
@@ -432,6 +461,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -447,10 +477,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Услуги комнат",
+                            "main": "Главная",
+                            "rooms": "Комнаты",
+                            "services": "Услуги отеля",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "Неверный email",
-                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                             },
                             "required": Object {
                               "email": "Требуется email",
@@ -481,7 +517,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "backend": null,
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -493,10 +529,11 @@ exports[`LoginPage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
+                                "ru",
                               ],
                               "fallbackNS": false,
                               "initImmediate": true,
@@ -506,6 +543,7 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -513,6 +551,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
+                                "routes",
                                 "ErrorHandler",
                                 "LoginForm",
                               ],
@@ -531,6 +570,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -546,10 +586,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Welcome to hotel management",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Services of room",
+                                    "main": "Main page",
+                                    "rooms": "Rooms",
+                                    "services": "Services of hotel",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "The email is incorrect",
-                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                     },
                                     "required": Object {
                                       "email": "Email is required",
@@ -560,6 +606,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -575,10 +622,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Услуги комнат",
+                                    "main": "Главная",
+                                    "rooms": "Комнаты",
+                                    "services": "Услуги отеля",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "Неверный email",
-                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                     },
                                     "required": Object {
                                       "email": "Требуется email",
@@ -604,10 +657,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -617,6 +671,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -624,6 +679,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -641,6 +697,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -656,10 +713,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -670,6 +733,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -685,10 +749,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -711,7 +781,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -723,10 +793,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -736,6 +807,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -743,6 +815,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -761,6 +834,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -776,10 +850,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -790,6 +870,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -805,10 +886,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -839,10 +926,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -852,6 +940,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -859,6 +948,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -876,6 +966,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -891,10 +982,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -905,6 +1002,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -920,10 +1018,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -949,6 +1053,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -964,10 +1069,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Welcome to hotel management",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Services of room",
+                              "main": "Main page",
+                              "rooms": "Rooms",
+                              "services": "Services of hotel",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "The email is incorrect",
-                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                               },
                               "required": Object {
                                 "email": "Email is required",
@@ -978,6 +1089,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -993,10 +1105,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Услуги комнат",
+                              "main": "Главная",
+                              "rooms": "Комнаты",
+                              "services": "Услуги отеля",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "Неверный email",
-                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                               },
                               "required": Object {
                                 "email": "Требуется email",
@@ -1012,7 +1130,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "format": [Function],
                         "formatSeparator": ",",
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -1024,10 +1142,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -1037,6 +1156,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -1044,6 +1164,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -1062,6 +1183,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -1077,10 +1199,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -1091,6 +1219,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -1106,10 +1235,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -1139,10 +1274,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -1152,6 +1288,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -1159,6 +1296,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -1176,6 +1314,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -1191,10 +1330,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -1205,6 +1350,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -1220,10 +1366,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -1253,7 +1405,7 @@ exports[`LoginPage should render correctly 1`] = `
                       },
                       "languageUtils": LanguageUtil {
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -1265,10 +1417,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -1278,6 +1431,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -1285,6 +1439,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -1303,6 +1458,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -1318,10 +1474,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -1332,6 +1494,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -1347,10 +1510,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -1376,10 +1545,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -1389,6 +1559,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -1396,6 +1567,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -1413,6 +1585,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -1428,10 +1601,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -1442,6 +1621,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -1457,10 +1637,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -1483,7 +1669,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "whitelist": false,
                       },
                       "logger": Logger {
-                        "debug": true,
+                        "debug": false,
                         "logger": Object {
                           "error": [Function],
                           "log": [Function],
@@ -1495,10 +1681,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -1508,6 +1695,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -1515,6 +1703,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -1532,6 +1721,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -1547,10 +1737,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -1561,6 +1757,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -1576,10 +1773,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -1604,7 +1807,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "pluralResolver": PluralResolver {
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -1616,10 +1819,11 @@ exports[`LoginPage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
+                                "ru",
                               ],
                               "fallbackNS": false,
                               "initImmediate": true,
@@ -1629,6 +1833,7 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -1636,6 +1841,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
+                                "routes",
                                 "ErrorHandler",
                                 "LoginForm",
                               ],
@@ -1654,6 +1860,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -1669,10 +1876,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Welcome to hotel management",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Services of room",
+                                    "main": "Main page",
+                                    "rooms": "Rooms",
+                                    "services": "Services of hotel",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "The email is incorrect",
-                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                     },
                                     "required": Object {
                                       "email": "Email is required",
@@ -1683,6 +1896,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -1698,10 +1912,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Услуги комнат",
+                                    "main": "Главная",
+                                    "rooms": "Комнаты",
+                                    "services": "Услуги отеля",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "Неверный email",
-                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                     },
                                     "required": Object {
                                       "email": "Требуется email",
@@ -1727,10 +1947,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -1740,6 +1961,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -1747,6 +1969,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -1764,6 +1987,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -1779,10 +2003,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -1793,6 +2023,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -1808,10 +2039,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -1834,7 +2071,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -1846,10 +2083,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -1859,6 +2097,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -1866,6 +2105,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -1884,6 +2124,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -1899,10 +2140,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -1913,6 +2160,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -1928,10 +2176,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -2894,6 +3148,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -2909,10 +3164,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Welcome to hotel management",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Services of room",
+                            "main": "Main page",
+                            "rooms": "Rooms",
+                            "services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
-                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                             },
                             "required": Object {
                               "email": "Email is required",
@@ -2923,6 +3184,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -2938,10 +3200,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Услуги комнат",
+                            "main": "Главная",
+                            "rooms": "Комнаты",
+                            "services": "Услуги отеля",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "Неверный email",
-                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                             },
                             "required": Object {
                               "email": "Требуется email",
@@ -2955,6 +3223,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "en": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Data already exist",
                             "invalidCredentials": "Invalid Credentials",
                             "networkError": "Network Error",
                           },
@@ -2970,10 +3239,16 @@ exports[`LoginPage should render correctly 1`] = `
                             "title": "Welcome to hotel management",
                           },
                         },
+                        "routes": Object {
+                          "addition": "Services of room",
+                          "main": "Main page",
+                          "rooms": "Rooms",
+                          "services": "Services of hotel",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "The email is incorrect",
-                            "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                            "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                           },
                           "required": Object {
                             "email": "Email is required",
@@ -2984,6 +3259,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "ru": Object {
                         "ErrorHandler": Object {
                           "error": Object {
+                            "dataExist": "Введенные данные уже существуют",
                             "invalidCredentials": "Неверно введенные данные",
                             "networkError": "Ошибка подключения к сети",
                           },
@@ -2999,10 +3275,16 @@ exports[`LoginPage should render correctly 1`] = `
                             "title": "Добро пожаловать в гостиничный менеджмент",
                           },
                         },
+                        "routes": Object {
+                          "addition": "Услуги комнат",
+                          "main": "Главная",
+                          "rooms": "Комнаты",
+                          "services": "Услуги отеля",
+                        },
                         "validation": Object {
                           "incorrect": Object {
                             "email": "Неверный email",
-                            "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                            "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                           },
                           "required": Object {
                             "email": "Требуется email",
@@ -3016,7 +3298,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "backend": null,
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -3028,10 +3310,11 @@ exports[`LoginPage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
+                                "ru",
                               ],
                               "fallbackNS": false,
                               "initImmediate": true,
@@ -3041,6 +3324,7 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -3048,6 +3332,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
+                                "routes",
                                 "ErrorHandler",
                                 "LoginForm",
                               ],
@@ -3066,6 +3351,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -3081,10 +3367,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Welcome to hotel management",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Services of room",
+                                    "main": "Main page",
+                                    "rooms": "Rooms",
+                                    "services": "Services of hotel",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "The email is incorrect",
-                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                     },
                                     "required": Object {
                                       "email": "Email is required",
@@ -3095,6 +3387,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -3110,10 +3403,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Услуги комнат",
+                                    "main": "Главная",
+                                    "rooms": "Комнаты",
+                                    "services": "Услуги отеля",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "Неверный email",
-                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                     },
                                     "required": Object {
                                       "email": "Требуется email",
@@ -3139,10 +3438,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -3152,6 +3452,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -3159,6 +3460,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -3176,6 +3478,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -3191,10 +3494,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -3205,6 +3514,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -3220,10 +3530,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -3246,7 +3562,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -3258,10 +3574,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -3271,6 +3588,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -3278,6 +3596,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -3296,6 +3615,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -3311,10 +3631,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -3325,6 +3651,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -3340,10 +3667,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -3374,10 +3707,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -3387,6 +3721,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -3394,6 +3729,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -3411,6 +3747,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -3426,10 +3763,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -3440,6 +3783,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -3455,10 +3799,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -3484,6 +3834,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -3499,10 +3850,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Welcome to hotel management",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Services of room",
+                              "main": "Main page",
+                              "rooms": "Rooms",
+                              "services": "Services of hotel",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "The email is incorrect",
-                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                               },
                               "required": Object {
                                 "email": "Email is required",
@@ -3513,6 +3870,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -3528,10 +3886,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Услуги комнат",
+                              "main": "Главная",
+                              "rooms": "Комнаты",
+                              "services": "Услуги отеля",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "Неверный email",
-                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                               },
                               "required": Object {
                                 "email": "Требуется email",
@@ -3547,7 +3911,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "format": [Function],
                         "formatSeparator": ",",
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -3559,10 +3923,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -3572,6 +3937,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -3579,6 +3945,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -3597,6 +3964,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -3612,10 +3980,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -3626,6 +4000,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -3641,10 +4016,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -3674,10 +4055,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -3687,6 +4069,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -3694,6 +4077,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -3711,6 +4095,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -3726,10 +4111,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -3740,6 +4131,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -3755,10 +4147,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -3786,9 +4184,10 @@ exports[`LoginPage should render correctly 1`] = `
                         "unescapeSuffix": "",
                         "useRawValueToEscape": false,
                       },
+                      "language": "en",
                       "languageUtils": LanguageUtil {
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -3800,10 +4199,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -3813,6 +4213,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -3820,6 +4221,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -3838,6 +4240,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -3853,10 +4256,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -3867,6 +4276,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -3882,10 +4292,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -3911,10 +4327,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -3924,6 +4341,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -3931,6 +4349,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -3948,6 +4367,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -3963,10 +4383,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -3977,6 +4403,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -3992,10 +4419,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -4018,7 +4451,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "whitelist": false,
                       },
                       "logger": Logger {
-                        "debug": true,
+                        "debug": false,
                         "logger": Object {
                           "error": [Function],
                           "log": [Function],
@@ -4030,10 +4463,11 @@ exports[`LoginPage should render correctly 1`] = `
                           "appendNamespaceToCIMode": false,
                           "appendNamespaceToMissingKey": false,
                           "contextSeparator": "_",
-                          "debug": true,
+                          "debug": false,
                           "defaultNS": "translations",
                           "fallbackLng": Array [
                             "en",
+                            "ru",
                           ],
                           "fallbackNS": false,
                           "initImmediate": true,
@@ -4043,6 +4477,7 @@ exports[`LoginPage should render correctly 1`] = `
                           },
                           "joinArrays": false,
                           "keySeparator": ".",
+                          "lng": "en",
                           "load": "all",
                           "missingInterpolationHandler": false,
                           "missingKeyHandler": false,
@@ -4050,6 +4485,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ns": Array [
                             "translations",
                             "validation",
+                            "routes",
                             "ErrorHandler",
                             "LoginForm",
                           ],
@@ -4068,6 +4504,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "en": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Data already exist",
                                   "invalidCredentials": "Invalid Credentials",
                                   "networkError": "Network Error",
                                 },
@@ -4083,10 +4520,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Welcome to hotel management",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Services of room",
+                                "main": "Main page",
+                                "rooms": "Rooms",
+                                "services": "Services of hotel",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "The email is incorrect",
-                                  "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                  "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                 },
                                 "required": Object {
                                   "email": "Email is required",
@@ -4097,6 +4540,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ru": Object {
                               "ErrorHandler": Object {
                                 "error": Object {
+                                  "dataExist": "Введенные данные уже существуют",
                                   "invalidCredentials": "Неверно введенные данные",
                                   "networkError": "Ошибка подключения к сети",
                                 },
@@ -4112,10 +4556,16 @@ exports[`LoginPage should render correctly 1`] = `
                                   "title": "Добро пожаловать в гостиничный менеджмент",
                                 },
                               },
+                              "routes": Object {
+                                "addition": "Услуги комнат",
+                                "main": "Главная",
+                                "rooms": "Комнаты",
+                                "services": "Услуги отеля",
+                              },
                               "validation": Object {
                                 "incorrect": Object {
                                   "email": "Неверный email",
-                                  "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                  "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                 },
                                 "required": Object {
                                   "email": "Требуется email",
@@ -4146,10 +4596,11 @@ exports[`LoginPage should render correctly 1`] = `
                         "appendNamespaceToCIMode": false,
                         "appendNamespaceToMissingKey": false,
                         "contextSeparator": "_",
-                        "debug": true,
+                        "debug": false,
                         "defaultNS": "translations",
                         "fallbackLng": Array [
                           "en",
+                          "ru",
                         ],
                         "fallbackNS": false,
                         "initImmediate": true,
@@ -4159,6 +4610,7 @@ exports[`LoginPage should render correctly 1`] = `
                         },
                         "joinArrays": false,
                         "keySeparator": ".",
+                        "lng": "en",
                         "load": "all",
                         "missingInterpolationHandler": false,
                         "missingKeyHandler": false,
@@ -4166,6 +4618,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "ns": Array [
                           "translations",
                           "validation",
+                          "routes",
                           "ErrorHandler",
                           "LoginForm",
                         ],
@@ -4183,6 +4636,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "en": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Data already exist",
                                 "invalidCredentials": "Invalid Credentials",
                                 "networkError": "Network Error",
                               },
@@ -4198,10 +4652,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Welcome to hotel management",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Services of room",
+                              "main": "Main page",
+                              "rooms": "Rooms",
+                              "services": "Services of hotel",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "The email is incorrect",
-                                "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                               },
                               "required": Object {
                                 "email": "Email is required",
@@ -4212,6 +4672,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "ru": Object {
                             "ErrorHandler": Object {
                               "error": Object {
+                                "dataExist": "Введенные данные уже существуют",
                                 "invalidCredentials": "Неверно введенные данные",
                                 "networkError": "Ошибка подключения к сети",
                               },
@@ -4227,10 +4688,16 @@ exports[`LoginPage should render correctly 1`] = `
                                 "title": "Добро пожаловать в гостиничный менеджмент",
                               },
                             },
+                            "routes": Object {
+                              "addition": "Услуги комнат",
+                              "main": "Главная",
+                              "rooms": "Комнаты",
+                              "services": "Услуги отеля",
+                            },
                             "validation": Object {
                               "incorrect": Object {
                                 "email": "Неверный email",
-                                "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                               },
                               "required": Object {
                                 "email": "Требуется email",
@@ -4253,7 +4720,7 @@ exports[`LoginPage should render correctly 1`] = `
                       "pluralResolver": PluralResolver {
                         "languageUtils": LanguageUtil {
                           "logger": Logger {
-                            "debug": true,
+                            "debug": false,
                             "logger": Object {
                               "error": [Function],
                               "log": [Function],
@@ -4265,10 +4732,11 @@ exports[`LoginPage should render correctly 1`] = `
                               "appendNamespaceToCIMode": false,
                               "appendNamespaceToMissingKey": false,
                               "contextSeparator": "_",
-                              "debug": true,
+                              "debug": false,
                               "defaultNS": "translations",
                               "fallbackLng": Array [
                                 "en",
+                                "ru",
                               ],
                               "fallbackNS": false,
                               "initImmediate": true,
@@ -4278,6 +4746,7 @@ exports[`LoginPage should render correctly 1`] = `
                               },
                               "joinArrays": false,
                               "keySeparator": ".",
+                              "lng": "en",
                               "load": "all",
                               "missingInterpolationHandler": false,
                               "missingKeyHandler": false,
@@ -4285,6 +4754,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ns": Array [
                                 "translations",
                                 "validation",
+                                "routes",
                                 "ErrorHandler",
                                 "LoginForm",
                               ],
@@ -4303,6 +4773,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "en": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Data already exist",
                                       "invalidCredentials": "Invalid Credentials",
                                       "networkError": "Network Error",
                                     },
@@ -4318,10 +4789,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Welcome to hotel management",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Services of room",
+                                    "main": "Main page",
+                                    "rooms": "Rooms",
+                                    "services": "Services of hotel",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "The email is incorrect",
-                                      "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                      "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                     },
                                     "required": Object {
                                       "email": "Email is required",
@@ -4332,6 +4809,7 @@ exports[`LoginPage should render correctly 1`] = `
                                 "ru": Object {
                                   "ErrorHandler": Object {
                                     "error": Object {
+                                      "dataExist": "Введенные данные уже существуют",
                                       "invalidCredentials": "Неверно введенные данные",
                                       "networkError": "Ошибка подключения к сети",
                                     },
@@ -4347,10 +4825,16 @@ exports[`LoginPage should render correctly 1`] = `
                                       "title": "Добро пожаловать в гостиничный менеджмент",
                                     },
                                   },
+                                  "routes": Object {
+                                    "addition": "Услуги комнат",
+                                    "main": "Главная",
+                                    "rooms": "Комнаты",
+                                    "services": "Услуги отеля",
+                                  },
                                   "validation": Object {
                                     "incorrect": Object {
                                       "email": "Неверный email",
-                                      "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                      "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                     },
                                     "required": Object {
                                       "email": "Требуется email",
@@ -4376,10 +4860,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -4389,6 +4874,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -4396,6 +4882,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -4413,6 +4900,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -4428,10 +4916,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -4442,6 +4936,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -4457,10 +4952,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -4483,7 +4984,7 @@ exports[`LoginPage should render correctly 1`] = `
                           "whitelist": false,
                         },
                         "logger": Logger {
-                          "debug": true,
+                          "debug": false,
                           "logger": Object {
                             "error": [Function],
                             "log": [Function],
@@ -4495,10 +4996,11 @@ exports[`LoginPage should render correctly 1`] = `
                             "appendNamespaceToCIMode": false,
                             "appendNamespaceToMissingKey": false,
                             "contextSeparator": "_",
-                            "debug": true,
+                            "debug": false,
                             "defaultNS": "translations",
                             "fallbackLng": Array [
                               "en",
+                              "ru",
                             ],
                             "fallbackNS": false,
                             "initImmediate": true,
@@ -4508,6 +5010,7 @@ exports[`LoginPage should render correctly 1`] = `
                             },
                             "joinArrays": false,
                             "keySeparator": ".",
+                            "lng": "en",
                             "load": "all",
                             "missingInterpolationHandler": false,
                             "missingKeyHandler": false,
@@ -4515,6 +5018,7 @@ exports[`LoginPage should render correctly 1`] = `
                             "ns": Array [
                               "translations",
                               "validation",
+                              "routes",
                               "ErrorHandler",
                               "LoginForm",
                             ],
@@ -4533,6 +5037,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "en": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Data already exist",
                                     "invalidCredentials": "Invalid Credentials",
                                     "networkError": "Network Error",
                                   },
@@ -4548,10 +5053,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Welcome to hotel management",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Services of room",
+                                  "main": "Main page",
+                                  "rooms": "Rooms",
+                                  "services": "Services of hotel",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "The email is incorrect",
-                                    "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                                    "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                                   },
                                   "required": Object {
                                     "email": "Email is required",
@@ -4562,6 +5073,7 @@ exports[`LoginPage should render correctly 1`] = `
                               "ru": Object {
                                 "ErrorHandler": Object {
                                   "error": Object {
+                                    "dataExist": "Введенные данные уже существуют",
                                     "invalidCredentials": "Неверно введенные данные",
                                     "networkError": "Ошибка подключения к сети",
                                   },
@@ -4577,10 +5089,16 @@ exports[`LoginPage should render correctly 1`] = `
                                     "title": "Добро пожаловать в гостиничный менеджмент",
                                   },
                                 },
+                                "routes": Object {
+                                  "addition": "Услуги комнат",
+                                  "main": "Главная",
+                                  "rooms": "Комнаты",
+                                  "services": "Услуги отеля",
+                                },
                                 "validation": Object {
                                   "incorrect": Object {
                                     "email": "Неверный email",
-                                    "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                                    "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                                   },
                                   "required": Object {
                                     "email": "Требуется email",
@@ -5543,6 +6061,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "en": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Data already exist",
                               "invalidCredentials": "Invalid Credentials",
                               "networkError": "Network Error",
                             },
@@ -5558,10 +6077,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Welcome to hotel management",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Services of room",
+                            "main": "Main page",
+                            "rooms": "Rooms",
+                            "services": "Services of hotel",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "The email is incorrect",
-                              "password": "Password should contain minimum eight characters, at least one uppercase letter, one lowercase letter and one number",
+                              "password": "Password should contain minimum eight characters,at least one uppercase letter, one lowercase letter and one number",
                             },
                             "required": Object {
                               "email": "Email is required",
@@ -5572,6 +6097,7 @@ exports[`LoginPage should render correctly 1`] = `
                         "ru": Object {
                           "ErrorHandler": Object {
                             "error": Object {
+                              "dataExist": "Введенные данные уже существуют",
                               "invalidCredentials": "Неверно введенные данные",
                               "networkError": "Ошибка подключения к сети",
                             },
@@ -5587,10 +6113,16 @@ exports[`LoginPage should render correctly 1`] = `
                               "title": "Добро пожаловать в гостиничный менеджмент",
                             },
                           },
+                          "routes": Object {
+                            "addition": "Услуги комнат",
+                            "main": "Главная",
+                            "rooms": "Комнаты",
+                            "services": "Услуги отеля",
+                          },
                           "validation": Object {
                             "incorrect": Object {
                               "email": "Неверный email",
-                              "password": "Пароль должен содержать не менее восьми символов, как минимум одну заглавную букву, одну строчную букву и одну цифру",
+                              "password": "Пароль должен содержать не менее восьми символов,как минимум одну заглавную букву, одну строчную букву и одну цифру",
                             },
                             "required": Object {
                               "email": "Требуется email",
@@ -5752,9 +6284,6 @@ exports[`LoginPage should render correctly 1`] = `
                                       "lastClassName": "c2",
                                       "rules": Array [
                                         "
-  font-family: ",
-                                        [Function],
-                                        ";
   font-weight: ",
                                         [Function],
                                         ";
@@ -5809,9 +6338,6 @@ exports[`LoginPage should render correctly 1`] = `
                                       "lastClassName": "c3",
                                       "rules": Array [
                                         "
-  font-family: ",
-                                        [Function],
-                                        ";
   font-weight: ",
                                         [Function],
                                         ";
@@ -5919,9 +6445,6 @@ exports[`LoginPage should render correctly 1`] = `
                                       "lastClassName": "c5",
                                       "rules": Array [
                                         "
-  width: ",
-                                        [Function],
-                                        ";
   height: ",
                                         [Function],
                                         ";
@@ -5937,6 +6460,17 @@ exports[`LoginPage should render correctly 1`] = `
   margin: ",
                                         [Function],
                                         ";
+
+  ",
+                                        [Function],
+                                        "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
 ",
                                         "
   width: 80%;
@@ -6003,9 +6537,6 @@ exports[`LoginPage should render correctly 1`] = `
                                       "lastClassName": "c5",
                                       "rules": Array [
                                         "
-  width: ",
-                                        [Function],
-                                        ";
   height: ",
                                         [Function],
                                         ";
@@ -6021,6 +6552,17 @@ exports[`LoginPage should render correctly 1`] = `
   margin: ",
                                         [Function],
                                         ";
+
+  ",
+                                        [Function],
+                                        "
+
+  padding-left: 13px;
+  font-size: 1em;
+  :focus {
+    outline: none;
+    border: 1px solid #ccc;
+  }
 ",
                                         "
   width: 80%;
@@ -6067,12 +6609,8 @@ exports[`LoginPage should render correctly 1`] = `
                             <Connect(ErrorBar)>
                               <ErrorBar
                                 dispatch={[Function]}
-                                error={
-                                  Object {
-                                    "message": "message",
-                                    "success": false,
-                                  }
-                                }
+                                isError={false}
+                                message=""
                               />
                             </Connect(ErrorBar)>
                           </main>
@@ -6097,6 +6635,15 @@ exports[`LoginPage should render correctly 1`] = `
                                   [Function],
                                   ";
   width: ",
+                                  [Function],
+                                  ";
+  height: ",
+                                  [Function],
+                                  ";
+  ",
+                                  [Function],
+                                  ";
+  ",
                                   [Function],
                                   ";
 ",
@@ -6135,32 +6682,31 @@ exports[`LoginPage should render correctly 1`] = `
                                       "lastClassName": "c7",
                                       "rules": Array [
                                         "
-  width: ",
+  height: 35px;
+  border-width: 0;
+  outline: none;
+  ",
                                         [Function],
-                                        ";
-  height: ",
+                                        "
+  ",
                                         [Function],
-                                        ";
-  background-color: ",
+                                        "
+  ",
                                         [Function],
-                                        ";
-  color: ",
+                                        "
+
+   ",
                                         [Function],
-                                        ";
-  border-radius: ",
+                                        "
+
+  ",
                                         [Function],
-                                        ";
-  border: ",
-                                        [Function],
-                                        ";
-  cursor: ",
-                                        [Function],
-                                        ";
+                                        "
 ",
                                         "
   position: relative;
   display: block;
-  margin: 10px auto 10px 10%;
+  margin: 10px auto 10px 9%;
   padding: 0px;
   width: 100px;
   overflow: hidden;

@@ -1,5 +1,5 @@
 import authReducer from '../auth.reducer';
-import authActions from '../../actions/auth.actions';
+import authActions from 'actions/auth.actions';
 
 const { Types } = authActions;
 describe('Auth reducer test', () => {
@@ -9,7 +9,6 @@ describe('Auth reducer test', () => {
       isFailed: false,
       user: null,
       tokenData: null,
-      error: false,
       isAuthenticated: false,
       createPassword: {
         success: null,
@@ -23,8 +22,7 @@ describe('Auth reducer test', () => {
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: true,
-      isFailed: false,
-      error: false
+      isFailed: false
     });
   });
   test('should handle LOGIN_SUCCESS', () => {
@@ -38,19 +36,16 @@ describe('Auth reducer test', () => {
       user: 'user',
       tokenData: 'tokens',
       isAuthenticated: true,
-      error: false,
       isFailed: false
     });
   });
   test('should handle LOGIN_FAILURE', () => {
     const action = {
       type: Types.LOGIN_FAILURE,
-      error: 'error',
       tokenData: null
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: false,
-      error: 'error',
       isAuthenticated: false,
       isFailed: true,
       tokenData: null
@@ -61,8 +56,7 @@ describe('Auth reducer test', () => {
       type: Types.LOAD_REQUEST
     };
     expect(authReducer({}, action)).toEqual({
-      isRequesting: true,
-      error: false
+      isRequesting: true
     });
   });
   test('should handle LOAD_SUCCESS', () => {
@@ -73,7 +67,6 @@ describe('Auth reducer test', () => {
     expect(authReducer({}, action)).toEqual({
       isRequesting: false,
       user: 'user',
-      error: false,
       isAuthenticated: true,
       isFailed: false
     });
@@ -88,7 +81,6 @@ describe('Auth reducer test', () => {
       user: null,
       tokenData: null,
       isAuthenticated: false,
-      error: 'error',
       isFailed: true
     });
   });
@@ -98,8 +90,7 @@ describe('Auth reducer test', () => {
     };
     expect(authReducer({}, action)).toEqual({
       isRequesting: true,
-      isFailed: false,
-      error: false
+      isFailed: false
     });
   });
   test('should handle CREATE_PASSWORD_SUCCESS', () => {
@@ -138,7 +129,6 @@ describe('Auth reducer test', () => {
       user: null,
       tokenData: null,
       isAuthenticated: false,
-      error: false,
       isFailed: false
     });
   });

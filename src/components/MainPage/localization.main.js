@@ -1,12 +1,12 @@
 export default {
   ru: {
-    buttons: {
-      logout: 'Выйти'
+    labels: {
+      title: 'Главная'
     }
   },
   en: {
-    buttons: {
-      logout: 'Logout'
+    labels: {
+      title: 'Main page'
     }
   }
 };
